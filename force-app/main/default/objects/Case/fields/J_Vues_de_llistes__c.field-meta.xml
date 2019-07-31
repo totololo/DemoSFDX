@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>J_Vues_de_llistes__c</fullName>
+    <description>Champ technique utilisé comme filtre dans les vues de listes Requêtes.</description>
+    <externalId>false</externalId>
+    <formula>OR( AND(RecordType.DeveloperName  &lt;&gt;  &quot;PUS_FR_IndisponibilitePBOperationnel_AvecDateFin&quot;,
+        Rappel_Jplus2__c = false,
+        Rappel_Jplus3__c = false),
+
+AND (RecordType.DeveloperName = &quot;PUS_FR_IndisponibilitePBOperationnel_AvecDateFin&quot;,
+         Indispo_Date_Fin__c &lt;= Today ()+ 3)
+  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>J Vues de llistes</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR03_TypePoint_NonModifiable</fullName>
+    <active>true</active>
+    <description>Une fois le PUDO créé, il n&#39;est plus possible de modifier le type de relais pour un utilisateur standard. Seul l&#39;administrateur Salesforce peut le modifier.</description>
+    <errorConditionFormula>AND (  NOT($User.BypassValidationRule__c),
+          NOT(ISBLANK( PRIORVALUE(Type))),
+          ISCHANGED( Type ),
+           $Profile.Name&lt;&gt;&quot;Administrateur système&quot;,
+           $Profile.Name&lt;&gt;&quot;Functional Adminstrator&quot;)</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>Vous n&#39;avez pas le droit de modifier le Type de Point. Contacter votre administrateur.</errorMessage>
+</ValidationRule>

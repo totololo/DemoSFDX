@@ -1,0 +1,199 @@
+<aura:component  implements="lightning:actionOverride,force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" access="global" controller="VFC09_DemarrageActiviteAppel">
+   <!--  <ltng:require scripts="/support/console/41.0/integration.js"/> --> 
+    
+    <aura:attribute name="ShowFirstPanel" type="boolean" default="true"/>
+    <aura:attribute name="ShowPlanifierUnAppel" type="boolean" default="false"/>
+    <aura:attribute name="ShowDatePlanifierUnAppel" type="boolean" default="false"/>
+    <aura:attribute name="ShowAppelPassageAppeSuivant" type="boolean" default="true"/>    
+    <aura:attribute name="historiqueObj" type="Historique_des_Comptes_Rendus__c" />
+    <aura:attribute name="currentCaseStatus" type="String" />
+    <aura:attribute name="contactId" type="String" default=""/>
+    <!--<aura:attribute name="RequiredFieldCompteRendu" type="String" default=""/>    -->
+    <aura:attribute name="RequiredFieldRadio" type="String" default=""/>
+    <aura:attribute name="RequiredFieldRadio1" type="String" default=""/>
+    <aura:attribute name="SelectedRadioBoxValue1" type="String" default="" />
+    <aura:attribute name="CompteRenduValue" type="String" />
+    <aura:attribute name="SelectedRadioBoxValue" type="String" default="" />
+    <aura:attribute name="SelectedChechBoxValue" type="String" default="" />
+    <aura:attribute name="SelectedChechBoxValue1" type="String" default="" />
+    <aura:attribute name="SelectedDateValue" type="Date" default=""/>
+    <aura:attribute name="Status" type="String" default=""/>
+    <aura:attribute name="RecordId" type="String" default=""/>
+    <aura:attribute name="caseId" type="String" />
+    <aura:attribute name="accountID" type="String"/>
+    <!-- Create attribute to store lookup value as a sObject--> 
+    <aura:attribute name="selectedLookUpRecord" type="sObject" default="{}"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:if isTrue="{!v.ShowFirstPanel}">
+        <!--###### MODAL BOX Start From Here ######--> 
+        <div role="dialog" tabindex="-1" aria-labelledby="header99" height="100%"  class="slds-modal slds-fade-in-open ">
+            <div class="slds-modal__container">
+                <!-- ###### MODAL BOX HEADER Part Start From Here ######-->
+                <div class="slds-modal__header">
+                    <div style="color : red">{!v.RequiredFieldRadio}</div>
+                </div>
+                <!--###### MODAL BOX BODY Part Start From Here ######-->
+                <div class="slds-modal__content slds-p-around--medium" >
+                    <fieldset class="slds-form-element" >
+                        <legend class="slds-form-element__legend slds-form-element__label">{!$Label.c.DA_RelaisJoinableLbl}</legend>
+                            <div class="slds-form-element__control" style =" padding-left : 24%">
+                                <span class="slds-radio">
+                                    <input type="radio" id="radio-6" name="options" value="{!$Label.c.DA_OuiRelaisRepond}" />
+                                    <label class="slds-radio__label" for="radio-6">
+                                        <span class="slds-radio_faux"></span>
+                                        <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_OuiRelaisRepond}</span>
+                                    </label>
+                                </span>
+                                <span class="slds-radio" style="padding-top:1%">
+                                    <input type="radio" id="radio-7" name="options" value="{!$Label.c.DA_NonRelaisRepond}" />
+                                    <label class="slds-radio__label" for="radio-7">
+                                        <span class="slds-radio_faux"></span>
+                                        <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_NonRelaisRepond}</span>
+                                    </label>
+                                </span>
+                            </div>
+                    </fieldset>
+                </div>
+                <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+                <div class="slds-modal__footer">
+                    <lightning:button variant="brand" label="{!$Label.c.EnregistrerLbl}" onclick="{! c.goToNextPage }"/>
+                    <lightning:button class="slds-button slds-button_neutral" label="{!$Label.c.AnnulerLbl}" onclick="{! c.closeDA }"/>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+        <!--###### MODAL BOX Part END Here ######-->
+        <aura:set attribute="else">
+            <!--###### MODAL BOX Start From Here ######--> 
+            <div role="dialog" style="height: 118%; margin-top: -3%;" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open dialogDemararageStyle" >
+                <div class="slds-modal__container" >
+                    <!--###### MODAL BOX BODY Part Start From Here ######-->
+                    <div class="slds-modal__content slds-p-around--medium" style="height: 120%; width :120%;margin-left :-10%; padding-top: 6%">
+                        <table>
+                            <tr>
+                                <td style = "width:21%; padding-left : 30px" >
+                                    <ui:outputText value="{!$Label.c.Statut}" class="slds-form-element__label"/>
+                                    <ui:outputText class="statusStyle slds-form-element__label" value="{!v.currentCaseStatus}"/>
+                                </td>
+                                <td></td>
+                                <td style = "padding-left : 0px" >
+                                    <label class="uiLabel-left form-element__label uiLabel ">
+                                        <div class="slds-grid">
+                                            <div class="slds-form-element__label">                                         
+                                                <ui:inputCheckbox aura:id="checkbox1" label="" change="{!c.onChkb}" text="" name="{!$Label.c.DA_InterrompuLbl}" value="{!v.historiqueObj.Traitement_interrompu__c}" />
+                                            </div>
+                                            <div class="slds-form-element__label">
+                                                <span>{!$Label.c.DA_InterrompuLbl}</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  style ="padding-left : 30px; padding-right : 0%; padding-top:1%;">
+                                    <ui:outputText value="{!$Label.c.NomDuContact}" class="slds-form-element__label"/>
+                                    <!--<c:InputLookup  type="Contact"  
+                                                   value="{!v.historiqueObj.Contact_Name__c}" className=""/> -->
+                                    <c:customLookup aura:id="child" objectAPIName="Contact" IconName="standard:contact" ContactID ="{!v.historiqueObj.Contact_Name__c}"
+                                                    selectedRecord="{!v.selectedLookUpRecord}" />
+
+                                </td>
+                                <td></td>
+                                <td style = "padding-left : 0px" >
+                                    <label class="uiLabel-left form-element__label uiLabel " >
+                                        <div class="slds-grid">
+                                            <div class="slds-form-element__label">  
+                                                <aura:renderIf isTrue="{!v.ShowPlanifierUnAppel}">
+                                                    <ui:inputCheckbox aura:id="checkbox2" label="" disabled='false' change="{!c.onChkb1}" text="" name="{!$Label.c.DA_PlannifierRappelLbl}" value="{!v.historiqueObj.Planifier_un_rappel__c}"/>
+                                                    <aura:set attribute="else">
+                                                        <ui:inputCheckbox label="" disabled='true' change="{!c.onChkb1}" text="" name="{!$Label.c.DA_PlannifierRappelLbl}" value="false"/>
+                                                    </aura:set>
+                                                </aura:renderIf> 
+                                            </div>
+                                            <div class="slds-form-element__label">
+                                                <span>{!$Label.c.DA_PlannifierRappelLbl}</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style = "width:21%; padding-left : 30px" >
+                                </td>
+                                <td></td>
+                                <td style = "padding-left : 0px">
+                                    <aura:renderIf isTrue="{!v.ShowDatePlanifierUnAppel}">
+                                        <lightning:input type="date" disabled='false' value="{!v.historiqueObj.Date_Du_Rappel__c}"  />
+                                        <!--<ui:inputDate aura:id="date" class="field" disabled='false' value="{!v.historiqueObj.Date_Du_Rappel__c}" displayDatePicker="true" />-->
+                                        <aura:set attribute="else">
+                                            <!--<lightning:input aura:id="date" label="Due Date/" type="date" disabled='true'  />-->
+                                            <ui:inputDate aura:id="date" class="field" disabled='true' value="" displayDatePicker="true" />
+                                        </aura:set>
+                                    </aura:renderIf> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style = "padding-top : 5%; padding-bottom : 2%">
+                                    <div class="slds-form-element" style = " width : 240%">
+                                        <lightning:textarea aura:id="compteRendu" label="{!$Label.c.DA_CompteRendu}" name="myTextArea" value="{!v.historiqueObj.Compte_rendu__c}"  maxlength="300" style="width : 75%"/>
+                                    </div>
+                                    <!--<div style="color : red">{!v.RequiredFieldCompteRendu}</div>-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style=" width:15%" ></td> 
+                                <td style=" width:15%"></td>
+                                <td style=" width:15%"></td>
+                            </tr>
+                        </table>
+                        <fieldset class="slds-form-element">
+                            <div class="slds-form-element__control battleBox">
+                                <span class="slds-radio leftRapper">
+                                    <aura:renderIf isTrue="{!v.ShowAppelPassageAppeSuivant}">
+                                        <input type="radio" id="radio-3" onchange="{!c.onRadio1}" name="options" value="{!$Label.c.TECH_DA_PassageAppSuivant}" />
+                                        <label class="slds-radio__label" for="radio-3">
+                                            <span class="slds-radio_faux"></span>
+                                            <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_PassageAppSuivant}</span>
+                                        </label>
+                                        <aura:set attribute="else">
+                                            <div style="visibility: hidden;">
+                                                <input type="radio" id="radio-3" onchange="{!c.onRadio}" name="options" value="{!$Label.c.TECH_DA_PassageAppSuivant}" />
+                                                <label class="slds-radio__label"  for="radio-3">
+                                                    <span class="slds-radio_faux" ></span>
+                                                    <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_PassageAppSuivant}</span>
+                                                </label>
+                                            </div>
+                                        </aura:set>
+                                    </aura:renderIf>
+                                </span>
+                                <span class="slds-radio middleRapper">
+                                    <input type="radio" id="radio-4" name="options" onchange="{!c.onRadio1}" value="{!$Label.c.TECH_DA_DemandeExclusionPUDO}" />
+                                    <label class="slds-radio__label" for="radio-4">
+                                        <span class="slds-radio_faux"></span>
+                                        <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_DemandeExclusionPUDO}</span>
+                                    </label>
+                                </span>
+                                <span class="slds-radio rightRapper">
+                                    <input type="radio" id="radio-5" name="options" onchange="{!c.onRadio1}" value="{!$Label.c.TECH_DA_FinSuiviDemmActivite}" />
+                                    <label class="slds-radio__label" for="radio-5">
+                                        <span class="slds-radio_faux"></span>
+                                        <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_FinSuiviDemmActivite}</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </fieldset>
+                        <div style="color : red">{!v.RequiredFieldRadio1}</div>
+                    </div>
+                    <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+                    <div class="slds-modal__footer" style=" width :120%; margin-left :-10% ">
+                        <lightning:button variant="brand" label="{!$Label.c.EnregistrerLbl}"  onclick="{! c.onSaveJoinable }"/>
+                        <lightning:button class="slds-button slds-button_neutral" label="{!$Label.c.AnnulerLbl}" onclick="{! c.closeDA }"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop--open"></div>
+            <!--###### MODAL BOX Part END Here ######-->
+        </aura:set>
+    </aura:if>
+</aura:component>

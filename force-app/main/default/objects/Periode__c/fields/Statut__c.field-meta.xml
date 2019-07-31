@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( Date_de_debut__c &gt;  TODAY() ,$Label.Periode_A_Venir,
+IF ( Date_de_fin__c  &lt;   TODAY() ,$Label.Periode_Passe,$Label.Periode_En_Cours))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Statut</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR07_Teleph_obligatoire</fullName>
+    <active>true</active>
+    <description>Pour rendre le téléphone ou téléphone portable obligatoire si Visité, Eligible et Intéressé égales à OUI (et donc Statut Chaud).</description>
+    <errorConditionFormula>AND (     NOT( $User.BypassValidationRule__c ),
+          ISPICKVAL( Status ,&quot;Oui&quot;),
+          ISPICKVAL( Commerce_eligible__c ,&quot;Oui&quot;),
+          ISPICKVAL( Interesse__c ,&quot;Oui&quot;),
+          ISBLANK( Phone ),
+          ISBLANK( MobilePhone)
+       )</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Veuillez indiquer soit Téléphone soit Téléphone mobile du Prospect.</errorMessage>
+</ValidationRule>

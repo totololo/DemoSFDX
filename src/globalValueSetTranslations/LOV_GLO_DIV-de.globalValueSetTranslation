@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>BYOD</masterLabel>
+        <translation>BYOD</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PDA Android</masterLabel>
+        <translation>Android PDA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PDA Windows</masterLabel>
+        <translation>Windows PDA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>WEBAPP</masterLabel>
+        <translation>WEBAPP</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

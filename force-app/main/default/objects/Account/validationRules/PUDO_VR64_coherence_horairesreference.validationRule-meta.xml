@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR64_coherence_horairesreference</fullName>
+    <active>true</active>
+    <description>Vérifier la cohérence des horaires de référence (ouverture, fermeture, début et fin de pause déjeuner).</description>
+    <errorConditionFormula>(Value(Left(Text(Debut_pause_dejeuner__c),2))*60)+ Value(Right(Text(Debut_pause_dejeuner__c ),2)) &gt;  (Value(Left(Text(Fin_pause_dejeuner__c),2))*60)+ Value(Right(Text( Fin_pause_dejeuner__c ),2))
+
+||
+
+((Value(Left(Text(  Horaire_Ouverture_Reference__c   ),2))*60)+ Value(Right(Text( Horaire_Ouverture_Reference__c ),2)) &gt;= (Value(Left(Text(   Horaire_Fermeture_Reference__c  ),2))*60)+ Value(Right(Text( Horaire_Fermeture_Reference__c  ),2)))
+
+||
+
+
+((Value(Left(Text(  Debut_pause_dejeuner__c   ),2))*60)+ Value(Right(Text( Debut_pause_dejeuner__c ),2)) &lt; (Value(Left(Text(   Horaire_Ouverture_Reference__c  ),2))*60)+ Value(Right(Text( Horaire_Ouverture_Reference__c  ),2)))
+
+
+||
+
+((Value(Left(Text(Horaire_Ouverture_Reference__c),2))*60)+ Value(Right(Text(Horaire_Ouverture_Reference__c),2)) &gt; (Value(Left(Text(Fin_pause_dejeuner__c),2))*60)+ Value(Right(Text(Fin_pause_dejeuner__c),2)))
+
+||
+
+((Value(Left(Text(Debut_pause_dejeuner__c),2))*60)+ Value(Right(Text(Debut_pause_dejeuner__c),2)) &gt; (Value(Left(Text(Horaire_Fermeture_Reference__c),2))*60)+ Value(Right(Text(Horaire_Fermeture_Reference__c),2)))
+
+||
+
+((Value(Left(Text(Fin_pause_dejeuner__c),2))*60)+ Value(Right(Text(Fin_pause_dejeuner__c),2)) &gt; (Value(Left(Text(Horaire_Fermeture_Reference__c),2))*60)+ Value(Right(Text(Horaire_Fermeture_Reference__c),2)))</errorConditionFormula>
+    <errorDisplayField>Horaire_Ouverture_Reference__c</errorDisplayField>
+    <errorMessage>Vérifier la cohérence des horaires de référence (ouverture, fermeture, début et fin de pause déjeuner).</errorMessage>
+</ValidationRule>

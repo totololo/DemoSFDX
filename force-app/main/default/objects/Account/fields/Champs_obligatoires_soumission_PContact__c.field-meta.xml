@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Champs_obligatoires_soumission_PContact__c</fullName>
+    <description>Champs obligatoires pour la soumission de Pickup contact à l&#39;approbation.</description>
+    <externalId>false</externalId>
+    <formula>IF(Passage_par_fiabilisation_effectuee__c =false, &quot;Fiabilisation de l&#39;adresse ; &quot;,&quot;&quot;)&amp; 
+IF(ISBLANK( Phone ),&quot;Téléphone; &quot;,&quot;&quot;)&amp;
+
+IF((Type_de_device_Selected__c = 0),&quot;Type de device;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Macroprofil_de_reference__c ),&quot;Macroprofil de référence;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Macroprofil_actuel__c ),&quot;Macroprofil actuel;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( ShippingAddress ),&quot;Adresse de livraison;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Long_Lat_adresse_de_livraison__c ),&quot;Longitude / Latitude ; &quot;,&quot;&quot;)&amp; 
+IF(ISBLANK( Zone_dimplantation__c ),&quot;Zone d&#39;implantation;&quot;,&quot;&quot;)&amp;
+IF ( and
+        ( 
+        Refus_Email__c =false, 
+        ISBLANK(  Email_du_magasin__c )),
+        &quot;Cocher la case Refus Email ou renseigner le champ Email du magasin;&quot;,&quot;&quot;)
+&amp;
+IF(ISBLANK( Hauteur_cm__c ),&quot;Hauteur;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Largeur_cm__c ),&quot;Largeur;&quot;,&quot;&quot;)&amp;
+IF( Contrat_Joint__c=false ,&quot;Contrat joint; &quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Profondeur_cm__c ),&quot;Profondeur;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Nombre_detageres__c ),&quot;Nombre d&#39;étagères;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK(TEXT( Volume_maximal_accepte__c )),&quot;Volume maximal accepté;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK(TEXT(  Poids_maximal_accepte_par_colis__c )),&quot;Poids maximal accepté par colis;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Seuil_calcule__c ),&quot;Seuil calculé;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( NumberOfEmployees ),&quot;Employés;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK(TEXT( Horaire_Ouverture_Reference__c )),&quot;Horaire d’ouverture de référence ; &quot;,&quot;&quot;)&amp; 
+IF(ISBLANK(TEXT( Horaire_Fermeture_Reference__c )),&quot;Horaire de fermeture de référence ; &quot;,&quot;&quot;) &amp;
+IF(ISBLANK( Amplitude_horaire_du_relais__c ),&quot;Amplitude horaire;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Nom_Responsable_magasin__c ),&quot;Responsable magasin;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Contact_operationnel_1__c ),&quot;Contact opérationnel;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Raison_sociale__c ),&quot;Raison sociale;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( N_SIREN__c ),&quot;N° SIREN;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK( Ville_RCS__c ),&quot;Ville RCS;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK(TEXT(  Type_acces_Internet__c )),&quot;Type d&#39;accès internet;&quot;,&quot;&quot;)&amp;
+IF(ISBLANK(TEXT(   Type_de_parking__c )),&quot;Type de parking;&quot;,&quot;&quot;)</formula>
+    <inlineHelpText>Champs obligatoires pour la soumission de Pickup contact à l&#39;approbation.</inlineHelpText>
+    <label>Champs obligatoires soumission PContact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

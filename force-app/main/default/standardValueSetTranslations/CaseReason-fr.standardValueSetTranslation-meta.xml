@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Animation relais</masterLabel>
+        <translation><!-- Animation relais --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Colis</masterLabel>
+        <translation><!-- Colis --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA - Panne PDA</masterLabel>
+        <translation>Indisponibilité problème PDA - Panne PDA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA - Problème de synchronisation</masterLabel>
+        <translation>Indisponibilité problème PDA - Problème de synchronisation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel - Sinistre/ Travaux/Santé avec date de fin</masterLabel>
+        <translation>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé avec date de fin</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin</masterLabel>
+        <translation>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème PDA / panne PDA</masterLabel>
+        <translation>Injoignable - Indisponibilité problème PDA / panne PDA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème PDA / problème synchronisation</masterLabel>
+        <translation>Injoignable - Indisponibilité problème PDA / problème synchronisation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème opérationnel Sinistre/travaux/Santé</masterLabel>
+        <translation>Injoignable - Indisponibilité problème opérationnel Sinistre/travaux/Santé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable- Indisponibilité problème opérationnel anomalie colis</masterLabel>
+        <translation>Injoignable - Indisponibilité problème opérationnel anomalie colis</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Matériel et réseau</masterLabel>
+        <translation><!-- Matériel et réseau --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Procédure et prestations</masterLabel>
+        <translation><!-- Procédure et prestations --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transporteur</masterLabel>
+        <translation><!-- Transporteur --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vie du relais</masterLabel>
+        <translation><!-- Vie du relais --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

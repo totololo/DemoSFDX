@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR41_ObligationAdresseLivraison</fullName>
+    <active>true</active>
+    <description>Les champs adresses de livraisons sont obligatoires.</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c,
+Piste_convertie_vers_compte__c = false,
+CONTAINS( $Label.RT_NonSuiviCo_Compte ,  RecordTypeId ),
+OR(
+ISBLANK(Shipping_Street__c),
+ISBLANK(Shipping_City__c),
+ISBLANK(Shipping_Zip_Postal_Code__c),
+ISBLANK(TEXT(Shipping_Country__c))
+))</errorConditionFormula>
+    <errorDisplayField>ShippingStreet</errorDisplayField>
+    <errorMessage>Vous devez saisir l&#39;adresse de livraison au complet.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Chronofresh</fullName>
+        <default>false</default>
+        <label>Chronofresh</label>
+    </customValue>
+    <customValue>
+        <fullName>Contre remboursement</fullName>
+        <default>false</default>
+        <label>Contre-remboursement</label>
+    </customValue>
+    <customValue>
+        <fullName>Contre remboursement_CASH</fullName>
+        <default>false</default>
+        <label>Contre-remboursement CASH</label>
+    </customValue>
+    <customValue>
+        <fullName>Contre remboursement_CB</fullName>
+        <default>false</default>
+        <label>Contre-remboursement CB</label>
+    </customValue>
+    <customValue>
+        <fullName>CtoC en sacoches bleues scellées</fullName>
+        <default>false</default>
+        <label>CtoC en sacoches bleues scellées</label>
+    </customValue>
+    <customValue>
+        <fullName>Dépôt en sacoche bleue</fullName>
+        <default>false</default>
+        <label>Dépôt en sacoche bleue</label>
+    </customValue>
+    <customValue>
+        <fullName>Dépôt express</fullName>
+        <default>false</default>
+        <label>Dépôt express</label>
+    </customValue>
+    <customValue>
+        <fullName>Dépôt payant</fullName>
+        <default>false</default>
+        <label>Dépôt payant</label>
+    </customValue>
+    <customValue>
+        <fullName>Dépôt simple</fullName>
+        <default>false</default>
+        <label>Dépôt simple</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Parcel Label</fullName>
+        <default>false</default>
+        <label>Digital Parcel Label</label>
+    </customValue>
+    <customValue>
+        <fullName>Instance</fullName>
+        <default>false</default>
+        <label>Instance</label>
+    </customValue>
+    <customValue>
+        <fullName>LA POSTE RELAIS (LPR)</fullName>
+        <default>false</default>
+        <label>LA POSTE RELAIS (LPR)</label>
+    </customValue>
+    <customValue>
+        <fullName>PickupPassCAB2D</fullName>
+        <default>false</default>
+        <label>PickupPass CAB2D</label>
+    </customValue>
+    <customValue>
+        <fullName>Printer activation</fullName>
+        <default>false</default>
+        <label>Printer activation</label>
+    </customValue>
+    <customValue>
+        <fullName>Redirection</fullName>
+        <default>false</default>
+        <label>Redirection</label>
+    </customValue>
+    <customValue>
+        <fullName>Relivraison STUART</fullName>
+        <default>false</default>
+        <label>Relivraison STUART</label>
+    </customValue>
+    <customValue>
+        <fullName>Retour</fullName>
+        <default>false</default>
+        <label>Retour</label>
+    </customValue>
+    <customValue>
+        <fullName>Retrait</fullName>
+        <default>false</default>
+        <label>Retrait</label>
+    </customValue>
+    <customValue>
+        <fullName>Retrait de colis prepares</fullName>
+        <default>false</default>
+        <label>Retrait de colis préparé</label>
+    </customValue>
+    <customValue>
+        <fullName>Reverse swap desyncho en sacoches grises scellées</fullName>
+        <default>false</default>
+        <label>Reverse swap desynchro en sacoches grises scellées</label>
+    </customValue>
+    <customValue>
+        <fullName>ROD</fullName>
+        <default>false</default>
+        <label>ROD</label>
+    </customValue>
+    <customValue>
+        <fullName>Shopident</fullName>
+        <default>false</default>
+        <label>Shop Ident</label>
+    </customValue>
+    <customValue>
+        <fullName>Swap Colis avec contrôle de contenu</fullName>
+        <default>false</default>
+        <label>Swap Colis avec contrôle de contenu</label>
+    </customValue>
+    <customValue>
+        <fullName>Swap Colis contre colis</fullName>
+        <default>false</default>
+        <label>Swap Colis contre colis</label>
+    </customValue>
+    <customValue>
+        <fullName>Transporteur multiple - DPD FR</fullName>
+        <default>false</default>
+        <label>Transporteur multiple - DPD FR</label>
+    </customValue>
+    <customValue>
+        <fullName>CARTE_FIDELITE</fullName>
+        <default>false</default>
+        <label>Carte fidélité</label>
+    </customValue>
+    <description>Cette valeur de liste globale contient tous les services de la plate-forme Pickup.</description>
+    <masterLabel>LOV_GLO_SER</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

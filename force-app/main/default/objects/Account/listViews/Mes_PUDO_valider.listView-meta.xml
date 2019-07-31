@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_PUDO_valider</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>Utilisateur_GC__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Mode__c</field>
+        <operation>equals</operation>
+        <value>40</value>
+    </filters>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Mes PUDO à valider</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>DPD_BNL_Animateur_reseau_siege</group>
+        <group>DPD_BNL_Animateurs</group>
+        <group>DPD_BNL_Gestion_Materiel</group>
+        <group>DPD_BNL_Manager</group>
+        <group>DPD_BNL_Service_Line</group>
+        <group>PUS_FR_Animateur_reseau</group>
+        <group>PUS_FR_Animateur_reseau_siege</group>
+        <group>PUS_FR_DOR</group>
+        <group>PUS_FR_Gestion_Contractuelle</group>
+        <group>PUS_FR_Gestion_Materiel</group>
+        <group>PUS_FR_Lecture_Seule</group>
+        <group>PUS_FR_Manager</group>
+        <group>PUS_FR_Planificateur</group>
+        <group>PUS_FR_Service_Client</group>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

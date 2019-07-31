@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BNL</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Id_du_Macroprofil__c</columns>
+    <columns>Partenaire__c</columns>
+    <columns>Pays__c</columns>
+    <columns>Type_de_point__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>BNL</label>
+    <language>fr</language>
+</ListView>

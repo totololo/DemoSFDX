@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Declarer_un_SAV_en_creation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( $Organization.Id = $Label.ID_ORG , 
+HYPERLINK(&quot;http://&quot;&amp;$Label.Fleet_Manager&amp;&quot;.revers.io/#/app/requests/createsav?externalref2=&quot;+Account.Reference_internationale__c+&quot;&amp;language=fr-FR&quot;, $Label.Click_Here ), 
+$Label.Lien_Non_Dispo)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Déclarer un SAV en création</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X5_PUDO_valdated_with_status_9</fullName>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS2_COUNTRY_CODE</columns>
+    <columns>Langues_parlees_sur_le_relais__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>9</value>
+    </filters>
+    <label>5 - PUDO validated with status 9</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>DPD_BNL_Animateur_reseau_siege</group>
+        <group>DPD_BNL_Animateurs</group>
+        <group>DPD_BNL_Gestion_Materiel</group>
+        <group>DPD_BNL_Manager</group>
+        <group>DPD_BNL_Service_Line</group>
+        <group>DPD_HUN_External_Team</group>
+        <group>DPD_HUN_Finance_Team</group>
+        <group>DPD_HUN_Manager</group>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

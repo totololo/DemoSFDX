@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Oui</fullName>
+        <default>false</default>
+        <label>Oui</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Non</fullName>
+        <default>true</default>
+        <label>Non</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>N&#39;existe plus</fullName>
+        <default>false</default>
+        <label>N&#39;existe plus</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

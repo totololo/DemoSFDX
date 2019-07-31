@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>0</masterLabel>
+        <translation>Wartet auf Zuteilung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1</masterLabel>
+        <translation>Wartet auf Anruf 1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>10</masterLabel>
+        <translation>Wartet auf Ausschluss</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>11</masterLabel>
+        <translation>Beendet - Ausschlussantrag stattgegeben</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>12</masterLabel>
+        <translation>Wartet auf Anruf 4</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>13</masterLabel>
+        <translation>Wartet auf Anruf 5</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>14</masterLabel>
+        <translation>Wartet auf Anruf 6</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2</masterLabel>
+        <translation>Wartet auf Anruf 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3</masterLabel>
+        <translation>Wartet auf Anruf 3</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4</masterLabel>
+        <translation>Wartet auf Anruf - Bilanz 1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5</masterLabel>
+        <translation>Wartet auf Anruf 5</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6</masterLabel>
+        <translation>Wartet auf Anruf - Bilanz 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>7</masterLabel>
+        <translation>Wartet auf Kündigung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>8</masterLabel>
+        <translation>Wartet auf Planung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>9</masterLabel>
+        <translation>Wartet auf Besuch Netzwerkadministrator</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente d&#39;attribution</masterLabel>
+        <translation>Wartet auf Zuteilung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de rappel</masterLabel>
+        <translation>Wartet auf Rückruf</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de rappel 2</masterLabel>
+        <translation>Wartet auf Rückruf</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de traitement</masterLabel>
+        <translation>Wartet auf Bearbeitung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de validation</masterLabel>
+        <translation>Wartet auf Genehmigung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours de traitement</masterLabel>
+        <translation>In Bearbeitung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours envoi matériel</masterLabel>
+        <translation>Austausch des Geräts</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours échange matériel</masterLabel>
+        <translation>Austausch des Geräts</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Terminée</masterLabel>
+        <translation>Beendet</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

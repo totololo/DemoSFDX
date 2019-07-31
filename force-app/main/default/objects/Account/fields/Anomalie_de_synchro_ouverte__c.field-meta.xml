@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Anomalie_de_synchro_ouverte__c</fullName>
+    <description>Ce champ permet de savoir si une anomalie de synchro est ouverte sur le PUDO. Se base sur l&#39;objet anomalie.</description>
+    <externalId>false</externalId>
+    <label>Anomalie de synchro ouverte</label>
+    <summaryFilterItems>
+        <field>Anomalie__c.Ouvert_SyncPudo__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Anomalie__c.PUDO__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

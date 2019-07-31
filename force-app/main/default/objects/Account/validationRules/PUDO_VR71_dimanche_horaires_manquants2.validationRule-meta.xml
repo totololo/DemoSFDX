@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR71_dimanche_horaires_manquants2</fullName>
+    <active>true</active>
+    <description>Veuillez remplir toutes les cases horaires du dimanche.</description>
+    <errorConditionFormula>AND( 
+NOT( $User.BypassValidationRule__c ), 
+Dimanche__c=false,OR(
+AND( 
+ISPICKVAL(Dimanche_Ouverture__c,&quot;&quot;), 
+ISPICKVAL(dimanche_debut_pause_dejeuner__c,&quot;&quot;), 
+NOT(ISPICKVAL(Dimanche_Fermeture__c, &quot;&quot;)), 
+NOT(ISPICKVAL(dimanche_fin_pause_dejeuner__c, &quot;&quot;)) 
+)|| 
+AND( 
+NOT(ISPICKVAL(Dimanche_Ouverture__c,&quot;&quot;)), 
+NOT(ISPICKVAL(dimanche_debut_pause_dejeuner__c,&quot;&quot;)), 
+ISPICKVAL(Dimanche_Fermeture__c, &quot;&quot;), 
+ISPICKVAL(dimanche_fin_pause_dejeuner__c, &quot;&quot;) 
+)))</errorConditionFormula>
+    <errorDisplayField>Dimanche_Ouverture__c</errorDisplayField>
+    <errorMessage>Veuillez remplir toutes les cases horaires du dimanche.</errorMessage>
+</ValidationRule>

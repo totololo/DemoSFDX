@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Envoyer_email_au_responsable_magasin__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/apex/VFP08_GenerateLien_RM?id=&quot;+ Id +&quot;&amp;isdtp=nv&quot;, $Label.Click_Here, &quot;_self&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Envoyer email au responsable magasin</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

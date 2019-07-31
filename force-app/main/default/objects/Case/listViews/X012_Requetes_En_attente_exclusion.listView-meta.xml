@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X012_Requetes_En_attente_exclusion</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ID_PUDO__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Secteur_Region__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>Age_de_la_requete__c</columns>
+    <columns>Disponibilite_Pudo__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Code_postal__c</columns>
+    <columns>Synchronisation_du_moyen_de_scan__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>10,En attente exclusion</value>
+    </filters>
+    <filters>
+        <field>Etat_Pudo__c</field>
+        <operation>equals</operation>
+        <value>2,4,5,6</value>
+    </filters>
+    <filters>
+        <field>Type_de_point__c</field>
+        <operation>equals</operation>
+        <value>2,3,21</value>
+    </filters>
+    <label>07b-Requêtes en attente exclusion</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>PUS_FR_Manager</group>
+    </sharedTo>
+</ListView>

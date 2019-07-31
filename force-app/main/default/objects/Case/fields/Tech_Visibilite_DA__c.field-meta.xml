@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Visibilite_DA__c</fullName>
+    <description>Ce champ permet de gérer la visibilité des requêtes DA dans les vues de liste</description>
+    <externalId>false</externalId>
+    <formula>AND(
+   OR( ISPICKVAL(Status,&quot;0&quot;),
+      ISPICKVAL(Status,&quot;1&quot;),
+      ISPICKVAL(Status,&quot;7&quot;),
+      ISPICKVAL(Status,&quot;8&quot;),
+      ISPICKVAL(Status,&quot;9&quot;),
+      ISPICKVAL(Status,&quot;10&quot;),
+      AND(ISPICKVAL(Status,&quot;2&quot;),IF( CONTAINS(  $Label.RT_France_Requete ,  RecordType.Id ) , (Today()-Date_appel_1__c)&gt; VALUE($Label.DA_PUS_FR_Duree_Entre_Appel),(Today()-Date_appel_1__c)&gt; VALUE( $Label.DA_INT_Duree_Entre_Appel ) )),
+	  AND(ISPICKVAL(Status,&quot;3&quot;),IF( CONTAINS(  $Label.RT_France_Requete ,  RecordType.Id ) , (Today()-Date_appel_2__c)&gt; VALUE($Label.DA_PUS_FR_Duree_Entre_Appel),(Today()-Date_appel_2__c)&gt; VALUE( $Label.DA_INT_Duree_Entre_Appel ) )),
+    AND(ISPICKVAL(Status,&quot;4&quot;),(Today()-Date_appel_3__c)&gt; VALUE($Label.DA_PUS_FR_Duree_Entre_Appel)),
+      AND(ISPICKVAL(Status,&quot;5&quot;),(Today()-Date_changem_vers_Prolongation__c)&gt; VALUE($Label.DA_PUS_FR_Duree_Entre_Appel)),
+      AND(ISPICKVAL(Status,&quot;6&quot;),(Today()-Date_appel_5__c)&gt; VALUE($Label.DA_PUS_FR_Duree_Entre_Appel)), 
+	  AND(ISPICKVAL(Status,&quot;12&quot;),(Today()-Date_appel_3__c)&gt; VALUE($Label.DA_INT_Duree_Entre_Appel)),
+	  AND(ISPICKVAL(Status,&quot;13&quot;),(Today()-Date_appel_4__c)&gt; VALUE($Label.DA_INT_Duree_Entre_Appel)),
+	  AND(ISPICKVAL(Status,&quot;14&quot;),(Today()-Date_appel_5__c)&gt; VALUE($Label.DA_INT_Duree_Entre_Appel))
+      ),
+   OR(
+      ISBLANK( Date_de_rappel_planifiee__c ),
+      (Today()- Date_de_rappel_planifiee__c&gt;=0)
+      )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Visibilité DA</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

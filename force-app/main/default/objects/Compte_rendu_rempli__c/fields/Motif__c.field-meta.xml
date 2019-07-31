@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif__c</fullName>
+    <description>Si le choix &quot;Autre&quot; est sélectionné dans le champ &quot;Motif d&#39;interruption&quot;, l&#39;utilisateur doit expliquer la raison dans ce champ.</description>
+    <externalId>false</externalId>
+    <label>Motif</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR12_PartenaireObligatoire</fullName>
+    <active>true</active>
+    <description>Le Champ &quot;Partenaire&quot; est obligatoire si le Type de point = Partenaire</description>
+    <errorConditionFormula>AND( 
+!$User.BypassValidationRule__c, 
+CONTAINS( $Label.RT_Prospect_France ,  RecordType.Id ),
+ISPICKVAL( Type_de_point__c , &quot;3&quot;), 
+ISBLANK(TEXT(Partenaire__c)) 
+
+)</errorConditionFormula>
+    <errorDisplayField>Partenaire__c</errorDisplayField>
+    <errorMessage>Le Champ &quot;Partenaire&quot; est obligatoire si le Type de point = Partenaire</errorMessage>
+</ValidationRule>

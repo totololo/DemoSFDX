@@ -1,0 +1,17 @@
+<aura:component implements="lightning:actionOverride,force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" access="global" controller="VFC02_LeadConversionControllerInter">
+    <aura:attribute name="myURL" type="String" default="{!v.myURL}"/>
+    <aura:attribute name="recordId" type="String" default=""/>
+    <aura:attribute name="errorMessage" type="String" default=""/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    
+    <div aura:id="SpinnerLoading" class="" style="height: 6rem;">
+        <div role="status" class="slds-spinner slds-spinner_medium">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+    <div class="demo-only" style="height: 6rem;">
+        <ui:outputText value="{!v.errorMessage}" class="slds-form-element__label" />
+    </div>
+</aura:component>

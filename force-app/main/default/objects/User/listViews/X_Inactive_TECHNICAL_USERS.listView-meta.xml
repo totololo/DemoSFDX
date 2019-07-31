@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X_Inactive_TECHNICAL_USERS</fullName>
+    <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.USERNAME</columns>
+    <columns>CORE.USERS.SAML_SUBJECT</columns>
+    <columns>CORE.USER_ROLE.NAME</columns>
+    <columns>CORE.PROFILE.NAME</columns>
+    <columns>MANAGER</columns>
+    <columns>DELEGATED_APPROVER</columns>
+    <columns>CORE.USERS.ACTIVE</columns>
+    <columns>IS_FROZEN</columns>
+    <columns>CORE.USERS.LAST_LOGIN</columns>
+    <columns>LAST_UPDATE_BY_ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ACTIVE</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CORE.PROFILE.NAME</field>
+        <operation>equals</operation>
+        <value>Service_accounts</value>
+    </filters>
+    <filters>
+        <field>CORE.PROFILE.NAME</field>
+        <operation>equals</operation>
+        <value>ServiceAccounts_ro</value>
+    </filters>
+    <filters>
+        <field>CORE.PROFILE.NAME</field>
+        <operation>equals</operation>
+        <value>ServiceAccounts</value>
+    </filters>
+    <label>X_Inactive TECHNICAL_USERS</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>EXPLOITATION</group>
+    </sharedTo>
+</ListView>

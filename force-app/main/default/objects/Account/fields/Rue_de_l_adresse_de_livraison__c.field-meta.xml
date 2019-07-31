@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rue_de_l_adresse_de_livraison__c</fullName>
+    <description>Rue de l&#39;adresse de livraison (langue secondaire)</description>
+    <externalId>false</externalId>
+    <label>Rue de l&#39;adresse de livraison</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

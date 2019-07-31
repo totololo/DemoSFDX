@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commerce_eligible__c</fullName>
+    <externalId>false</externalId>
+    <label>Commerce éligible</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oui</fullName>
+                <default>false</default>
+                <label>Oui</label>
+            </value>
+            <value>
+                <fullName>Non</fullName>
+                <default>false</default>
+                <label>Non</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Oui</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Non</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

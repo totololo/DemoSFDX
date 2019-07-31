@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_is_more_30__c</fullName>
+    <description>Technical field for retporting or listview criteria to know if the request exist less more than 30 days</description>
+    <externalId>false</externalId>
+    <formula>Age_de_la_requete__c &gt;30</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech &gt;30j</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

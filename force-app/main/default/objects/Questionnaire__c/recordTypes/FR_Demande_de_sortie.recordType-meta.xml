@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FR_Demande_de_sortie</fullName>
+    <active>true</active>
+    <description>Pour créer un questionnaire type Demande de sortie.</description>
+    <label>FR_Demande_de_sortie</label>
+    <picklistValues>
+        <picklist>Bilan__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Operateur__c</picklist>
+        <values>
+            <fullName>CLP_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPD_BNL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PUS_FR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_de_la_requete__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

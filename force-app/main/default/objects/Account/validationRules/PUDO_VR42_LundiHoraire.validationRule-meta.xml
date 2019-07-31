@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR42_LundiHoraire</fullName>
+    <active>true</active>
+    <description>Les cases &quot;Lundi&quot; et &quot;Lundi fermé&quot; ne peuvent pas être cochées simultanément.</description>
+    <errorConditionFormula>AND(
+Not($User.BypassValidationRule__c),
+ Lundi__c = true,
+ Lundi_ferme__c = true
+
+)</errorConditionFormula>
+    <errorDisplayField>Lundi_ferme__c</errorDisplayField>
+    <errorMessage>Les cases &quot;Lundi&quot; et &quot;Lundi fermé&quot; ne peuvent pas être cochées simultanément.</errorMessage>
+</ValidationRule>

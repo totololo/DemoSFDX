@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEPOTS_DPD_BEL</fullName>
+    <columns>NAME</columns>
+    <columns>Transporteur__c</columns>
+    <columns>ReferenceExterne__c</columns>
+    <columns>Coordinateur_logistique__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Transporteur__c</field>
+        <operation>equals</operation>
+        <value>DPD_BEL</value>
+    </filters>
+    <label>DPD_BEL</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>SUPPORT_DOSI</group>
+        <roleAndSubordinates>DPD_BNL</roleAndSubordinates>
+    </sharedTo>
+</ListView>

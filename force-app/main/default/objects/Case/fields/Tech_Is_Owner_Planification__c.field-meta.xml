@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Is_Owner_Planification__c</fullName>
+    <description>Ce champ est coché lorsque le propriétaire de la requête est la file d&#39;attente &quot;PUS_FR_Planification &quot; ou un(e) utilisateur/trice qui a la fonction &quot;CHARGE DE PLANIFICATION&quot;.</description>
+    <externalId>false</externalId>
+    <formula>OR(OwnerId = LEFT( $CustomMetadata.Association_Record_Type_et_pays__mdt.FR.ID_PlanificationQueue__c ,15),CONTAINS(Owner:User.Title, &#39;CHARGE DE PLANIFICATION&#39;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech_Is_Owner_Planification</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

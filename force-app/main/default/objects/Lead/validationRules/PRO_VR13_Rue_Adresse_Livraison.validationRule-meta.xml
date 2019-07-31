@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR13_Rue_Adresse_Livraison</fullName>
+    <active>true</active>
+    <description>Ne pas dépasser 35 caractères pour la 1ère ligne, 100 caractères pour la 2ème ligne et 100 caractères pour la 3ème ligne.</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, 
+
+NOT( 
+OR 
+( 
+REGEX(Street, &quot;(.){0,35}&quot;), 
+REGEX(Street, &quot;(.){0,35}\r\n(.){0,100}&quot;), 
+REGEX(Street, &quot;(.){0,35}\r\n(.){0,100}\r\n(.){0,100}&quot;) 
+) 
+)
+)</errorConditionFormula>
+    <errorDisplayField>Street</errorDisplayField>
+    <errorMessage>Merci de ne pas dépasser 35 caractères pour la 1ère ligne, 100 caractères pour la 2ème ligne et 100 caractères pour la 3ème ligne.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>PUS_FR_Gestion_Matériel</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>PUS_FR_Gestion_Materiel</publicGroup>
+            <publicGroup>PUS_FR_Manager</publicGroup>
+        </publicGroups>
+        <users>
+            <user>karim.daouda@ei-technologies.com</user>
+            <user>natasza@pickup.com</user>
+            <user>niveau2_test1@pickup.test</user>
+            <user>niveau3_test1@pickup.test</user>
+            <user>niveau3_test2@pickup.test</user>
+            <user>pa.iweins@pickup-services.com</user>
+            <user>s.chaker@pickup-services.com</user>
+            <user>eit@pickup-services.com</user>
+            <user>y.ladjouzi@pickup-services.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

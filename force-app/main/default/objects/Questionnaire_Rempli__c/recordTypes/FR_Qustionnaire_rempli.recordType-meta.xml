@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FR_Qustionnaire_rempli</fullName>
+    <active>true</active>
+    <label>FR_Qustionnaire_rempli</label>
+    <picklistValues>
+        <picklist>Motif_de_sortie_du_DA__c</picklist>
+        <values>
+            <fullName>Changement de statut juridique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personne déjà formée à l%E2%80%99activité</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Score_obtenu__c</picklist>
+        <values>
+            <fullName>EXCLUSION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUCCES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_de_demande_de_sortie_de_DA__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

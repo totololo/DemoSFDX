@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services_HUN</fullName>
+    <columns>NAME</columns>
+    <columns>ReferenceExterne__c</columns>
+    <columns>Operateur__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Operateur__c</field>
+        <operation>includes</operation>
+        <value>DPD_HUN</value>
+    </filters>
+    <label>HUN</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

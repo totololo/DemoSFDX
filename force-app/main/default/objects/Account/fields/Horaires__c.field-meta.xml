@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Horaires__c</fullName>
+    <externalId>false</externalId>
+    <formula>$Label.Lundi &amp; &quot; : &quot; &amp; TEXT( Lundi_Ouverture__c ) &amp; &quot; - &quot; &amp;  TEXT(Lundi_Fermeture__c)  &amp; BR() &amp;
+$Label.Mardi &amp; &quot; : &quot; &amp; TEXT(  Mardi_Ouverture__c  ) &amp; &quot; - &quot; &amp;  TEXT(Mardi_Fermeture__c)&amp; BR() &amp;
+$Label.Mercredi &amp; &quot; : &quot; &amp; TEXT(  Mercredi_Ouverture__c  ) &amp; &quot; - &quot; &amp; TEXT(Mercredi_Fermeture__c) &amp; BR() &amp; 
+$Label.Jeudi &amp; &quot; : &quot; &amp; TEXT(  Jeudi_Ouverture__c  ) &amp; &quot; - &quot; &amp; TEXT(Jeudi_Fermeture__c)&amp; BR() &amp;
+$Label.Vendredi &amp; &quot; : &quot; &amp; TEXT(  Vendredi_Ouverture__c  ) &amp; &quot; - &quot; &amp; TEXT(Vendredi_Fermeture__c)&amp; BR() &amp;
+$Label.Samedi &amp; &quot; : &quot; &amp; TEXT(  Samedi_Ouverture__c  ) &amp; &quot; - &quot; &amp; TEXT(Samedi_Fermeture__c)
+&amp; BR() &amp;
+$Label.Dimanche &amp; &quot; : &quot; &amp; TEXT(  Dimanche_Ouverture__c  ) &amp; &quot; - &quot; &amp; TEXT(Dimanche_Fermeture__c)
+&amp; BR() &amp; BR() &amp;
+$Label.AP_AmplitudeHoraire &amp; &quot; : &quot; &amp; TEXT(   Amplitude_horaire_du_relais__c   ) &amp; &quot; &quot; &amp; $Label.heures</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Horaires</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONG_VR_05_Modifier_Dispo_ApresDebut</fullName>
+    <active>true</active>
+    <description>Après le début de la disponibilité il n’est plus possible de modifier la date de début.</description>
+    <errorConditionFormula>AND( 
+     Not($User.BypassValidationRule__c), 
+     NOT ISCHANGED(Tech_Treated__c), 
+     NOT(ISPICKVAL( Type_d_indisponibilite__c ,&quot;4&quot;)), 
+     ISCHANGED(Date_de_debut__c) , 
+     IF( Today () &gt;= PRIORVALUE(Date_de_debut__c), 
+          True, False) 
+    )</errorConditionFormula>
+    <errorDisplayField>Date_de_debut__c</errorDisplayField>
+    <errorMessage>Vous n&#39;avez plus le droit de modifier la date de début.</errorMessage>
+</ValidationRule>

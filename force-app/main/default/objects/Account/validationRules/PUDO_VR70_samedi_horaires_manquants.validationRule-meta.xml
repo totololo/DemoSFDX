@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR70_samedi_horaires_manquants</fullName>
+    <active>true</active>
+    <description>Veuillez remplir toutes les cases horaires du samedi.</description>
+    <errorConditionFormula>AND( 
+NOT( $User.BypassValidationRule__c ), 
+Samedi__c=false,OR(
+AND(  
+ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;),
+NOT(ISPICKVAL(Samedi_Fermeture__c,&quot;&quot;)),
+NOT(ISPICKVAL(samedi_debut_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(samedi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Samedi_Fermeture__c,&quot;&quot;),
+NOT(ISPICKVAL(samedi_debut_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(samedi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Samedi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(samedi_debut_pause_dejeuner__c, &quot;&quot;),
+NOT(ISPICKVAL(samedi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;)),
+ISPICKVAL(Samedi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(samedi_debut_pause_dejeuner__c, &quot;&quot;),
+ISPICKVAL(samedi_fin_pause_dejeuner__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(samedi_fin_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;)),
+NOT(ISPICKVAL(Samedi_Fermeture__c, &quot;&quot;)),
+NOT(ISPICKVAL(samedi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(samedi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;),
+NOT(ISPICKVAL(Samedi_Fermeture__c, &quot;&quot;)),
+NOT(ISPICKVAL(samedi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(samedi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Samedi_Fermeture__c, &quot;&quot;),
+NOT(ISPICKVAL(samedi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(samedi_fin_pause_dejeuner__c,&quot;&quot;)),
+ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Samedi_Fermeture__c, &quot;&quot;),
+ISPICKVAL(samedi_debut_pause_dejeuner__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(samedi_debut_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(samedi_fin_pause_dejeuner__c,&quot;&quot;)),
+NOT(ISPICKVAL(Samedi_Ouverture__c, &quot;&quot;)),
+NOT(ISPICKVAL(Samedi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(samedi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(samedi_fin_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(Samedi_Ouverture__c, &quot;&quot;)),
+NOT(ISPICKVAL(Samedi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(samedi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(samedi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Samedi_Ouverture__c, &quot;&quot;),
+NOT(ISPICKVAL(Samedi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+NOT(ISPICKVAL(samedi_debut_pause_dejeuner__c,&quot;&quot;)),
+ISPICKVAL(samedi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Samedi_Ouverture__c, &quot;&quot;),
+ISPICKVAL(Samedi_Fermeture__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(Samedi_Fermeture__c,&quot;&quot;),
+NOT(ISPICKVAL(samedi_debut_pause_dejeuner__c,&quot;&quot;)),
+NOT(ISPICKVAL(samedi_fin_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(Samedi_Ouverture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(Samedi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(samedi_debut_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(samedi_fin_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(Samedi_Ouverture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(Samedi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(samedi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(samedi_fin_pause_dejeuner__c, &quot;&quot;),
+NOT(ISPICKVAL(Samedi_Ouverture__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(Samedi_Fermeture__c,&quot;&quot;)),
+ISPICKVAL(samedi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(samedi_fin_pause_dejeuner__c, &quot;&quot;),
+ISPICKVAL(Samedi_Ouverture__c, &quot;&quot;)
+)))</errorConditionFormula>
+    <errorDisplayField>Samedi_Ouverture__c</errorDisplayField>
+    <errorMessage>Veuillez remplir toutes les cases horaires du samedi.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONG_VR_12_Debut_Nouvelle_Indispo</fullName>
+    <active>false</active>
+    <description>Une Indisponibilité doit débuter à Jour ou dans le futur.</description>
+    <errorConditionFormula>AND(    
+        NOT ISCHANGED(Tech_Treated__c), 
+        Not($User.BypassValidationRule__c),
+        ISNEW(),
+        OR(
+        CONTAINS($Label.CongInd_RT_IndispoStandard_ALL,RecordTypeId),
+        CONTAINS($Label.CongInd_RT_IndispoConsigne,RecordTypeId)),
+        Date_de_debut__c    &lt;   today())</errorConditionFormula>
+    <errorDisplayField>Date_de_debut__c</errorDisplayField>
+    <errorMessage>Une Indisponibilité doit débuter à Jour ou dans le futur.</errorMessage>
+</ValidationRule>

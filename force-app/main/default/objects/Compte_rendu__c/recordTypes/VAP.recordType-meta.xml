@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VAP</fullName>
+    <active>true</active>
+    <label>VAP</label>
+    <picklistValues>
+        <picklist>Compte_rendu__c</picklist>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTER</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Operateur__c</picklist>
+        <values>
+            <fullName>CLP_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPD_BNL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PUS_FR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_compte_rendu__c</picklist>
+        <values>
+            <fullName>VAP DA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP Enquête de bienvenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP Enquête de satisfaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP FC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP FDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP MEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP QS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP Seuil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP VO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

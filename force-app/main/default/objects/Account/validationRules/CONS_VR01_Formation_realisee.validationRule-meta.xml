@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONS_VR01_Formation_realisee</fullName>
+    <active>true</active>
+    <description>En état 4, 5 et 6, le case &quot;formation réalisée&quot; ne peut être cochée que si la case &quot;formation requise&quot; est cochée.</description>
+    <errorConditionFormula>AND( !$User.BypassValidationRule__c, 
+
+ISPICKVAL(Type, &quot;20&quot;),
+   OR(
+      ISPICKVAL( Etat__c, &quot;4&quot;), 
+      ISPICKVAL( Etat__c, &quot;5&quot;),
+      ISPICKVAL( Etat__c, &quot;6&quot;)
+      ),  
+
+   Formation_requise__c =true,
+   Formation_realisee__c=false
+
+)</errorConditionFormula>
+    <errorDisplayField>Formation_realisee__c</errorDisplayField>
+    <errorMessage>Le champ &quot;formation réalisée&quot; est obligatoire pour passer à l&#39;état 4 si le champ &quot;formation requise&quot; est cochée.</errorMessage>
+</ValidationRule>

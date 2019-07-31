@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>VFC04_PudoDevicesSynchro</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Autorisations permettant la visualisation de la page Visual Force sur les devices</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Visualisation des Devices</label>
+    <license>Salesforce</license>
+    <pageAccesses>
+        <apexPage>VFP04_PudoDevices</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

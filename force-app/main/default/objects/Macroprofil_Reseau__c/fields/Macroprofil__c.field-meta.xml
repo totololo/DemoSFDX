@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Macroprofil__c</fullName>
+    <externalId>false</externalId>
+    <label>Macroprofil</label>
+    <referenceTo>Macroprofil__c</referenceTo>
+    <relationshipLabel>Réseaux par défaut</relationshipLabel>
+    <relationshipName>Reseaux_par_defaut</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

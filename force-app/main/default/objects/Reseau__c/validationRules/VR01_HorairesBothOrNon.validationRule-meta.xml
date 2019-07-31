@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR01_HorairesBothOrNon</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+Not($User.BypassValidationRule__c), OR( AND( NOT(ISPICKVAL( Horaire_d_ouverture_de_reference__c , &#39;&#39;)), ISPICKVAL( Horaire_de_fermeture_de_reference__c , &#39;&#39;)) , AND( ISPICKVAL( Horaire_d_ouverture_de_reference__c, &#39;&#39; ), NOT(ISPICKVAL( Horaire_de_fermeture_de_reference__c, &#39;&#39; )))))</errorConditionFormula>
+    <errorMessage>Veuillez ou bien remplir les deux champs &quot;Horaire d&#39;ouverture de référence&quot; et &quot;Horaire de fermeture de référence&quot; ou bien les laisser vides.</errorMessage>
+</ValidationRule>

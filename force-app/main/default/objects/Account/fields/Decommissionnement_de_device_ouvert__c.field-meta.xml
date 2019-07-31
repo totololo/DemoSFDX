@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decommissionnement_de_device_ouvert__c</fullName>
+    <description>Ce champ permet de savoir si un décommissionnement de device est ouvert sur le PUDO. Se base sur l&#39;objet anomalie</description>
+    <externalId>false</externalId>
+    <label>Décommissionnement de device ouvert</label>
+    <summaryFilterItems>
+        <field>Anomalie__c.Type__c</field>
+        <operation>equals</operation>
+        <value>Décommissionnement de device</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Anomalie__c.PUDO__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

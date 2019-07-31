@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR14_SiModifMP_Statut_Obligatoire</fullName>
+    <active>true</active>
+    <description>Si le point est en état 4 ou 5 et Macroprofil actuel est modifié, il faut obligatoirement renseigner le statut de modification. Cette règle ne s&#39;applique pas pour les consignes.</description>
+    <errorConditionFormula>AND(
+  NOT( $User.BypassValidationRule__c ),
+  NOT (RecordType.Name=&quot;PUS_FR_Consigne&quot;),
+  ischanged ( Macroprofil_actuel__c ),
+  ISPICKVAL(Statut_de_modification__c, &quot;&quot;),
+OR (
+     ISPICKVAL( Etat__c ,&quot;4&quot;),
+     ISPICKVAL( Etat__c ,&quot;5&quot;)))</errorConditionFormula>
+    <errorDisplayField>Statut_de_modification__c</errorDisplayField>
+    <errorMessage>Le Macroprofil a été modifié, veuillez indiquer le &quot;Statut de modification&quot;</errorMessage>
+</ValidationRule>

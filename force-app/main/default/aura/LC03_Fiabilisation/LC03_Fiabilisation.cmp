@@ -1,0 +1,7 @@
+<aura:component implements="lightning:actionOverride,flexipage:availableForAllPageTypes,force:lightningQuickAction,force:appHostable,force:hasRecordId,force:hasSObjectName"  access="global">
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="url" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <iframe id="vfFrame" aura:id="vfFrame" src="{!v.url}" style =" width: 100%; height: 30em !important;padding: 0px !important;border : 0px !important;" />	
+    
+</aura:component>

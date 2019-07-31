@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TM_Autre_motif</fullName>
+    <active>true</active>
+    <description>Le champ &quot;Autre motif&quot; doit être rempli lorsque le Sous-motif 1 ou le Sous-motif 2 est &quot;Autre&quot;</description>
+    <errorConditionFormula>OR ( 
+
+AND( 
+OR( 
+ISPICKVAL( Sous_motif_2__c , &#39;Autre&#39;), 
+ISPICKVAL( Sous_motif_1__c , &#39;Autres&#39;)), 
+ISBLANK ( Autre_motif__c ) 
+) 
+, 
+
+AND( 
+(ISPICKVAL( Sous_motif_1__c , &#39;Autres&#39;)), 
+NOT(ISPICKVAL( Sous_motif_2__c , &#39;Autre&#39;)), 
+ISBLANK( Autre_motif__c ) 
+) 
+, 
+
+AND( 
+NOT(ISPICKVAL( Sous_motif_1__c , &#39;Autres&#39;)), 
+ISPICKVAL( Sous_motif_2__c , &#39;Autre&#39;), 
+ISBLANK( Autre_motif__c ) 
+)
+,
+AND( 
+NOT(ISPICKVAL( Sous_motif_1__c , &#39;Autres&#39;)), 
+NOT(ISPICKVAL( Sous_motif_2__c , &#39;Autre&#39;)), 
+NOT ISBLANK( Autre_motif__c ) 
+)
+)</errorConditionFormula>
+    <errorDisplayField>Autre_motif__c</errorDisplayField>
+    <errorMessage>Le champ &quot;Autre motif&quot; doit être rempli lorsque le Sous-motif 1 ou le Sous-motif 2 est &quot;Autre&quot;</errorMessage>
+</ValidationRule>

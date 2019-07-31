@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Feature Request</masterLabel>
+        <translation>Feature Request</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA - Panne PDA</masterLabel>
+        <translation>Unavailability problem PDA - PDA breakdown</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA - Problème de synchronisation</masterLabel>
+        <translation>Unavailability problem PDA - synchronisation problem</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel - Sinistre/ Travaux/Santé avec date de fin</masterLabel>
+        <translation><!-- Indisponibilité problème opérationnel - Sinistre/ Travaux/Santé avec date de fin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin</masterLabel>
+        <translation><!-- Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème PDA / panne PDA</masterLabel>
+        <translation><!-- Injoignable - Indisponibilité problème PDA / panne PDA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème PDA / problème synchronisation</masterLabel>
+        <translation><!-- Injoignable - Indisponibilité problème PDA / problème synchronisation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème opérationnel Sinistre/travaux/Santé</masterLabel>
+        <translation>Unreachable - operational unavailability incident/road works/ health</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable- Indisponibilité problème opérationnel anomalie colis</masterLabel>
+        <translation><!-- Injoignable- Indisponibilité problème opérationnel anomalie colis --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

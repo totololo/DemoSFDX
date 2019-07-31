@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>1</masterLabel>
+        <translation>Art &amp; services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>10</masterLabel>
+        <translation>Haberdashery, material, wool</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>11</masterLabel>
+        <translation>Multi-services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>12</masterLabel>
+        <translation>Photographer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>13</masterLabel>
+        <translation>Press, tobacco, books, stationery</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>14</masterLabel>
+        <translation>Dry cleaning, laundry, ironing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>15</masterLabel>
+        <translation>Telecom</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>172</masterLabel>
+        <translation>Trade and services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2</masterLabel>
+        <translation>Cars, motocycles</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>226</masterLabel>
+        <translation>Trades and services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>227</masterLabel>
+        <translation>Cars, motorcycles</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>228</masterLabel>
+        <translation>Gifts, gadgets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>229</masterLabel>
+        <translation>Food shops</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>230</masterLabel>
+        <translation>Leisure stores</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>231</masterLabel>
+        <translation>Home supplies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>232</masterLabel>
+        <translation>Personal supplies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>233</masterLabel>
+        <translation>Florist, garden, pet shop</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>234</masterLabel>
+        <translation>Medical, paramedical</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>235</masterLabel>
+        <translation>Haberdashery, material, wool</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>236</masterLabel>
+        <translation>Multi-service</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>237</masterLabel>
+        <translation>Photographer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>238</masterLabel>
+        <translation>Press, tobacco, books, stationery</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>239</masterLabel>
+        <translation>Dry cleaning, laundry, ironing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>240</masterLabel>
+        <translation>Telephones</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>241</masterLabel>
+        <translation>Carrier depot</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>242</masterLabel>
+        <translation>Other BE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>243</masterLabel>
+        <translation>Trades and services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>244</masterLabel>
+        <translation>Cars, motorcycles</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>245</masterLabel>
+        <translation>Gifts, gadgets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>246</masterLabel>
+        <translation>Food shops</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>247</masterLabel>
+        <translation>Leisure stores</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>248</masterLabel>
+        <translation>Home supplies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>249</masterLabel>
+        <translation>Personal supplies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>250</masterLabel>
+        <translation>Florist, garden, pet shop</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>251</masterLabel>
+        <translation>Medical, paramedical</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>252</masterLabel>
+        <translation>Haberdashery, material, wool</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>253</masterLabel>
+        <translation>Multi-service</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>254</masterLabel>
+        <translation>Photographer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>255</masterLabel>
+        <translation>Press, tobacco, books, stationery</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>256</masterLabel>
+        <translation>Dry cleaning, laundry, ironing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>257</masterLabel>
+        <translation>Telephones</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>258</masterLabel>
+        <translation>Carrier depot</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>259</masterLabel>
+        <translation>Other LU</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>260</masterLabel>
+        <translation>Trades and services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>261</masterLabel>
+        <translation>Cars, motorcycles</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>262</masterLabel>
+        <translation>Gifts, gadgets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>263</masterLabel>
+        <translation>Food shops</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>264</masterLabel>
+        <translation>Leisure stores</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>265</masterLabel>
+        <translation>Home supplies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>266</masterLabel>
+        <translation>Personal supplies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>267</masterLabel>
+        <translation>Florist, garden, pet shop</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>268</masterLabel>
+        <translation>Medical, paramedical</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>269</masterLabel>
+        <translation>Haberdashery, material, wool</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>270</masterLabel>
+        <translation>Multi-service</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>271</masterLabel>
+        <translation>Photographer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>272</masterLabel>
+        <translation>Press, tobacco, books, stationery</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>273</masterLabel>
+        <translation>Dry cleaning, laundry, ironing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>274</masterLabel>
+        <translation>Telephones</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>275</masterLabel>
+        <translation>Carrier depot</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>276</masterLabel>
+        <translation>Other NL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3</masterLabel>
+        <translation>Gifts, gadgets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3301</masterLabel>
+        <translation><!-- 3301 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4</masterLabel>
+        <translation>Food shops</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5</masterLabel>
+        <translation>Leisure stores</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6</masterLabel>
+        <translation>Home supplies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>7</masterLabel>
+        <translation>Personal supplies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>8</masterLabel>
+        <translation>Florist, garden, pet shop</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>9</masterLabel>
+        <translation>Medical, paramedical</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

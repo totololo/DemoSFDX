@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indisponibilite__c</fullName>
+    <externalId>false</externalId>
+    <label>Indisponibilité</label>
+    <referenceTo>Conge_Indispo__c</referenceTo>
+    <relationshipLabel>Historique Injoignabilités</relationshipLabel>
+    <relationshipName>Historique_Injoignabilites</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

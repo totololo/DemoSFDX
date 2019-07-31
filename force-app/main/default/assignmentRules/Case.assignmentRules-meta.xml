@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Pickup</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>PUS_FR_Gestion_Materiel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>0</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>notEqual</operation>
+                <value>Démarrage d&#39;activité</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PUS_FR_WebHelp</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>PUS_FR_Indisponibilité PB Opé - AvecDateFin,PUS_FR_Injoignable Indisponibilité,PUS_FR_Indisponibilité PB Opé - SansDateFin</value>
+            </criteriaItems>
+            <overrideExistingTeams>true</overrideExistingTeams>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PUS_FR_ARS</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>Demarrage d&#39;activité</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>0</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

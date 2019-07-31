@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reseau__c</fullName>
+    <externalId>false</externalId>
+    <label>Réseau</label>
+    <referenceTo>Reseau__c</referenceTo>
+    <relationshipLabel>Transporteurs associés à ce réseau</relationshipLabel>
+    <relationshipName>Reseau_Transporteur</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

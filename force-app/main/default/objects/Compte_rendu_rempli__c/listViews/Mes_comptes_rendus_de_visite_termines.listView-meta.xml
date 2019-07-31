@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_comptes_rendus_de_visite_termines</fullName>
+    <columns>NAME</columns>
+    <columns>Numero_de_point_relais__c</columns>
+    <columns>Type_de_visite__c</columns>
+    <columns>Type_de_compte_rendu__c</columns>
+    <columns>Date_de_la_visite__c</columns>
+    <columns>Interrompu__c</columns>
+    <columns>Motif_d_interruption__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Terminé</value>
+    </filters>
+    <filters>
+        <field>Cr_ateur_compte_rendu__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Mes comptes rendus de visite terminés</label>
+    <language>fr</language>
+</ListView>

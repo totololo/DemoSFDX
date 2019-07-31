@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Fichiers Partenaires</fullName>
+        <default>false</default>
+        <label>Fichiers Partenaires</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fichiers Experian</fullName>
+        <default>false</default>
+        <label>Fichiers Experian</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Candidature spontanée</fullName>
+        <default>false</default>
+        <label>Candidature spontanée</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visite terrain</fullName>
+        <default>true</default>
+        <label>Visite terrain</label>
+    </standardValue>
+    <standardValue>
+        <fullName>E-mail</fullName>
+        <default>false</default>
+        <label>E-mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Téléphone</fullName>
+        <default>false</default>
+        <label>Téléphone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Génération Leads Relais</fullName>
+        <default>false</default>
+        <label>Génération Leads Relais</label>
+    </standardValue>
+</StandardValueSet>

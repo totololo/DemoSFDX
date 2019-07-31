@@ -1,0 +1,49 @@
+<aura:component implements="lightning:actionOverride,force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" access="global" controller="LC02_ConsignerUnAppel_Controller">
+    
+    <aura:attribute name="RecordId" type="String" default=""/>
+    <aura:attribute name="SelectedRadioBoxValue" type="String" default="" />
+    <aura:attribute name="RequiredFieldRadio" type="String" default=""/>
+    <aura:attribute name="currentCaseStatus" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <div role="dialog" tabindex="-1" aria-labelledby="header99"  class="slds-modal slds-fade-in-open ">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header"> {!$Label.c.CA_ConsignerUnAppel}
+                <div style="color : red">{!v.RequiredFieldRadio}</div>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium" >
+                <fieldset class="slds-form-element" >
+                    <div class="slds-form-element__control" style =" padding-left : 24%">
+                        <span class="slds-radio">
+                            <input type="radio" id="radio-6" name="options" value="{!$Label.c.DA_OuiRelaisRepond}" />
+                            <label class="slds-radio__label" for="radio-6">
+                                <span class="slds-radio_faux"></span>
+                                <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_OuiRelaisRepond}</span>
+                            </label>
+                        </span>
+                        <span class="slds-radio" style="padding-top:1%">
+                            <input type="radio" id="radio-7" name="options" value="{!$Label.c.DA_NonRelaisRepond}" />
+                            <label class="slds-radio__label" for="radio-7">
+                                <span class="slds-radio_faux"></span>
+                                <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_NonRelaisRepond}</span>
+                            </label>
+                        </span>
+                        <span class="slds-radio" style="padding-top:1%">
+                            <input type="radio" id="radio-8" name="options" value="{!$Label.c.DA_InterrompuLbl}" />
+                            <label class="slds-radio__label" for="radio-8">
+                                <span class="slds-radio_faux"></span>
+                                <span class="slds-form-element__label" style ="font-size: 90%;">{!$Label.c.DA_InterrompuLbl}</span>
+                            </label>
+                        </span>
+                    </div>
+                </fieldset>
+            </div>
+            <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+            <div class="slds-modal__footer">
+                <lightning:button variant="brand" label="{!$Label.c.EnregistrerLbl}" onclick="{! c.consignerUnappel }"/>
+                <lightning:button class="slds-button slds-button_neutral" label="{!$Label.c.AnnulerLbl}" onclick="{! c.closeDA }"/>
+            </div>
+        </div>
+    </div>
+     <div class="slds-backdrop slds-backdrop--open"></div>
+</aura:component>

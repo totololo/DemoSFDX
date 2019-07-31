@@ -1,0 +1,10 @@
+<apex:page controller="VFC01_PageRedirect" action="{!redirect}">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:outputLabel value="{!strErrorMessage}" /> <br/> <br />
+            <apex:outputText value="{!$Label.Reference_International_Message}"/> 
+            <apex:inputText value="{!vfReferenceInt}" style="margin-left:10px;" /> <br/> <br/>
+            <apex:commandButton value="{!$Label.Open_International_Reference}" action="{!redirect}"/>
+        </apex:pageBlock> 
+    </apex:form>
+</apex:page>

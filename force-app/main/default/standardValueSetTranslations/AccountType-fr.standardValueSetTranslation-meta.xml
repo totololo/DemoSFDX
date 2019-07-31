@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>-3</masterLabel>
+        <translation>Pickup contact</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2</masterLabel>
+        <translation>Standard</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>20</masterLabel>
+        <translation>Consigne</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>21</masterLabel>
+        <translation>Pickup store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>22</masterLabel>
+        <translation>Agence</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>23</masterLabel>
+        <translation>External chains</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3</masterLabel>
+        <translation>Partenaire</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

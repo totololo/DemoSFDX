@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_d_activation_desactivation__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif d&#39;activation/désactivation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Création</fullName>
+                <default>false</default>
+                <label>Création</label>
+            </value>
+            <value>
+                <fullName>Régulation</fullName>
+                <default>false</default>
+                <label>Régulation</label>
+            </value>
+            <value>
+                <fullName>Autres / Voir commentaire</fullName>
+                <default>false</default>
+                <label>Autres / Voir commentaire</label>
+            </value>
+            <value>
+                <fullName>Relais en surcharge</fullName>
+                <default>false</default>
+                <label>Relais en surcharge</label>
+            </value>
+            <value>
+                <fullName>Omission</fullName>
+                <default>false</default>
+                <label>Omission</label>
+            </value>
+            <value>
+                <fullName>Concurrence chargeur</fullName>
+                <default>false</default>
+                <label>Concurrence chargeur</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

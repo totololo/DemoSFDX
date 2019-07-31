@@ -1,0 +1,6 @@
+<apex:page standardController="Case" lightningStyleSheets="true" recordSetVar="record" extensions="VFC13_GetMultipleOwnership" action="{!getOwnership}">
+    <apex:pageMessages />
+    <apex:form >
+        <apex:commandButton action="{!Cancel}" value="Cancel" id="theButton"/>
+    </apex:form>
+</apex:page>

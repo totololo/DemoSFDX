@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Points_valid_s_en_Etat_9</fullName>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>9</value>
+    </filters>
+    <label>Points validés en Etat 9</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>DPD_BNL_Animateur_reseau_siege</group>
+        <group>DPD_BNL_Animateurs</group>
+        <group>DPD_BNL_Gestion_Materiel</group>
+        <group>DPD_BNL_Manager</group>
+        <group>DPD_BNL_Service_Line</group>
+        <group>DPD_HUN_External_Team</group>
+        <group>PUS_FR_Animateur_reseau</group>
+        <group>PUS_FR_Animateur_reseau_siege</group>
+        <group>PUS_FR_DOR</group>
+        <group>PUS_FR_Gestion_Contractuelle</group>
+        <group>PUS_FR_Gestion_Materiel</group>
+        <group>PUS_FR_Lecture_Seule</group>
+        <group>PUS_FR_Manager</group>
+        <group>PUS_FR_Planificateur</group>
+        <group>PUS_FR_Service_Client</group>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>1000</masterLabel>
+        <translation>Terminé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>200</masterLabel>
+        <translation>En attente d’attribution</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2000</masterLabel>
+        <translation>En attente demande de sortie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2001</masterLabel>
+        <translation>En attente planification</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2002</masterLabel>
+        <translation>En attente visite animateur réseau</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2003</masterLabel>
+        <translation>Terminée</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>210</masterLabel>
+        <translation>En attente appel 1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>220</masterLabel>
+        <translation>En attente appel 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>240</masterLabel>
+        <translation>En attente appel 3</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>250</masterLabel>
+        <translation>En attente appel – Bilan 1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>260</masterLabel>
+        <translation>En attente appel 5 – Prolongation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>264</masterLabel>
+        <translation>En attente appel – Bilan 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>270</masterLabel>
+        <translation>En attente exclusion</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>280</masterLabel>
+        <translation>En attente appel 4</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>290</masterLabel>
+        <translation>En attente appel 5</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>300</masterLabel>
+        <translation>Activité normale</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>310</masterLabel>
+        <translation>En attente appel 6</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>40</masterLabel>
+        <translation>En attente de validation responsable</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>65</masterLabel>
+        <translation>En attente de validation GC</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>730</masterLabel>
+        <translation>Exclusion (suggérée)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>735</masterLabel>
+        <translation>Exclusion (non suggérée)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>740</masterLabel>
+        <translation>Résiliation (suggérée)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>745</masterLabel>
+        <translation>Résiliation (non suggérée)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>900</masterLabel>
+        <translation>Inactif</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Accord Pickup : Non retenu</masterLabel>
+        <translation>Accord Pickup : Non retenu</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de signature</masterLabel>
+        <translation>En attente de signature</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de validation DOR</masterLabel>
+        <translation>En attente de validation DOR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MC9</masterLabel>
+        <translation>Supervision renforcée</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

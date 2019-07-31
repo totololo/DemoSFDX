@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONS_VR15_Etat9</fullName>
+    <active>true</active>
+    <description>Vous ne pouvez passer en état 9 que si le champ &quot;cause abandon&quot; est renseigné.</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c ,ISPICKVAL(PRIORVALUE( Etat__c ), &quot;2&quot;),
+ ISPICKVAL(Etat__c, &quot;9&quot;),   
+    ISPICKVAL(Cause_abandon__c, &quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>Cause_abandon__c</errorDisplayField>
+    <errorMessage>Pour passer en état 9, vous devez renseigner le champ &quot;cause abandon&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PUS_FR</fullName>
+        <default>false</default>
+        <label>PUS_FR</label>
+    </customValue>
+    <customValue>
+        <fullName>DPD_BNL</fullName>
+        <default>false</default>
+        <label>DPD_BNL</label>
+    </customValue>
+    <customValue>
+        <fullName>CLP_FR</fullName>
+        <default>false</default>
+        <label>CLP_FR</label>
+    </customValue>
+    <customValue>
+        <fullName>DPD_HUN</fullName>
+        <default>false</default>
+        <label>DPD_HUN</label>
+    </customValue>
+    <customValue>
+        <fullName>DPD_CHE</fullName>
+        <default>false</default>
+        <label>DPD_CHE</label>
+    </customValue>
+    <customValue>
+        <fullName>DPD_CZE</fullName>
+        <default>false</default>
+        <label>DPD_CZE</label>
+    </customValue>
+    <description>Liste des opérateurs</description>
+    <masterLabel>LOV_GLO_OPE</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

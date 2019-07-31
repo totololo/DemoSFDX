@@ -1,0 +1,69 @@
+<apex:page standardController="Account" extensions="VFC06_PudoAnomalies" > 
+    <apex:includeScript value="{!$Resource.jQuery }"/>
+    <style type="text/css"> 
+       .bPageBlock
+        {
+        	border-bottom : 0px !important;
+        	border-left :   0px !important;
+        	border-right :  0px !important;
+        	border-top: 1px solid white !important; 
+       		background-color : #FFF !important;
+        }  
+        .labelCol { 
+        	width : 50% !important; 
+        }
+        
+        .dataCol {
+       		text-align :left !important;
+        	width : 50% !important;	
+        	padding-left:8px !important;
+       
+        }
+        
+        .table-main{
+        	width:100%;
+        	padding-right:30% !important;
+        	
+        }
+        div.pbBody{margin:0px !important;}
+       
+        
+    </style>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){  
+            var iframe = $(this).closest('iframe');   
+            var body = iframe.context.body;  
+            body.style.padding = 0;
+            body.style.margin = 0; 
+             
+            
+            actionfunction(); 
+             
+          
+        }); 
+    </script> 
+    <body style="text-align:center;" id="test"> 
+        <!-- action function to be called on the page load -->
+        <apex:form >
+            <apex:actionFunction action="{!getPudoAnomalies}" name="actionfunction" rerender="pg-main" />  
+        </apex:form>
+    
+        
+        <apex:pageBlock id="pg-main"   > 
+                <apex:form id="form-main" rendered="{!showAnomalie}"> 
+                    <table class="table-main">
+                       <td style='padding-left:0px !important;' id='test' class="labelCol"> 
+                          <!-- <apex:outputLink title="Clickez Ici" target="_blank" value="{!link}" rendered="{!link != ''}" >{!$Label.Anomalies}</apex:outputLink>  -->
+                           <apex:outputText >{!$Label.Anomalies}</apex:outputText>
+                       </td>
+                        <td class="dataCol" >
+                            <apex:outputLink style="color:blue;" title="Clickez Ici" rendered="{!link != ''}" value="{!link}" target="_blank">{!anomalie} Anomalie(s)</apex:outputLink>
+                            <apex:outputText rendered="{!link == ''}">{!anomalie} Anomalie(s)</apex:outputText>
+                        </td>
+                    </table> 
+                </apex:form>  
+        </apex:pageBlock>
+    </body>
+    
+</apex:page>

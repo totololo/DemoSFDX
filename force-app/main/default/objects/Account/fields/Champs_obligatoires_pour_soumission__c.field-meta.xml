@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Champs_obligatoires_pour_soumission__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( Phone ), $Label.Telephone ,&quot;&quot;) 
+&amp;IF(Type_de_device_Selected__c = 0,$Label.TypeDeDevice,&quot;&quot;) 
+&amp;IF(ISBLANK( ShippingAddress ),$Label.ShippingAddress,&quot;&quot;) 
+&amp;IF(ISBLANK( BillingAddress ),$Label.BillingAddress,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT(Adresse_courrier__c)),$Label.AdresseCourier,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Version_de_contrat__c )),$Label.VersionContrat,&quot;&quot;) 
+&amp;IF(ISBLANK( Long_Lat_adresse_de_livraison__c ),$Label.LogLat,&quot;&quot;) 
+&amp;IF(ISBLANK( Nombre_detageres__c ),$Label.NbEtageres,&quot;&quot;) 
+&amp;IF(ISBLANK( Seuil_contractuel__c ),$Label.SeuilContractuel,&quot;&quot;) 
+&amp;IF(ISBLANK( Seuil_calcule__c ),$Label.SeuilCalcule,&quot;&quot;) 
+&amp;IF(ISBLANK( Contact_operationnel_1__c ),$Label.ContactOperationnel,&quot;&quot;) 
+&amp;IF(ISBLANK( Responsable_facturation__c ),$Label.RespFacturation,&quot;&quot;) 
+&amp;IF(ISBLANK( Raison_sociale__c ),$Label.RaisonSociale,&quot;&quot;) 
+&amp;IF(ISBLANK( NumberOfEmployees ),$Label.Employes,&quot;&quot;) 
+&amp;IF(Contrat_Joint__c=false, $Label.Contrat_Joint, &quot;&quot;)
+&amp;IF(NOT(CONTAINS( $Label.RT_France_Compte , RecordType.Id )),IF(ISBLANK( Langues_parlees_sur_le_relais__c ),$Label.LanguesParleesSurleRelais,&quot;&quot;), IF(ISBLANK( Macroprofil_de_reference__c ), $Label.MacroprofilReference , &quot;&quot;) 
+&amp;IF(ISBLANK( Capital_EUR__c ),$Label.Capital_EUR,&quot;&quot;) 
+&amp;IF(ISBLANK( Code_BIC__c ),$Label.CodeBIC,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Grille_tarifaire__c )),$Label.GrilleTarifaire,&quot;&quot;)) 
+
+&amp;IF ( 
+AND( 
+Refus_Email__c =false, 
+ISBLANK(Email_du_magasin__c) 
+),$Label.EmailDuMagasin,&quot;&quot;) 
+&amp;IF(horaires_manquants__c=true,$Label.HorairesManquantes,&quot;&quot;)</formula>
+    <inlineHelpText>Liste des champs à remplir avant de soumettre le prospect pour approbation</inlineHelpText>
+    <label>Champs obligatoires pour soumission</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,66 @@
+<apex:page standardController="Account" extensions="VFC04_PudoDevicesSynchro" lightningStylesheets="true"> 
+    <apex:includeScript value="{!$Resource.jQuery }"/>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){ 
+        actionfunction(); 
+    }); 
+    </script> 
+    
+    <style>    
+        .bPageBlock {
+        border-top: 1px solid #f3f3ec !important;
+        }
+        .bPageBlock .detailList .data2Col{
+        padding-left:0 px !important; 
+        }
+    </style>
+    <!-- action function to be called on the page load -->
+    <apex:form >
+        <apex:actionFunction action="{!syncDevices}" name="actionfunction" rerender="tableDiv,dissocierDiv" />  
+    </apex:form>
+    <apex:pageBlock id="tableDiv">
+        
+        <!-- loading mask -->
+        <apex:form id="loadingHeader"  rendered="{!showLoading}" > 
+            <apex:outputLabel >{!loadingMessage}</apex:outputLabel>   
+        </apex:form>
+        
+        <!-- Pudo's Devices Section -->
+        <apex:form id="devicesBlock" rendered="{!hasDevices}">
+            <!-- style="overflow:auto;height: 75px" --> 
+            <apex:pageBlock >
+                
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{!firstPage}" value="First" disabled="{!hasPrevious}"/>
+                    <apex:commandButton action="{!previousPage}" value="Previous" disabled="{!hasPrevious}"/>
+                    <apex:commandButton action="{!nextPage}" value="Next" disabled="{!hasNext}"/>
+                    <apex:commandButton action="{!lastPage}" value="Last" disabled="{!hasNext}"/>
+                </apex:pageBlockButtons>   
+
+                <apex:outputPanel layout="block">                               
+                    <!--<div style="overflow: scroll;  height: 100px"> -->
+                    <apex:pageBlockTable value="{!listdevicesSort}" var="device" first="{!offset}" rows="6" > 
+                        <apex:column headerValue="Device Number">
+                            <apex:outputLink style="color:#015ba7;" value="{!device.PDALink}" target="_blank">{!device.deviceNumber}</apex:outputLink>
+                        </apex:column> 
+                        <apex:column value="{!device.deviceBrand}"  headerValue="Device Brand" />
+                        <apex:column value="{!device.deviceType}"   headerValue="Device Type" />
+                        <apex:column value="{!device.connectedAt}"  headerValue="Last Sync Date"/> 
+                        <apex:column headerValue="Association Fleet"> 
+                            <apex:image url="/img/func_icons/util/checkmark16.gif" rendered="{!device.IsFleetAssociation}"/> <!-- rendered="{!device.IsFleetAssociation}" -->
+                            <apex:image url="/img/msg_icons/error16.png" rendered="{!!device.IsFleetAssociation}"/><!-- rendered="{!!device.IsFleetAssociation}" -->
+                        </apex:column> 
+                        <apex:column headerValue="Action">  
+                            <apex:outputLink style="color:#015ba7;" value="{!device.dissocierPDALink}" target="_blank" rendered="{!device.IsFleetAssociation}">{!$Label.Dissocier}</apex:outputLink> 
+                            <apex:outputLink style="color:#015ba7;" value="{!device.WhitelistPDALink}" target="_blank" rendered="{!!device.IsFleetAssociation}">{!$Label.Dissocier}</apex:outputLink> 
+                        </apex:column>
+                    </apex:pageBlockTable> 
+                    <!-- </div> -->
+                </apex:outputPanel>
+            </apex:pageBlock> 
+        </apex:form> 
+        <br/>
+        <apex:outputLink style="padding:5px;color:#015ba7;" value="{!associerPDALink}" target="_blank">{!$Label.AssocierUnPDA}</apex:outputLink>
+    </apex:pageBlock> 
+</apex:page>

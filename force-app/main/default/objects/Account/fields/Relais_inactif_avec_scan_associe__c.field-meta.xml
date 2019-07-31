@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relais_inactif_avec_scan_associe__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(Absence_de_device_existante__c=0,
+     AND(Absence_de_device_existante__c&lt;&gt;0,
+            Absence_de_device_ouverte__c = 0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Relais Inactif Avec Scan Associé</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

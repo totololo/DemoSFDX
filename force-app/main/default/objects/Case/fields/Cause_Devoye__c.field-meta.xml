@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cause_Devoye__c</fullName>
+    <externalId>false</externalId>
+    <label>Cause Dévoyé</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cause relais</fullName>
+                <default>false</default>
+                <label>Cause relais</label>
+            </value>
+            <value>
+                <fullName>Cause transporteur</fullName>
+                <default>false</default>
+                <label>Cause transporteur</label>
+            </value>
+            <value>
+                <fullName>Cause mixte</fullName>
+                <default>false</default>
+                <label>Cause mixte</label>
+            </value>
+            <value>
+                <fullName>Cause DDR</fullName>
+                <default>false</default>
+                <label>Cause DDR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

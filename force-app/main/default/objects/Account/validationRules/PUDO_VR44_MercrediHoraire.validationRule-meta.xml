@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR44_MercrediHoraire</fullName>
+    <active>true</active>
+    <description>Les cases &quot;Mercredi&quot; et &quot;Mercredi fermé&quot; ne peuvent pas être cochées simultanément.</description>
+    <errorConditionFormula>AND(
+Not($User.BypassValidationRule__c),
+ Mercredi__c = true,
+ Mercredi_ferme__c = true
+
+)</errorConditionFormula>
+    <errorDisplayField>Mercredi_ferme__c</errorDisplayField>
+    <errorMessage>Les cases &quot;Mercredi&quot; et &quot;Mercredi fermé&quot; ne peuvent pas être cochées simultanément.</errorMessage>
+</ValidationRule>

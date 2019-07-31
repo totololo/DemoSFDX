@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR_01_PlanifierAppel_1</fullName>
+    <active>true</active>
+    <description>Cette case ne peut être cochée que si la case &quot;traitement interrompu&quot; est aussi cochée</description>
+    <errorConditionFormula>AND (  !$User.BypassValidationRule__c ,
+     not( Subject = $Label.DA_ObjetDA ),
+       Traitement_interrompu__c = False ,
+       Planifier_un_rappel__c = True
+     )</errorConditionFormula>
+    <errorDisplayField>Planifier_un_rappel__c</errorDisplayField>
+    <errorMessage>Cette case ne peut être cochée que si la case &quot;traitement interrompu&quot; est aussi cochée</errorMessage>
+</ValidationRule>

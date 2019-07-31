@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONG_VR_08_ST_NonModifiable_ApresDebut</fullName>
+    <active>true</active>
+    <description>Il n’est pas possible de modifier le sous type d’une indisponibilité &quot;problème opérationnel&quot; une fois l&#39;indisponibilité commencée.</description>
+    <errorConditionFormula>AND ( ! $User.BypassValidationRule__c , 
+NOT ISCHANGED(Tech_Treated__c), 
+ISPICKVAL( Type_d_indisponibilite__c , &quot;1&quot;), 
+Date_de_debut__c &lt;= TODAY() , 
+ISCHANGED( Sous_type__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Sous_type__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez plus modifier ce sous-type d&#39;indisponibilité après son début.</errorMessage>
+</ValidationRule>

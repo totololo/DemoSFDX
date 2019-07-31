@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>20</masterLabel>
+        <translation>Less than 20kgs</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>30</masterLabel>
+        <translation>More than 20kgs</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

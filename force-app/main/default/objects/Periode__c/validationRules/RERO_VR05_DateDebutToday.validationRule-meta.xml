@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RERO_VR05_DateDebutToday</fullName>
+    <active>true</active>
+    <description>Date de début doit être supérieure ou égale à aujourd&#39;hui.</description>
+    <errorConditionFormula>AND ( 
+   !$User.BypassValidationRule__c, 
+   Date_de_debut__c  &lt;  TODAY(),
+   OR(ISNEW() , PRIORVALUE(Date_de_debut__c  ) &gt;= TODAY())
+   
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_debut__c</errorDisplayField>
+    <errorMessage>Veuillez saisir la date de début valide :  elle doit être supérieure ou égale à aujourd&#39;hui.</errorMessage>
+</ValidationRule>

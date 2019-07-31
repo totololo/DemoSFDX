@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONS_VR_17_Configuration_obligatoire</fullName>
+    <active>true</active>
+    <description>Pour la France, l&#39;association d&#39;une configuration à un point de type consigne est obligatoire à partir de l&#39;état 4.</description>
+    <errorConditionFormula>AND (NOT($User.BypassValidationRule__c), 
+RecordType.DeveloperName=&quot;PUS_FR_Consigne&quot;, 
+ShippingCountry=&quot;France&quot;, 
+OR(ISPICKVAL(Etat__c,&quot;4&quot;), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;)), 
+ISBLANK(Configuration_Site__c))</errorConditionFormula>
+    <errorMessage>Pour la France, l&#39;association d&#39;une configuration à un point de type consigne est obligatoire à partir de l&#39;état 4. Veuillez cliquer sur le bouton &quot;Configuration&quot; pour sélectionner une configuration et l&#39;associer à la consigne.</errorMessage>
+</ValidationRule>

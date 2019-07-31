@@ -1,0 +1,173 @@
+<apex:page standardController="Case" extensions="VFC03_DemarrageActiviteAppel" showHeader="false" sidebar="false"> 
+    <apex:includeScript value="/support/console/28.0/integration.js"/>  
+    <apex:includeScript value="/soap/ajax/33.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/33.0/apex.js"/>
+      
+    <style>
+        .headerRow{
+        text-align:center;
+        }
+        .missingCls{
+        display: none;
+        }
+        .radioButtonCls td, .clearBorder{
+        border-color:transparent ! important;
+        }
+        .hideCompte{
+        display:none;
+        }
+    </style>
+    
+    <apex:includeScript value="{!$Resource.JqueryLibrary}"/>
+    
+    
+    <script>
+    
+    window.onload = function(){ 
+    	document.getElementById('{!$Component.pageForm.hdnInConsole}').value = sforce.console.isInConsole(); 
+    }
+    
+    var checkbox = false;
+    var completedForm = true;
+    
+    
+    function toggleCheckbox(){
+        checkbox = !checkbox;
+    }
+      
+    function validateRadioButtonsFilled(btn){  
+        btn.disabled = true;
+        var totalRows = $('.radioButtonCls').length;
+        var validRows = 0;
+        $('.radioButtonCls').each(function() {
+            if($(this).find(':input:checked').length >0 ){
+                validRows += 1;
+            }
+        });
+        if((validRows != totalRows || totalRows == 0 ) && checkbox == false ){
+            completedForm = false;
+            $(".missingCls").show();
+            btn.disabled = false;
+        }
+        else{
+            $(".missingCls").hide();
+            completedForm = true;
+            save(); 
+        }
+        return false;
+        
+    } 
+     
+      
+    function onSaveJoinable(btn) { 
+        btn.disabled = true; 
+        redirectToQuestionnaire();   
+    } 
+    
+    function closeDA(){ 
+        cancel(); 
+    }
+    
+    </script>
+    <apex:form id="pageForm"> 
+        <apex:inputHidden id="hdnInConsole" value="{!inConsole}" />
+        
+        <div class="missingCls">
+            <apex:pageMessage id="missingFieldsMessage" severity="error" strength="1" summary="{!$Label.DA_CompleterQuestionnaire}" rendered="true"/>
+        </div>
+        <apex:pageMessages id="pageMessages">
+        </apex:pageMessages>
+        <apex:outputPanel id="panelQuestionnaire" >
+          
+              
+            <apex:actionFunction name="cancel"  action="{!cancel}" reRender="hdnInConsole" />
+            <apex:actionFunction name="redirectToQuestionnaire" action="{!redirectToQuestionnaire}" reRender="hdnInConsole,panelQuestionnaire" />
+            <apex:actionFunction name="save" action="{!save}"  reRender="pageMessages,btn_save,questionsTable,hdnInConsole"/> 
+            
+            <apex:pageBlock id="pgBlockJoinable" rendered="{!AND(renderQuestionnaire, NOT(secondBlock))}">
+                <apex:pageBlockSection columns="1">
+                    <apex:selectRadio value="{!isJoinable}" label="{!$Label.DA_RelaisJoinableLbl}" layout="pageDirection">
+                        <apex:selectOption itemValue="true" itemLabel="{!$Label.DA_OuiRelaisRepond}" />
+                        <apex:selectOption itemValue="false" itemLabel="{!$Label.DA_NonRelaisRepond}" />
+                    </apex:selectRadio>
+                </apex:pageBlockSection>
+                <apex:pageBlockButtons location="both"> 
+                    
+                    <apex:commandButton value="{!$Label.EnregistrerLbl}" onclick="onSaveJoinable(this); return false;"  rerender="panelQuestionnaire"/> 
+                    <apex:commandButton onclick="closeDA(); return false;" value="{!$Label.AnnulerLbl}"  />   
+                    
+                    
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+            
+            
+            <apex:pageBlock id="pageBlock" rendered="{!AND(renderQuestionnaire,secondBlock)}">
+                <apex:actionFunction name="fillSelection" action="{!fillSelection}" reRender="columnReponse">
+                    <apex:param name="questionId" value="" assignTo="{!questionId}"/>
+                </apex:actionFunction>
+                <div style="padding-bottom:10px">
+                    <apex:pageBlockSection columns="2" id="pgBlockSection">
+                        <apex:outputField value="{!Case.Status}" ></apex:outputField>
+                        <apex:inputTextarea label="{!$Label.DA_CommentaireLbl}" value="{!commentaire}" cols="30" rows="3"/>
+                        <apex:inputField value="{!questRempli.Nom_du_contact__c}"/>
+                        <apex:inputField value="{!questRempli.Motif_de_sortie_du_DA__c}" rendered="{!isSortie}" required="true">
+                            <apex:actionSupport event="onchange" reRender="pgBlockSection"/>
+                        </apex:inputField>
+                        <apex:inputField value="{!questRempli.Reference_de_l_ancien_PUDO__c}" rendered="{!isSortie}"/>
+                        <apex:inputCheckbox value="{!interrompu}" label="{!$Label.DA_InterrompuLbl}"  onclick="toggleCheckbox();">
+                            <apex:actionSupport event="onchange" reRender="pgBlockSection"/>
+                        </apex:inputCheckbox>
+                        <apex:outputPanel styleClass="hideCompte">
+                            <apex:inputField id="accId" value="{!questRempli.Compte__c}"/>
+                        </apex:outputPanel>
+                        <apex:inputField value="{!questRempli.Planifier_un_rappel__c}" id="txt_rappel" rendered="{!interrompu}"/>
+                        
+                        
+                    </apex:pageBlockSection>
+                </div>
+                
+                <apex:pageBlockButtons id="pgBlockBtn" location="both">
+                    <apex:commandButton value="{!$Label.EnregistrerLbl}" disabled="{!btnDisable}" id="btn_save" onclick="validateRadioButtonsFilled(this); return false;" />
+                    <apex:commandButton onclick="closeDA(); return false;" value="{!$Label.AnnulerLbl}"/>   
+                </apex:pageBlockButtons>
+                
+                <apex:pageBlockTable value="{!listWrapperQuestions}" var="question" id="questionsTable">
+                    <apex:column value="{!question.Id}" rendered="false" />
+                    <apex:column value="{!question.numero}" headerValue="{!$Label.DA_NumeroQuestionLbl}"/>
+                    <apex:column headerValue="{!$Label.DA_QuestionLbl}" >
+                        <apex:outputText value="{!question.question}" escape="false"/>
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.DA_TypeQuestionLbl}" >
+                        <apex:outputLabel value="{!question.type}" ></apex:outputLabel>
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.DA_ReponseSuggereesLbl}">
+                        <apex:outputText value="{!question.repsuggere}" escape="false"/>
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.DA_ReponseLbl}" id="columnReponse">
+                        <table style="width:150px;">
+                            <tr>
+                                <td class="clearBorder">
+                                    <apex:selectRadio value="{!question.reponse}" onchange="fillSelection('{!question.Id}');" styleClass="radioButtonCls">
+                                        <apex:selectOptions value="{!items}"/>
+                                    </apex:selectRadio>
+                                </td>
+                                <td class="clearBorder" style="padding-bottom:10%">
+                                    <apex:commandLink action="{!clearSelection}" reRender="pageMessages,questionsTable" >
+                                        <apex:image value="{!$Resource.Effacer}" width="15" height="15" />
+                                        <apex:param name="questionId" value="{!question.Id}" assignTo="{!questionId}"/>
+                                    </apex:commandLink>
+                                </td>
+                            </tr>
+                        </table>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+            
+        </apex:outputPanel>
+        <apex:pageBlock rendered="{!NOT(renderQuestionnaire)}">
+            <apex:pageBlockButtons location="bottom">
+               <apex:commandButton action="{!cancel}"  value="{!$Label.AnnulerLbl}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

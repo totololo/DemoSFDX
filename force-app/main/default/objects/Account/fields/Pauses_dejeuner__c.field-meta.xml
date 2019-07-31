@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pauses_dejeuner__c</fullName>
+    <externalId>false</externalId>
+    <formula>$Label.Lundi &amp; &quot; : &quot; &amp; TEXT(  lundi_debut_pause_dejeuner__c  ) &amp; &quot; - &quot; &amp; TEXT( lundi_fin_pause_dejeuner__c ) &amp; BR() &amp;
+
+$Label.Mardi &amp; &quot; : &quot; &amp; TEXT(mardi_debut_pause_dejeuner__c  ) &amp; &quot; - &quot; &amp; TEXT( mardi_fin_pause_dejeuner__c ) &amp; BR() &amp; 
+
+$Label.Mercredi &amp; &quot; : &quot; &amp; TEXT( mercredi_debut_pause_dejeuner__c  ) &amp; &quot; - &quot; &amp; TEXT( mercredi_fin_pause_dejeuner__c ) &amp; BR() &amp; 
+
+$Label.Jeudi &amp; &quot; : &quot; &amp; TEXT(  jeudi_debut_pause_dejeuner__c  ) &amp; &quot; - &quot; &amp; TEXT( jeudi_fin_pause_dejeuner__c ) &amp; BR() &amp; 
+
+$Label.Vendredi &amp; &quot; : &quot; &amp; TEXT(  vendredi_debut_pause_dejeuner__c  ) &amp; &quot; - &quot; &amp; TEXT( vendredi_fin_pause_dejeuner__c ) &amp; BR() &amp; 
+
+$Label.Samedi &amp; &quot; : &quot; &amp; TEXT(  samedi_debut_pause_dejeuner__c  ) &amp; &quot; - &quot; &amp; TEXT( samedi_fin_pause_dejeuner__c ) &amp; BR() &amp; 
+
+$Label.Dimanche &amp; &quot; : &quot; &amp; TEXT(  dimanche_debut_pause_dejeuner__c  ) &amp; &quot; - &quot; &amp; TEXT( dimanche_fin_pause_dejeuner__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pauses déjeuner</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

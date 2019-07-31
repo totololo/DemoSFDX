@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sous type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type_d_indisponibilite__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sinistre / Travaux / Santé</fullName>
+                <default>false</default>
+                <label>Sinistre / Travaux / Santé</label>
+            </value>
+            <value>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+                <label>Qualité de service</label>
+            </value>
+            <value>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+                <label>Problème de synchronisation</label>
+            </value>
+            <value>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+                <label>Panne PDA</label>
+            </value>
+            <value>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+                <label>Injoignabilité</label>
+            </value>
+            <value>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+                <label>Pas de PDA associé</label>
+            </value>
+            <value>
+                <fullName>Anomalie colis</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anomalie colis</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Sinistre / Travaux / Santé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Qualité de service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>Injoignabilité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Problème de synchronisation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Panne PDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4</controllingFieldValue>
+            <valueName>Pas de PDA associé</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

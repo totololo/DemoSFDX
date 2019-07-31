@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VKO_Liste_des_pudos_associ_s_RES_SHOWROO</fullName>
+    <booleanFilter>1 AND 2 AND  3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>ReferenceExterne__c</columns>
+    <columns>Reference_Pudo__c</columns>
+    <columns>Compte__c</columns>
+    <columns>Macroprofil__c</columns>
+    <columns>Active__c</columns>
+    <columns>Modifiable__c</columns>
+    <columns>Desactive__c</columns>
+    <columns>Exclu__c</columns>
+    <columns>Interdit__c</columns>
+    <columns>Motif_d_activation_desactivation__c</columns>
+    <columns>Commentaires__c</columns>
+    <columns>Etat_du_statut__c</columns>
+    <columns>Date_de_fin_du_statut__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Reseau__c</field>
+        <operation>equals</operation>
+        <value>RES_SHOWROOMPRIVE_CLP</value>
+    </filters>
+    <filters>
+        <field>Modifiable__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Reference_Pudo__c</field>
+        <operation>contains</operation>
+        <value>FR51886,FR53636,FR53649,FR54782</value>
+    </filters>
+    <label>VKO-Liste des pudos asso dis RES_SHOWROO</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>PUS_FR_DOR</group>
+    </sharedTo>
+</ListView>

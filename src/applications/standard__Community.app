@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Idea</tabs>
+    <tabs>standard-IdeaTheme</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Questionnaire__c</tabs>
+    <tabs>Macroprofil__c</tabs>
+    <tabs>Service__c</tabs>
+    <tabs>Reseau__c</tabs>
+    <tabs>Secteur__c</tabs>
+    <tabs>Plateforme__c</tabs>
+    <tabs>Transporteur__c</tabs>
+    <tabs>Reseau_Associe__c</tabs>
+    <tabs>Service_Associe__c</tabs>
+    <tabs>Transporteur_Associe__c</tabs>
+    <tabs>Questions__c</tabs>
+    <tabs>Reponse__c</tabs>
+    <tabs>Historique_Macroprofils__c</tabs>
+    <tabs>Reseau_Service__c</tabs>
+    <tabs>Reseau_Transporteur__c</tabs>
+</CustomApplication>

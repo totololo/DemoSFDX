@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reset_Settings</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Reset Settings</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/apex.js&quot;)}
+ 
+try{ 
+    var AccountId= &#39;{!Account.Id}&#39;;
+    var result = sforce.apex.execute(&quot;WS01_Account&quot;, &quot;ResetSettings&quot;,{AccountId: AccountId}); 
+    alert(result);
+} 
+catch(ex) {
+  alert(&#39;An error has occured, please try again later.&#39;); 
+}</url>
+</WebLink>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X00_Points_Pickup_Contact_en_tat_2</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Reference_internationale__c</columns>
+    <columns>DisponibiliteFormule__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>-3</value>
+    </filters>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <label>00-Points Pickup Contact en état 2</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>PUS_FR_Animateur_reseau_siege</group>
+        <group>PUS_FR_Manager</group>
+    </sharedTo>
+</ListView>

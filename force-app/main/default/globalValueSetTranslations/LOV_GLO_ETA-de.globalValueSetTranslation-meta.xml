@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>0</masterLabel>
+        <translation>Zustand 0 - Vorausgehender Zyklus</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1</masterLabel>
+        <translation>Zustand 1 - Wartet auf Zulassung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2</masterLabel>
+        <translation>Zustand 2 - Wartet auf Beginn</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4</masterLabel>
+        <translation>Zustand 4 - Aufnahme der Tätigkeit</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5</masterLabel>
+        <translation>Zustand 5 - In Betrieb</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6</masterLabel>
+        <translation>Zustand 6 - Kündigung erfolgt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>7</masterLabel>
+        <translation>Zustand 7 - Beendung der Tätigkeit</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>8</masterLabel>
+        <translation>Zustand 8 - Tätigkeit beendet</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>9</masterLabel>
+        <translation>Zustand 9 - Abgewiesener Kontakt</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR38_SeuilContSup0</fullName>
+    <active>true</active>
+    <description>Seuil contractuel doit être supérieur à 0.</description>
+    <errorConditionFormula>and( not ($User.BypassValidationRule__c ),
+    Seuil_contractuel__c  &lt;= 0)</errorConditionFormula>
+    <errorDisplayField>Seuil_contractuel__c</errorDisplayField>
+    <errorMessage>Seuil contractuel doit être supérieur à 0.</errorMessage>
+</ValidationRule>

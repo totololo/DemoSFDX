@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>allInternalUsers</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>EXPLOITATION</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_Animateur_reseau</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_Animateur_reseau_siege</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_DOR</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_Gestion_Contractuelle</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_Gestion_Materiel</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_Lecture_Seule</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_Manager</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_Planificateur</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>PUS_FR_Service_Client</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>SUPPORT_DOSI</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Reference_internationale__c</field>
+        <field>Macroprofil_de_reference__c</field>
+        <field>Zone_dimplantation__c</field>
+        <field>ShippingAddress</field>
+        <field>Amplitude_horaire_40_h__c</field>
+        <field>Seuil_contractuel_sup_egal__c</field>
+        <field>Pause_dejeuner_inf_egal_2h__c</field>
+        <field>Ouvert_tous_les_matins_avant_10h__c</field>
+        <field>Ouvert_jusqua_19h__c</field>
+        <field>Ouvert_les_matins_entre_mardi_et_samedi__c</field>
+        <field>Activite_commerciale_eligible__c</field>
+        <field>DMax_Respectee__c</field>
+        <field>Recrute_dans_la_mission__c</field>
+        <field>Macroprofil__c</field>
+        <field>Seuil_conforme__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>AP_Recopie_Criteres_Validation</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>MAJ_Prospect_Activit_commerciale_ligib</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>MAJ_Prospect_Amplitude_Horaire</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>MAJ_Prospect_Ouvert_avant_10h</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>MAJ_Prospect_Ouvert_jusqu_19h</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>MAJ_Prospect_Ouvert_les_matins</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>MAJ_Prospect_Pause_d_jeuner_2h</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>MAJ_Prospect_Seuil_contractuel</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Mode_Attente_validation_DOR</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Passage_en_etat_1</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>true</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Responsable</label>
+        <name>Responsable1</name>
+        <rejectionActions>
+            <action>
+                <name>Accord_Responsable_Non_Retenu</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Alerte_par_email_Prop</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Passage_en_etat_9</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>AP_Recopie_Criteres_Validation</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>En_attente_ValidationGC</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>b.leconte@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>c.louguit@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>e.nguyen@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>m.vacher@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>s.muyl@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>OR( 
+   ISPICKVAL(Recrute_dans_la_mission__c, &quot;Non&quot;) , 
+   ISBLANK(TEXT(Recrute_dans_la_mission__c)) , 
+   ISPICKVAL( Macroprofil__c , &quot;Non&quot;), 
+   ISBLANK(TEXT( Macroprofil__c)), 
+   ISPICKVAL( Seuil_conforme__c , &quot;Non&quot;),  
+   ISBLANK(TEXT( Seuil_conforme__c)),  
+   Zone_dimplantation__c =&quot;H00-00000&quot;,
+   Dmax_Approbation__c  =&quot;Non&quot;   
+
+
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>DOR</label>
+        <name>DOR</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Accord_DOR_Non_retenu</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Alerte_par_email_Prop</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Alerte_par_email_Propri_taire_et_Responsable</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Passage_en_etat_9</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>c.behue@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>i.gras@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>k.boujemaoui@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>m.kemmoun@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>m.oliveira@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>s.imbault@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>s.mathes@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>v.baron@pickup-services.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>GC</label>
+        <name>GC</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Accord_GC_Non_retenu</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Alerte_par_email_DOR</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Alerte_par_email_Prop</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Alerte_par_email_Propri_taire_et_Responsable</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Passage_en_etat_9</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <description>Processus d&apos;approbation d&apos;un point supervisé.</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+RecordType.Name =&quot;PUS_FR_Prospect_Converti&quot;, 
+Passage_par_fiabilisation_effectuee__c = true,
+NOT(ISBLANK( Name)), 
+NOT(ISBLANK( Phone )),  
+NOT(ISBLANK( Hauteur_cm__c )), 
+NOT(ISBLANK( Largeur_cm__c )), 
+NOT(ISBLANK( Profondeur_cm__c )),
+NOT(ISBLANK( Titulaire_du_compte__c )),
+NOT(ISBLANK(TEXT( Type_de_parking__c  ))),
+NOT(Type_de_device_Selected__c = 0),
+OR(
+AND(
+NOT(ISBLANK( N_TVA__c )),
+ISPICKVAL (Assujetti_la_TVA__c, &quot;Oui&quot; )
+),
+
+AND(
+ISBLANK( N_TVA__c ),
+ISPICKVAL (Assujetti_la_TVA__c, &quot;Non&quot;)
+)
+),
+
+
+NOT(ISBLANK(TEXT( Ownership ))),
+NOT(ISBLANK( N_SIREN__c )),
+NOT(ISBLANK( Ville_RCS__c )),
+NOT(ISBLANK( Zone_dimplantation__c )),
+NOT(ISBLANK(TEXT( Volume_maximal_accepte__c ))),
+NOT(ISBLANK(TEXT( Poids_maximal_accepte_par_colis__c ))),
+NOT(ISBLANK(TEXT( Horaire_Ouverture_Reference__c ))),
+NOT(ISBLANK(TEXT( Horaire_Fermeture_Reference__c ))),
+NOT(ISBLANK(TEXT( Debut_pause_dejeuner__c))),
+NOT(ISBLANK(TEXT( Fin_pause_dejeuner__c))),
+NOT(ISBLANK( NumberOfEmployees)),
+NOT(ISBLANK( Nom_Responsable_magasin__c )),
+NOT(ISBLANK( Capital_EUR__c)),
+NOT(ISBLANK( IBAN__c )),
+NOT(ISBLANK(TEXT( Type_acces_Internet__c ))),
+
+NOT(ISBLANK(TEXT( Adresse_courrier__c ))),
+NOT(ISBLANK(TEXT(  Grille_tarifaire__c  ))),
+NOT(ISBLANK(TEXT(  Version_de_contrat__c  ))),
+NOT(ISBLANK( Macroprofil_de_reference__c )),
+NOT(ISBLANK( ShippingAddress )),
+NOT(ISBLANK( BillingAddress)),
+NOT(ISBLANK( Long_Lat_adresse_de_livraison__c )), 
+NOT(ISBLANK( Nombre_detageres__c )),
+NOT(ISBLANK( Seuil_contractuel__c )),
+NOT(ISBLANK( Seuil_calcule__c )),
+NOT(ISBLANK( Contact_operationnel_1__c )),
+NOT(ISBLANK( Responsable_facturation__c )),
+NOT(ISBLANK( Raison_sociale__c )),
+OR(Contrat_Joint__c =true, ISPICKVAL( Version_de_contrat__c , &quot;Sans contrat&quot;) ),
+NOT(ISBLANK( Code_BIC__c)),
+OR( Refus_Email__c = false,ISBLANK( Email_du_magasin__c )),
+horaires_manquants__c=false
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>MAJ_Type_Enregistrement_Valider</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Passage_du_mode_sur_aucun</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Passage_en_etat_2</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>MAJ_ETAT</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>MAJ_Validation_responsable</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Type_d_enregistrement</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>PUDO_AP02_Approbation_Supervise</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

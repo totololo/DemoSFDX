@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derniere_synchronisation_statut__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Anomalie_de_synchro_ouverte__c  &gt; 0, 
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Red&quot;), 
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;Green&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dernière Synchronisation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

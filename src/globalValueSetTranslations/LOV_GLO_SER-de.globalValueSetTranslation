@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Carte fidélité</masterLabel>
+        <translation><!-- Carte fidélité --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chronofresh</masterLabel>
+        <translation><!-- Chronofresh --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contre-remboursement</masterLabel>
+        <translation><!-- Contre-remboursement --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contre-remboursement CASH</masterLabel>
+        <translation><!-- Contre-remboursement CASH --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contre-remboursement CB</masterLabel>
+        <translation><!-- Contre-remboursement CB --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CtoC en sacoches bleues scellées</masterLabel>
+        <translation><!-- CtoC en sacoches bleues scellées --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Digital Parcel Label</masterLabel>
+        <translation><!-- Digital Parcel Label --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dépôt en sacoche bleue</masterLabel>
+        <translation><!-- Dépôt en sacoche bleue --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dépôt express</masterLabel>
+        <translation>Express Depot</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dépôt payant</masterLabel>
+        <translation>Kostenpflichtiges Depot</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dépôt simple</masterLabel>
+        <translation>Annahme</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Instance</masterLabel>
+        <translation>Instanz</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LA POSTE RELAIS (LPR)</masterLabel>
+        <translation><!-- LA POSTE RELAIS (LPR) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PickupPass CAB2D</masterLabel>
+        <translation><!-- PickupPass CAB2D --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Printer activation</masterLabel>
+        <translation><!-- Printer activation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ROD</masterLabel>
+        <translation><!-- ROD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Redirection</masterLabel>
+        <translation><!-- Redirection --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relivraison STUART</masterLabel>
+        <translation><!-- Relivraison STUART --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Retour</masterLabel>
+        <translation>Rückversand</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Retrait</masterLabel>
+        <translation>Abholung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Retrait de colis préparé</masterLabel>
+        <translation><!-- Retrait de colis préparé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Reverse swap desynchro en sacoches grises scellées</masterLabel>
+        <translation><!-- Reverse swap desynchro en sacoches grises scellées --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Shop Ident</masterLabel>
+        <translation><!-- Shop Ident --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Swap Colis avec contrôle de contenu</masterLabel>
+        <translation><!-- Swap Colis avec contrôle de contenu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Swap Colis contre colis</masterLabel>
+        <translation><!-- Swap Colis contre colis --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transporteur multiple - DPD FR</masterLabel>
+        <translation><!-- Transporteur multiple - DPD FR --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

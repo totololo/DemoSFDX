@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pays__c</fullName>
+    <externalId>false</externalId>
+    <label>Pays</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BE</fullName>
+                <default>false</default>
+                <label>Belgique</label>
+            </value>
+            <value>
+                <fullName>FR</fullName>
+                <default>false</default>
+                <label>France</label>
+            </value>
+            <value>
+                <fullName>HU</fullName>
+                <default>false</default>
+                <label>Hungary</label>
+            </value>
+            <value>
+                <fullName>LU</fullName>
+                <default>false</default>
+                <label>Luxembourg</label>
+            </value>
+            <value>
+                <fullName>NL</fullName>
+                <default>false</default>
+                <label>Pays Bas</label>
+            </value>
+            <value>
+                <fullName>CZ</fullName>
+                <default>false</default>
+                <label>République Tchèque</label>
+            </value>
+            <value>
+                <fullName>CH</fullName>
+                <default>false</default>
+                <label>Suisse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

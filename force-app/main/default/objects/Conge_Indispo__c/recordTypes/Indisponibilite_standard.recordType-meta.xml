@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indisponibilite_standard</fullName>
+    <active>true</active>
+    <description>Permet de créer une période d&#39;indisponibilité d&#39;un Pudo standard</description>
+    <label>Indisponibilité_standard</label>
+    <picklistValues>
+        <picklist>Cause_d_indisponibilite__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Désinstallation temporaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panne réseau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panne écran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panne électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vandalisme</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Raison_d_appel__c</picklist>
+        <values>
+            <fullName>Anomalie Colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anomalie de synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Démarrage d%27activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dévoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquête de bienvenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquête de satisfaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité S%2FT%2FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité qualité de service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Menace de résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de PDA associé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surcharge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_type__c</picklist>
+        <values>
+            <fullName>Injoignabilité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualité de service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_d_indisponibilite__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_periode__c</picklist>
+        <values>
+            <fullName>Indisponibilité</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

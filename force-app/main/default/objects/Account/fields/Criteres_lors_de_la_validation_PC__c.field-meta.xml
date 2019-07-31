@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Criteres_lors_de_la_validation_PC__c</fullName>
+    <description>Affiche l&#39;état des indicateurs lors de la soumission pour l&#39;approbation de point Pickup contact.</description>
+    <externalId>false</externalId>
+    <label>Critères lors de la validation PC</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

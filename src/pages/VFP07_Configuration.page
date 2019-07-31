@@ -1,0 +1,60 @@
+<apex:page standardController="Account" extensions="VFC07_ConfigurationController" lightningStylesheets="true">
+    <apex:form >
+        <apex:outputPanel id="tstpopup">
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <table>
+                    <tr>
+                        <td style="padding-top: 2%; padding-left : 18%; border-width: 2px;border-style: solid;border-color: GhostWhite ">
+                            <apex:outputLabel style="font-weight:bold">Configuration</apex:outputLabel>
+                        </td>
+                        <td width="110%" style ="border-width: 2px;border-style: solid; border-color: GhostWhite">
+                            <apex:inputField required="true" value="{!Account.Configuration__c}"/> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:42%"></td>
+                        <td style="width:58%; padding-top : 2%">
+                            <apex:commandButton value="Save" action="{!save}" rerender="tstpopup"/>
+                            <apex:commandButton value="Cancel" action="{!Cancel}" rerender="tstpopup"/> 
+                        </td>
+                    </tr>
+                </table>
+            </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:form>
+    <apex:form >
+     
+    </apex:form>
+    <style type="text/css">
+        .custPopup{
+        background-color: GhostWhite;
+        border-width: 2px;
+        border-style: solid;
+        z-index: 9999;
+        left: 50%;
+        padding:10px;
+        /* These are the 3 css properties you will need to change so the popup 
+        displays in the center of the screen. First set the width. Then set 
+        margin-left to negative half of what the width is. You can add 
+        the height property for a fixed size pop up if you want.*/
+        width: 500px;
+        margin-left: 30%;
+        top:100px;
+        border-radius: 25px;
+        
+        }
+        .popupBackground{
+        background-color:black;
+        opacity: 0.20;
+        filter: alpha(opacity = 20);
+        position: absolute;
+        width: 100%;
+        height: 600%;
+        top: 0;
+        left: 0;
+        z-index: 9998;
+        }
+        
+    </style>
+    
+</apex:page>

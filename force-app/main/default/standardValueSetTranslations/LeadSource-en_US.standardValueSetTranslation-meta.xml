@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Candidature spontanée</masterLabel>
+        <translation>Spontaneous application</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-mail</masterLabel>
+        <translation><!-- E-mail --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fichiers Experian</masterLabel>
+        <translation><!-- Fichiers Experian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fichiers Partenaires</masterLabel>
+        <translation>Partner files</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Génération Leads Relais</masterLabel>
+        <translation><!-- Génération Leads Relais --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Téléphone</masterLabel>
+        <translation>Phone</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Visite terrain</masterLabel>
+        <translation>Field visit</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

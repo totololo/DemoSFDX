@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR02_VisiteOui_eligible_oblig</fullName>
+    <active>true</active>
+    <description>Si &quot;Commerce visité&quot; égal à oui, alors &quot;Commerce éligible&quot; obligatoire.</description>
+    <errorConditionFormula>AND (
+      Not($User.BypassValidationRule__c),
+      IsConverted = false ,
+      ISPICKVAL(  Status  , &quot;Oui&quot;),
+     ISPICKVAL( Commerce_eligible__c ,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Commerce_eligible__c</errorDisplayField>
+    <errorMessage>Si Commerce visité égal Oui, veuillez remplir le champ
+&quot;Commerce éligible&quot;.</errorMessage>
+</ValidationRule>

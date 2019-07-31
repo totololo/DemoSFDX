@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Allemand</masterLabel>
+        <translation>German</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Anglais</masterLabel>
+        <translation>English</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Espagnol</masterLabel>
+        <translation>Spanish</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Français</masterLabel>
+        <translation>French</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hollandais</masterLabel>
+        <translation>Dutch</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hongrois</masterLabel>
+        <translation>Hungarian</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Italien</masterLabel>
+        <translation><!-- Italien --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tchèque</masterLabel>
+        <translation><!-- Tchèque --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

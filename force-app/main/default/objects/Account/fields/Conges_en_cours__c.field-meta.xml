@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conges_en_cours__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS($User.Tech_Locale_Sid_Key__c,&quot;fr&quot;), 
+	IF(NOT(ISBLANK(Tech_date_debut_conge_en_cours__c)),
+		&#39;Du &#39; + 
+		CASE( MOD( Tech_date_debut_conge_en_cours__c - DATE(1900, 1, 7), 7), 0, &quot;dim.&quot;, 1, &quot;lun.&quot;, 2, &quot;mar.&quot;, 3,&quot;mer.&quot;, 4, &quot;jeu.&quot;, 5, &quot;ven.&quot;, 6, &quot;sam.&quot;,&#39;&#39;) + &#39; &#39; + 
+		IF(VALUE(TEXT(DAY( Tech_date_debut_conge_en_cours__c ))) &lt;= 9 , &#39;0&#39; + TEXT(DAY( Tech_date_debut_conge_en_cours__c )) , TEXT(DAY(Tech_date_debut_conge_en_cours__c ))) 
+		+ &#39;/&#39; + 
+		IF(VALUE(TEXT(MONTH(Tech_date_debut_conge_en_cours__c))) &lt;= 9 , &#39;0&#39; + TEXT(MONTH(Tech_date_debut_conge_en_cours__c)) , TEXT(MONTH(Tech_date_debut_conge_en_cours__c))) 
+		+ &#39;/&#39; + 
+		TEXT(YEAR(Tech_date_debut_conge_en_cours__c)) , &#39;&#39;) + 
+	
+	IF(NOT(ISBLANK(Tech_date_fin_conge_en_cours__c)),
+		&#39; au &#39; + 
+		CASE( MOD( Tech_date_fin_conge_en_cours__c - DATE(1900, 1, 7), 7), 0, &quot;dim.&quot;, 1, &quot;lun.&quot;, 2, &quot;mar.&quot;, 3,&quot;mer.&quot;, 4, &quot;jeu.&quot;, 5, &quot;ven.&quot;, 6, &quot;sam.&quot;,&#39;&#39;) + &#39; &#39; + 
+		IF(VALUE(TEXT(DAY( Tech_date_fin_conge_en_cours__c ))) &lt;= 9 , &#39;0&#39; + TEXT(DAY( Tech_date_fin_conge_en_cours__c )) , TEXT(DAY(Tech_date_fin_conge_en_cours__c ))) 
+		+ &#39;/&#39; + 
+		IF(VALUE(TEXT(MONTH(Tech_date_fin_conge_en_cours__c))) &lt;= 9 , &#39;0&#39; + TEXT(MONTH(Tech_date_fin_conge_en_cours__c)) , TEXT(MONTH(Tech_date_fin_conge_en_cours__c))) 
+		+ &#39;/&#39; + 
+		TEXT(YEAR(Tech_date_fin_conge_en_cours__c)),&#39;&#39;), 
+		
+	IF(NOT(ISBLANK(Tech_date_debut_conge_en_cours__c)),
+		&#39;From &#39; + 
+		CASE( MOD( Tech_date_debut_conge_en_cours__c - DATE(1900, 1, 7), 7), 0, &quot;sun.&quot;, 1, &quot;mon.&quot;, 2, &quot;tue.&quot;, 3,&quot;wed.&quot;, 4, &quot;thu.&quot;, 5, &quot;fri.&quot;, 6, &quot;sat.&quot;,&#39;&#39;) + &#39; &#39; +
+		IF(VALUE(TEXT(MONTH(Tech_date_debut_conge_en_cours__c))) &lt;= 9 , &#39;0&#39; + TEXT(MONTH(Tech_date_debut_conge_en_cours__c)) , TEXT(MONTH(Tech_date_debut_conge_en_cours__c))) + &#39;/&#39; + 
+		IF(VALUE(TEXT(DAY(Tech_date_debut_conge_en_cours__c))) &lt;= 9 , &#39;0&#39; + TEXT(DAY( Tech_date_debut_conge_en_cours__c )) , TEXT(DAY(Tech_date_debut_conge_en_cours__c ))) + &#39;/&#39; + 
+		TEXT(YEAR( Tech_date_debut_conge_en_cours__c )),&#39;&#39;) +
+		 
+	IF(NOT(ISBLANK(Tech_date_fin_conge_en_cours__c)),
+		&#39; to &#39; +
+		CASE( MOD( Tech_date_fin_conge_en_cours__c - DATE(1900, 1, 7), 7), 0, &quot;sun.&quot;, 1, &quot;mon.&quot;, 2, &quot;tue.&quot;, 3,&quot;wed.&quot;, 4, &quot;thu.&quot;, 5, &quot;fri.&quot;, 6, &quot;sat.&quot;,&#39;&#39;) + &#39; &#39; +
+		IF(VALUE(TEXT(MONTH(Tech_date_fin_conge_en_cours__c))) &lt;= 9 , &#39;0&#39; + TEXT(MONTH(Tech_date_fin_conge_en_cours__c)) , TEXT(MONTH(Tech_date_fin_conge_en_cours__c))) + &#39;/&#39; + 
+		IF(VALUE(TEXT(DAY( Tech_date_fin_conge_en_cours__c ))) &lt;= 9 , &#39;0&#39; + TEXT(DAY( Tech_date_fin_conge_en_cours__c )) , TEXT(DAY(Tech_date_fin_conge_en_cours__c )))+ &#39;/&#39; + 
+		TEXT(YEAR( Tech_date_fin_conge_en_cours__c )),&#39;&#39;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Congés en cours</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

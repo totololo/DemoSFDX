@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MP_Date_fin_expir_e</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Macroprofil_de_reference__c</columns>
+    <columns>Macroprofil_actuel__c</columns>
+    <columns>Statut_de_modification__c</columns>
+    <columns>Date_de_fin_de_modification__c</columns>
+    <columns>Motif_macroprofil__c</columns>
+    <columns>Commentaire__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Date_de_fin_de_modification__c</field>
+        <operation>lessThan</operation>
+        <value>2/12/2018</value>
+    </filters>
+    <filters>
+        <field>Etat__c</field>
+        <operation>contains</operation>
+        <value>État 4 - Démarrage d’activité,État 5 - En activité,État 6 - En cours de préavi</value>
+    </filters>
+    <label>MP-Date_fin_expirée</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>PUS_FR_DOR</group>
+    </sharedTo>
+</ListView>

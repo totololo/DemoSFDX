@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Macroprofil_de_reference__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Macroprofil de création.</inlineHelpText>
+    <label>Macroprofil de référence</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR (3 AND 4) OR (5 AND 6)</booleanFilter>
+        <errorMessage>La valeur ne correspond pas aux critères de filtre.</errorMessage>
+        <filterItems>
+            <field>$Source.Type</field>
+            <operation>equals</operation>
+            <value>Consigne</value>
+        </filterItems>
+        <filterItems>
+            <field>Macroprofil__c.Name</field>
+            <operation>contains</operation>
+            <value>MPFR_Consigne</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Type</field>
+            <operation>equals</operation>
+            <value>Pickup contact</value>
+        </filterItems>
+        <filterItems>
+            <field>Macroprofil__c.Name</field>
+            <operation>equals</operation>
+            <value>MP2-Standard</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Type</field>
+            <operation>equals</operation>
+            <value>Pickup store, Agence, Partenaire, Standard, 23</value>
+        </filterItems>
+        <filterItems>
+            <field>Macroprofil__c.Name</field>
+            <operation>contains</operation>
+            <value>MP</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Macroprofil__c</referenceTo>
+    <relationshipLabel>Comptes (Macroprofil de référence)</relationshipLabel>
+    <relationshipName>Comptes1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

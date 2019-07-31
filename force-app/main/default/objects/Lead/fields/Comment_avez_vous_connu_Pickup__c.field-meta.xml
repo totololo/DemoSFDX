@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_avez_vous_connu_Pickup__c</fullName>
+    <externalId>false</externalId>
+    <label>Comment avez-vous connu Pickup ?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>par des commerçants</fullName>
+                <default>false</default>
+                <label>par des commerçants</label>
+            </value>
+            <value>
+                <fullName>par vos clients</fullName>
+                <default>false</default>
+                <label>par vos clients</label>
+            </value>
+            <value>
+                <fullName>par internet</fullName>
+                <default>false</default>
+                <label>par internet</label>
+            </value>
+            <value>
+                <fullName>par des articles de presse</fullName>
+                <default>false</default>
+                <label>par des articles de presse</label>
+            </value>
+            <value>
+                <fullName>par de la publicité presse</fullName>
+                <default>false</default>
+                <label>par de la publicité presse</label>
+            </value>
+            <value>
+                <fullName>par Colissimo</fullName>
+                <default>false</default>
+                <label>par Colissimo</label>
+            </value>
+            <value>
+                <fullName>par Chronopost</fullName>
+                <default>false</default>
+                <label>par Chronopost</label>
+            </value>
+            <value>
+                <fullName>par DPD France</fullName>
+                <default>false</default>
+                <label>par DPD France</label>
+            </value>
+            <value>
+                <fullName>par Système U</fullName>
+                <default>false</default>
+                <label>par Système U</label>
+            </value>
+            <value>
+                <fullName>autres</fullName>
+                <default>false</default>
+                <label>autres</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

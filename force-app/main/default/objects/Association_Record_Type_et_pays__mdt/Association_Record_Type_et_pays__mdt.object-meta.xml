@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Cet objet contient les type d&#39;enregistrement associés à chaque pays</description>
+    <label>Association Record Type et pays</label>
+    <pluralLabel>Association Record Type et pays</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

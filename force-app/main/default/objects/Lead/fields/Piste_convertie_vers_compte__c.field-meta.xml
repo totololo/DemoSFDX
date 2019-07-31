@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Piste_convertie_vers_compte__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>champ technique</description>
+    <externalId>false</externalId>
+    <label>Piste convertie vers compte</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

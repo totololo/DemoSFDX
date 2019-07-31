@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compte_BNL_DA</fullName>
+    <fields>Name</fields>
+    <fields>Etat__c</fields>
+    <fields>Reference__c</fields>
+    <fields>Date_de_fin_d_activite__c</fields>
+    <fields>DateFinDactivite_Formule__c</fields>
+    <fields>Seuil_contractuel__c</fields>
+    <fields>Seuil_contractuel_sup_egal__c</fields>
+    <fields>Seuil_calcule__c</fields>
+    <fields>DisponibiliteFormule__c</fields>
+    <label>Compte_BNL_DA</label>
+</CompactLayout>

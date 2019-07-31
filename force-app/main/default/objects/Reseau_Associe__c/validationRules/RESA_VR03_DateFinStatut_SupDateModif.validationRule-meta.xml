@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RESA_VR03_DateFinStatut_SupDateModif</fullName>
+    <active>true</active>
+    <description>La date de fin du statut ne peut pas être antérieur à la date de modification</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, 
+ISPICKVAL (Etat_du_statut__c,&quot;temporaire&quot;), 
+Date_de_fin_du_statut__c &lt; Date_de_modification__c 
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_fin_du_statut__c</errorDisplayField>
+    <errorMessage>La date de fin du statut ne peut pas être antérieur à la date de modification</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR81_NTVA</fullName>
+    <active>true</active>
+    <description>Le &quot;N° de TVA&quot; est obligatoire si le champ &quot;Assujetti à la TVA&quot;=Oui</description>
+    <errorConditionFormula>AND( 
+!$User.BypassValidationRule__c, 
+ISPICKVAL(Assujetti_la_TVA__c, &quot;Oui&quot;), 
+ISBLANK( N_TVA__c ), 
+
+OR( 
+CONTAINS($Label.RT_SuiviCo_Compte, RecordType.Id), 
+CONTAINS($Label.RT_ProspectAValider_Compte, RecordType.Id), 
+CONTAINS($Label.RT_ProspectConverti_Compte, RecordType.Id), 
+CONTAINS($Label.RT_NonSuiviCo_Compte, RecordType.Id)), 
+
+OR( 
+ispickval( Etat__c ,&quot;1&quot;), 
+ispickval( Etat__c ,&quot;2&quot;), 
+ispickval( Etat__c ,&quot;4&quot;), 
+ispickval( Etat__c ,&quot;5&quot;), 
+ispickval( Etat__c ,&quot;6&quot;), 
+ispickval( Etat__c ,&quot;7&quot;), 
+ispickval( Etat__c ,&quot;9&quot;) 
+) 
+
+
+
+)</errorConditionFormula>
+    <errorDisplayField>N_TVA__c</errorDisplayField>
+    <errorMessage>Le &quot;N° de TVA&quot; est obligatoire si le champ &quot;Assujetti à la TVA&quot;=Oui</errorMessage>
+</ValidationRule>

@@ -1,0 +1,644 @@
+<apex:page docType="html-5.0" standardController="Compte_rendu_rempli__c" extensions="VFC14_DemarrageCompteRenduRempli" showHeader="false" sidebar="false" lightningStylesheets="true" > 
+    <apex:includeScript value="/support/console/28.0/integration.js"/>  
+    <apex:includeScript value="/soap/ajax/33.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/33.0/apex.js"/>
+    
+    <style>
+        .body input[type="radio"][disabled]:before, body input[type="checkbox"][disabled]:before, .slds-vf-scope input[type="radio"][disabled]:before, .slds-vf-scope input[type="checkbox"][disabled]:before {
+        background-color: white;
+        border-color: rgb(201, 199, 197);
+        }
+        .custom3 {
+        background-color: green !important;
+        }
+        .headerRow{
+        text-align:center;
+        }
+        .missingCls{
+        display: none;
+        }
+        .radioButtonCls td, .clearBorder{
+        border-color:transparent ! important;
+        }
+        .hideCompte{
+        display:none;
+        }
+        .column {
+        float: left;
+        padding: 30px;
+        margin-top:20px;
+        }
+        .column2 {
+        float: left;
+        padding: 30px;
+        margin-top:20px;
+        }
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .bPageBlock th.vfLabelColTextWrap {
+        /* white-space: normal; */
+        position: relative;
+        }
+        .bPageBlock .detailList tr td, .bPageBlock .detailList tr th, .hoverDetail .bPageBlock .detailList tr td, .hoverDetail .bPageBlock .detailList tr th {
+        border-bottom: 0px;
+        }
+        #col1,#col2{width:49%;display:inline-block;}
+    </style>
+    
+    <apex:includeScript value="{!$Resource.JqueryLibrary}"/>
+    <script>
+    (function(){try{ var s=document.createElement('style'); s.innerHTML="html,html body{overflow: auto;-webkit-overflow-scrolling:touch;}body{position:absolute;left:0;right:0;top:0;bottom:0;}"; document.getElementsByTagName('head')[0].appendChild(s);}catch(e){}})();
+    
+    $(document).on('keyup keypress', 'form input[type="text"]', function(e) {
+        if(e.which == 13) {
+            e.preventDefault();
+            return false;
+        }
+    });
+    
+    window.onload = function(){
+        if(!{!secondBlock}){
+            document.getElementById("{!$Component.pageForm.pgBlockCRType.pgBlockTypeSection.sousTypePicklist}").disabled= true;
+        }
+        checkStatut(true);
+        if({!AND(statutTermine)}){
+            if(document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}')!=null){
+                document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}').style.visibility = 'hidden'; //'{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}'
+            }
+            $.each($('form').serializeArray(), function(index, value){ 
+                $('[name="' + value.name + '"]').attr('disabled', 'disabled');
+                $('input[type="checkbox"]').attr('disabled', 'disabled');
+                $('select').attr('disabled','disabled');
+                
+            });
+        }
+        document.getElementById('{!$Component.pageForm.hdnInConsole}').value = sforce.console.isInConsole(); 
+    }
+    
+    var checkbox = false; 
+    var completedForm = true;
+    function getOtherContact(){
+        
+        getOtherContactAction();
+        
+        $.each($('form').serializeArray(), function(index, value){
+            $('[name="' + value.name + '"]').attr('disabled', 'disabled');
+            $('input[type="checkbox"]').attr('disabled', 'disabled');
+        });
+        
+        $.each($('form').serializeArray(), function(index, value){
+            $('[name="' + value.name + '"]').attr('disabled', 'enabled');
+            $('input[type="checkbox"]').attr('disabled', 'enabled');
+        });
+    }
+    
+    function onSaveCRType(btn) { 
+        btn.disabled = true; 
+        redirectToQuestionnaire();
+        
+    } 
+    
+    function closeDA(){ 
+        cancel(); 
+    }
+    function disableMultiClick(btn){
+        btn.disabled = true;
+        setTimeout(function(){btn.disabled = false;}, 2000);
+        saveResponse();   
+    }
+    function enableSaveButton(varible){
+        console.log('### ' + varible.value);
+        event.preventDefault();
+        var obj = $('[id$=btn_save]');
+        obj.prop("disabled",false);
+    }
+    //<!-- TFS-126315-->
+    function CalculerSeuil(){
+        
+        var total = 1;
+        var SeuilCalculer = $(".Seuil");
+        var ChampACalculer = $(".Calcul");
+        
+        
+        if(ChampACalculer.length > 0){
+            for (var i = 0; i < ChampACalculer.length; i++) {                       
+                total = total*ChampACalculer[i].value;
+            }
+        }
+        total = total/63000;// total/(21*1000*3)
+        SeuilCalculer.text(Math.round(total));
+        
+    }
+    
+    function GoToTop(){
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+    }
+    
+    //added for ticket VA/VAP conditionnement des champs
+    function ValidateQuestions()
+    { 
+        // get all elements that has selectme as html-class 
+        // --> getting all the question tags from the layout
+        var getallelements = document.getElementById('{!$Component.pageForm.pageBlock.pageBlockTableLoop}').querySelectorAll(".selectme");
+        // loop over the retrieved elements
+        for (i = 0; i < getallelements.length; i++) 
+        {
+            // filtering the tags that have a question number (not all questions have a number, a question might be hidden) and a question parent 
+            // --> making sure the current question and its parent question are not empty
+            if(getallelements[i].getAttribute("numero") && getallelements[i].getAttribute("questionParent"))
+            {
+                // loop over the retrieved elements
+                for (j = 0; j < getallelements.length; j++) 
+                {
+                    // Check if the element is a picklist that has options
+                    if( getallelements[j].options && getallelements[j].options.length > 0)
+                    {
+                        var selectList = getallelements[j]; // object element of picklist
+                        var elementValues = new Array();
+                        // loop over the options of the picklist
+                        for(var x = 0; x < selectList.options.length; x++)
+                        {
+                            // check if the option is selected
+                            // action : add the value to an array
+                            if(getallelements[j][x].selected)
+                            {
+                                elementValues.push(getallelements[j][x].value);
+                            }
+                        }
+                    }
+                    //    if a filtered parent question (filtered = not empty) == to one of the questions displayed in the layout
+                    //and ( (if a filtered question's responseFollowUp (Réponse déclencheur de  cette question) != 
+                    //       to one of the questions displayed in the layout)  and not a mutlipicklist
+                    //    or if one of the selected values is not a filtered question's responseFollowUp (Réponse déclencheur de  cette question)   
+                    //    action: disable and clear the filtered tag on the layout
+                    if( getallelements[i].getAttribute("questionParent") == getallelements[j].getAttribute("numero")
+                       && (getallelements[i].getAttribute("reponseFollowUp") != getallelements[j].value && elementValues.length <= 1
+                           || (!elementValues.includes(getallelements[i].getAttribute("reponseFollowUp")) ) ))
+                    { 
+                        getallelements[i].disabled = true;
+                        getallelements[i].value = null;
+                        break;
+                    }
+                    // action: enable the filtered tag on the layout
+                    else
+                    {
+                        getallelements[i].disabled = false;
+                    }
+                } 
+                
+            }
+        }
+    }
+    //added for ticket VA/VAP conditionnement des champs
+    function onInterrompuChecked()
+    {
+        document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotif}').disabled = true; 
+        document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotif}').value = null; 
+        document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotif}').style.backgroundColor = "lightgrey";
+    }
+    //added for ticket VA/VAP conditionnement des champs
+    function onMotifOther() { 
+        if((document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotifDinter}').value).includes("{!$Label.VAVAP_Autre}"))
+        {
+            document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotif}').disabled = false; 
+            document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotif}').style.backgroundColor = "white";
+        }
+        else
+        {
+            document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotif}').disabled = true; 
+            document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotif}').value = null; 
+            document.getElementById('{!$Component.pageForm.pageBlock.statutSectionChckB.interrompuMotif}').style.backgroundColor = "lightgrey";
+        }
+    }
+    </script>
+    <apex:form id="pageForm">
+        <apex:pageMessages id="pageMessagess" >
+        </apex:pageMessages>
+        <apex:outputPanel id="jspanel"> 
+            <script>
+            function disablePicklist(){
+                
+                var isDisabled = ('{!disabled}' === 'true');
+                
+                document.getElementById('{!$Component.pageForm.pgBlockCRType.pgBlockTypeSection.sousTypePicklist}').disabled= isDisabled;
+            }
+            </script>
+        </apex:outputPanel>
+        <apex:outputPanel id="statutController"> 
+            <script>
+            function checkStatut(removeStatut){
+                
+                //MAIN FUNCITON
+                $.each($('form').serializeArray(), function(index, value){ 
+                    if(document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}')!=null){
+                        document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}').style.visibility = 'hidden';
+                        
+                    }
+                    $('input[type="checkbox"]').attr('disabled', 'disabled');
+                    $('input[type="checkbox"]').attr('disabled', 'disabled');
+                    $('input[type="text"]').attr('disabled', 'disabled');
+                    $('select').attr('disabled','disabled');
+                    $('textarea').attr('disabled', 'disabled');
+                    $('[name="{!$Component.pageForm.pgBlockCRType.pgBlockTypeSection.recordTypes}"]').removeAttr('disabled'); 
+                    
+                    
+                    //STATUT : En Attente de Traitement
+                    if('{!CRR.Statut__c}' == '{!$Label.VAVAP_statutEnAttenteDeTraitement}'){
+                        $('[name="{!$Component.pageForm.pageBlock.infoGeneral.dateDeVisite}"]').removeAttr('disabled'); 
+                        $('[name="{!$Component.pageForm.pageBlock.statutSection.statut}"]').removeAttr('disabled'); 
+                        
+                    }
+                    //STATUT : En Cours de preparation
+                    if('{!CRR.Statut__c}' == '{!$Label.VAVAP_enCoursDePrep}'){
+                        $('[name="{!$Component.pageForm.pageBlock.infoGeneral.dateDeVisite}"]').removeAttr('disabled'); 
+                        $('[name="{!$Component.pageForm.pageBlock.noteDePrepSection.noteDePreparation}"]').removeAttr('disabled');           
+                        $('[name="{!$Component.pageForm.pageBlock.statutSection.statut}"]').removeAttr('disabled'); 
+                        if(document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}')!=null){
+                            document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}').style.visibility = 'hidden';
+                        }
+                    }
+                    //STATUT : En Attente de Visite
+                    if('{!CRR.Statut__c}' == '{!$Label.VAVAP_EnAttenteDeVisite}' ){
+                        $('input[type="checkbox"]').removeAttr('disabled'); 
+                        $('input[type!="checkbox"]').removeAttr('disabled');
+                        $('textarea').removeAttr('disabled'); 
+                        $('select').removeAttr('disabled'); 
+                        if(document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}')!=null){
+                            document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}').style.visibility = 'visible';} 
+                        //added for ticket VA/VAP conditionnement des champs
+                        ValidateQuestions();
+                        //added for ticket VA/VAP conditionnement des champs
+                        onMotifOther();
+                    }
+                    //STATUT : Terminee
+                    if('{!CRR.Statut__c}' == '{!$Label.VAVAP_statutTermine}'  ){
+                        $('input[type="checkbox"]').removeAttr('disabled'); 
+                        $('input[type!="checkbox"]').removeAttr('disabled');
+                        $('textarea').removeAttr('disabled'); 
+                        $('select').removeAttr('disabled'); 
+                        if(document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}')!=null){          
+                            document.getElementById('{!$Component.pageForm.pageBlock.infoGeneral.lookupContact}').style.visibility = 'visible'; 
+                        }
+                        //added for ticket VA/VAP conditionnement des champs
+                        ValidateQuestions();
+                        //added for ticket VA/VAP conditionnement des champs
+                        onMotifOther();    
+                    }
+                });
+                if(removeStatut){
+                    (function(){
+                        var e = document.querySelectorAll('[id$="statut"]')[0];
+                        console.log(document.querySelectorAll('[id$="statut"]'));
+                        //console.log(document.querySelectorAll('[id$="statut"]')[0].value);
+                        
+                        for (i=e.selectedIndex-1;i>=0 ;i--){
+                            
+                            e.remove(i);
+                        }
+                        //e.remove(0);
+                        // for(integer 0;
+                    })();
+                }  
+            }
+            checkStatut(false);
+            
+            
+            </script>
+        </apex:outputPanel>
+        
+        
+        
+        <apex:outputPanel id="panelQuestionnaire" >
+            
+            <apex:actionFunction name="cancel"  action="{!cancel}" reRender="hdnInConsole" />
+            <apex:actionFunction name="redirectToQuestionnaire" action="{!redirectToQuestionnaire}" oncomplete="disablePicklist()"  reRender="pageMessagess,pageMessages,hdnInConsole,panelQuestionnaire,jspanel,statutController" />
+            <apex:actionFunction name="save" action="{!save}"  reRender="pageMessagess,pageMessages,btn_save,questionsTable,hdnInConsole"/> 
+            <apex:actionFunction name="saveResponse" action="{!saveResponse}" reRender="pageMessagess,pageMessages,hdnInConsole" />
+            <apex:actionFunction name="closePage1" action="{!closePage}" reRender="pageMessagess,pageMessages,hdnInConsole" />
+            
+            
+            <apex:pageBlock id="pgBlockCRType" rendered="{!AND(renderQuestionnaire, NOT(secondBlock))}"> 
+                <apex:pageBlockSection id="pgBlockTypeSection">
+                    <apex:selectList value="{!selectedRT}" size="1" label="{!$Label.VAVAP_TypeEnregistrementLabel}" title="{!$Label.VAVAP_TypeEnregistrementLabel}" id="recordTypes"  > 
+                        <apex:actionSupport event="onchange" oncomplete="disablePicklist()" action="{!getPickListValues}" reRender="sousTypePicklist,jspanel" />
+                        <apex:selectOptions value="{!CRTypes}" /> 
+                    </apex:selectList>
+                    <apex:inputField id="sousTypePicklist" value="{!CRR.Type_de_compte_rendu__c}"/>                   
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockButtons location="both"> 
+                    
+                    <apex:commandButton value="{!$Label.EnregistrerLbl}" onclick="onSaveCRType(this);checkStatut(false); return false;"  rerender="panelQuestionnaire,statut"/> 
+                    <apex:commandButton onclick="closePage1();return false;" value="{!$Label.AnnulerLbl}"  /><!--action="{!closePage}"-->
+                    
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+            
+            <apex:pageBlock id="pageBlock" rendered="{!AND(renderQuestionnaire,secondBlock)}">
+                <apex:pageBlockSection columns="1"  id="statutSection" > 
+                    <apex:inputField value="{!CRR.Statut__c}" id="statut" rendered="{!AND(renderQuestionnaire,secondBlock)}" >
+                        <apex:actionSupport event="onchange" oncomplete="checkStatut(true)"  reRender="statutController" />
+                    </apex:inputField>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockButtons id="pgBlockBtn" location="both">
+                    <apex:commandButton value="{!$Label.EnregistrerLbl}" onclick="disableMultiClick(this);return false;" action="{!saveResponse}" disabled="false" id="btn_save"  />
+                    <apex:commandButton onclick="closePage1();return false;" value="{!$Label.AnnulerLbl}" disabled="false"/><!-- action="{!closePage}"-->   
+                </apex:pageBlockButtons>
+                
+                <apex:pageBlockSection title="{!$Label.VAVAP_noteDePrep}" id="noteDePrepSection">                       
+                    <apex:inputTextarea value="{!CRR.Notes_de_preparation__c}" html-maxlength="255" cols="100" rows="6" id="noteDePreparation"  />
+                    <c:HelpText helpText="Limitation à 255 caractères"/>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection columns="1"  title="{!$Label.VAVAP_infoGeneral}" rendered="{!generalInfoSec}" id="infoGeneral" >
+                    <apex:outputField value="{!theAccount.Reference_internationale__c}" label="{!$Label.VAVAP_numeroPoint}"/>
+                    <apex:outputField value="{!theAccount.Secteur__c}" />
+                    <apex:inputField value="{!CRR.Date_de_la_visite__c}"  id="dateDeVisite"  />
+                    <apex:outputField value="{!CRR.Type_de_compte_rendu__c}" label="{!$Label.VAVAP_objectifVisite}"/>
+                    
+                    
+                    <div class="row" >
+                        <div class="column" >
+                            <table>
+                                <h2 style="padding-left:20px;">{!$Label.contactOperationel}</h2>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Contact_operationnel_1__r.LastName}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Contact_operationnel_1__r.FirstName}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Contact_operationnel_1__r.Email}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Contact_operationnel_1__r.Phone}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Contact_operationnel_1__r.MobilePhone}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:inputCheckbox value="{!CRR.Contact_operationnel_rencontre__c }"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="column" >
+                            <table>
+                                <h2 style="padding-left:20px;" >{!$Label.responsableMagasin}</h2>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Nom_Responsable_magasin__r.LastName}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Nom_Responsable_magasin__r.FirstName}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Nom_Responsable_magasin__r.Email}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Nom_Responsable_magasin__r.Phone}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Nom_Responsable_magasin__r.MobilePhone}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:inputCheckbox value="{!CRR.Responsable_magasin_rencontre__c }"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="column" >
+                            
+                            <table>
+                                <h2  style="padding-left:20px;" >{!$Label.responsableFacturation}</h2>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Responsable_facturation__r.LastName}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Responsable_facturation__r.FirstName}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Responsable_facturation__r.Email}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Responsable_facturation__r.Phone}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputField value="{!theAccount.Responsable_facturation__r.MobilePhone}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:inputCheckbox value="{!CRR.Responsable_facturation_rencontre__c}"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    
+                    <apex:outputLabel rendered="{!isVA}" >
+                        <h3>
+                            {!$Label.VAVAP_otherContactPhrase} 
+                        </h3>
+                    </apex:outputLabel>
+                    <apex:panelGrid columns="1" rendered="{!isVA}" id="otherCon" style="text-align: left;">
+                        <apex:outputPanel id="lookupContact"  >
+                            
+                            <apex:outputLabel value="{!$Label.VAVAP_OtherContact}" style="text-allign:right;margin-right:65px" styleClass="labelCol vfLabelColTextWrap "/>
+                            <apex:inputField value="{!CRR.Contact__c}" onchange="getOtherContact();"  rendered="{!isVA}" label="{!$Label.VAVAP_OtherContact}"  >
+                                <apex:actionFunction name="getOtherContactAction"  action="{!getOtherContact}"/>
+                            </apex:inputField>
+                        </apex:outputPanel>
+                        <apex:outputPanel style="margin-top: 5px;margin-bottom: 65px;">
+                            <apex:outputLabel value="Nom"  style="text-align: right;margin-right:92px"/>
+                            <apex:outputField value="{!CRR.Nom_CR__c}" label="Nom" rendered="{!isVA}" style="text-align: right;" />
+                        </apex:outputPanel>
+                        <apex:outputPanel style="margin-top: 5px;margin-bottom: 5px;">
+                            <apex:outputLabel value="Prénom" style="margin-right:78px" />
+                            <apex:outputField value="{!CRR.Prenom_CR__c}" label="Prénom" rendered="{!isVA}" style="text-align: right;" />
+                        </apex:outputPanel>
+                        <apex:outputPanel style="margin-top: 5px;margin-bottom: 5px;">
+                            <apex:outputLabel value="Email"  style="margin-right:88px" />
+                            <apex:outputField value="{!CRR.Email_CR__c}" label="Email"   rendered="{!isVA}" style="text-align: right;" />    
+                        </apex:outputPanel>
+                        <apex:outputPanel style="margin-top: 5px;margin-bottom: 5px;">
+                            <apex:outputLabel value="Telephone"  style="margin-right:63px " />
+                            <apex:outputField value="{!CRR.Telephone_fixe_CR__c}" label="Telephone" rendered="{!isVA}"/>
+                        </apex:outputPanel>
+                        <apex:outputPanel style="margin-top: 5px;margin-bottom: 5px;" >
+                            <apex:outputLabel value="Telephone portable" style="margin-right:15px" />
+                            <apex:outputField value="{!CRR.Telephone_portable_CR__c}" label="Telephone portable" rendered="{!isVA}" />
+                        </apex:outputPanel>
+                    </apex:panelGrid>
+                    
+                    
+                    <!--     <div id="lookupContact"  >
+<apex:inputField value="{!CRR.Contact__c}" onchange="getOtherContact();"   rendered="{!isVA}" label="{!$Label.VAVAP_OtherContact}" >
+<apex:actionFunction name="getOtherContactAction"  action="{!getOtherContact}"/>
+</apex:inputField>
+
+</div> -->
+                    
+                    <!--<apex:outputField value="{!otherContact.LastName}" label="Nom" rendered="{!isVA}"/>
+<apex:outputField value="{!otherContact.FirstName}" label="Prénom" rendered="{!isVA}"/>
+<apex:outputField value="{!otherContact.Email}" label="Email"   rendered="{!isVA}"/>    
+<apex:outputField value="{!otherContact.Phone}" label="Telephone" rendered="{!isVA}"/>
+<apex:outputField value="{!otherContact.MobilePhone}" label="Telephone portable" rendered="{!isVA}" />
+<br/>-->
+                    
+                    <br/>
+                    
+                    <!--<apex:outputLabel rendered="{!AND(newCRR,isVA)}" >
+<h3 >
+{!$Label.VAVAP_ZoneDeStock}  
+</h3>
+
+<apex:pageBlockSection title="Member Information" collapsible="false" columns="2" rendered="{!AND(newCRR,isVA)}" showHeader="false">
+
+<apex:outputField value="{!theAccount.Hauteur_cm__c}" label="{!$Label.VAVAP_HauteurInitial}" rendered="{!AND(newCRR,isVA)}" style="width:30px"/>
+<apex:inputField value="{!CRR.Hauteur__c}" label="Hauteur" rendered="{!AND(newCRR,isVA)}" />
+<apex:outputField value="{!theAccount.Largeur_cm__c}" label="{!$Label.VAVAP_largeurInitial}" rendered="{!AND(newCRR,isVA)}"/>
+<apex:inputField value="{!CRR.Hauteur__c}"  rendered="{!AND(newCRR,isVA)}"/> 
+<apex:outputField value="{!theAccount.Profondeur_cm__c}" label="{!$Label.VAVAP_profInitial}" rendered="{!AND(newCRR,isVA)}"/>
+<apex:inputField value="{!CRR.Profondeur__c}"  rendered="{!AND(newCRR,isVA)}"/>
+<apex:outputField value="{!theAccount.Seuil_calcule__c}" label="{!$Label.VAVAP_seuilCalcInitial}" rendered="{!AND(newCRR,isVA)}"/>
+<apex:outputField value="{!theAccount.Seuil_calcule__c}" rendered="{!AND(newCRR,isVA)}"/>
+<apex:outputField value="{!theAccount.Nombre_detageres__c}" label="{!$Label.VAVAP_etagInitial}" rendered="{!AND(newCRR,isVA)}"/>
+<apex:inputField value="{!CRR.Nombre_d_etageres__c}"  rendered="{!AND(newCRR,isVA)}"/>
+<apex:outputField value="{!theAccount.Seuil_contractuel__c}" label="{!$Label.VAVAP_contactIntial}" rendered="{!AND(newCRR,isVA)}"/>
+<apex:inputField value="{!CRR.Seuil_contractuel__c}"  rendered="{!AND(newCRR,isVA)}"/>
+
+</apex:pageBlockSection>
+
+</apex:outputLabel>
+<apex:outputLabel rendered="{!AND(NOT(newCRR),isVA)}" >
+<h3 >
+{!$Label.VAVAP_ZoneDeStock}    
+</h3>
+
+<apex:pageBlockSection title="Member Information" collapsible="false" columns="2" rendered="{!AND(NOT(newCRR),isVA)}"  showHeader="false">
+<apex:outputField value="{!CRR.Hauteur_initiale__c}" label="{!$Label.VAVAP_HauteurInitial}" rendered="{!AND(NOT(newCRR),isVA)}" />
+<apex:inputField value="{!CRR.Hauteur__c}"  rendered="{!AND(NOT(newCRR),isVA)}" />
+
+<apex:outputField value="{!CRR.Largeur_initiale__c}" label="{!$Label.VAVAP_largeurInitial}" rendered="{!AND(NOT(newCRR),isVA)}"/>
+<apex:inputField value="{!CRR.Hauteur__c }" rendered="{!AND(NOT(newCRR),isVA)}"  /> 
+
+<apex:outputField value="{!CRR.Profondeur_initiale__c}" label="{!$Label.VAVAP_profInitial}" rendered="{!AND(NOT(newCRR),isVA)}"/>
+<apex:inputField value="{!CRR.Profondeur__c}" rendered="{!AND(NOT(newCRR),isVA)}" />
+
+<apex:outputField value="{!CRR.Seuil_calcul_initial__c}" label="{!$Label.VAVAP_seuilCalcInitial}" rendered="{!AND(NOT(newCRR),isVA)}"/>
+<apex:outputField value="{!theAccount.Seuil_calcule__c}"  rendered="{!AND(NOT(newCRR),isVA)}"/>
+
+<apex:outputField value="{!CRR.Nombre_d_etageres_initial__c}" label="{!$Label.VAVAP_etagInitial}" rendered="{!AND(NOT(newCRR),isVA)}"/>
+<apex:inputField value="{!CRR.Nombre_d_etageres__c}"  rendered="{!AND(NOT(newCRR),isVA)}" />
+
+<apex:outputField value="{!CRR.Seuil_contractuel_initial__c}" label="{!$Label.VAVAP_contactIntial}" rendered="{!AND(NOT(newCRR),isVA)}"/>
+<apex:inputField value="{!CRR.Seuil_contractuel__c}"   rendered="{!AND(NOT(newCRR),isVA)}"/>
+
+</apex:pageBlockSection> 
+</apex:outputLabel>-->
+                    <apex:outputLabel rendered="{!isVA}" >
+                        <h3 >
+                            {!$Label.VAVAP_ZoneDeStock}    
+                        </h3>
+                        
+                        <apex:pageBlockSection title="Member Information" collapsible="false" columns="2" rendered="{!isVA}"  showHeader="false">
+                            <apex:outputField value="{!CRR.Hauteur_initiale1__c}" label="{!$Label.VAVAP_HauteurInitial}" rendered="{!isVA}" />
+                            <apex:inputField value="{!CRR.Hauteur__c}" styleClass="Calcul" onkeyup="CalculerSeuil()" rendered="{!isVA}" />
+                            
+                            <apex:outputField value="{!CRR.Largeur_initiale1__c}" label="{!$Label.VAVAP_largeurInitial}" rendered="{!isVA}"/>
+                            <apex:inputField value="{!CRR.Largeur__c }" styleClass="Calcul" onkeyup="CalculerSeuil()" rendered="{!isVA}"  /> 
+                            
+                            <apex:outputField value="{!CRR.Profondeur_initiale1__c}" label="{!$Label.VAVAP_profInitial}" rendered="{!isVA}"/>
+                            <apex:inputField value="{!CRR.Profondeur__c}" styleClass="Calcul" onkeyup="CalculerSeuil()" rendered="{!isVA}" />
+                            
+                            <apex:outputField value="{!CRR.Seuil_calcul_initial1__c}" label="{!$Label.VAVAP_seuilCalcInitial}" rendered="{!isVA}"/>
+                            <!--<apex:outputField value="{!theAccount.Seuil_calcule__c}"  rendered="{!AND(isVA, newCRR)}"/>
+<apex:outputField value="{!CRR.Seuil_calcule__c}" rendered="{!AND(isVA, NOT(newCRR))}"/>--><!-- TFS-126315-->
+                            <apex:outputText styleClass="Seuil" label="Seuil calculé" rendered="{!AND(isVA)}" value="{!CRR.Seuil_calcule__c}"></apex:outputText>
+                            
+                            <apex:outputField value="{!CRR.Nombre_d_etageres_initial1__c}" label="{!$Label.VAVAP_etagInitial}" rendered="{!isVA}"/>
+                            <apex:inputField value="{!CRR.Nombre_d_etageres__c}"  rendered="{!isVA}" />
+                            
+                            <apex:outputField value="{!CRR.Seuil_contractuel_initial1__c}" label="{!$Label.VAVAP_contactIntial}" rendered="{!isVA}"/>
+                            <apex:inputField value="{!CRR.Seuil_contractuel__c}"   rendered="{!isVA}"/>
+                            
+                        </apex:pageBlockSection> 
+                    </apex:outputLabel>
+                    
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockTable var="ques" value="{!listWrapperQuestions}" style="margin-top:20px;" id="pageBlockTableLoop" >
+                    <apex:column headerValue="Numero">
+                        
+                        <apex:outputLabel value="{!ques.numero}" rendered="{!ques.type != $Label.VAVAP_TypeReponseTitre}"/>
+                    </apex:column>
+                    <apex:column headerValue="Question">
+                        <apex:outputLabel value="{!ques.question}" rendered="{!ques.type != $Label.VAVAP_TypeReponseTitre}"/>
+                        <apex:outputLabel value="{!ques.question}" style="font-weight: bold;" rendered="{!ques.type == $Label.VAVAP_TypeReponseTitre}"/>
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.DA_ReponseLbl}" id="columnReponse" >
+                        
+                        <div style="margin-left:40%">
+                            <apex:outputLabel value="{!$Label.VAVAP_MPActuel}" rendered="{!ques.showMPName}"/>
+                            <apex:outputField value="{!theAccount.Macroprofil_actuel__r.Name}" rendered="{!ques.showMPName}" />
+                        </div>
+                        <br/>
+                        <apex:selectList rendered="{!ques.type  == 'Choix'}" html-class="selectme"  onchange="enableSaveButton(this);ValidateQuestions();" html-reponseFollowUp="{!ques.reponseFollowUp}" html-questionParent="{!ques.questionParent}" html-numero="{!ques.numero}" multiselect="false" size="1" value="{!ques.reponse}" style="margin-left:40%">
+                            <apex:selectOptions value="{!ques.repsuggere}" />
+                        </apex:selectList>
+                        <apex:selectList rendered="{!ques.type  == 'Multi-choix'}" html-class="selectme"   onchange="enableSaveButton(this);ValidateQuestions();" html-reponseFollowUp="{!ques.reponseFollowUp}" html-questionParent="{!ques.questionParent}"  html-numero="{!ques.numero}"  id="multipick" multiselect="true"  value="{!ques.multiReponse}" style="margin-left:37%">
+                            <apex:selectOptions value="{!ques.repsuggere}" />
+                        </apex:selectList>
+                        <apex:inputTextarea value="{!ques.reponse}" id="inputTextfields"  html-maxlength="255" html-class="selectme"  html-reponseFollowUp="{!ques.reponseFollowUp}"  html-numero="{!ques.numero}" html-questionParent="{!ques.questionParent}" onchange="enableSaveButton(this);ValidateQuestions();" rendered="{!ques.type  == 'Texte'}"  style="margin-left:5px;width:200px;height:100px"  />
+                        <c:HelpText helpText="Limitation à 255 caractères" rendered="{!ques.type  == 'Texte'}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+                
+                <div style="padding-bottom:10px">
+                    
+                    <apex:pageBlockSection title="{!$Label.VAVAP_commentairesTitle}"  rendered="{!CRR.Type_de_compte_rendu__c != $Label.VAVAP_VALP && isVA}">                       
+                        <apex:inputTextarea label="{!$Label.VAVAP_diversRelaisLabel}" html-maxlength="255" value="{!CRR.Commentaires_divers_Relais__c}" cols="100" rows="6"/>
+                        <c:HelpText helpText="Limitation à 255 caractères"/>
+                        <br/>
+                        <apex:pageBlockSectionItem helpText="Limitation à 255 caractères"/>
+                        <apex:inputTextarea label="{!$Label.VAVAP_diversPickupLabel}" html-maxlength="255" value="{!CRR.Commentaires_divers_Pickup__c}" cols="100" rows="6"/>  
+                        <c:HelpText helpText="Limitation à 255 caractères"/>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="{!$Label.VAVAP_VALPcommentairesTitle}"  rendered="{!CRR.Type_de_compte_rendu__c == $Label.VAVAP_VALP && isVA}">                       
+                        <apex:inputTextarea label="{!$Label.VAVAP_diversRelaisLabel}" html-maxlength="255" value="{!CRR.Commentaires_divers_Relais__c}" cols="100" rows="6"/>
+                        <c:HelpText helpText="Limitation à 255 caractères"/>
+                        <apex:inputTextarea label="{!$Label.VAVAP_diversPickupLabel}"  html-maxlength="255" value="{!CRR.Commentaires_divers_Pickup__c}" cols="100" rows="6"/>  
+                        <c:HelpText helpText="Limitation à 255 caractères"/>
+                    </apex:pageBlockSection>
+                    
+                </div>
+                <div style="padding-bottom:10px">
+                    
+                    <apex:pageBlockSection title="{!$Label.VAVAP_NotesInternes}"  >                       
+                        <apex:inputTextarea value="{!CRR.Notes_internes__c}" html-maxlength="255" cols="100" rows="6"/>
+                        <c:HelpText helpText="Limitation à 255 caractères"/>
+                    </apex:pageBlockSection>
+                    
+                </div>
+                <apex:pageBlockSection title="{!$Label.VAVAP_statutDuCR}"   columns="1"  id="statutSectionChckB" ><!--id="statutSection" > 
+<apex:inputField value="{!CRR.Statut__c}" id="statut" rendered="{!AND(renderQuestionnaire,secondBlock)}" >
+<apex:actionSupport event="onchange" oncomplete="checkStatut(true)"  reRender="statutController" />
+</apex:inputField>-->
+                    
+                    <apex:inputField value="{!CRR.Interrompu__c}" id="interrompuCheckBox" onClick="onInterrompuChecked()"/>
+                    <apex:inputField value="{!CRR.Motif_d_interruption__c}"  onchange="onMotifOther()" id="interrompuMotifDinter"/>
+                    <apex:inputField value="{!CRR.Motif__c}" style="width:387px; height:47px" label="{!$Label.VAVAP_errorMotif}" id="interrompuMotif" />
+                </apex:pageBlockSection>
+                <a onclick="GoToTop()" style="margin-left:33%;">Vers le Statut</a>
+            </apex:pageBlock>
+        </apex:outputPanel>
+        
+        <div style="min-height: 50px;">
+            <apex:outputPanel id="hdnInConsole">
+                <apex:pageMessages id="pageMessages" >
+                </apex:pageMessages>
+            </apex:outputPanel>
+        </div>
+    </apex:form>  
+</apex:page>

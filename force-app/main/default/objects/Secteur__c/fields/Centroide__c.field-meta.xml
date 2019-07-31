@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Centroide__c</fullName>
+    <description>Propriété&quot;longitude centroide&quot; et &quot;latitude centroide&quot; (champs à masquer), ils vont servir à la règle de calcul.</description>
+    <displayLocationInDecimal>true</displayLocationInDecimal>
+    <externalId>false</externalId>
+    <label>Centroide</label>
+    <required>false</required>
+    <scale>14</scale>
+    <trackTrending>false</trackTrending>
+    <type>Location</type>
+</CustomField>

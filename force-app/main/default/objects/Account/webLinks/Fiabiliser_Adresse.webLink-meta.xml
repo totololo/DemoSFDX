@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fiabiliser_Adresse</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Fiabiliser Adresse</masterLabel>
+    <openType>sidebar</openType>
+    <page>VFP05_Fiabilisation</page>
+    <protected>false</protected>
+</WebLink>

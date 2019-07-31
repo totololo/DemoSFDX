@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR16_FDA_SupJ</fullName>
+    <active>true</active>
+    <description>En état 4/5/6, lorsque je saisi la date de FDA, la date de FDA ne peut être que strictement supérieure à J</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, 
+ OR(ISPICKVAL( Etat__c , &quot;4&quot;),ISPICKVAL( Etat__c , &quot;5&quot;),ISPICKVAL( Etat__c , &quot;6&quot;)), 
+ischanged(Date_de_fin_d_activite__c),
+Date_de_fin_d_activite__c  &lt;= TODAY())</errorConditionFormula>
+    <errorDisplayField>Date_de_fin_d_activite__c</errorDisplayField>
+    <errorMessage>La date de fin d&#39;activité doit être strictement supérieure à la date du jour.</errorMessage>
+</ValidationRule>

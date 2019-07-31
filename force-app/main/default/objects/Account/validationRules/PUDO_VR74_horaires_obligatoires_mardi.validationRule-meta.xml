@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR74_horaires_obligatoires_mardi</fullName>
+    <active>true</active>
+    <description>Les horaires du mardi doivent être obligatoirement renseignés pour: Consignes, les PUDO suivi CO, les Pickup contact, les Points non suivis par le CO, les prospects à valider, les prospects à valider Pickup contact, les Prospects convertis Pickup contact.</description>
+    <errorConditionFormula>AND( 
+!$User.BypassValidationRule__c, 
+
+OR( 
+
+AND(CONTAINS( $Label.RT_NonSuiviCo_Compte ,RecordType.Id ),  
+OR( 
+ISPICKVAL(Etat__c,&quot;1&quot;), 
+AND(ISPICKVAL(Etat__c,&quot;2&quot;),NOT ISBLANK(TEXT(Type))), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;), 
+ISPICKVAL(Etat__c,&quot;7&quot;), 
+ISPICKVAL(Etat__c,&quot;8&quot;))), 
+
+
+AND(CONTAINS( $Label.RT_Consigne_Compte, RecordType.Id ), 
+OR( 
+ISPICKVAL(Etat__c,&quot;4&quot;), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;))), 
+
+
+
+
+AND( CONTAINS($Label.RT_ProspectAValider_Compte , RecordType.Id ), 
+OR( 
+ISPICKVAL(Etat__c,&quot;1&quot;), 
+AND(ISPICKVAL(Etat__c,&quot;2&quot;),NOT ISBLANK(TEXT(Type))), 
+ISPICKVAL(Etat__c,&quot;4&quot;), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;), 
+ISPICKVAL(Etat__c,&quot;7&quot;), 
+ISPICKVAL(Etat__c,&quot;8&quot;), 
+ISPICKVAL(Etat__c,&quot;9&quot;))), 
+
+
+AND(CONTAINS( $Label.RT_ProspectAValiderPickupContact_Compte ,RecordType.Id ), 
+OR( 
+ISPICKVAL(Etat__c,&quot;1&quot;), 
+AND(ISPICKVAL(Etat__c,&quot;2&quot;),NOT ISBLANK(TEXT(Type))), 
+ISPICKVAL(Etat__c,&quot;4&quot;), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;), 
+ISPICKVAL(Etat__c,&quot;7&quot;), 
+ISPICKVAL(Etat__c,&quot;8&quot;), 
+ISPICKVAL(Etat__c,&quot;9&quot;))), 
+
+AND(CONTAINS($Label.RT_SuiviCo_Compte , RecordType.Id ), 
+
+OR(ISPICKVAL(Etat__c,&quot;1&quot;), 
+AND(ISPICKVAL(Etat__c,&quot;2&quot;),NOT ISBLANK(TEXT(Type))), 
+ISPICKVAL(Etat__c,&quot;4&quot;), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;), 
+ISPICKVAL(Etat__c,&quot;7&quot;), 
+ISPICKVAL(Etat__c,&quot;8&quot;))), 
+
+AND(CONTAINS( $Label.RT_ProspectConvertiPickupContact_Compte, RecordType.Id ), 
+ISPICKVAL(Etat__c,&quot;1&quot;)), 
+
+AND(CONTAINS( $Label.RT_PickupContact_Compte , RecordType.Id ), 
+OR( 
+ISPICKVAL(Etat__c,&quot;1&quot;), 
+AND(ISPICKVAL(Etat__c,&quot;2&quot;),NOT ISBLANK(TEXT(Type))), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;), 
+ISPICKVAL(Etat__c,&quot;7&quot;), 
+ISPICKVAL(Etat__c,&quot;8&quot;), 
+ISPICKVAL(Etat__c,&quot;9&quot;))) 
+), 
+
+Mardi__c = false, 
+Mardi_ferme__c = false, 
+(ISPICKVAL(Mardi_Ouverture__c,&quot;&quot;)|| 
+ISPICKVAL( Mardi_Fermeture__c,&quot;&quot;)|| 
+ISPICKVAL( mardi_debut_pause_dejeuner__c ,&quot;&quot;)|| 
+ISPICKVAL( mardi_fin_pause_dejeuner__c ,&quot;&quot;)) 
+)</errorConditionFormula>
+    <errorDisplayField>Mardi_Ouverture__c</errorDisplayField>
+    <errorMessage>Les horaires du mardi doivent être obligatoirement renseignés (ouverture, fermeture, début et fin de pause déjeuner).</errorMessage>
+</ValidationRule>

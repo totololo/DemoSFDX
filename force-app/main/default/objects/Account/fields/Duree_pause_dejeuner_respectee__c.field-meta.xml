@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_pause_dejeuner_respectee__c</fullName>
+    <description>Entre lundi et samedi</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+AND( 
+VALUE(SUBSTITUTE(TEXT( lundi_fin_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100 -VALUE(SUBSTITUTE(TEXT( lundi_debut_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100 &lt;= VALUE(TEXT( Duree_pause_dejeuner_en_h__c )), 
+VALUE(SUBSTITUTE(TEXT( mardi_fin_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100 -VALUE(SUBSTITUTE(TEXT( mardi_debut_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100  &lt;= VALUE(TEXT( Duree_pause_dejeuner_en_h__c )), 
+VALUE(SUBSTITUTE(TEXT( mercredi_fin_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100 -VALUE(SUBSTITUTE(TEXT( mercredi_debut_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100  &lt;= VALUE(TEXT( Duree_pause_dejeuner_en_h__c )), 
+VALUE(SUBSTITUTE(TEXT( jeudi_fin_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100 -VALUE(SUBSTITUTE(TEXT( jeudi_debut_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100  &lt;= VALUE(TEXT( Duree_pause_dejeuner_en_h__c )), 
+VALUE(SUBSTITUTE(TEXT( vendredi_fin_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100 -VALUE(SUBSTITUTE(TEXT( vendredi_debut_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100  &lt;= VALUE(TEXT( Duree_pause_dejeuner_en_h__c )), 
+VALUE(SUBSTITUTE(TEXT( samedi_fin_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100 -VALUE(SUBSTITUTE(TEXT( samedi_debut_pause_dejeuner__c), &#39;:&#39;, &#39;&#39;))/100  &lt;= VALUE(TEXT( Duree_pause_dejeuner_en_h__c )) ), 
+
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;Green&quot;), 
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Red&quot;) 
+)</formula>
+    <inlineHelpText>Between Monday and Saturday</inlineHelpText>
+    <label>Durée pause déjeuner respectée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

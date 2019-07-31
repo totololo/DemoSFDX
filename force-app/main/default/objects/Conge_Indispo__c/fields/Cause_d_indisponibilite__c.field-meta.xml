@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cause_d_indisponibilite__c</fullName>
+    <externalId>false</externalId>
+    <label>Cause d&#39;indisponibilité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type_d_indisponibilite__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Panne matérielle</fullName>
+                <default>false</default>
+                <label>Panne matérielle</label>
+            </value>
+            <value>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+                <label>Panne électrique</label>
+            </value>
+            <value>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+                <label>Panne écran</label>
+            </value>
+            <value>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+                <label>Panne réseau</label>
+            </value>
+            <value>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+                <label>Vandalisme</label>
+            </value>
+            <value>
+                <fullName>Travaux non prévus/communiqués</fullName>
+                <default>false</default>
+                <label>Travaux non prévus/communiqués</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+                <label>Travaux</label>
+            </value>
+            <value>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+                <label>Désinstallation temporaire</label>
+            </value>
+            <value>
+                <fullName>Autre(s)</fullName>
+                <default>false</default>
+                <label>Autre(s)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Planifiée</controllingFieldValue>
+            <valueName>Travaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planifiée</controllingFieldValue>
+            <valueName>Désinstallation temporaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planifiée</controllingFieldValue>
+            <valueName>Autre(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imprévue</controllingFieldValue>
+            <valueName>Panne matérielle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imprévue</controllingFieldValue>
+            <valueName>Panne électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imprévue</controllingFieldValue>
+            <valueName>Panne écran</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imprévue</controllingFieldValue>
+            <valueName>Panne réseau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imprévue</controllingFieldValue>
+            <valueName>Vandalisme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imprévue</controllingFieldValue>
+            <valueName>Travaux non prévus/communiqués</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imprévue</controllingFieldValue>
+            <valueName>Autre</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

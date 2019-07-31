@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR32_BIC_IBAN_Titulaire_Obligatoire</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c , 
+CONTAINS( $Label.RT_France_Compte 
+, RecordTypeId ), 
+NOT(CONTAINS( $Label.RT_NonSuiviCo_Compte , RecordTypeId )), 
+OR( 
+AND( 
+CONTAINS( $Label.RT_SuiviCo_Compte , RecordTypeId ), 
+ISPICKVAL( Type , &quot;2&quot;) 
+), 
+
+AND( 
+ISPICKVAL( Type , &quot;3&quot;), 
+NOT(CONTAINS( $Label.RT_ProspectConverti_Compte , RecordTypeId )), 
+OR( 
+NOT(ISPICKVAL( Partenaire__c,&quot;21&quot;)), 
+NOT(ISPICKVAL( Partenaire__c,&quot;84&quot;)), 
+NOT(ISPICKVAL( Partenaire__c,&quot;135&quot;)) 
+) 
+) 
+
+), 
+
+OR( 
+ISBLANK (Code_BIC__c ), 
+ISBLANK (IBAN__c ), 
+ISBLANK (Titulaire_du_compte__c )) 
+
+)</errorConditionFormula>
+    <errorDisplayField>Code_BIC__c</errorDisplayField>
+    <errorMessage>Les champs « Code BIC », « IBAN » et « Titulaire du compte » sont obligatoires.</errorMessage>
+</ValidationRule>

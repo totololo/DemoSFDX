@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indispo_AnomalieC_cree__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Champ technique pour éviter la création de plusieurs requête dans la cas de modification d&#39;une Indisponibilité</description>
+    <externalId>false</externalId>
+    <label>Indispo_AnomalieC_crée</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

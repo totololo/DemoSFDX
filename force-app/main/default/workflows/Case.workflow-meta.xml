@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Decocher_NRP_BNL</fullName>
+        <field>Point_relais_ne_repond_pas__c</field>
+        <literalValue>0</literalValue>
+        <name>Décocher NRP BNL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Fermmeture_RequeteAnomalie</fullName>
+        <field>Status</field>
+        <literalValue>Terminée</literalValue>
+        <name>Fermmeture_RequeteAnomalie</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Objet_Requete_TM</fullName>
+        <field>Subject</field>
+        <formula>TEXT(Reason)&amp;&quot; &quot;&amp;&quot;-&quot;&amp;&quot; &quot;&amp;TEXT(Sous_motif_1__c)</formula>
+        <name>MAJ_Objet_Requête_TM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Requete_DemandeSortie</fullName>
+        <field>Status</field>
+        <literalValue>En attente demande de sortie</literalValue>
+        <name>MAJ_Requete_DemandeSortie</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Statut1</fullName>
+        <field>Status</field>
+        <literalValue>Terminée</literalValue>
+        <name>MAJ Statut</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Staut_Requete</fullName>
+        <field>Status</field>
+        <literalValue>1</literalValue>
+        <name>MAJ Staut Requête</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_statut</fullName>
+        <field>Status</field>
+        <literalValue>En attente de traitement</literalValue>
+        <name>MAJ statut</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_statut2</fullName>
+        <field>Status</field>
+        <literalValue>En attente de traitement</literalValue>
+        <name>MAJ statut2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>M_J_Date_Today</fullName>
+        <field>Date_changem_vers_Prolongation__c</field>
+        <formula>Today()</formula>
+        <name>MàJ_Date_Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>M_J_Statut_Req_Attribution</fullName>
+        <field>Status</field>
+        <literalValue>0</literalValue>
+        <name>MàJ Statut Req Attribution</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>M_J_Statut_Req_Traitement</fullName>
+        <field>Status</field>
+        <literalValue>En attente de traitement</literalValue>
+        <name>MàJ Statut Req &quot;Traitement&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>M_j_statut_attente_traitement</fullName>
+        <field>Status</field>
+        <literalValue>En attente de traitement</literalValue>
+        <name>Màj statut attente traitement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>M_j_statut_requ_te_attente_attribution</fullName>
+        <field>Status</field>
+        <literalValue>0</literalValue>
+        <name>Màj statut requête attente attribution</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>M_j_statut_requ_te_attente_traitement</fullName>
+        <description>une fois l’attribution effectuée (soit le user se l&#39;attribue à lui-même ou à un autre user) la requête passe automatiquement en statut « En attente de traitement ».</description>
+        <field>Status</field>
+        <literalValue>En attente de traitement</literalValue>
+        <name>Màj statut requête attente traitement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PUDO_WF01_Commentaire</fullName>
+        <description>Dès que le commentaire congé est saisi, ce workflow remplit le champ Nom_de_l_utilisateur__c avec le nom de l&#39;utilisateur.</description>
+        <field>Nom_de_l_utilisateur__c</field>
+        <formula>$User.FirstName &amp; &quot; &quot; &amp; $User.LastName</formula>
+        <name>PUDO_WF01_Commentaire</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PUDO_WF02_Date_de_Modification</fullName>
+        <description>Dès que le commentaire congé est saisi, ce workflow remplit le champ Date_de_modification__c avec la date de la modification</description>
+        <field>Date_de_modification__c</field>
+        <formula>NOW()</formula>
+        <name>PUDO_WF02_Date_de_Modification</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>REQ_WF01_MAJ_StatutRequete</fullName>
+        <actions>
+            <name>MAJ_statut</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Si Statut Requête est &quot;En attente d&#39;attribution&quot; et propriétaire est File Gest Mat (et pas WebHelp), si attribution est effectué (propriétaire a changé) le statut de la requête passe automatiquement &quot;En attente de traitement&quot;.</description>
+        <formula>AND ( !$User.BypassWorkflow__c,  ISPICKVAL(Status, &quot;0&quot;),   CONTAINS( $Label.RT_France_Compte ,  Account.RecordType.Id ), ISPICKVAL(Status, &quot;0&quot;),    ISCHANGED(OwnerId),  NOT(RecordType.Id= $Label.DA_RequeteRecrodTypeDAId) , NOT(ISBLANK(Owner:User.Id))   )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF02_StatutAttA1</fullName>
+        <actions>
+            <name>MAJ_Staut_Requete</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Si la requête DA est &quot;En attente attribution&quot; et elle change de propriétaire (attribution à soi-même ou à un autre utilisateur) alors sont statut devienne &quot;En attente appel 1&quot;</description>
+        <formula>and(not( $User.BypassWorkflow__c ),  ispickval( Status ,&quot;0&quot;),  ISCHANGED(OwnerId),  CONTAINS ( $Label.RT_DA_Requete ,  RecordType.Id ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF03_DateChngAppel5</fullName>
+        <actions>
+            <name>M_J_Date_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(        NOT($User.BypassWorkflow__c),              ISPICKVAL(Status,&quot;5&quot;)        )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF04_Commentaire</fullName>
+        <actions>
+            <name>PUDO_WF01_Commentaire</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>PUDO_WF02_Date_de_Modification</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Dès que le commentaire est saisi, ce workflow remplit le champ Nom_de_l_utilisateur__c avec le nom de l&#39;utilisateur.</description>
+        <formula>ISCHANGED( Commentaire__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF05_BNL_Statut_Att_Traitement</fullName>
+        <actions>
+            <name>M_J_Statut_Req_Traitement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Applicable pour INTER (BNL et HUN) : une fois l’attribution effectuée, la requête Indisponibilité ou Injoignabilité passe automatiquement en statut « En attente de traitement ».</description>
+        <formula>AND(NOT($User.BypassValidationRule__c),                NOT(CONTAINS( $Label.RT_France_Compte , Account.RecordType.Id )),               OR(CONTAINS($Label.RT_BNL_Requ_tes_IND_INJ_Ano,RecordTypeId),             CONTAINS($Label.RT_HUN_Requ_tes_IND_INJ_Ano,RecordTypeId),             CONTAINS($Label.RT_Ticket_Manager,RecordTypeId)                 ),        ISPICKVAL(Status, &quot;0&quot;),        ISCHANGED(OwnerId) ,  NOT(ISBLANK(Owner:User.Id) ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF06_BNL_Statut_Att_Attribution</fullName>
+        <actions>
+            <name>M_J_Statut_Req_Attribution</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Applicable pour BNL :  Si Requête escaladée vers une file d&#39;attente alors statut devient &quot;En attente d&#39;attribution&quot;</description>
+        <formula>AND(NOT( $User.BypassWorkflow__c ),           NOT(CONTAINS( $Label.RT_France_Compte , Account.RecordType.Id )),                  OR(CONTAINS($Label.RT_BNL_Requ_tes_IND_INJ_Ano,RecordTypeId),             CONTAINS($Label.RT_HUN_Requ_tes_IND_INJ_Ano,RecordTypeId),             CONTAINS($Label.RT_Ticket_Manager,RecordTypeId)                 ),                    NOT(ISPICKVAL(Status,&quot;0&quot;)),          ISCHANGED(OwnerId),           NOT(ISBLANK( Owner:Queue.Id)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF07_Décocher NRP BNL</fullName>
+        <active>true</active>
+        <description>Décoche la case NRP après 2 heures, applicable pour BNL.</description>
+        <formula>AND  (NOT( $User.BypassWorkflow__c ),  NOT(CONTAINS($Label.RT_Consigne_Compte ,Account.RecordType.Id )), OR(     CONTAINS( $Label.RT_INT_Compte ,Account.RecordType.Id),      CONTAINS(  $Label.RT_INT_Compte2 ,Account.RecordType.Id )),          Point_relais_ne_repond_pas__c = TRUE )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Decocher_NRP_BNL</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>REQ_WF08_MAJ_StatutRequeteTM</fullName>
+        <actions>
+            <name>MAJ_statut2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Si une requête dont le statut est &quot;En attente d&#39;attribution&quot; et dont le propriétaire est changé d&#39;une file d&#39;attente à un utilisateur nominatif, le statut de la requête passe automatiquement à &quot;En attente de traitement&quot;.</description>
+        <formula>AND ( !$User.BypassWorkflow__c,  ISPICKVAL(Status, &quot;0&quot;),  ISCHANGED(OwnerId), OR((RecordType.DeveloperName= &#39;TM_BNL&#39;), (RecordType.DeveloperName= &#39;TM_HUN&#39;)), NOT(ISBLANK(Owner:User.Id))  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF_09_MAJ_Objet_Req_TM</fullName>
+        <actions>
+            <name>MAJ_Objet_Requete_TM</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( NOT( $User.BypassWorkflow__c ),     CONTAINS( $Label.RT_Ticket_Manager , RecordType.Id ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF_FR_Statut_Att_Traitement</fullName>
+        <actions>
+            <name>M_j_statut_requ_te_attente_traitement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Applicable pour FR : une fois l’attribution effectuée (à soi-même ou à un autre user), la requête (tous types confondus) passe automatiquement en statut « En attente de traitement ».</description>
+        <formula>AND(NOT($User.BypassValidationRule__c),        NOT (CONTAINS(Account.RecordType.Id, $Label.RT_INT_Compte)), NOT (ISPICKVAL( Object_de_la_requete__c ,&quot;Démarrage d&#39;activité&quot;)), NOT (ISPICKVAL(Status, &quot;11&quot;)), NOT (ISPICKVAL(Status, &quot;Terminée&quot;)), ISCHANGED(OwnerId) , NOT(ISBLANK(Owner:User.Id)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF_FR_files_but_webhelp</fullName>
+        <actions>
+            <name>M_j_statut_requ_te_attente_attribution</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Si une requête (tout type sauf DA) escaladée vers une file d&#39;attente (toutes sauf Webhelp) alors statut devient &quot;En attente d&#39;attribution&quot;</description>
+        <formula>AND(  NOT( $User.BypassWorkflow__c ),  NOT(CONTAINS( Owner:Queue.QueueName , &quot;WebHelp&quot;)),  NOT (CONTAINS(Account.RecordType.Id, $Label.RT_INT_Compte)),  NOT (CONTAINS(RecordType.DeveloperName,&quot;PUS_FR_Demarrage_Activite &quot;)))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>REQ_WF_FR_statut_webhelp</fullName>
+        <actions>
+            <name>M_j_statut_attente_traitement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Si une requête (tout type sauf DA) escaladée vers la file d&#39;attente Webhelp alors statut devient &quot;En attente de traitement&quot;</description>
+        <formula>AND( NOT( $User.BypassWorkflow__c ),  (CONTAINS( Owner:Queue.QueueName , &quot;WebHelp&quot;)), NOT (CONTAINS(Account.RecordType.Id, $Label.RT_INT_Compte)), NOT (CONTAINS(RecordType.DeveloperName,&quot;PUS_FR_Demarrage_Activite &quot;)))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Demarrage_d_activit_Demande_de_sortie_en_cours</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normale</priority>
+        <protected>false</protected>
+        <status>Traité</status>
+        <subject>Démarrage d&#39;activité - Demande de sortie en cours</subject>
+    </tasks>
+</Workflow>

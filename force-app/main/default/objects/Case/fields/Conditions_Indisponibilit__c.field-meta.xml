@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conditions_Indisponibilit__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND
+
+           (Injoignabilite_en_cours_TECH__c=false,
+            Etat_Pudo__c&lt;&gt;&quot;7&quot;,
+            Etat_Pudo__c&lt;&gt;&quot;8&quot;,
+            Etat_Pudo__c&lt;&gt;&quot;9&quot;,
+
+            OR(ISBLANK(Date_de_rappel_planifiee__c),
+                 Date_de_rappel_planifiee__c&lt;=Today()),
+
+           
+            OR(
+               AND(RecordType.DeveloperName=&quot;DPD_BNL_Indisponibilite&quot;,
+                         Date_fin_Indispo_ChTech__c=true),
+               AND(RecordType.DeveloperName=&quot;DPD_HUN_Indisponibilit&quot;,
+                         Date_fin_Indispo_ChTech__c=true),
+            
+        RecordType.DeveloperName=&quot;DPD_BNL_Indisponibilit_PDA&quot;,
+        RecordType.DeveloperName=&quot;DPD_HUN_Indisponibilit_PDA&quot;
+        
+        )),
+           
+            
+            
+         
+                 
+                 true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Conditions Indisponibilité</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

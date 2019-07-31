@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR48_DimancheHoraire</fullName>
+    <active>true</active>
+    <description>Les cases &quot;Dimanche&quot; et &quot;Dimanche fermé&quot; ne peuvent pas être cochées simultanément.</description>
+    <errorConditionFormula>AND(
+Not($User.BypassValidationRule__c),
+ Dimanche__c = true,
+ Dimanche_ferme__c = true
+
+)</errorConditionFormula>
+    <errorDisplayField>Dimanche_ferme__c</errorDisplayField>
+    <errorMessage>Les cases &quot;Dimanche&quot; et &quot;Dimanche fermé&quot; ne peuvent pas être cochées simultanément.</errorMessage>
+</ValidationRule>

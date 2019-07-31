@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_cause_devoye__c</fullName>
+    <externalId>false</externalId>
+    <label>Nom de la cause du dévoyé</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Cause_Devoye__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Relais fermé pendant ses heures d’ouverture</fullName>
+                <default>false</default>
+                <label>Relais fermé pendant ses heures d’ouverture</label>
+            </value>
+            <value>
+                <fullName>Relais refuse les colis</fullName>
+                <default>false</default>
+                <label>Relais refuse les colis</label>
+            </value>
+            <value>
+                <fullName>Relais n’a pas déclaré ses congés en temps et en heure</fullName>
+                <default>false</default>
+                <label>Relais n’a pas déclaré ses congés en temps et en heure</label>
+            </value>
+            <value>
+                <fullName>Non prévisible (sinistre, cambriolage…)</fullName>
+                <default>false</default>
+                <label>Non prévisible (sinistre, cambriolage…)</label>
+            </value>
+            <value>
+                <fullName>Passage transporteur en dehors des heures d’ouverture</fullName>
+                <default>false</default>
+                <label>Passage transporteur en dehors des heures d’ouverture</label>
+            </value>
+            <value>
+                <fullName>Passage transporteur en dehors des heures d’ouverture / qualif refus</fullName>
+                <default>false</default>
+                <label>Passage transporteur en dehors des heures d’ouverture / qualif refus</label>
+            </value>
+            <value>
+                <fullName>Impossibilité de livrer (marché, travaux…)</fullName>
+                <default>false</default>
+                <label>Impossibilité de livrer (marché, travaux…)</label>
+            </value>
+            <value>
+                <fullName>Relais en congés</fullName>
+                <default>false</default>
+                <label>Relais en congés</label>
+            </value>
+            <value>
+                <fullName>Relais en congés et refuse les colis</fullName>
+                <default>false</default>
+                <label>Relais en congés et refuse les colis</label>
+            </value>
+            <value>
+                <fullName>Colis retourné en agence</fullName>
+                <default>false</default>
+                <label>Colis retourné en agence</label>
+            </value>
+            <value>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+                <label>Panne PDA</label>
+            </value>
+            <value>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+                <label>Surcharge</label>
+            </value>
+            <value>
+                <fullName>Mise en indisponibilité</fullName>
+                <default>false</default>
+                <label>Mise en indisponibilité</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cause relais</controllingFieldValue>
+            <valueName>Relais fermé pendant ses heures d’ouverture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause relais</controllingFieldValue>
+            <valueName>Relais refuse les colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause relais</controllingFieldValue>
+            <valueName>Relais n’a pas déclaré ses congés en temps et en heure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause relais</controllingFieldValue>
+            <valueName>Non prévisible (sinistre, cambriolage…)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause transporteur</controllingFieldValue>
+            <valueName>Passage transporteur en dehors des heures d’ouverture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause transporteur</controllingFieldValue>
+            <valueName>Passage transporteur en dehors des heures d’ouverture / qualif refus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause transporteur</controllingFieldValue>
+            <valueName>Impossibilité de livrer (marché, travaux…)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause mixte</controllingFieldValue>
+            <valueName>Relais en congés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause mixte</controllingFieldValue>
+            <valueName>Relais en congés et refuse les colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause mixte</controllingFieldValue>
+            <valueName>Colis retourné en agence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause DDR</controllingFieldValue>
+            <valueName>Panne PDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause DDR</controllingFieldValue>
+            <valueName>Surcharge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause DDR</controllingFieldValue>
+            <valueName>Mise en indisponibilité</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

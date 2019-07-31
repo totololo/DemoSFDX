@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Horaires_du_jour__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Tech_Number_Opening_Hour__c=-1,&quot;&quot;,
+IF(FLOOR(Tech_Number_Opening_Hour__c / 60)&lt;10,&quot;0&quot;,&quot;&quot;)&amp;
+TEXT(FLOOR(Tech_Number_Opening_Hour__c / 60))
+&amp;&#39;:&#39;&amp; 
+IF(MOD(Tech_Number_Opening_Hour__c, 60)&lt;10,&quot;0&quot;,&quot;&quot;)&amp;
+TEXT(MOD(Tech_Number_Opening_Hour__c,60))
+&amp;
+IF(Tech_Number_Start_Lunch_Hour__c=-1,&quot;&quot;,
+&#39; - &#39;&amp;
+IF(FLOOR(Tech_Number_Start_Lunch_Hour__c / 60)&lt;10,&quot;0&quot;,&quot;&quot;)&amp;
+TEXT(FLOOR( Tech_Number_Start_Lunch_Hour__c  / 60))
+&amp;&#39;:&#39;&amp; 
+IF(MOD(Tech_Number_Start_Lunch_Hour__c, 60)&lt;10,&quot;0&quot;,&quot;&quot;)&amp;
+TEXT(MOD(Tech_Number_Start_Lunch_Hour__c,60)))
+&amp;&#39; / &#39;
+&amp;
+IF(Tech_Number_End_Lunch_Hour__c=-1,&quot;&quot;,
+IF(FLOOR(Tech_Number_End_Lunch_Hour__c / 60)&lt;10,&quot;0&quot;,&quot;&quot;)&amp;
+TEXT(FLOOR( Tech_Number_End_Lunch_Hour__c  / 60))
+&amp;&#39;:&#39;&amp; 
+IF(MOD(Tech_Number_End_Lunch_Hour__c, 60)&lt;10,&quot;0&quot;,&quot;&quot;)&amp;
+TEXT(MOD(Tech_Number_End_Lunch_Hour__c,60))
+&amp;&#39; - &#39;)&amp;
+IF(FLOOR(Tech_Number_Closing_Hour__c / 60)&lt;10,&quot;0&quot;,&quot;&quot;)&amp;
+TEXT(FLOOR(Tech_Number_Closing_Hour__c / 60))
+&amp;&#39;:&#39;&amp;
+IF(MOD(Tech_Number_Closing_Hour__c, 60)&lt;10,&quot;0&quot;,&quot;&quot;)&amp; 
+TEXT(MOD(Tech_Number_Closing_Hour__c,60)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Horaires du jour</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

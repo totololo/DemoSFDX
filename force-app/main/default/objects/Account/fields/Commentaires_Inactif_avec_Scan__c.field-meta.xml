@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commentaires_Inactif_avec_Scan__c</fullName>
+    <description>Champ utilisé en vue de liste pour les campagnes ponctuelles</description>
+    <externalId>false</externalId>
+    <label>Commentaires Inactif avec Scan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

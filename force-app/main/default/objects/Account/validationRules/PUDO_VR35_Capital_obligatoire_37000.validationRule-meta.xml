@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR35_Capital_obligatoire_37000</fullName>
+    <active>true</active>
+    <description>Le champ capital devient obligatoire pour certaines formes juridiques</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, NOT ISBLANK(TEXT(  Ownership )),
+ OR(ISBLANK(Capital_EUR__c), Capital_EUR__c &lt; 37000) ,
+
+ OR( ISPICKVAL(Ownership , &quot;160&quot; ),
+ISPICKVAL(Ownership , &quot;-1&quot; ))
+
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Capital_EUR__c</errorDisplayField>
+    <errorMessage>Le champ capital doit obligatoirement être supérieur à 37.000 euros pour la forme juridique que vous avez choisit.</errorMessage>
+</ValidationRule>

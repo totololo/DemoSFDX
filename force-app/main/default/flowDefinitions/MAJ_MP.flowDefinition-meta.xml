@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>9</activeVersionNumber>
+    <description>Ce Flow déclenché par un Process Builder : en fonction de l&#39;état du Pudo, les Macroprofils actuel et de référence sont mis à jour.</description>
+    <masterLabel>PUDO_Flux01_MAJ_MP</masterLabel>
+</FlowDefinition>

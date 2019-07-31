@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR88_Rue_Adresse_Facturation</fullName>
+    <active>true</active>
+    <description>Ne pas dépasser 35 caractères pour la 1ère ligne, 100 caractères pour la 2ème ligne et 100 caractères pour la 3ème ligne.</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, 
+
+NOT( 
+OR 
+( 
+REGEX(Billing_Street__c, &quot;(.){0,35}&quot;), 
+REGEX(Billing_Street__c, &quot;(.){0,35}\r\n(.){0,100}&quot;), 
+REGEX(Billing_Street__c, &quot;(.){0,35}\r\n(.){0,100}\r\n(.){0,100}&quot;), 
+REGEX(Billing_Street__c, &quot;(.){0,35}&quot;), 
+REGEX(Billing_Street__c, &quot;(.){0,35}\n(.){0,100}&quot;), 
+REGEX(Billing_Street__c, &quot;(.){0,35}\n(.){0,100}\n(.){0,100}&quot;) 
+) 
+))</errorConditionFormula>
+    <errorDisplayField>Billing_Street__c</errorDisplayField>
+    <errorMessage>Merci de ne pas dépasser 35 caractères pour la 1ère ligne, 100 caractères pour la 2ème ligne et 100 caractères pour la 3ème ligne.</errorMessage>
+</ValidationRule>

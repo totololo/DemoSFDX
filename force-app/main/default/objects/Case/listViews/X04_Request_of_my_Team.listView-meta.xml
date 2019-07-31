@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X04_Request_of_my_Team</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Object_de_la_requete__c</columns>
+    <columns>CASES.REASON</columns>
+    <columns>Sous_motif_1__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Team</filterScope>
+    <label>04 - Request of my Team</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>DPD_HUN_External_Team</group>
+        <group>DPD_HUN_Finance_Team</group>
+        <group>DPD_HUN_Manager</group>
+    </sharedTo>
+</ListView>

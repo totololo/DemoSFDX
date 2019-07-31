@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_d_ineligibilite__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif d’inéligibilité </label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Commerce_eligible__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stockage insuffisant</fullName>
+                <default>false</default>
+                <label>Stockage insuffisant</label>
+            </value>
+            <value>
+                <fullName>Moins de 35h</fullName>
+                <default>false</default>
+                <label>Moins de 35h</label>
+            </value>
+            <value>
+                <fullName>Secteur d’activité</fullName>
+                <default>false</default>
+                <label>Secteur d’activité</label>
+            </value>
+            <value>
+                <fullName>Chaîne</fullName>
+                <default>false</default>
+                <label>Chaîne</label>
+            </value>
+            <value>
+                <fullName>Commerce saisonnier</fullName>
+                <default>false</default>
+                <label>Commerce saisonnier</label>
+            </value>
+            <value>
+                <fullName>Fermeture en semaine</fullName>
+                <default>false</default>
+                <label>Fermeture en semaine</label>
+            </value>
+            <value>
+                <fullName>Fermeture le samedi</fullName>
+                <default>false</default>
+                <label>Fermeture le samedi</label>
+            </value>
+            <value>
+                <fullName>Non francophone</fullName>
+                <default>false</default>
+                <label>Non francophone</label>
+            </value>
+            <value>
+                <fullName>Pas de réseau</fullName>
+                <default>false</default>
+                <label>Pas de réseau</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Stockage insuffisant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Moins de 35h</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Secteur d’activité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Chaîne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Commerce saisonnier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Fermeture en semaine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Fermeture le samedi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Non francophone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Pas de réseau</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

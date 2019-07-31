@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consulter_liste_colis__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://&quot;&amp;$Label.Consulter_la_liste_des_colis&amp;&quot;/#/parcel?pudoId=&quot;+Reference__c, $Label.Click_Here )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Consulter la liste des colis</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

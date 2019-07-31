@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR82_PS_PartenaireObligatoire</fullName>
+    <active>true</active>
+    <description>Le Champ &quot;Partenaire&quot; est obligatoire si le Type de point = Partenaire (depuis la phase de prospection pour le Point supervisé)</description>
+    <errorConditionFormula>AND( 
+!$User.BypassValidationRule__c,
+ISPICKVAL(Type , &quot;3&quot;), 
+ISBLANK(TEXT(Partenaire__c)), 
+ 
+
+OR( 
+ispickval( Etat__c ,&quot;2&quot;), 
+ispickval( Etat__c ,&quot;4&quot;), 
+ispickval( Etat__c ,&quot;5&quot;), 
+ispickval( Etat__c ,&quot;6&quot;), 
+ispickval( Etat__c ,&quot;7&quot;), 
+ispickval( Etat__c ,&quot;9&quot;) 
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Partenaire__c</errorDisplayField>
+    <errorMessage>Le Champ &quot;Partenaire&quot; est obligatoire si le Type de point = Partenaire</errorMessage>
+</ValidationRule>

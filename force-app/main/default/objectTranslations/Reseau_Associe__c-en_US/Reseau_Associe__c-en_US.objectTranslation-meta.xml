@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Associated Network</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Associated Networks</value>
+    </caseValues>
+    <nameFieldLabel>Associated Network ID</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

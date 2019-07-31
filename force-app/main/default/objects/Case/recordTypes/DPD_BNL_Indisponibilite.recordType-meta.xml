@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DPD_BNL_Indisponibilite</fullName>
+    <active>true</active>
+    <businessProcess>DPD_BNL_Indisponibilite_PO</businessProcess>
+    <compactLayoutAssignment>En_tete_Requetes_Campagnes_BNL</compactLayoutAssignment>
+    <label>DPD_BNL_Indisponibilité</label>
+    <picklistValues>
+        <picklist>Canal_du_contact__c</picklist>
+        <values>
+            <fullName>Appel</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selfcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite terrain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cause_Devoye__c</picklist>
+        <values>
+            <fullName>Cause DDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause mixte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause relais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause transporteur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nom_cause_devoye__c</picklist>
+        <values>
+            <fullName>Colis retourné en agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impossibilité de livrer %28marché%2C travaux%E2%80%A6%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise en indisponibilité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non prévisible %28sinistre%2C cambriolage%E2%80%A6%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passage transporteur en dehors des heures d%E2%80%99ouverture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passage transporteur en dehors des heures d%E2%80%99ouverture %2F qualif refus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais en congés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais en congés et refuse les colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais fermé pendant ses heures d%E2%80%99ouverture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais n%E2%80%99a pas déclaré ses congés en temps et en heure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais refuse les colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surcharge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Object_de_la_requete__c</picklist>
+        <values>
+            <fullName>Anomalie de synchronisation d%E2%80%99un relais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité Problème PDA %2F Panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité Problème PDA %2F Problème de synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité Problème opérationnel Qualité de Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité Problème opérationnel Sinistre %2F Travaux %2F Santé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel - Injoignabilité</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Demarrage d%27activité</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Enquête de satisfaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resilisation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qualification__c</picklist>
+        <values>
+            <fullName>Autres %28avec champ libre%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Démarrage d%27activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dévoyés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquête de bienvenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquête de satisfaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité S%2FT%2FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité qualité de service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Menaces de résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surcharge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Indisponibilité problème PDA - Panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA - Problème de synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel - Sinistre%2F Travaux%2FSanté avec date de fin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel - Sinistre%2FTravaux%2FSanté sans date de fin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable - Indisponibilité problème PDA %2F panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable - Indisponibilité problème PDA %2F problème synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable - Indisponibilité problème opérationnel Sinistre%2Ftravaux%2FSanté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable- Indisponibilité problème opérationnel anomalie colis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sens_du_contact__c</picklist>
+        <values>
+            <fullName>Entrant</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Sortant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_motif_1__c</picklist>
+        <values>
+            <fullName>Actions à réaliser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anomalie colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement de coordonnees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colis volumineux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecte Transporteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commandes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comportement du point relais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congé et disponibilité du point relais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contre-remboursement %28COD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande d%27enlèvement colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de retour colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépôt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dévoyés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Echange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horaires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indemnisation colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informations colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventaire colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventaire colis non réalisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livraison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Menace de résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification seuil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notification destinataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème d%27avisage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de suggestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème relationnel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Préparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recherche colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus d%27activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service après-vente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shop Ident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surcharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert de responsabilité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporteur%2FService%2FRéseau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>État du colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Événement grave</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_motif_2__c</picklist>
+        <values>
+            <fullName>Absence de collecte avant Fin d%27activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence de collecte avant congés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence de livraison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Absence de scan de réception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adhésion à un réseau concurrent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agression</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alerte surcharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annonce de congés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annonce de disponibilité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avant formation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambriolage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capacité de stockage insuffisant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement d%27horaires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changement propriété facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chargeur concurrent à mon activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Code barres colis non reconnu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colis a préparer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colis retour non remis au transporteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colis réceptionné inconnu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colis à réceptionner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congés%2Ffermeture non annoncés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contestation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrat non conforme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Création %2FRéinitialisation mot de passe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande d%27ajout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de duplicata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de suspension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Destinataire seul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disponibilité %28horaires %2F jours %2F congés%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépôt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépôt Chrono relais a relais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépôt DPL %28Digital parcel label%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépôt standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecart sur le nombre de colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecran abime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecran cassé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement financier de la responsabilité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquête judiciaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etiquette illisible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etiquettes DPL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facturation matériel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flux colis insuffisant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flux trop faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fournitures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identité destinataire différente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le matériel est lent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le matériel ne s%27allume pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le matériel ne synchronise pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le matériel se décharge rapidement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le matériel sort de l%27application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidation judiciaire %2F fin d%E2%80%99activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livraison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livraison en dehors des horaires d%27ouverture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matérielle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modifications dans l%E2%80%99organisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non respect des horaires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opérationnelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDA devoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de première livraison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plainte Destinataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plainte Transporteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prestations %2F procédures trop complexes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prestations PUS mal réalisées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preuve de livraison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème QS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème avec le support téléphonique réseau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème avec le transporteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème d%27affichage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de PDA %28lent%2C pas de signal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de son</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème scanner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus d%27activité partielle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus d%27activité totale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus d%E2%80%99activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus partiel de collecte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus total de collecte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais %2F Actions à réaliser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais %2F Inventaire colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais avec le destinataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relivraison d%27un colis enlevé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrait avec Pickup Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrait avec PinCode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrait standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saturation du relais %28nombre de colis%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saturation du relais %28taille de colis%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seuil contractuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seuil temporaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinistre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert de responsabilité réception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vente de commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vol %2F Refus d%E2%80%99indemnisation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_type_indisponibilit__c</picklist>
+        <values>
+            <fullName>Injoignabilité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème de synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualité de service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Traite__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA - Panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA - Problème de synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel - Sinistre%2F Travaux%2FSanté avec date de fin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel - Sinistre%2FTravaux%2FSanté sans date de fin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable - Indisponibilité problème PDA %2F panne PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable - Indisponibilité problème PDA %2F problème synchronisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable - Indisponibilité problème opérationnel Sinistre%2Ftravaux%2FSanté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable- Indisponibilité problème opérationnel anomalie colis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_d_indisponibilit__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème opérationnel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR90_Non_Sup_Resp</fullName>
+    <active>true</active>
+    <description>Pour un PUDO non supervisé en état 5, il faut obligatoirement renseigner un responsable magasin.</description>
+    <errorConditionFormula>Not($User.BypassValidationRule__c)  &amp;&amp; 
+RecordType.Name  = &quot;PUS_FR_Point_non_Suivi_par_le_CO&quot;  &amp;&amp;   
+NOT(ISBLANK( Date_de_la_formation_reelle__c ))  &amp;&amp;
+ISBLANK( Nom_Responsable_magasin__c)</errorConditionFormula>
+    <errorDisplayField>Nom_Responsable_magasin__c</errorDisplayField>
+    <errorMessage>Veuillez renseigner un responsable magasin via la liste associée Contact.</errorMessage>
+</ValidationRule>

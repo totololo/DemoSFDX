@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I06_PUDO_valdated_with_status_9</fullName>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS2_COUNTRY_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>9</value>
+    </filters>
+    <label>I06 - PUDO validated with status 9</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>TECH_VL_I06_PUDO_validated_w_status_9</group>
+    </sharedTo>
+</ListView>

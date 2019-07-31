@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Alert_PUDO_EtatDifferent</fullName>
+    <active>true</active>
+    <description>Pudo n&#39;est pas en activité</description>
+    <errorConditionFormula>AND(NOT($User.BypassValidationRule__c),OR((ISPICKVAL(pudo__r.Etat__c, &#39;0&#39;)),(ISPICKVAL(pudo__r.Etat__c, &#39;1&#39;)),(ISPICKVAL(pudo__r.Etat__c, &#39;2&#39;)),(ISPICKVAL(pudo__r.Etat__c, &#39;7&#39;)),(ISPICKVAL(pudo__r.Etat__c, &#39;8&#39;)),
+(ISPICKVAL(pudo__r.Etat__c, &#39;9&#39;)))
+)</errorConditionFormula>
+    <errorMessage>Ce point n&#39;est ni en Etat 4, 5 ou 6</errorMessage>
+</ValidationRule>

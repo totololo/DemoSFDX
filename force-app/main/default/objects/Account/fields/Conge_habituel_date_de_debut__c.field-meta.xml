@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conge_habituel_date_de_debut__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Veuillez saisir la date sous format &quot;JJ/MM&quot;.</inlineHelpText>
+    <label>Congé habituel - date de début</label>
+    <length>5</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activite_commerciale_eligible__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+OR(
+ispickval (Activite_commerciale_principale__c ,&quot;23&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;31&quot;),  
+ispickval (Activite_commerciale_principale__c ,&quot;36&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;42&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;49&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;67&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;73&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;76&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;87&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;91&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;66&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;81&quot;),
+ispickval (Activite_commerciale_principale__c ,&quot;3342&quot;),
+ispickval (Industry,&quot;2&quot;)
+),
+       IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Red&quot;),
+       IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;Green&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Activité commerciale éligible</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

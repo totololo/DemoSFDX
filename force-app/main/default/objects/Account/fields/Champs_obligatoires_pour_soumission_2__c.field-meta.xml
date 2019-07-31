@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Champs_obligatoires_pour_soumission_2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(CONTAINS( $Label.RT_France_Compte , RecordType.Id )),IF(ISBLANK(Macroprofil_actuel__c ),$Label.Macroprofil_actuel,&quot;&quot;)
+&amp;IF(ISBLANK( Titulaire_du_compte__c ),$Label.TitulaireDuCompte,&quot;&quot;)
+&amp;IF(ISBLANK( TEXT( Date_de_visite__c )),$Label.DateDeVisite,&quot;&quot;),&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT(Type_de_parking__c )),$Label.TypeDeParking,&quot;&quot;) 
+&amp;IF(CONTAINS( $Label.RT_France_Compte , RecordType.Id), 
+IF(Passage_par_fiabilisation_effectuee__c =false, $Label.AdresseFiabiliser , &quot;&quot;)
+&amp;IF(ISBLANK( N_SIREN__c ),$Label.NbDeSiren,&quot;&quot;)
+&amp;IF(ISBLANK( Ville_RCS__c ),$Label.VilleRCS,&quot;&quot;)  , &quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Ownership )),$Label.FormeJuridique,&quot;&quot;) 
+&amp;IF(ISBLANK( Hauteur_cm__c ),$Label.Hauteur,&quot;&quot;) 
+&amp;IF(ISBLANK( Largeur_cm__c ),$Label.Largeur,&quot;&quot;) 
+&amp;IF(ISBLANK( Profondeur_cm__c ),$Label.Profondeur,&quot;&quot;) 
+&amp;IF(ISBLANK( Zone_dimplantation__c ),$Label.ZoneImplantation,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Volume_maximal_accepte__c )),$Label.VolumeMaximal,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Poids_maximal_accepte_par_colis__c )),$Label.PoidsMaximal,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Horaire_Ouverture_Reference__c )),$Label.HoraireReferenceOuverture,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Horaire_Fermeture_Reference__c )),$Label.HoraireReferenceFermeture,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Debut_pause_dejeuner__c )),$Label.DebutPauseDejeuner,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT( Fin_pause_dejeuner__c )),$Label.FinPauseDejeuner,&quot;&quot;) 
+&amp;IF(ISBLANK(NumberOfEmployees),$Label.NbEmployes,&quot;&quot;) 
+&amp;IF(ISBLANK(Nom_Responsable_magasin__c),$Label.ResponsableMagasin,&quot;&quot;) 
+&amp;IF(ISBLANK(IBAN__c),$Label.IBAN,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT(Type_acces_Internet__c)),$Label.TypeAccesInternet,&quot;&quot;) 
+&amp;IF(ISBLANK(TEXT(Assujetti_la_TVA__c)),$Label.AssujettiTVA,&quot;&quot;) 
+&amp;IF( 
+
+AND( 
+ISPICKVAL(Assujetti_la_TVA__c, &quot;Oui&quot;), 
+ISBLANK( N_TVA__c ) 
+) ,$Label.NumeroTVA,&quot;&quot;)</formula>
+    <inlineHelpText>Liste des champs à remplir avant de soumettre le prospect pour approbation</inlineHelpText>
+    <label>Champs obligatoires pour soumission (2)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

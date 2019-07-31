@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DisponibiliteFormule__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(
+ IF(
+    AND(
+          LEN(TEXT(Tech_date_debut_conge_en_cours__c)) = 0,
+          Tech_Number_Now__c &gt; Tech_Number_Opening_Hour__c, 
+          Tech_Number_Now__c &lt; Tech_Number_Closing_Hour__c,
+          NOT( AND(Tech_Number_Now__c &gt; Tech_Number_Start_Lunch_Hour__c ,Tech_Number_Now__c &lt; Tech_Number_End_Lunch_Hour__c)
+    )  
+   
+    ) ,&quot;/img/samples/flag_green.gif&quot; , &quot;/img/samples/flag_red.gif&quot;),&quot;Disponibilité&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Disponibilité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR04_VisiteOui_interesse_oblig</fullName>
+    <active>true</active>
+    <description>Si &quot;Commerce visité&quot; égal à oui, alors &quot;Intéressé&quot; obligatoire.</description>
+    <errorConditionFormula>AND
+(NOT( $User.BypassValidationRule__c ),
+IsConverted = false ,
+ISPICKVAL(  Status  , &quot;Oui&quot;),
+
+ISPICKVAL(   Interesse__c   ,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Interesse__c</errorDisplayField>
+    <errorMessage>Si Commerce visité égal Oui, veuillez remplir le champ
+&quot;Intéressé&quot;.</errorMessage>
+</ValidationRule>

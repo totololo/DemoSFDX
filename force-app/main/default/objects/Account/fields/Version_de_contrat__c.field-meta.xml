@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Version_de_contrat__c</fullName>
+    <externalId>false</externalId>
+    <label>Version de contrat</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>V0412</fullName>
+                <default>false</default>
+                <label>V0412</label>
+            </value>
+            <value>
+                <fullName>V0214</fullName>
+                <default>false</default>
+                <label>V0214</label>
+            </value>
+            <value>
+                <fullName>V0615</fullName>
+                <default>false</default>
+                <label>V0615</label>
+            </value>
+            <value>
+                <fullName>V0815</fullName>
+                <default>false</default>
+                <label>V0815</label>
+            </value>
+            <value>
+                <fullName>V0915</fullName>
+                <default>false</default>
+                <label>V0915</label>
+            </value>
+            <value>
+                <fullName>V0116</fullName>
+                <default>false</default>
+                <label>V0116</label>
+            </value>
+            <value>
+                <fullName>V0616</fullName>
+                <default>false</default>
+                <label>V0616</label>
+            </value>
+            <value>
+                <fullName>CCCasino</fullName>
+                <default>false</default>
+                <label>CCCasino</label>
+            </value>
+            <value>
+                <fullName>V1116</fullName>
+                <default>false</default>
+                <label>V1116</label>
+            </value>
+            <value>
+                <fullName>CCPSMREM</fullName>
+                <default>false</default>
+                <label>CCPSMREM</label>
+            </value>
+            <value>
+                <fullName>CCPSMsansREM</fullName>
+                <default>false</default>
+                <label>CCPSMsansREM</label>
+            </value>
+            <value>
+                <fullName>CCSystemeU</fullName>
+                <default>false</default>
+                <label>CCSystemeU</label>
+            </value>
+            <value>
+                <fullName>CCMrBricolage</fullName>
+                <default>false</default>
+                <label>CCMrBricolage</label>
+            </value>
+            <value>
+                <fullName>CCUnibail</fullName>
+                <default>false</default>
+                <label>CCUnibail</label>
+            </value>
+            <value>
+                <fullName>CCAviaThevenin</fullName>
+                <default>false</default>
+                <label>CCAviaThevenin</label>
+            </value>
+            <value>
+                <fullName>CARREFOURFRANCHISE-V1117</fullName>
+                <default>false</default>
+                <label>CARREFOURFRANCHISE-V1117</label>
+            </value>
+            <value>
+                <fullName>Sans contrat</fullName>
+                <default>false</default>
+                <label>Sans contrat</label>
+            </value>
+            <value>
+                <fullName>DPS Contract BE FR</fullName>
+                <default>false</default>
+                <label>DPS Contract BE FR</label>
+            </value>
+            <value>
+                <fullName>DPS Contract BE NL</fullName>
+                <default>false</default>
+                <label>DPS Contract BE NL</label>
+            </value>
+            <value>
+                <fullName>DPS Contract NLD NL</fullName>
+                <default>false</default>
+                <label>DPS Contract NLD NL</label>
+            </value>
+            <value>
+                <fullName>DPS Contract LUX DE</fullName>
+                <default>false</default>
+                <label>DPS Contract LUX DE</label>
+            </value>
+            <value>
+                <fullName>DPS Contract LUX FR</fullName>
+                <default>false</default>
+                <label>DPS Contract LUX FR</label>
+            </value>
+            <value>
+                <fullName>Contract HU</fullName>
+                <default>false</default>
+                <label>Contract HU</label>
+            </value>
+            <value>
+                <fullName>Contrat Pickup - FR</fullName>
+                <default>false</default>
+                <label>Contrat Pickup - FR</label>
+            </value>
+            <value>
+                <fullName>Pickup Vertrag - DE</fullName>
+                <default>false</default>
+                <label>Pickup Vertrag - DE</label>
+            </value>
+            <value>
+                <fullName>Contratto Pickup - IT</fullName>
+                <default>false</default>
+                <label>Contratto Pickup - IT</label>
+            </value>
+            <value>
+                <fullName>Pickup Contract - CZ</fullName>
+                <default>false</default>
+                <label>Pickup Contract - CZ</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>22</controllingFieldValue>
+            <controllingFieldValue>23</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Pickup Contract - CZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>-3</controllingFieldValue>
+            <valueName>V1116</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>V0412</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>V0214</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>V0615</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>V0815</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>V0915</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>V0116</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>V0616</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>DPS Contract BE FR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>DPS Contract BE NL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>DPS Contract NLD NL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>DPS Contract LUX DE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>DPS Contract LUX FR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Contract HU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Contrat Pickup - FR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Pickup Vertrag - DE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Contratto Pickup - IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>CCCasino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>CCPSMREM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>CCPSMsansREM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>CCSystemeU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>CCMrBricolage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>CCUnibail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>CCAviaThevenin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>CARREFOURFRANCHISE-V1117</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Sans contrat</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

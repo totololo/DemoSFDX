@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR90_Code_Postal_facturation</fullName>
+    <active>true</active>
+    <description>Oblige à mettre 5 chiffres pour le code postal de facturation.</description>
+    <errorConditionFormula>AND(NOT($User.BypassValidationRule__c),
+       OR(RecordType.DeveloperName = &#39;PUS_FR_Prospect_Converti&#39;,RecordType.DeveloperName = &#39;PUS_FR_Prospect_A_Valider&#39;,RecordType.DeveloperName = &#39;PUS_FR_PUDO_Suivi_CO&#39;),
+    OR(
+         NOT( REGEX( Billing_Zip_Postal_Code__c, &quot;[0-9]{5}&quot;)),
+            LEN( Billing_Zip_Postal_Code__c) !=5 ),
+                 TEXT(Billing_Country__c) =&#39;France&#39; 
+
+       
+)</errorConditionFormula>
+    <errorDisplayField>Billing_Zip_Postal_Code__c</errorDisplayField>
+    <errorMessage>Veuillez remplir les codes postaux français avec 5 chiffres.</errorMessage>
+</ValidationRule>

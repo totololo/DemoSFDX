@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>-3</masterLabel>
+        <translation><!-- -3 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2</masterLabel>
+        <translation>Telefonvermittlung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>20</masterLabel>
+        <translation>Lager</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>21</masterLabel>
+        <translation><!-- 21 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>22</masterLabel>
+        <translation>Zweigstelle</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3</masterLabel>
+        <translation>Partner</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

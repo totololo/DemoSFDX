@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualification__c</fullName>
+    <externalId>false</externalId>
+    <label>Qualification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Démarrage d&#39;activité</fullName>
+                <default>false</default>
+                <label>Démarrage d&#39;activité</label>
+            </value>
+            <value>
+                <fullName>Indisponibilité S/T/S</fullName>
+                <default>false</default>
+                <label>Indisponibilité S/T/S</label>
+            </value>
+            <value>
+                <fullName>Indisponibilité problème PDA</fullName>
+                <default>false</default>
+                <label>Indisponibilité problème PDA</label>
+            </value>
+            <value>
+                <fullName>Indisponibilité qualité de service</fullName>
+                <default>false</default>
+                <label>Indisponibilité qualité de service</label>
+            </value>
+            <value>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+                <label>Surcharge</label>
+            </value>
+            <value>
+                <fullName>Dévoyés</fullName>
+                <default>false</default>
+                <label>Dévoyés</label>
+            </value>
+            <value>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+                <label>Résiliation</label>
+            </value>
+            <value>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+                <label>Exclusion</label>
+            </value>
+            <value>
+                <fullName>Menaces de résiliation</fullName>
+                <default>false</default>
+                <label>Menaces de résiliation</label>
+            </value>
+            <value>
+                <fullName>Enquête de bienvenue</fullName>
+                <default>false</default>
+                <label>Enquête de bienvenue</label>
+            </value>
+            <value>
+                <fullName>Enquête de satisfaction</fullName>
+                <default>false</default>
+                <label>Enquête de satisfaction</label>
+            </value>
+            <value>
+                <fullName>Autres (avec champ libre)</fullName>
+                <default>false</default>
+                <label>Autres (avec champ libre)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

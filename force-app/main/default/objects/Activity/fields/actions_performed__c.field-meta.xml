@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>actions_performed__c</fullName>
+    <externalId>false</externalId>
+    <label>Actions performed</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Modification seuil contractuel</fullName>
+                <default>false</default>
+                <label>Modification seuil contractuel</label>
+            </value>
+            <value>
+                <fullName>Mise en place d’un seuil temporaire</fullName>
+                <default>false</default>
+                <label>Mise en place d’un seuil temporaire</label>
+            </value>
+            <value>
+                <fullName>Activation reroutage</fullName>
+                <default>false</default>
+                <label>Activation reroutage</label>
+            </value>
+            <value>
+                <fullName>Demande de dissociation</fullName>
+                <default>false</default>
+                <label>Demande de dissociation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

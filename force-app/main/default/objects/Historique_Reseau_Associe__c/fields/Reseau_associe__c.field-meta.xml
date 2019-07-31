@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reseau_associe__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Réseau associé</label>
+    <referenceTo>Reseau_Associe__c</referenceTo>
+    <relationshipLabel>Historique des réseaux</relationshipLabel>
+    <relationshipName>Historiques_des_reseaux</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONG_VR_07_Type_NonModifiable_Apresdebut</fullName>
+    <active>true</active>
+    <description>Pour tous les types de point sauf les consignes, il est impossible de modifier le type d’une indisponibilité (problème opérationnel, problème PDA) après son début.</description>
+    <errorConditionFormula>AND( 
+NOT($User.BypassValidationRule__c) , 
+NOT ISCHANGED(Tech_Treated__c), 
+CONTAINS($Label.CongInd_RT_IndispoStandard_ALL,RecordTypeId),
+NOT(ISPICKVAL( Type_d_indisponibilite__c ,&quot;4&quot;)), 
+
+Date_de_debut__c &lt;= TODAY() , 
+ISCHANGED( Type_d_indisponibilite__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Type_d_indisponibilite__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas modifier ce type d&#39;indisponibilité après son début.</errorMessage>
+</ValidationRule>

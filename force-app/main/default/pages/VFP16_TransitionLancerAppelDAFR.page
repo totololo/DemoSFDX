@@ -1,0 +1,45 @@
+<apex:page standardController="Case">
+    <apex:pageMessages />
+    <script>
+    var statusValues =";1;2;3;4;5;6;";
+    var url = '/apex/VFP03_DemarrageActiviteAppel?id='+getUrlParameter('id');
+    if(statusValues.includes(";"+getUrlParameter('status')+";"))
+    {
+        if (typeof(srcUp) == 'function') {
+            // removed for ticket 135201
+            //url += '&isdtp=vw';
+            //srcSelf(url);
+            sforce.one.navigateToURL(url,true);
+        }
+        else{
+            window.location.href = url;
+        }
+    }
+    else{
+        alert("{!$Label.DA_ErreurChoixStatut}");
+    }
+    
+    
+    function getUrlParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&')
+        for (var i = 0; i < sURLVariables.length; i++) 
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) 
+            {
+                while(sParameterName[1].includes('+') /*|| sParameterName[1].includes('%28') || sParameterName[1].includes('%29')*/)
+                {
+                    sParameterName[1] = sParameterName[1].replace("+", " "); 
+                    //sParameterName[1] = sParameterName[1].replace("%28", "(");
+                    //sParameterName[1] = sParameterName[1].replace("%29", ")");
+                    //sParameterName[1] = sParameterName[1].replace("%C3%A8", "è");
+                } 
+                
+                return sParameterName[1];
+            }
+        }
+    }
+    </script>
+</apex:page>

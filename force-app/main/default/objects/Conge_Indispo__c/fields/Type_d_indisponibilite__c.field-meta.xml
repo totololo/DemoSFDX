@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_indisponibilite__c</fullName>
+    <description>Ne pas activer l&#39;option &quot;Restreindre la liste sélectionnée aux valeurs définies dans l’ensemble de valeurs.	&quot; pour ne pas bloquer le PB qui crée automatiquement les indispos suite à des créations d&#39;anomalies.</description>
+    <externalId>false</externalId>
+    <label>Type d&#39;indisponibilité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>Planifiée</fullName>
+                <default>false</default>
+                <label>Planifiée</label>
+            </value>
+            <value>
+                <fullName>Imprévue</fullName>
+                <default>false</default>
+                <label>Imprévue</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

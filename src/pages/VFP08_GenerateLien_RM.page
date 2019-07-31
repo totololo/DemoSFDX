@@ -1,0 +1,41 @@
+<apex:page standardController="Account" LightningStyleSheets="true" extensions="VFC08_GenerateLien" action="{!sendEmailRM}">
+    <style> 
+        .labelCol {text-align: right; width:16.5%; color : #4a4a56; font-weight : bold; font-size : 91%;} 
+        .data2Col{  width: 82%; padding-bottom : 3px; padding-right : 2px;  padding-left : 15px; text-align : left; } 
+        table { width :100%;}
+        .success {color:green;}
+        .error   {color:red;}
+        span {padding-left: 2px;}
+    </style>
+    <script>
+    function GoBackToAccount(){
+        window.history.back();
+    }
+    </script> 
+    <apex:form > 
+        <apex:actionFunction name="sendEmail" action="{!sendEmailRM}"/>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                       <!-- <td class="labelCol">{!$Label.Lien_Android_Send_Email_To_Responsable_Magasin}</td>m--> 
+                        <td class="data2Col">
+                            <apex:inputHidden value="{!Account.Nom_Responsable_magasin__r.Email}"/>
+                            <apex:outputField rendered="false" value="{!Account.Identifiant_android_du_Pudo__c}"/>
+                            <apex:inputHidden value="{!Account.Reference_internationale__c}"/>
+                            <!--<apex:outputLink style="color:#015ba7;" onclick="sendEmail(); return false;" value="#" >{!$Label.Lien_Android_Click_Here}</apex:outputLink>-->
+                            <span class="{!IF(success == true , 'success' , 'error')}">{!message}</span>
+                        </td>                      
+                    </tr>
+                    <tr>
+                        <td class="data2Col">
+                            <!--<apex:commandButton value="OK" onclick="GoBackToAccount()" rendered="{!NOT(isSF1)}"/> -->
+                            <input type="button" value="OK" onclick="GoBackToAccount();" style="{!IF(NOT(isSF1), 'display:block', 'display:none')}"/>
+                            <apex:commandButton value="OK" action="{!GoToAccountPage}"  rendered="{!isSF1}"/> 
+                        </td>
+                    </tr>
+                </tbody>                
+            </table>            
+        </div>        
+    </apex:form>            
+</apex:page>

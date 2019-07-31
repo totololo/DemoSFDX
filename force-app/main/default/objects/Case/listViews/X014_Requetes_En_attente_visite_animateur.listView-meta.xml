@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X014_Requetes_En_attente_visite_animateur</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ID_PUDO__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Secteur_Region__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>Age_de_la_requete__c</columns>
+    <columns>Disponibilite_Pudo__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>9</value>
+    </filters>
+    <filters>
+        <field>Etat_Pudo__c</field>
+        <operation>equals</operation>
+        <value>2,4,5,6</value>
+    </filters>
+    <filters>
+        <field>Type_de_point__c</field>
+        <operation>equals</operation>
+        <value>2,3,21</value>
+    </filters>
+    <label>07d-Requêtes en attente visite animateur</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>PUS_FR_Animateur_reseau</group>
+        <group>PUS_FR_Manager</group>
+    </sharedTo>
+</ListView>

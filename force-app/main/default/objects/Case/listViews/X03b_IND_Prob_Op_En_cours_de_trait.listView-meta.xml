@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X03b_IND_Prob_Op_En_cours_de_trait</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6 AND (7 OR 8) AND 9 AND 10</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ID_PUDO__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Indispo_Date_Fin__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Secteur_Region__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>Age_de_la_requete__c</columns>
+    <columns>Disponibilite_Pudo__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Point_relais_ne_repond_pas__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>En cours de traitement</value>
+    </filters>
+    <filters>
+        <field>Date_de_rappel_planifiee__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Date_de_rappel_planifiee__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Injoignabilite_en_cours__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Conges_en_cours__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Indispo_Date_Fin__c</field>
+        <operation>lessOrEqual</operation>
+        <value>NEXT_N_DAYS:3</value>
+    </filters>
+    <filters>
+        <field>Indispo_Date_Fin__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>contains</operation>
+        <value>Indisponibilité - Problème opérationnel</value>
+    </filters>
+    <filters>
+        <field>Etat_Pudo__c</field>
+        <operation>equals</operation>
+        <value>2,4,5,6</value>
+    </filters>
+    <label>03b-IND Prob. Op.-En cours de trait.</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>PUS_FR_Manager</group>
+        <group>PUS_FR_Service_Client</group>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

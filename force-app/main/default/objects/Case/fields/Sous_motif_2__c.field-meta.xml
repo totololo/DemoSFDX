@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_motif_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Sous-motif 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sous_motif_1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Absence de collecte avant congés</fullName>
+                <default>false</default>
+                <label>Absence de collecte avant congés</label>
+            </value>
+            <value>
+                <fullName>Absence de collecte avant Fin d&#39;activité</fullName>
+                <default>false</default>
+                <label>Absence de collecte avant Fin d&#39;activité</label>
+            </value>
+            <value>
+                <fullName>Absence de livraison</fullName>
+                <default>false</default>
+                <label>Absence de livraison</label>
+            </value>
+            <value>
+                <fullName>Absence de scan de réception</fullName>
+                <default>false</default>
+                <label>Absence de scan de réception</label>
+            </value>
+            <value>
+                <fullName>Adhésion à un réseau concurrent</fullName>
+                <default>false</default>
+                <label>Adhésion à un réseau concurrent</label>
+            </value>
+            <value>
+                <fullName>Agression</fullName>
+                <default>false</default>
+                <label>Agression</label>
+            </value>
+            <value>
+                <fullName>Alerte Dévoyé</fullName>
+                <default>false</default>
+                <label>Alerte Dévoyé</label>
+            </value>
+            <value>
+                <fullName>Alerte surcharge</fullName>
+                <default>false</default>
+                <label>Alerte surcharge</label>
+            </value>
+            <value>
+                <fullName>Annonce de congés</fullName>
+                <default>false</default>
+                <label>Annonce de congés</label>
+            </value>
+            <value>
+                <fullName>Annonce de disponibilité</fullName>
+                <default>false</default>
+                <label>Annonce de disponibilité</label>
+            </value>
+            <value>
+                <fullName>Augmentation seuil contractuel</fullName>
+                <default>false</default>
+                <label>Augmentation seuil contractuel</label>
+            </value>
+            <value>
+                <fullName>augmentation seuil temporaire</fullName>
+                <default>false</default>
+                <label>augmentation seuil temporaire</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Autre source</fullName>
+                <default>false</default>
+                <label>Autre source</label>
+            </value>
+            <value>
+                <fullName>Avant formation</fullName>
+                <default>false</default>
+                <label>Avant formation</label>
+            </value>
+            <value>
+                <fullName>Cambriolage</fullName>
+                <default>false</default>
+                <label>Cambriolage</label>
+            </value>
+            <value>
+                <fullName>Capacité de stockage insuffisant</fullName>
+                <default>false</default>
+                <label>Capacité de stockage insuffisant</label>
+            </value>
+            <value>
+                <fullName>Changement d&#39;horaires</fullName>
+                <default>false</default>
+                <label>Changement d&#39;horaires</label>
+            </value>
+            <value>
+                <fullName>Changement propriété facturation</fullName>
+                <default>false</default>
+                <label>Changement propriété facturation</label>
+            </value>
+            <value>
+                <fullName>Chargeur concurrent à mon activité</fullName>
+                <default>false</default>
+                <label>Chargeur concurrent à mon activité</label>
+            </value>
+            <value>
+                <fullName>Code barres colis non reconnu</fullName>
+                <default>false</default>
+                <label>Code barres colis non reconnu</label>
+            </value>
+            <value>
+                <fullName>Colis a préparer</fullName>
+                <default>false</default>
+                <label>Colis a préparer</label>
+            </value>
+            <value>
+                <fullName>Colis à réceptionner</fullName>
+                <default>false</default>
+                <label>Colis à réceptionner</label>
+            </value>
+            <value>
+                <fullName>Colis réceptionné inconnu</fullName>
+                <default>false</default>
+                <label>Colis réceptionné inconnu</label>
+            </value>
+            <value>
+                <fullName>Colis retour non remis au transporteur</fullName>
+                <default>false</default>
+                <label>Colis retour non remis au transporteur</label>
+            </value>
+            <value>
+                <fullName>Collecte</fullName>
+                <default>false</default>
+                <label>Collecte</label>
+            </value>
+            <value>
+                <fullName>Congés/fermeture non annoncés</fullName>
+                <default>false</default>
+                <label>Congés/fermeture non annoncés</label>
+            </value>
+            <value>
+                <fullName>Contestation</fullName>
+                <default>false</default>
+                <label>Contestation</label>
+            </value>
+            <value>
+                <fullName>Contrat non conforme</fullName>
+                <default>false</default>
+                <label>Contrat non conforme</label>
+            </value>
+            <value>
+                <fullName>Création /Réinitialisation mot de passe</fullName>
+                <default>false</default>
+                <label>Création /Réinitialisation mot de passe</label>
+            </value>
+            <value>
+                <fullName>Demande d&#39;ajout</fullName>
+                <default>false</default>
+                <label>Demande d&#39;ajout</label>
+            </value>
+            <value>
+                <fullName>Demande de duplicata</fullName>
+                <default>false</default>
+                <label>Demande de duplicata</label>
+            </value>
+            <value>
+                <fullName>Demande de suspension</fullName>
+                <default>false</default>
+                <label>Demande de suspension</label>
+            </value>
+            <value>
+                <fullName>Dépôt</fullName>
+                <default>false</default>
+                <label>Dépôt</label>
+            </value>
+            <value>
+                <fullName>Dépôt Chrono relais a relais</fullName>
+                <default>false</default>
+                <label>Dépôt Chrono relais a relais</label>
+            </value>
+            <value>
+                <fullName>Dépôt DPL (Digital parcel label)</fullName>
+                <default>false</default>
+                <label>Dépôt DPL (Digital parcel label)</label>
+            </value>
+            <value>
+                <fullName>Dépôt standard</fullName>
+                <default>false</default>
+                <label>Dépôt standard</label>
+            </value>
+            <value>
+                <fullName>Destinataire seul</fullName>
+                <default>false</default>
+                <label>Destinataire seul</label>
+            </value>
+            <value>
+                <fullName>Dévoyé Full</fullName>
+                <default>false</default>
+                <label>Dévoyé Full</label>
+            </value>
+            <value>
+                <fullName>Dévoyé Partiel</fullName>
+                <default>false</default>
+                <label>Dévoyé Partiel</label>
+            </value>
+            <value>
+                <fullName>Disponibilité (horaires / jours / congés)</fullName>
+                <default>false</default>
+                <label>Disponibilité (horaires / jours / congés)</label>
+            </value>
+            <value>
+                <fullName>Ecart sur le nombre de colis</fullName>
+                <default>false</default>
+                <label>Ecart sur le nombre de colis</label>
+            </value>
+            <value>
+                <fullName>Ecran abime</fullName>
+                <default>false</default>
+                <label>Ecran abime</label>
+            </value>
+            <value>
+                <fullName>Ecran cassé</fullName>
+                <default>false</default>
+                <label>Ecran cassé</label>
+            </value>
+            <value>
+                <fullName>Engagement financier de la responsabilité</fullName>
+                <default>false</default>
+                <label>Engagement financier de la responsabilité</label>
+            </value>
+            <value>
+                <fullName>Enquête judiciaire</fullName>
+                <default>false</default>
+                <label>Enquête judiciaire</label>
+            </value>
+            <value>
+                <fullName>Etiquette illisible</fullName>
+                <default>false</default>
+                <label>Etiquette illisible</label>
+            </value>
+            <value>
+                <fullName>Etiquettes DPL</fullName>
+                <default>false</default>
+                <label>Etiquettes DPL</label>
+            </value>
+            <value>
+                <fullName>Facturation matériel</fullName>
+                <default>false</default>
+                <label>Facturation matériel</label>
+            </value>
+            <value>
+                <fullName>Flux colis insuffisant</fullName>
+                <default>false</default>
+                <label>Flux colis insuffisant</label>
+            </value>
+            <value>
+                <fullName>Flux trop faible</fullName>
+                <default>false</default>
+                <label>Flux trop faible</label>
+            </value>
+            <value>
+                <fullName>Fournitures</fullName>
+                <default>false</default>
+                <label>Fournitures</label>
+            </value>
+            <value>
+                <fullName>Identité destinataire différente</fullName>
+                <default>false</default>
+                <label>Identité destinataire différente</label>
+            </value>
+            <value>
+                <fullName>Information facturation</fullName>
+                <default>false</default>
+                <label>Information facturation</label>
+            </value>
+            <value>
+                <fullName>Le matériel est lent</fullName>
+                <default>false</default>
+                <label>Le matériel est lent</label>
+            </value>
+            <value>
+                <fullName>Le matériel ne s&#39;allume pas</fullName>
+                <default>false</default>
+                <label>Le matériel ne s&#39;allume pas</label>
+            </value>
+            <value>
+                <fullName>Le matériel ne synchronise pas</fullName>
+                <default>false</default>
+                <label>Le matériel ne synchronise pas</label>
+            </value>
+            <value>
+                <fullName>Le matériel se décharge rapidement</fullName>
+                <default>false</default>
+                <label>Le matériel se décharge rapidement</label>
+            </value>
+            <value>
+                <fullName>Le matériel sort de l&#39;application</fullName>
+                <default>false</default>
+                <label>Le matériel sort de l&#39;application</label>
+            </value>
+            <value>
+                <fullName>Liquidation judiciaire / fin d’activité</fullName>
+                <default>false</default>
+                <label>Liquidation judiciaire / fin d’activité</label>
+            </value>
+            <value>
+                <fullName>Livraison</fullName>
+                <default>false</default>
+                <label>Livraison</label>
+            </value>
+            <value>
+                <fullName>Livraison en dehors des horaires d&#39;ouverture</fullName>
+                <default>false</default>
+                <label>Livraison en dehors des horaires d&#39;ouverture</label>
+            </value>
+            <value>
+                <fullName>Matérielle</fullName>
+                <default>false</default>
+                <label>Matérielle</label>
+            </value>
+            <value>
+                <fullName>Modifications dans l’organisation</fullName>
+                <default>false</default>
+                <label>Modifications dans l’organisation</label>
+            </value>
+            <value>
+                <fullName>Non respect des horaires</fullName>
+                <default>false</default>
+                <label>Non respect des horaires</label>
+            </value>
+            <value>
+                <fullName>Opérationnelle</fullName>
+                <default>false</default>
+                <label>Opérationnelle</label>
+            </value>
+            <value>
+                <fullName>Pas de première livraison</fullName>
+                <default>false</default>
+                <label>Pas de première livraison</label>
+            </value>
+            <value>
+                <fullName>PDA devoyé</fullName>
+                <default>false</default>
+                <label>PDA devoyé</label>
+            </value>
+            <value>
+                <fullName>Plainte Destinataire</fullName>
+                <default>false</default>
+                <label>Plainte Destinataire</label>
+            </value>
+            <value>
+                <fullName>Plainte Transporteur</fullName>
+                <default>false</default>
+                <label>Plainte Transporteur</label>
+            </value>
+            <value>
+                <fullName>Prestations / procédures trop complexes</fullName>
+                <default>false</default>
+                <label>Prestations / procédures trop complexes</label>
+            </value>
+            <value>
+                <fullName>Prestations PUS mal réalisées</fullName>
+                <default>false</default>
+                <label>Prestations PUS mal réalisées</label>
+            </value>
+            <value>
+                <fullName>Preuve de livraison</fullName>
+                <default>false</default>
+                <label>Preuve de livraison</label>
+            </value>
+            <value>
+                <fullName>Problème avec le support téléphonique réseau</fullName>
+                <default>false</default>
+                <label>Problème avec le support téléphonique réseau</label>
+            </value>
+            <value>
+                <fullName>Problème avec le transporteur</fullName>
+                <default>false</default>
+                <label>Problème avec le transporteur</label>
+            </value>
+            <value>
+                <fullName>Problème d&#39;affichage</fullName>
+                <default>false</default>
+                <label>Problème d&#39;affichage</label>
+            </value>
+            <value>
+                <fullName>Problème de facturation</fullName>
+                <default>false</default>
+                <label>Problème de facturation</label>
+            </value>
+            <value>
+                <fullName>Problème de mise à jour</fullName>
+                <default>false</default>
+                <label>Problème de mise à jour</label>
+            </value>
+            <value>
+                <fullName>Problème de PDA (lent, pas de signal)</fullName>
+                <default>false</default>
+                <label>Problème de PDA (lent, pas de signal)</label>
+            </value>
+            <value>
+                <fullName>Problème de son</fullName>
+                <default>false</default>
+                <label>Problème de son</label>
+            </value>
+            <value>
+                <fullName>Problème QS</fullName>
+                <default>false</default>
+                <label>Problème QS</label>
+            </value>
+            <value>
+                <fullName>Problème scanner</fullName>
+                <default>false</default>
+                <label>Problème scanner</label>
+            </value>
+            <value>
+                <fullName>Refus d&#39;activité partielle</fullName>
+                <default>false</default>
+                <label>Refus d&#39;activité partielle</label>
+            </value>
+            <value>
+                <fullName>Refus d&#39;activité totale</fullName>
+                <default>false</default>
+                <label>Refus d&#39;activité totale</label>
+            </value>
+            <value>
+                <fullName>Refus d’activité</fullName>
+                <default>false</default>
+                <label>Refus d’activité</label>
+            </value>
+            <value>
+                <fullName>Refus partiel de collecte</fullName>
+                <default>false</default>
+                <label>Refus partiel de collecte</label>
+            </value>
+            <value>
+                <fullName>Refus total de collecte</fullName>
+                <default>false</default>
+                <label>Refus total de collecte</label>
+            </value>
+            <value>
+                <fullName>Relais / Actions à réaliser</fullName>
+                <default>false</default>
+                <label>Relais / Actions à réaliser</label>
+            </value>
+            <value>
+                <fullName>Relais / Inventaire colis</fullName>
+                <default>false</default>
+                <label>Relais / Inventaire colis</label>
+            </value>
+            <value>
+                <fullName>Relais avec le destinataire</fullName>
+                <default>false</default>
+                <label>Relais avec le destinataire</label>
+            </value>
+            <value>
+                <fullName>Relivraison d&#39;un colis enlevé</fullName>
+                <default>false</default>
+                <label>Relivraison d&#39;un colis enlevé</label>
+            </value>
+            <value>
+                <fullName>Retrait</fullName>
+                <default>false</default>
+                <label>Retrait</label>
+            </value>
+            <value>
+                <fullName>Retrait avec Pickup Pass</fullName>
+                <default>false</default>
+                <label>Retrait avec Pickup Pass</label>
+            </value>
+            <value>
+                <fullName>Retrait avec PinCode</fullName>
+                <default>false</default>
+                <label>Retrait avec PinCode</label>
+            </value>
+            <value>
+                <fullName>Retrait standard</fullName>
+                <default>false</default>
+                <label>Retrait standard</label>
+            </value>
+            <value>
+                <fullName>Saturation du relais (nombre de colis)</fullName>
+                <default>false</default>
+                <label>Saturation du relais (nombre de colis)</label>
+            </value>
+            <value>
+                <fullName>Saturation du relais (taille de colis)</fullName>
+                <default>false</default>
+                <label>Saturation du relais (taille de colis)</label>
+            </value>
+            <value>
+                <fullName>Seuil contractuel</fullName>
+                <default>false</default>
+                <label>Seuil contractuel</label>
+            </value>
+            <value>
+                <fullName>Seuil temporaire</fullName>
+                <default>false</default>
+                <label>Seuil temporaire</label>
+            </value>
+            <value>
+                <fullName>Sinistre</fullName>
+                <default>false</default>
+                <label>Sinistre</label>
+            </value>
+            <value>
+                <fullName>Surcharge avérée</fullName>
+                <default>false</default>
+                <label>Surcharge avérée</label>
+            </value>
+            <value>
+                <fullName>Transfert de responsabilité réception</fullName>
+                <default>false</default>
+                <label>Transfert de responsabilité réception</label>
+            </value>
+            <value>
+                <fullName>Transporteur</fullName>
+                <default>false</default>
+                <label>Transporteur</label>
+            </value>
+            <value>
+                <fullName>Vente de commerce</fullName>
+                <default>false</default>
+                <label>Vente de commerce</label>
+            </value>
+            <value>
+                <fullName>Vol / Refus d’indemnisation</fullName>
+                <default>false</default>
+                <label>Vol / Refus d’indemnisation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Transfert de responsabilité</controllingFieldValue>
+            <valueName>Collecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfert de responsabilité</controllingFieldValue>
+            <valueName>Livraison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporteur/Service/Réseau</controllingFieldValue>
+            <valueName>Demande d&#39;ajout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporteur/Service/Réseau</controllingFieldValue>
+            <valueName>Demande de suspension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seuil</controllingFieldValue>
+            <controllingFieldValue>Modification seuil</controllingFieldValue>
+            <valueName>Seuil contractuel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seuil</controllingFieldValue>
+            <valueName>Problème de mise à jour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seuil</controllingFieldValue>
+            <controllingFieldValue>Modification seuil</controllingFieldValue>
+            <valueName>Seuil temporaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dépôt</controllingFieldValue>
+            <valueName>Dépôt DPL (Digital parcel label)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dépôt</controllingFieldValue>
+            <valueName>Dépôt Chrono relais a relais</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dépôt</controllingFieldValue>
+            <valueName>Dépôt standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dévoyés</controllingFieldValue>
+            <valueName>Dévoyé Full</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dévoyés</controllingFieldValue>
+            <valueName>Dévoyé Partiel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Événement grave</controllingFieldValue>
+            <valueName>Agression</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Événement grave</controllingFieldValue>
+            <valueName>Enquête judiciaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Événement grave</controllingFieldValue>
+            <valueName>Sinistre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Événement grave</controllingFieldValue>
+            <valueName>Cambriolage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Disponibilité (horaires / jours / congés)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Avant formation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Capacité de stockage insuffisant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Contrat non conforme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Adhésion à un réseau concurrent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Autre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Problème de PDA (lent, pas de signal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Problème QS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Refus d’activité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Vol / Refus d’indemnisation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exclusion</controllingFieldValue>
+            <valueName>Flux trop faible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Changement propriété facturation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Contestation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Facturation matériel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Demande de duplicata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Information facturation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Actions à réaliser</controllingFieldValue>
+            <valueName>Colis à réceptionner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Actions à réaliser</controllingFieldValue>
+            <valueName>Colis a préparer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collecte Transporteur</controllingFieldValue>
+            <valueName>Absence de collecte avant Fin d&#39;activité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collecte Transporteur</controllingFieldValue>
+            <valueName>Absence de collecte avant congés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collecte Transporteur</controllingFieldValue>
+            <valueName>Refus partiel de collecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collecte Transporteur</controllingFieldValue>
+            <valueName>Colis retour non remis au transporteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collecte Transporteur</controllingFieldValue>
+            <valueName>Refus total de collecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commandes</controllingFieldValue>
+            <valueName>Etiquettes DPL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commandes</controllingFieldValue>
+            <valueName>Fournitures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comportement du point relais</controllingFieldValue>
+            <valueName>Plainte Transporteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comportement du point relais</controllingFieldValue>
+            <valueName>Plainte Destinataire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comportement du point relais</controllingFieldValue>
+            <valueName>Autre source</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congé et disponibilité du point relais</controllingFieldValue>
+            <valueName>Annonce de disponibilité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congé et disponibilité du point relais</controllingFieldValue>
+            <valueName>Annonce de congés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congé et disponibilité du point relais</controllingFieldValue>
+            <valueName>Congés/fermeture non annoncés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Horaires</controllingFieldValue>
+            <valueName>Changement d&#39;horaires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Horaires</controllingFieldValue>
+            <valueName>Non respect des horaires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indisponibilité</controllingFieldValue>
+            <valueName>Matérielle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indisponibilité</controllingFieldValue>
+            <valueName>Opérationnelle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informations colis</controllingFieldValue>
+            <valueName>Identité destinataire différente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informations colis</controllingFieldValue>
+            <valueName>Etiquette illisible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informations colis</controllingFieldValue>
+            <valueName>Code barres colis non reconnu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informations colis</controllingFieldValue>
+            <valueName>Colis réceptionné inconnu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Livraison</controllingFieldValue>
+            <valueName>Livraison en dehors des horaires d&#39;ouverture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Livraison</controllingFieldValue>
+            <valueName>Absence de livraison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Livraison</controllingFieldValue>
+            <valueName>Absence de scan de réception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Livraison</controllingFieldValue>
+            <valueName>Pas de première livraison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Livraison</controllingFieldValue>
+            <valueName>Ecart sur le nombre de colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Livraison</controllingFieldValue>
+            <valueName>Preuve de livraison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Livraison</controllingFieldValue>
+            <valueName>Relivraison d&#39;un colis enlevé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Livraison</controllingFieldValue>
+            <valueName>Transfert de responsabilité réception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Modifications dans l’organisation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Saturation du relais (nombre de colis)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Saturation du relais (taille de colis)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Prestations / procédures trop complexes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Engagement financier de la responsabilité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Flux colis insuffisant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Problème de facturation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Chargeur concurrent à mon activité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Problème avec le transporteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Problème avec le support téléphonique réseau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Menace de résiliation</controllingFieldValue>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Prestations PUS mal réalisées</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Notification destinataire</controllingFieldValue>
+            <valueName>Dépôt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Notification destinataire</controllingFieldValue>
+            <valueName>Retrait</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recherche colis</controllingFieldValue>
+            <valueName>Transporteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recherche colis</controllingFieldValue>
+            <valueName>Destinataire seul</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recherche colis</controllingFieldValue>
+            <valueName>Relais avec le destinataire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recherche colis</controllingFieldValue>
+            <valueName>Relais / Inventaire colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recherche colis</controllingFieldValue>
+            <valueName>Relais / Actions à réaliser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refus d&#39;activité</controllingFieldValue>
+            <valueName>Refus d&#39;activité partielle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refus d&#39;activité</controllingFieldValue>
+            <valueName>Refus d&#39;activité totale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Vente de commerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Liquidation judiciaire / fin d’activité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retrait</controllingFieldValue>
+            <valueName>Retrait avec Pickup Pass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retrait</controllingFieldValue>
+            <valueName>Retrait avec PinCode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retrait</controllingFieldValue>
+            <valueName>Retrait standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Création /Réinitialisation mot de passe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Le matériel se décharge rapidement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Problème d&#39;affichage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Le matériel ne s&#39;allume pas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Le matériel sort de l&#39;application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Le matériel est lent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Le matériel ne synchronise pas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>PDA devoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Problème scanner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Ecran cassé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Ecran abime</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service après-vente</controllingFieldValue>
+            <valueName>Problème de son</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Surcharge</controllingFieldValue>
+            <valueName>Augmentation seuil contractuel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Surcharge</controllingFieldValue>
+            <valueName>augmentation seuil temporaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Surcharge</controllingFieldValue>
+            <valueName>Alerte surcharge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Surcharge</controllingFieldValue>
+            <valueName>Surcharge avérée</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

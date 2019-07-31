@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR37_Obligation_adressefacturation</fullName>
+    <active>true</active>
+    <description>Les champs adresse de facturation sont obligatoires</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, 
+
+
+OR( 
+AND(ISPICKVAL(Etat__c,&quot;0&quot;),ConversionTerminated__c = true), 
+ISPICKVAL(Etat__c,&quot;1&quot;), 
+ISPICKVAL(Etat__c,&quot;4&quot;), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;), 
+ISPICKVAL(Etat__c,&quot;7&quot;), 
+ISPICKVAL(Etat__c,&quot;9&quot;), 
+
+AND( 
+ISPICKVAL(Etat__c,&quot;2&quot;), 
+NOT ISBLANK(TEXT(Type)) 
+)), 
+
+OR( 
+AND(CONTAINS( $Label.RT_ProspectConverti_Compte , RecordTypeId ),ConversionTerminated__c= true), 
+CONTAINS($Label.RT_SuiviCo_Compte , RecordTypeId ), 
+CONTAINS($Label.RT_ProspectAValider_Compte , RecordTypeId )), 
+
+OR( 
+ISBLANK(Billing_Street__c), 
+ISBLANK(Billing_City__c), 
+ISBLANK(Billing_Zip_Postal_Code__c), 
+ISBLANK(TEXT(Billing_Country__c)) 
+
+))</errorConditionFormula>
+    <errorDisplayField>Billing_Street__c</errorDisplayField>
+    <errorMessage>Vous devez saisir l&#39;adresse de facturation au complet (Rue, Code Postal, Ville, Pays)</errorMessage>
+</ValidationRule>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>horaires_manquants__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(RecordType.Name= &quot;PUS_FR_Prospect_Converti&quot;, 
+OR( 
+AND (Lundi_ferme__c = false, 
+ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;) 
+),
+AND (Mardi_ferme__c = false, 
+ISPICKVAL(Mardi_Ouverture__c,&quot;&quot;) 
+),
+AND (Mercredi_ferme__c = false, 
+ISPICKVAL(Mercredi_Ouverture__c,&quot;&quot;) 
+),
+AND (Jeudi_ferme__c = false, 
+ISPICKVAL(Jeudi_Ouverture__c,&quot;&quot;) 
+),
+AND (Vendredi_ferme__c = false, 
+ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;) 
+),
+AND (Samedi_ferme__c = false, 
+ISPICKVAL(Samedi_Ouverture__c,&quot;&quot;) 
+),
+AND (Dimanche_ferme__c = false, 
+ISPICKVAL(Dimanche_Ouverture__c,&quot;&quot;) 
+) 
+) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>horaires manquants</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

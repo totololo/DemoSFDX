@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DPD_BNL_Requ_te_Ano_Ind</fullName>
+    <fields>CaseNumber</fields>
+    <fields>OwnerId</fields>
+    <fields>Object_de_la_requete__c</fields>
+    <fields>Status</fields>
+    <label>DPD_BNL_Requête_Ano_Ind</label>
+</CompactLayout>

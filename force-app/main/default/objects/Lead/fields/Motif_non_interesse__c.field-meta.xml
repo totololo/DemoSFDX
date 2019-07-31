@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_non_interesse__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif non intéressé </label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Interesse__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stock insuffisant</fullName>
+                <default>false</default>
+                <label>Stock insuffisant</label>
+            </value>
+            <value>
+                <fullName>Rémunération trop faible</fullName>
+                <default>false</default>
+                <label>Rémunération trop faible</label>
+            </value>
+            <value>
+                <fullName>Manque de temps</fullName>
+                <default>false</default>
+                <label>Manque de temps</label>
+            </value>
+            <value>
+                <fullName>Trop compliqué</fullName>
+                <default>false</default>
+                <label>Trop compliqué</label>
+            </value>
+            <value>
+                <fullName>Présent à la concurrence</fullName>
+                <default>false</default>
+                <label>Présent à la concurrence</label>
+            </value>
+            <value>
+                <fullName>Mauvaise expérience</fullName>
+                <default>false</default>
+                <label>Mauvaise expérience</label>
+            </value>
+            <value>
+                <fullName>Mauvaise image de l&#39;activité relais</fullName>
+                <default>false</default>
+                <label>Mauvaise image de l&#39;activité relais</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Stock insuffisant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Rémunération trop faible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Manque de temps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Trop compliqué</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Présent à la concurrence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Mauvaise expérience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non</controllingFieldValue>
+            <valueName>Mauvaise image de l&#39;activité relais</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

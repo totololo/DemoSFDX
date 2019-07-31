@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR07_NonAssujettiTVA</fullName>
+    <active>true</active>
+    <description>Si la valeur &quot;Non&quot; est sélectionné dans le champ « assujetti à la TVA », il est impossible de renseigner les champs &quot;N° TVA&quot;</description>
+    <errorConditionFormula>AND (!$User.BypassValidationRule__c ,
+      ISPICKVAL(Assujetti_la_TVA__c, &quot;Non&quot;),
+       NOT(ISBLANK( N_TVA__c ))
+    )</errorConditionFormula>
+    <errorDisplayField>N_TVA__c</errorDisplayField>
+    <errorMessage>Point non assujetti à la TVA. Vous ne pouvez renseigner un N° de TVA</errorMessage>
+</ValidationRule>

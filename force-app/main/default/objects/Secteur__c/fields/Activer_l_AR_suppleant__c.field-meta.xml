@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activer_l_AR_suppleant__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Seul le secteur &quot; Zone AR suppléant &quot; est concerné par cette activation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Seul le secteur &quot; Zone AR suppléant &quot; est concerné par cette activation.</inlineHelpText>
+    <label>Activer l’AR suppléant</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

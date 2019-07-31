@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR95_LogLat_Obligatoire_INT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT($User.BypassValidationRule__c) ,
+    OR(CONTAINS(  $Label.RT_INT_Compte , RecordTypeId ),
+       CONTAINS( $Label.RT_INT_Compte2, RecordTypeId )),
+
+    OR( 
+
+    AND(
+    CONTAINS( $Label.RT_NonSuiviCo_Compte , RecordTypeId ), 
+    ISBLANK (  Long_Lat_adresse_de_livraison__Latitude__s  ),
+    ISBLANK(  Long_Lat_adresse_de_livraison__Longitude__s  )),
+
+
+
+     
+    AND( 
+    OR(CONTAINS( $Label.RT_SuiviCo_Compte , RecordTypeId ),
+       CONTAINS( $Label.RT_ProspectAValider_Compte, RecordTypeId ),
+       CONTAINS( $Label.RT_ProspectConverti_Compte, RecordTypeId )),
+    OR(ISCHANGED(Long_Lat_adresse_de_livraison__Latitude__s),
+       ISCHANGED(Long_Lat_adresse_de_livraison__Longitude__s)), 
+    ISBLANK (  Long_Lat_adresse_de_livraison__Latitude__s  ),
+    ISBLANK(  Long_Lat_adresse_de_livraison__Longitude__s  ))
+     
+       ))</errorConditionFormula>
+    <errorMessage>Les champs « Latitude » et « Longitude » sont obligatoires pour les comptes Internationaux.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Alert_PUDO_Supervise</fullName>
+    <active>true</active>
+    <description>Traitement des points supérvisé</description>
+    <errorConditionFormula>AND(NOT($User.BypassValidationRule__c), (pudo__r.RecordType.DeveloperName&lt;&gt;&#39;PUS_FR_PUDO_Suivi_CO&#39;))</errorConditionFormula>
+    <errorMessage>Le point n&#39;est pas supervisé</errorMessage>
+</ValidationRule>

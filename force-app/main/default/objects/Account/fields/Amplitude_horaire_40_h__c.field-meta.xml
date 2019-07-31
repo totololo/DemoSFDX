@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amplitude_horaire_40_h__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(   Amplitude_horaire_du_relais__c &gt;= 40,IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;Green&quot;),IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Red&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Amplitude horaire &gt;= 40 h</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

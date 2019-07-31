@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_compte_rendu__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de compte rendu</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VA Standard</fullName>
+                <default>false</default>
+                <label>VA Standard</label>
+            </value>
+            <value>
+                <fullName>VALP</fullName>
+                <default>false</default>
+                <label>VALP</label>
+            </value>
+            <value>
+                <fullName>VA Quali</fullName>
+                <default>false</default>
+                <label>VA Quali</label>
+            </value>
+            <value>
+                <fullName>VA Orga</fullName>
+                <default>false</default>
+                <label>VA Orga</label>
+            </value>
+            <value>
+                <fullName>VAP PDA</fullName>
+                <default>false</default>
+                <label>VAP PDA</label>
+            </value>
+            <value>
+                <fullName>VAP Seuil</fullName>
+                <default>false</default>
+                <label>VAP Seuil</label>
+            </value>
+            <value>
+                <fullName>VAP FDA</fullName>
+                <default>false</default>
+                <label>VAP FDA</label>
+            </value>
+            <value>
+                <fullName>VAP Injoignable</fullName>
+                <default>false</default>
+                <label>VAP Injoignable</label>
+            </value>
+            <value>
+                <fullName>VAP DA</fullName>
+                <default>false</default>
+                <label>VAP DA</label>
+            </value>
+            <value>
+                <fullName>VAP MEN</fullName>
+                <default>false</default>
+                <label>VAP MEN</label>
+            </value>
+            <value>
+                <fullName>VAP VO</fullName>
+                <default>false</default>
+                <label>VAP VO</label>
+            </value>
+            <value>
+                <fullName>VAP QS</fullName>
+                <default>false</default>
+                <label>VAP QS</label>
+            </value>
+            <value>
+                <fullName>VAP Enquête de satisfaction</fullName>
+                <default>false</default>
+                <label>VAP Enquête de satisfaction</label>
+            </value>
+            <value>
+                <fullName>VAP Enquête de bienvenue</fullName>
+                <default>false</default>
+                <label>VAP Enquête de bienvenue</label>
+            </value>
+            <value>
+                <fullName>VAP FC</fullName>
+                <default>false</default>
+                <label>VAP FC</label>
+            </value>
+            <value>
+                <fullName>Recruitment visit report</fullName>
+                <default>false</default>
+                <label>Recruitment visit report</label>
+            </value>
+            <value>
+                <fullName>Monitoring visit report</fullName>
+                <default>false</default>
+                <label>Monitoring visit report</label>
+            </value>
+            <value>
+                <fullName>Course visit report</fullName>
+                <default>false</default>
+                <label>Course visit report</label>
+            </value>
+            <value>
+                <fullName>VA FDA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VA FDA</label>
+            </value>
+            <value>
+                <fullName>VA Injoignable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VA Injoignable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

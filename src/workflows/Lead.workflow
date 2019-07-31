@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Date_de_visite_par_defaut</fullName>
+        <field>Date_de_visite__c</field>
+        <formula>TODAY()</formula>
+        <name>Date de visite par défaut</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Prospect_Chaud</fullName>
+        <field>Statut__c</field>
+        <literalValue>Prospect Chaud</literalValue>
+        <name>MAJ_Prospect_Chaud</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Statut_Cible</fullName>
+        <field>Statut__c</field>
+        <literalValue>Prospect Cible</literalValue>
+        <name>MAJ Statut Cible</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Statut_pour_Froid</fullName>
+        <field>Statut__c</field>
+        <literalValue>Prospect Froid</literalValue>
+        <name>MAJ Statut pour Froid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_TelFixeProspect</fullName>
+        <field>Phone</field>
+        <formula>MobilePhone</formula>
+        <name>MAJ_TelFixeProspect</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Visite_NON</fullName>
+        <field>Status</field>
+        <literalValue>Non</literalValue>
+        <name>MAJ_Visite_NON</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Piste_Prenom_NC</fullName>
+        <field>FirstName</field>
+        <formula>&quot;N/C&quot;</formula>
+        <name>Piste_Prénom_NC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Viste_Oui</fullName>
+        <field>Status</field>
+        <literalValue>Oui</literalValue>
+        <name>Visté Oui</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>PRO_WF02_MAJ_vers_Prospect_Froid</fullName>
+        <actions>
+            <name>MAJ_Statut_pour_Froid</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Oui</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.City</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Interesse__c</field>
+            <operation>equals</operation>
+            <value>Non</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.PostalCode</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.BypassWorkflow__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Street</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Si &quot;Commerce visité&quot; égal à Oui, &quot;Statut&quot; est &quot;Prospect froid&quot;. 
+Attention, &quot;Statut de la piste&quot; a été renommé &quot;Commerce visité&quot;.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PRO_WF03_MAJ_vers_Prospect_Chaud</fullName>
+        <actions>
+            <name>MAJ_Prospect_Chaud</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Oui</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Interesse__c</field>
+            <operation>equals</operation>
+            <value>Oui</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.City</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.PostalCode</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.BypassWorkflow__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Street</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Si &quot;Intéressé&quot; égal à oui, alors statut &quot;Prospect chaud&quot;.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PRO_WF04_MAJ_vers_Prospect_Cible</fullName>
+        <actions>
+            <name>MAJ_Statut_Cible</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Non</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>N&apos;existe plus</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.BypassWorkflow__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Si champ &quot;Commerce visité&quot; égal à Non ou N&apos;existe plus alors &quot;Prospect cible&quot;.
+Attention &quot;Statut de la piste&quot; a été renommé &quot;Commerce visité&quot;.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PRO_WF05_RecopieMobile</fullName>
+        <actions>
+            <name>MAJ_TelFixeProspect</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.BypassWorkflow__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.MobilePhone</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Phone</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Si Téléphone du Prospect est vide alors la valeur du champ Téléphone mobile est recopiée dans Téléphone.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>PRO_WF07_Cible_Prenom_Nom_Auto</fullName>
+        <actions>
+            <name>Piste_Prenom_NC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Non,N&apos;existe plus</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.FirstName</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Si le Prospect est cible (Commerce visité Non ou N&apos;existe plus) et les champs Prénom et Nom sont vides alors ils sont remplis au moment d&apos;enregistrement avec les valeurs &quot;N/C&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

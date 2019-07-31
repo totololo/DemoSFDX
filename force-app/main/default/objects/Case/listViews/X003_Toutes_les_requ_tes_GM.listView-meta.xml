@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X003_Toutes_les_requ_tes_GM</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ID_PUDO__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Secteur_Region__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>Age_de_la_requete__c</columns>
+    <columns>Disponibilite_Pudo__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Terminée,11</value>
+    </filters>
+    <filters>
+        <field>Conges_en_cours__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Tech_is_Owner_GM__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>003-Toutes les requêtes GM</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>PUS_FR_Gestion_Materiel</group>
+        <group>PUS_FR_Manager</group>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

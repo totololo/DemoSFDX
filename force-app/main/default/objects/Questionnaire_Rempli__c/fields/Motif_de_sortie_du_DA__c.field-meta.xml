@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_sortie_du_DA__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif de sortie du DA</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Changement de statut juridique</fullName>
+                <default>false</default>
+                <label>Changement de statut juridique</label>
+            </value>
+            <value>
+                <fullName>Personne déjà formée à l’activité</fullName>
+                <default>false</default>
+                <label>Personne déjà formée à l’activité</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

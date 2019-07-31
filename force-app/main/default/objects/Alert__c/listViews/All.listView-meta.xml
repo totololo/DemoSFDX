@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Age_Alert__c</columns>
+    <columns>alert_type__c</columns>
+    <columns>International_Site_Id__c</columns>
+    <columns>pudo__c</columns>
+    <columns>Missguided_requalification__c</columns>
+    <columns>Status__c</columns>
+    <columns>Missguided_Rate__c</columns>
+    <columns>saturation_rate__c</columns>
+    <columns>MessagePDA_ID__c</columns>
+    <columns>recurrence_index__c</columns>
+    <columns>MsgPDA_Erreur_Message__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

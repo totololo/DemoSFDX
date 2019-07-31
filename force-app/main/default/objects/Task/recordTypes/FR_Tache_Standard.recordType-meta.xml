@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FR_Tache_Standard</fullName>
+    <active>true</active>
+    <label>FR_Tache_Standard</label>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Elevée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normale</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Ouvert</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Traité</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Activation d%27une nouvelle consigne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Activation reroutage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anomalie de synchronisation - non résolu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anomalie de synchronisation - résolu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel ARS %E2%80%93 Formation Pickup contact%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel ARS %E2%80%93 Suivi Pickup Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause relais confirmée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congé - Ne répond pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congé - Période renseignée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congé - Relais déclare rester ouvert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congé - Relais ne connait pas sa période</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congé - Traitement interrompu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de dissociation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de passage animateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissociation effectuée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Démarrage d%27activité - Demande d%27exclusion en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Démarrage d%27activité - Demande d%27exclusion refusé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Démarrage d%27activité - Demande d%27exclusion validé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dévoyés cause relais %E2%80%93 cause DDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formation agence transporteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horaire - Amplitude horaire modifiée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horaire - Ne répond pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horaire - Relais ne souhaite pas modifier ses horaires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horaire - Traitement interrompu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité Problème PDA%2FPanne PDA - Demande d%27exclusion refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité Problème PDA%2FPanne PDA - Demande d%27exclusion validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité Problème PDA%2FProblème de synchronisation - Demande d%27exclusion refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité Problème PDA%2FProblème de synchronisation - Demande d%27exclusion validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA%2F panne PDA - Demande d%27exclusion en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA%2F panne PDA - Résolu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA%2F problème synchronisation - Demande d%27exclusion en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème PDA%2F problème synchronisation - Résolu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel Sinistre%2FTravaux%2FSanté avec date de fin  - Demande d%27exclusion refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel Sinistre%2FTravaux%2FSanté avec date de fin - Demande d%27exclusion validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel Sinistre%2FTravaux%2FSanté sans date de fin  - Demande d%27exclusion refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilité problème opérationnel Sinistre%2FTravaux%2FSanté sans date de fin - Demande d%27exclusion validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information agence installation nouvelle consigne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème PDA %2F panne PDA - Relais joignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème PDA %2F problème synchronisation - Relais joignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème PDA%2F panne PDA - Demande d%27exclusion refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème PDA%2F panne PDA - Demande d%27exclusion validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème PDA%2F problème synchronisation- Demande d%27exclusion en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème PDA%2F problème synchronisation- Demande d%27exclusion refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème PDA%2F problème synchronisation- Demande d%27exclusion validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème opérationnel Sinistre%2FTravaux%2FSanté - Demande d%27exclusion en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème opérationnel Sinistre%2FTravaux%2FSanté - Demande d%27exclusion refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème opérationnel Sinistre%2FTravaux%2FSanté - Demande d%27exclusion validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème opérationnel Sinistre%2FTravaux%2FSanté - Relais joignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème opérationnel anomalie colis  - Demande d%27exclusion refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème opérationnel anomalie colis  - Demande d%27exclusion validée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème opérationnel anomalie colis - Demande d%27exclusion en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilité problème opérationnel anomalie colis - Relais joignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignabilitéproblème PDA%2F panne PDA - Demande d%27exclusion en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise en place d%E2%80%99un seuil temporaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification seuil contractuel %E2%80%93 Baisse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification seuil contractuel %E2%80%93 Hausse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de dissociation effectuée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rappel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recrutement en cours sur la zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais actif avec plusieurs moyens de scan associés - Non résolu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais actif avec plusieurs moyens de scan associés - Résolu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais inactif avec  moyen de scan - Attente intervention Animateur réseau %2F Ne répond pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais inactif avec  moyen de scan - En attente de dissociation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais inactif avec  moyen de scan - En cours d%E2%80%99acheminement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais inactif avec  moyen de scan - Enlèvement sur demande non réalisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais inactif avec  moyen de scan - Indisponible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais inactif avec  moyen de scan - Liquidateur %2Fmatériel à disposition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais inactif avec moyen de scan - Attente intervention Animateur réseau %2F refus de rendre le matériel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais inactif avec moyen de scan - Liquidateur %2F Délai de réclamation matériel dépassé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais sans moyen de scan - Association effectuée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais sans moyen de scan - En cours d%27acheminement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais sans moyen de scan - Matériel à envoyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais sans moyen de scan - Ne répond pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais sans moyen de scan - Traitement interrompu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requalification dévoyés cause relais %E2%80%93 cause chargeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requalification dévoyés cause relais %E2%80%93 cause mixte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requalification dévoyés cause relais %E2%80%93 cause transporteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone noire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>actions_performed__c</picklist>
+        <values>
+            <fullName>Activation reroutage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de dissociation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise en place d%E2%80%99un seuil temporaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification seuil contractuel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

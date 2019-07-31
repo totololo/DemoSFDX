@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR93_Code_Postal_facturation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+
+NOT($User.BypassValidationRule__c), 
+ShippingPostalCode != null, 
+OR(
+NOT( REGEX( ShippingPostalCode , &quot;[0-9]{4}&quot;)), 
+LEN( ShippingPostalCode ) !=4 
+),
+
+OR(
+ShippingCountry =&#39;Belgium&#39;,
+ShippingCountry = &#39;Luxembourg&#39;
+)
+
+),
+AND(
+
+NOT($User.BypassValidationRule__c), 
+OR(
+NOT( REGEX( ShippingPostalCode , &quot;[0-9]{4} [a-z]{2}&quot;)),
+LEN( ShippingPostalCode ) !=7
+),
+OR(
+
+NOT( REGEX( ShippingPostalCode , &quot;[0-9]{4} [A-Z]{2}&quot;)),
+LEN( ShippingPostalCode ) !=7
+),
+OR(
+ShippingCountry = &#39;Netherlands&#39;
+)
+
+)
+)</errorConditionFormula>
+    <errorDisplayField>Shipping_Zip_Postal_Code__c</errorDisplayField>
+    <errorMessage>Veuillez remplir les codes postaux Belge et Luxembourgeois avec 4 chiffres. Et les codes postaux Pays-Bas avec 4 chiffres suivi de deux lettres (e.g: 1234 AB)</errorMessage>
+</ValidationRule>

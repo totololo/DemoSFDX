@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR09_NIveauSeuilBackup</fullName>
+    <active>true</active>
+    <description>Le seuil backup ne doit pas être supérieur au seuil calculé ni inférieur au seuil contractuel.</description>
+    <errorConditionFormula>AND(NOT($User.BypassValidationRule__c),
+CONTAINS( $Label.RT_France_Compte ,  RecordType.Id ),
+     ISPICKVAL(Pudo_backup__c,&quot;Oui&quot;),
+
+	 OR(
+     Seuil_Backup__c  &gt; ROUND(Seuil_calcule__c,0),
+     Seuil_Backup__c &lt;  Seuil_contractuel__c,
+     Seuil_Backup__c = 0)
+	 
+	 )</errorConditionFormula>
+    <errorDisplayField>Seuil_Backup__c</errorDisplayField>
+    <errorMessage>Vous devez renseigner un seuil backup supérieur ou égal au seuil contractuel et inférieur ou égal au seuil calculé.</errorMessage>
+</ValidationRule>

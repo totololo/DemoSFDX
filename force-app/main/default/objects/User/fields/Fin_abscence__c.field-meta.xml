@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fin_abscence__c</fullName>
+    <description>Date de Fin d&#39;absence</description>
+    <externalId>false</externalId>
+    <label>Date Fin absence</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

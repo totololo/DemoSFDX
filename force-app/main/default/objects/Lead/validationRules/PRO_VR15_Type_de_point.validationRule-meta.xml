@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR15_Type_de_point</fullName>
+    <active>true</active>
+    <description>Le Type de point est obligatoire si le type du point est &quot;Prospect Froid&quot; ou &quot;Prospect Chaud&quot;</description>
+    <errorConditionFormula>AND 
+(NOT( $User.BypassValidationRule__c ), 
+ Text(Type_de_point__c)  = &quot;&quot;,
+
+ISPICKVAL(  Commerce_eligible__c ,&quot;Oui&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Type_de_point__c</errorDisplayField>
+    <errorMessage>Veuillez remplir le champ &quot;Type de point&quot;.</errorMessage>
+</ValidationRule>

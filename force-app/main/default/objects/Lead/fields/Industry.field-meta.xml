@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry</fullName>
+    <inlineHelpText>If the ShopType is equal to Partner, after selecting a partner&#39;s name, the fields &quot;Industry&quot; and &quot;Main Commercial Activity&quot; will be filled in automatically at save.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

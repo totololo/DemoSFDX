@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ent_te_requ_tes_campagnes_FR</fullName>
+    <fields>Object_de_la_requete__c</fields>
+    <fields>AccountId</fields>
+    <fields>Disponibilite_Pudo__c</fields>
+    <fields>Status</fields>
+    <fields>OwnerId</fields>
+    <fields>Age_de_la_requete__c</fields>
+    <label>Entête requêtes campagnes FR</label>
+</CompactLayout>

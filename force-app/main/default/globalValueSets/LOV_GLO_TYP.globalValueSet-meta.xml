@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>21</fullName>
+        <default>false</default>
+        <label>21</label>
+    </customValue>
+    <customValue>
+        <fullName>22</fullName>
+        <default>false</default>
+        <label>22</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>3</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>2</label>
+    </customValue>
+    <customValue>
+        <fullName>20</fullName>
+        <default>false</default>
+        <label>20</label>
+    </customValue>
+    <customValue>
+        <fullName>-3</fullName>
+        <default>false</default>
+        <label>-3</label>
+    </customValue>
+    <customValue>
+        <fullName>Pudo non suivi par le CO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pudo non suivi par le CO</label>
+    </customValue>
+    <customValue>
+        <fullName>Agences Coliposte</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Agences Coliposte</label>
+    </customValue>
+    <customValue>
+        <fullName>Bureaux de Postes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bureaux de Postes</label>
+    </customValue>
+    <customValue>
+        <fullName>Cytissimo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cytissimo</label>
+    </customValue>
+    <customValue>
+        <fullName>Centre Distribution Coliposte</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Centre Distribution Coliposte</label>
+    </customValue>
+    <description>Type de point utilisé sur réseau et Prospect. Doit correspondre au champ standard type (Compte).</description>
+    <masterLabel>LOV_GLO_TYP</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

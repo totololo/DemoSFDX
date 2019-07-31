@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>0</masterLabel>
+        <translation>En attente d&apos;attribution</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1</masterLabel>
+        <translation>En attente appel 1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>10</masterLabel>
+        <translation>En attente exclusion</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>11</masterLabel>
+        <translation>Terminée - Exclusion validée</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>12</masterLabel>
+        <translation>En attente Appel 4</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>13</masterLabel>
+        <translation>En attente Appel 5</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>14</masterLabel>
+        <translation>En attente Appel 6</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2</masterLabel>
+        <translation>En attente appel 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3</masterLabel>
+        <translation>En attente appel 3</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4</masterLabel>
+        <translation>En attente appel - Bilan 1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5</masterLabel>
+        <translation>En attente appel 5 - Prolongation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6</masterLabel>
+        <translation>En attente appel - Bilan 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>7</masterLabel>
+        <translation>En attente demande de sortie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>8</masterLabel>
+        <translation>En attente planification</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>9</masterLabel>
+        <translation>En attente visite animateur réseau</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente d&apos;attribution</masterLabel>
+        <translation>En attente d&apos;attribution</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de rappel</masterLabel>
+        <translation>En attente de rappel</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de rappel 2</masterLabel>
+        <translation>En attente de rappel 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de traitement</masterLabel>
+        <translation>En attente de traitement</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente de validation</masterLabel>
+        <translation>En attente de validation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours de traitement</masterLabel>
+        <translation>En cours de traitement</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours envoi matériel</masterLabel>
+        <translation>En cours envoi matériel</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours échange matériel</masterLabel>
+        <translation>En cours échange matériel</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Terminée</masterLabel>
+        <translation>Terminée</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

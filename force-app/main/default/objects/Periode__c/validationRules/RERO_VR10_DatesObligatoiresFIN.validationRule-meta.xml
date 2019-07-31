@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RERO_VR10_DatesObligatoiresFIN</fullName>
+    <active>false</active>
+    <description>La date de fin est obligatoire.</description>
+    <errorConditionFormula>and( not( $User.BypassValidationRule__c ),
+     isblank( Date_de_fin__c ),
+      or(
+        ISPICKVAL( Type_de_periode__c , &quot;41&quot;),
+        ISPICKVAL( Type_de_periode__c , &quot;43&quot;),
+       ISPICKVAL( Type_de_periode__c , &quot;48&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Date_de_debut__c</errorDisplayField>
+    <errorMessage>Veuillez saisir la date de début et la date de fin.</errorMessage>
+</ValidationRule>

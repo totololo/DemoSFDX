@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>PUS_FR_ARS</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>PUS_FR_Animateur_reseau_siege</publicGroup>
+            <publicGroup>PUS_FR_Manager</publicGroup>
+        </publicGroups>
+        <users>
+            <user>benoit.benaise@pickup-services.com</user>
+            <user>f.lemoine@pickup-services.com.old</user>
+            <user>michel.jebran@pickup.com</user>
+            <user>natasza@pickup.com</user>
+            <user>niveau2_test2@pickup.test</user>
+            <user>niveau3_test1@pickup.test</user>
+            <user>niveau3_test2@pickup.test</user>
+            <user>s.chaker@pickup-services.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

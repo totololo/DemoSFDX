@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Macroprofil_actuel__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Macroprofil actuel</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(((1 AND 2) OR (3 AND 4) OR (5 AND 6)) AND 7) OR 8</booleanFilter>
+        <errorMessage>La valeur ne correspond pas aux critères de filtre.</errorMessage>
+        <filterItems>
+            <field>$Source.Type</field>
+            <operation>equals</operation>
+            <value>Consigne</value>
+        </filterItems>
+        <filterItems>
+            <field>Macroprofil__c.Name</field>
+            <operation>contains</operation>
+            <value>MPFR_Consigne</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Type</field>
+            <operation>equals</operation>
+            <value>Pickup contact</value>
+        </filterItems>
+        <filterItems>
+            <field>Macroprofil__c.Name</field>
+            <operation>contains</operation>
+            <value>MP2-Standard</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Type</field>
+            <operation>equals</operation>
+            <value>Pickup store, Agence, Partenaire, Standard</value>
+        </filterItems>
+        <filterItems>
+            <field>Macroprofil__c.Name</field>
+            <operation>contains</operation>
+            <value>MP</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Operateur_Global__c</field>
+            <operation>equals</operation>
+            <value>PUS_FR</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Operateur_Global__c</field>
+            <operation>notEqual</operation>
+            <value>PUS_FR</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Macroprofil__c</referenceTo>
+    <relationshipLabel>Comptes</relationshipLabel>
+    <relationshipName>Comptes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

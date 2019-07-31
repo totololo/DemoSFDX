@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permet de gérer le droit en modification du champ Macroprofil actuel en fonction de l&apos;état du PUDO</description>
+    <label>PUS_FR_Macroprofil_ActuelCP</label>
+</CustomPermission>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Animation relais</fullName>
+        <default>false</default>
+        <label>Animation relais</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Colis</fullName>
+        <default>false</default>
+        <label>Colis</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Indisponibilité problème opérationnel - Sinistre/ Travaux/Santé avec date de fin</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Indisponibilité problème opérationnel - Sinistre/ Travaux/Santé avec date de fin</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Indisponibilité problème PDA - Panne PDA</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Indisponibilité problème PDA - Panne PDA</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Indisponibilité problème PDA - Problème de synchronisation</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Indisponibilité problème PDA - Problème de synchronisation</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Injoignable- Indisponibilité problème opérationnel anomalie colis</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Injoignable- Indisponibilité problème opérationnel anomalie colis</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Injoignable - Indisponibilité problème opérationnel Sinistre/travaux/Santé</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Injoignable - Indisponibilité problème opérationnel Sinistre/travaux/Santé</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Injoignable - Indisponibilité problème PDA / panne PDA</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Injoignable - Indisponibilité problème PDA / panne PDA</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Injoignable - Indisponibilité problème PDA / problème synchronisation</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Injoignable - Indisponibilité problème PDA / problème synchronisation</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Matériel et réseau</fullName>
+        <default>false</default>
+        <label>Matériel et réseau</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Procédure et prestations</fullName>
+        <default>false</default>
+        <label>Procédure et prestations</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Transporteur</fullName>
+        <default>false</default>
+        <label>Transporteur</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Vie du relais</fullName>
+        <default>false</default>
+        <label>Vie du relais</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

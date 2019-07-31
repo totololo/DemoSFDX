@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR18_Siren_chiffres</fullName>
+    <active>true</active>
+    <description>Le champ n° de SIREN ne contient que 9 chiffres.</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c,
+NOT (ISBLANK ( N_SIREN__c )),
+OR(NOT(ISNUMBER(  N_SIREN__c  )),
+LEN(N_SIREN__c)&lt;&gt;9)
+)</errorConditionFormula>
+    <errorDisplayField>N_SIREN__c</errorDisplayField>
+    <errorMessage>Ce champ doit contenir 9 chiffres.</errorMessage>
+</ValidationRule>

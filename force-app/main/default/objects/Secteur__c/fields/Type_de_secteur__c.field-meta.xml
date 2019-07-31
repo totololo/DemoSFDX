@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_secteur__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de secteur</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cluster</fullName>
+                <default>false</default>
+                <label>Cluster</label>
+            </value>
+            <value>
+                <fullName>Zone de conso</fullName>
+                <default>false</default>
+                <label>Zone de conso</label>
+            </value>
+            <value>
+                <fullName>Zone AR suppléant</fullName>
+                <default>false</default>
+                <label>Zone AR suppléant</label>
+            </value>
+            <value>
+                <fullName>Secteur AR</fullName>
+                <default>false</default>
+                <label>Secteur AR</label>
+            </value>
+            <value>
+                <fullName>Plaque</fullName>
+                <default>false</default>
+                <label>Plaque</label>
+            </value>
+            <value>
+                <fullName>Region</fullName>
+                <default>false</default>
+                <label>Region</label>
+            </value>
+            <value>
+                <fullName>Pays</fullName>
+                <default>false</default>
+                <label>Pays</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

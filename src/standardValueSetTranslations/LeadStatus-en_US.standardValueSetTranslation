@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>N&apos;existe plus</masterLabel>
+        <translation>Does not exist anymore</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non</masterLabel>
+        <translation>No</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oui</masterLabel>
+        <translation>Yes</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

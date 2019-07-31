@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Champ_technique__c</fullName>
+    <description>Pour le tri dans la liste associée.</description>
+    <externalId>false</externalId>
+    <formula>IF ( Statut__c =&quot;En cours&quot;,&quot;3&quot;,
+IF( Statut__c =&quot;A venir&quot;,&quot;2&quot;,
+IF (Statut__c=&quot;Passé&quot;,&quot;1&quot;,&quot;null&quot;)))
+&amp;  TEXT(YEAR( Date_de_debut__c ))  &amp;  
+
+IF (LEN(TEXT(MONTH(Date_de_debut__c)))=1,&quot;0&quot; &amp; TEXT(MONTH(Date_de_debut__c)) ,TEXT(MONTH(Date_de_debut__c)))
+ &amp; 
+
+IF (LEN(TEXT(DAY(Date_de_debut__c)))=1,&quot;0&quot; &amp; TEXT(DAY(Date_de_debut__c)) ,TEXT(DAY(Date_de_debut__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Champ technique</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

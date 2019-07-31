@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_requete_DA__c</fullName>
+    <description>En état 4, le mode est recopié dans le champ &quot;Statut requête DA&quot; de la section Formation et DA.
+En état 5, 6 et 7, ce champ affiche la valeur Terminé. Dans les autres états, ce champ n&#39;affiche rien.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+   ISPICKVAL( Etat__c,&quot;5&quot;),$Label.DA_Termine ,
+   IF(
+      ISPICKVAL( Etat__c,&quot;6&quot;),$Label.DA_Termine ,
+      IF(
+         ISPICKVAL( Etat__c,&quot;7&quot;),$Label.DA_Termine ,
+IF( 
+   ISPICKVAL( Mode__c,&quot;200&quot;), $Label.DA_EnAttenteAttribution ,
+  IF( 
+   ISPICKVAL( Mode__c,&quot;210&quot;),  $Label.DA_EnAttenteAppel1Statut1 ,
+    IF(
+      ISPICKVAL( Mode__c,&quot;220&quot;),  $Label.DA_EnAttenteAppel2Statut2 , 
+      IF(
+         ISPICKVAL( Mode__c,&quot;240&quot;),  $Label.DA_EnAttenteAppel3Statut3 ,
+         IF(
+            ISPICKVAL( Mode__c,&quot;250&quot;),   $Label.DA_EnAttenteAppelBILAN1 ,
+            IF(
+               ISPICKVAL( Mode__c,&quot;260&quot;),   $Label.DA_EnAttenteAppel5Statut5  ,
+               IF(
+                  ISPICKVAL( Mode__c,&quot;264&quot;),  $Label.DA_EnAttenteAppelBILAN2_S6   ,
+                 IF(
+                  ISPICKVAL( Mode__c,&quot;270&quot;),   $Label.DA_EnAttenteExclusion   ,
+                   IF(
+                     ISPICKVAL( Mode__c,&quot;2002&quot;),   $Label.DA_EnAttenteVisiteAnimateur ,
+                     IF(
+                        ISPICKVAL( Mode__c,&quot;2001&quot;),   $Label.DA_EnAttentePlanification  ,
+                          IF(
+                            ISPICKVAL( Mode__c,&quot;2003&quot;),    $Label.DA_Termine   ,
+                             IF(
+                             ISPICKVAL( Mode__c,&quot;2000&quot;),     $Label.DA_En_AttenteDemandeSortie   ,
+								IF(
+								ISPICKVAL( Mode__c,&quot;En attente appel 4&quot;),     $Label.DA_AttenteAppel4   ,
+									IF(
+								ISPICKVAL( Mode__c,&quot;En attente appel 5&quot;),     $Label.DA_EnAttenteAppel5Statut5S   ,
+								IF(
+								ISPICKVAL( Mode__c,&quot;En attente appel 6&quot;),     $Label.DA_AttenteAppel6   ,
+
+&quot;&quot;))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Statut requête DA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

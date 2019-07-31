@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VRO09_Prenom</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+Not($User.BypassValidationRule__c),
+ISBLANK( FirstName ),
+OR(
+ISPICKVAL( Status , &quot;Oui&quot;), 
+ CONTAINS($Label.RT_Prospect_INTER,  RecordType.Id ))
+)</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>Veuillez indiquer le &quot;Prénom&quot;</errorMessage>
+</ValidationRule>

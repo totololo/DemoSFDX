@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR05_Motif_non_interesse</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(NOT( $User.BypassValidationRule__c ),
+ISPICKVAL( Interesse__c  ,&quot;Non&quot;),
+ISPICKVAL(  Motif_non_interesse__c  ,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Motif_non_interesse__c</errorDisplayField>
+    <errorMessage>Veuillez indiquer le&quot; Motif de non intéressé&quot;.</errorMessage>
+</ValidationRule>

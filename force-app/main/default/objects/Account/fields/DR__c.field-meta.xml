@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR__c</fullName>
+    <externalId>false</externalId>
+    <formula>Zone_dimplantation__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Responsable__r.FirstName &amp; &quot; &quot;&amp; 
+
+Zone_dimplantation__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Responsable__r.LastName &amp; &quot; - &quot; &amp; 
+
+Zone_dimplantation__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Responsable__r.Phone &amp; &quot; - &quot; &amp; 
+
+HYPERLINK(Zone_dimplantation__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Responsable__r.Email, Zone_dimplantation__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Secteur_parent__r.Responsable__r.Email, &quot;_self&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DR</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

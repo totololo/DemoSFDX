@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Follow_up__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Cette case indique s&#39;il y a une question de follow-up sur la question original</description>
+    <externalId>false</externalId>
+    <label>Dépendance</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

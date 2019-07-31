@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR08_VisiteOui_source_oblig</fullName>
+    <active>true</active>
+    <description>Si &quot;Commerce visité&quot; égal à oui, alors &quot;Source&quot;</description>
+    <errorConditionFormula>AND
+( NOT( $User.BypassValidationRule__c ),
+ISPICKVAL(  Status  , &quot;Oui&quot;),
+
+ISPICKVAL(  LeadSource  ,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>Si Commerce visité égal Oui, veuillez remplir le champ
+&quot;Source&quot;.</errorMessage>
+</ValidationRule>

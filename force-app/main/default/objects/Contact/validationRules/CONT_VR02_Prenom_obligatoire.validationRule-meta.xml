@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONT_VR02_Prenom_obligatoire</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c,
+ISBLANK( FirstName ))</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>Vous devez obligatoirement renseigner le champ &quot;Prénom&quot;</errorMessage>
+</ValidationRule>

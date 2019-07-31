@@ -1,0 +1,44 @@
+.THIS.radioButton {
+    float : right;
+}
+.THIS.test{
+    background:red;
+
+}
+
+.THIS .nomDuContact{
+    padding-right: 4%;
+}
+
+.THIS .nomDuContactTxt{
+    width:40%;
+}
+
+.THIS .dialogDemararageStyle{
+    width:300%;
+}
+
+.THIS .statusStyle{
+    padding-left:6%;
+}
+.THIS.NomDuContact {
+    float : left;
+}
+.THIS .battleBox {  
+    width: 100%; /* increasing width from 210 to 216 because your border takes 6 extra px*/
+}
+.THIS .leftRapper {
+    
+    display:block;
+    float: left;
+}
+.THIS .middleRapper {
+
+    display:block;
+    float: left;
+}
+.THIS .rightRapper {
+    width:30%;
+    display:block;
+    float: right;
+}

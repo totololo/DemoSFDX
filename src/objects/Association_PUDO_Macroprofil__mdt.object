@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Cet objet contient les pays et types de point associés à chaque Macroprofil d&apos;un PUDO</description>
+    <fields>
+        <fullName>Id_du_Macroprofil__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Id du Macroprofil</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partenaire__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Partenaire</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pays__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Pays</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_de_point__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Type de point</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Association PUDO Macroprofil</label>
+    <listViews>
+        <fullName>BNL</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>Id_du_Macroprofil__c</columns>
+        <columns>Partenaire__c</columns>
+        <columns>Pays__c</columns>
+        <columns>Type_de_point__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>BNL</label>
+        <language>fr</language>
+    </listViews>
+    <pluralLabel>Association PUDO Macroprofils</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

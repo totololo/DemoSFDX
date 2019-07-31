@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X4_PUDO_validated_in_end_of_life_cycle</fullName>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS2_COUNTRY_CODE</columns>
+    <columns>Langues_parlees_sur_le_relais__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>6,7,8</value>
+    </filters>
+    <label>4 - PUDO validated in end of life cycle</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>DPD_BNL_Animateur_reseau_siege</group>
+        <group>DPD_BNL_Animateurs</group>
+        <group>DPD_BNL_Gestion_Materiel</group>
+        <group>DPD_BNL_Manager</group>
+        <group>DPD_BNL_Service_Line</group>
+        <group>DPD_HUN_External_Team</group>
+        <group>DPD_HUN_Finance_Team</group>
+        <group>DPD_HUN_Manager</group>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

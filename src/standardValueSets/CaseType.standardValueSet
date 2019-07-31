@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Feature Request</fullName>
+        <color>#0B6FCE</color>
+        <default>false</default>
+        <label>Feature Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Indisponibilité problème opérationnel - Sinistre/ Travaux/Santé avec date de fin</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Indisponibilité problème opérationnel - Sinistre/ Travaux/Santé avec date de fin</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Indisponibilité problème PDA - Panne PDA</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Indisponibilité problème PDA - Panne PDA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Indisponibilité problème PDA - Problème de synchronisation</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Indisponibilité problème PDA - Problème de synchronisation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Injoignable- Indisponibilité problème opérationnel anomalie colis</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Injoignable- Indisponibilité problème opérationnel anomalie colis</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Injoignable - Indisponibilité problème opérationnel Sinistre/travaux/Santé</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Injoignable - Indisponibilité problème opérationnel Sinistre/travaux/Santé</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Injoignable - Indisponibilité problème PDA / panne PDA</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Injoignable - Indisponibilité problème PDA / panne PDA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Injoignable - Indisponibilité problème PDA / problème synchronisation</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Injoignable - Indisponibilité problème PDA / problème synchronisation</label>
+    </standardValue>
+</StandardValueSet>

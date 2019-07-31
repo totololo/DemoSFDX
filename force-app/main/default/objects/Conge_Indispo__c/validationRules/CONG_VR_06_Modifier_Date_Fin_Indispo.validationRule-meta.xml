@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONG_VR_06_Modifier_Date_Fin_Indispo</fullName>
+    <active>false</active>
+    <description>Il est possible de modifier la date de fin uniquement pour une date supérieure ou égale à la date du jour.
+Il est possible de modifier la date de fin uniquement pour une date supérieure ou égale à la date du début de l&#39;indisponibilité</description>
+    <errorConditionFormula>AND(
+   NOT ISCHANGED(Tech_Treated__c),
+   Not($User.BypassValidationRule__c),
+     OR (
+             CONTAINS($Label.CongInd_RT_IndispoConsigne, RecordTypeId),
+             CONTAINS($Label.CongInd_RT_IndispoStandard_ALL,RecordTypeId)
+            ) ,
+     NOT(ISPICKVAL( Type_d_indisponibilite__c ,&quot;4&quot;)),
+     OR(Date_de_fin__c &lt; Date_de_debut__c,
+        Date_de_fin__c &lt; Today ()
+       ) 
+     )</errorConditionFormula>
+    <errorDisplayField>Date_de_fin__c</errorDisplayField>
+    <errorMessage>La date de fin doit rester supérieure ou égale à la date du jour et supérieure à la date de début de l&#39;indisponibilité.</errorMessage>
+</ValidationRule>

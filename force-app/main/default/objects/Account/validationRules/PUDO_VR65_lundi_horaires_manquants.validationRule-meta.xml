@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR65_lundi_horaires_manquants</fullName>
+    <active>true</active>
+    <description>Veuillez remplir toutes les cases horaires du lundi.</description>
+    <errorConditionFormula>AND( 
+NOT( $User.BypassValidationRule__c ), 
+Lundi__c=false,OR(
+AND(  
+ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;),
+NOT(ISPICKVAL(Lundi_Fermeture__c,&quot;&quot;)),
+NOT(ISPICKVAL(lundi_debut_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(lundi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Lundi_Fermeture__c,&quot;&quot;),
+NOT(ISPICKVAL(lundi_debut_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(lundi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Lundi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(lundi_debut_pause_dejeuner__c, &quot;&quot;),
+NOT(ISPICKVAL(lundi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;)),
+ISPICKVAL(Lundi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(lundi_debut_pause_dejeuner__c, &quot;&quot;),
+ISPICKVAL(lundi_fin_pause_dejeuner__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(lundi_fin_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;)),
+NOT(ISPICKVAL(Lundi_Fermeture__c, &quot;&quot;)),
+NOT(ISPICKVAL(lundi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(lundi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;),
+NOT(ISPICKVAL(Lundi_Fermeture__c, &quot;&quot;)),
+NOT(ISPICKVAL(lundi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(lundi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Lundi_Fermeture__c, &quot;&quot;),
+NOT(ISPICKVAL(lundi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(lundi_fin_pause_dejeuner__c,&quot;&quot;)),
+ISPICKVAL(Lundi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Lundi_Fermeture__c, &quot;&quot;),
+ISPICKVAL(lundi_debut_pause_dejeuner__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(lundi_fin_pause_dejeuner__c,&quot;&quot;)),
+NOT(ISPICKVAL(Lundi_Ouverture__c, &quot;&quot;)),
+NOT(ISPICKVAL(Lundi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(lundi_fin_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(Lundi_Ouverture__c, &quot;&quot;)),
+NOT(ISPICKVAL(Lundi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(lundi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Lundi_Ouverture__c, &quot;&quot;),
+NOT(ISPICKVAL(Lundi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+NOT(ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;)),
+ISPICKVAL(lundi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Lundi_Ouverture__c, &quot;&quot;),
+ISPICKVAL(Lundi_Fermeture__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(Lundi_Fermeture__c,&quot;&quot;),
+NOT(ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;)),
+NOT(ISPICKVAL(lundi_fin_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(Lundi_Ouverture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(Lundi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(lundi_fin_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(Lundi_Ouverture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(Lundi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(lundi_fin_pause_dejeuner__c, &quot;&quot;),
+NOT(ISPICKVAL(Lundi_Ouverture__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(Lundi_Fermeture__c,&quot;&quot;)),
+ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(lundi_fin_pause_dejeuner__c, &quot;&quot;),
+ISPICKVAL(Lundi_Ouverture__c, &quot;&quot;)
+)))</errorConditionFormula>
+    <errorDisplayField>Lundi_Ouverture__c</errorDisplayField>
+    <errorMessage>Veuillez remplir toutes les cases horaires du lundi.</errorMessage>
+</ValidationRule>

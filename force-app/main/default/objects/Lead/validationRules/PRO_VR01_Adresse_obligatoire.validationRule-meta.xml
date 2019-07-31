@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR01_Adresse_obligatoire</fullName>
+    <active>true</active>
+    <description>Rende l&#39;adresse du Prospect obligatoire.</description>
+    <errorConditionFormula>AND (
+      Not($User.BypassValidationRule__c),
+OR( ISBLANK( Postal_Code__c ),
+         ISBLANK( Street__c ),
+         ISBLANK( City__c ),
+ISBLANK(  TEXT(Country__c ))
+       ))</errorConditionFormula>
+    <errorDisplayField>Street</errorDisplayField>
+    <errorMessage>Veuillez indiquer l&#39;adresse du Prospect (Rue, code postal, pays et ville).</errorMessage>
+</ValidationRule>

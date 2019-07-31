@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_RV10_ActiviteObligatoire</fullName>
+    <active>true</active>
+    <errorConditionFormula>and (not( $User.BypassValidationRule__c ),
+ Contains( $Label.RT_Prospect_France  ,  RecordTypeId ),
+OR(
+ispickval( Type_de_point__c ,&quot;2&quot;), 
+ispickval(Type_de_point__c,&quot;-3&quot;), 
+ispickval( Partenaire__c ,&quot;68&quot;), 
+ispickval( Partenaire__c ,&quot;Linex&quot;) 
+),
+ispickval ( Activite_commerciale_principale__c ,&quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>Activite_commerciale_principale__c</errorDisplayField>
+    <errorMessage>Veuillez renseigner les champs &quot;Domaine d&#39;activité&quot; et &quot;Activité commerciale principale&quot;.</errorMessage>
+</ValidationRule>

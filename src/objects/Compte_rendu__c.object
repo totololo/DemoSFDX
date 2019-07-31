@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Cet objet permet de sélectionner les questions CR en fonction du compte rendu sélectionné.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Compte_rendu__c</fullName>
+        <externalId>false</externalId>
+        <label>Compte rendu</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>France</fullName>
+                    <default>false</default>
+                    <label>France</label>
+                </value>
+                <value>
+                    <fullName>INTER</fullName>
+                    <default>false</default>
+                    <label>INTER</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Operateur__c</fullName>
+        <externalId>false</externalId>
+        <label>Opérateur</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PUS_FR</fullName>
+                    <default>false</default>
+                    <label>PUS_FR</label>
+                </value>
+                <value>
+                    <fullName>DPD_BNL</fullName>
+                    <default>false</default>
+                    <label>DPD_BNL</label>
+                </value>
+                <value>
+                    <fullName>CLP_FR</fullName>
+                    <default>false</default>
+                    <label>CLP_FR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_de_compte_rendu__c</fullName>
+        <externalId>false</externalId>
+        <label>Type de compte rendu</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VA Standard</fullName>
+                    <default>false</default>
+                    <label>VA Standard</label>
+                </value>
+                <value>
+                    <fullName>VALP</fullName>
+                    <default>false</default>
+                    <label>VALP</label>
+                </value>
+                <value>
+                    <fullName>VA Quali</fullName>
+                    <default>false</default>
+                    <label>VA Quali</label>
+                </value>
+                <value>
+                    <fullName>VA Orga</fullName>
+                    <default>false</default>
+                    <label>VA Orga</label>
+                </value>
+                <value>
+                    <fullName>VAP PDA</fullName>
+                    <default>false</default>
+                    <label>VAP PDA</label>
+                </value>
+                <value>
+                    <fullName>VAP Seuil</fullName>
+                    <default>false</default>
+                    <label>VAP Seuil</label>
+                </value>
+                <value>
+                    <fullName>VAP FDA</fullName>
+                    <default>false</default>
+                    <label>VAP FDA</label>
+                </value>
+                <value>
+                    <fullName>VAP Injoignable</fullName>
+                    <default>false</default>
+                    <label>VAP Injoignable</label>
+                </value>
+                <value>
+                    <fullName>VAP DA</fullName>
+                    <default>false</default>
+                    <label>VAP DA</label>
+                </value>
+                <value>
+                    <fullName>VAP MEN</fullName>
+                    <default>false</default>
+                    <label>VAP MEN</label>
+                </value>
+                <value>
+                    <fullName>VAP VO</fullName>
+                    <default>false</default>
+                    <label>VAP VO</label>
+                </value>
+                <value>
+                    <fullName>VAP QS</fullName>
+                    <default>false</default>
+                    <label>VAP QS</label>
+                </value>
+                <value>
+                    <fullName>VAP Enquête de satisfaction</fullName>
+                    <default>false</default>
+                    <label>VAP Enquête de satisfaction</label>
+                </value>
+                <value>
+                    <fullName>VAP Enquête de bienvenue</fullName>
+                    <default>false</default>
+                    <label>VAP Enquête de bienvenue</label>
+                </value>
+                <value>
+                    <fullName>VAP FC</fullName>
+                    <default>false</default>
+                    <label>VAP FC</label>
+                </value>
+                <value>
+                    <fullName>Recruitment visit report</fullName>
+                    <default>false</default>
+                    <label>Recruitment visit report</label>
+                </value>
+                <value>
+                    <fullName>Monitoring visit report</fullName>
+                    <default>false</default>
+                    <label>Monitoring visit report</label>
+                </value>
+                <value>
+                    <fullName>Course visit report</fullName>
+                    <default>false</default>
+                    <label>Course visit report</label>
+                </value>
+                <value>
+                    <fullName>VA FDA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>VA FDA</label>
+                </value>
+                <value>
+                    <fullName>VA Injoignable</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>VA Injoignable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Compte rendu</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Tout</label>
+    </listViews>
+    <nameField>
+        <label>Nom de compte rendu</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Comptes rendus</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>VA</fullName>
+        <active>true</active>
+        <label>VA</label>
+        <picklistValues>
+            <picklist>Compte_rendu__c</picklist>
+            <values>
+                <fullName>France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INTER</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Operateur__c</picklist>
+            <values>
+                <fullName>CLP_FR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DPD_BNL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PUS_FR</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_compte_rendu__c</picklist>
+            <values>
+                <fullName>VA Orga</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA Quali</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA Standard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VALP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>VAP</fullName>
+        <active>true</active>
+        <label>VAP</label>
+        <picklistValues>
+            <picklist>Compte_rendu__c</picklist>
+            <values>
+                <fullName>France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INTER</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Operateur__c</picklist>
+            <values>
+                <fullName>CLP_FR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DPD_BNL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PUS_FR</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_compte_rendu__c</picklist>
+            <values>
+                <fullName>VAP DA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP Enquête de bienvenue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP Enquête de satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP FC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP FDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP MEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP QS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP Seuil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP VO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

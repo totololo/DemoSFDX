@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Dispo_07_08__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR( 
+MONTH(Tech_date_debut_disp_a_venir__c) = 7, 
+MONTH(Tech_date_debut_disp_a_venir__c) = 8, 
+MONTH(Tech_date_fin_disp_a_venir__c) = 7, 
+MONTH(Tech_date_fin_disp_a_venir__c) = 8) 
+,false,true)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech_Dispo_07_08</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creer_un_ticket__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*[Inter]*/
+IF( AND( NOT (CONTAINS($Label.RT_Consigne_Compte, RecordType.Id)), 
+  OR(CONTAINS($Label.RT_INT_Compte, RecordType.Id ), CONTAINS($Label.RT_INT_Compte2, RecordType.Id))),
+IF($Label.Creer_un_ticket_INTER == $Label.TECH_ENV_NOT_AVAILABLE,
+HYPERLINK($Label.TECH_ENV_NOT_AVAILABLE,$Label.Click_Here),
+HYPERLINK($Label.Creer_un_ticket_INTER+Reference__c+&quot;&amp;uiculture=en-EN&quot;,
+$Label.Click_Here)),
+
+/*[France only]*/
+IF(OR(CONTAINS($Label.RT_France_Compte, RecordType.Id), CONTAINS($Label.RT_Consigne_Compte, RecordType.Id)),
+IF($Label.Creer_un_ticket == $Label.TECH_ENV_NOT_AVAILABLE,
+HYPERLINK($Label.TECH_ENV_NOT_AVAILABLE,$Label.Click_Here),
+HYPERLINK($Label.Creer_un_ticket+Reference__c+&quot;&amp;uiculture=fr-FR&quot;, $Label.Click_Here )),null)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Créer un ticket</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

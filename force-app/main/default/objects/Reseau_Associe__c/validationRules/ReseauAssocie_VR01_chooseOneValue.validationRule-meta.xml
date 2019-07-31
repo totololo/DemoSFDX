@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReseauAssocie_VR01_chooseOneValue</fullName>
+    <active>true</active>
+    <errorConditionFormula>If(Active__c = true,1,0)+ 
+If(Exclu__c = true,1,0)+ 
+If(Interdit__c = true, 1,0) 
+&gt; 1</errorConditionFormula>
+    <errorMessage>Veuillez choisir une des cases à cochés suivantes (Activé, Exclu ou Interdit)</errorMessage>
+</ValidationRule>

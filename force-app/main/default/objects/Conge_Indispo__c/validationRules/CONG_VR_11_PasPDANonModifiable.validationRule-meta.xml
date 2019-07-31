@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONG_VR_11_PasPDANonModifiable</fullName>
+    <active>true</active>
+    <description>Indisponibilité Pas de PDA associé n&#39;est pas modifiable manuellement (sauf par Administrateur).</description>
+    <errorConditionFormula>and (
+     not( $User.BypassValidationRule__c ),
+     $UserRole.DeveloperName  &lt;&gt; &quot;Administrateur&quot;,
+      not( RecordType.DeveloperName 
+                 =&quot;Indisponibilite_consigne&quot;),
+     ispickval(Type_d_indisponibilite__c,&quot;4&quot;), 
+or   (ischanged( Type_d_indisponibilite__c ), 
+      ischanged( Sous_type__c ), 
+      ischanged(Date_de_debut__c), 
+      ischanged( Date_de_fin__c ), 
+      ischanged( Commentaires__c ), 
+      ischanged( Injoignable__c )))</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas modifier cette indisponibilité manuellement.</errorMessage>
+</ValidationRule>

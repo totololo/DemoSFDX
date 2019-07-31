@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etat_6_Suggere__c</fullName>
+    <description>Champ technique utilisé dans les vues de listes des requêtes.</description>
+    <externalId>false</externalId>
+    <formula>AND(
+         (Etat_Pudo__c = &quot;6&quot;),
+    OR(
+           (Mode__c=&quot;730&quot;),
+           (Mode__c=&quot;740&quot;)
+           ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Etat 6 Suggéré</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

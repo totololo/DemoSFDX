@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR18_HUN_MailObligatoire</fullName>
+    <active>true</active>
+    <description>Applicable pour Hongrie : le champ Email est obligatoire pour un prospect chaud.</description>
+    <errorConditionFormula>AND (NOT($User.BypassValidationRule__c),
+        CONTAINS($Label.RT_Prospect_Hongrie,RecordTypeId),
+        ISPICKVAL( Status ,&quot;Oui&quot;), 
+        ISPICKVAL( Commerce_eligible__c ,&quot;Oui&quot;), 
+        ISPICKVAL( Interesse__c ,&quot;Oui&quot;), 
+        ISBLANK(Email)
+        )</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>Veuillez indiquer Email du Prospect.</errorMessage>
+</ValidationRule>

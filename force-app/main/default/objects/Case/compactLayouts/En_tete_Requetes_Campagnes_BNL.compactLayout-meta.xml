@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>En_tete_Requetes_Campagnes_BNL</fullName>
+    <fields>Object_de_la_requete__c</fields>
+    <fields>CaseNumber</fields>
+    <fields>Status</fields>
+    <fields>OwnerId</fields>
+    <fields>Age_de_la_requete__c</fields>
+    <label>En tête Requêtes Campagnes BNL</label>
+</CompactLayout>

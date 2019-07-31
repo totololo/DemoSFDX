@@ -1,0 +1,8 @@
+Bonjour {!Receiving_User.Username},
+
+Une demande d'approbation vous a été adressée.
+
+Voici le lien : https://eu6.salesforce.com/{!01I58000000nzB8.Id}
+
+Cordialement,
+Administrateur

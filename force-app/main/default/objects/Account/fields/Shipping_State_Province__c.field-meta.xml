@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_State_Province__c</fullName>
+    <externalId>false</externalId>
+    <label>Shipping State/Province</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Shipping_Country__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Antwerp</fullName>
+                <default>false</default>
+                <label>Antwerp</label>
+            </value>
+            <value>
+                <fullName>Walloon Brabant</fullName>
+                <default>false</default>
+                <label>Walloon Brabant</label>
+            </value>
+            <value>
+                <fullName>Hainaut</fullName>
+                <default>false</default>
+                <label>Hainaut</label>
+            </value>
+            <value>
+                <fullName>Liège</fullName>
+                <default>false</default>
+                <label>Liège</label>
+            </value>
+            <value>
+                <fullName>Luxembourg</fullName>
+                <default>false</default>
+                <label>Luxembourg</label>
+            </value>
+            <value>
+                <fullName>Namur</fullName>
+                <default>false</default>
+                <label>Namur</label>
+            </value>
+            <value>
+                <fullName>East Flanders</fullName>
+                <default>false</default>
+                <label>East Flanders</label>
+            </value>
+            <value>
+                <fullName>Flemish Brabant</fullName>
+                <default>false</default>
+                <label>Flemish Brabant</label>
+            </value>
+            <value>
+                <fullName>West Flanders</fullName>
+                <default>false</default>
+                <label>West Flanders</label>
+            </value>
+            <value>
+                <fullName>Drenthe</fullName>
+                <default>false</default>
+                <label>Drenthe</label>
+            </value>
+            <value>
+                <fullName>Flevoland</fullName>
+                <default>false</default>
+                <label>Flevoland</label>
+            </value>
+            <value>
+                <fullName>Friesland</fullName>
+                <default>false</default>
+                <label>Friesland</label>
+            </value>
+            <value>
+                <fullName>Gelderland</fullName>
+                <default>false</default>
+                <label>Gelderland</label>
+            </value>
+            <value>
+                <fullName>Groningen</fullName>
+                <default>false</default>
+                <label>Groningen</label>
+            </value>
+            <value>
+                <fullName>Noord-Brabant</fullName>
+                <default>false</default>
+                <label>Noord-Brabant</label>
+            </value>
+            <value>
+                <fullName>Noord-Holland</fullName>
+                <default>false</default>
+                <label>Noord-Holland</label>
+            </value>
+            <value>
+                <fullName>Overijssel</fullName>
+                <default>false</default>
+                <label>Overijssel</label>
+            </value>
+            <value>
+                <fullName>Utrecht</fullName>
+                <default>false</default>
+                <label>Utrecht</label>
+            </value>
+            <value>
+                <fullName>Zuid-Holland</fullName>
+                <default>false</default>
+                <label>Zuid-Holland</label>
+            </value>
+            <value>
+                <fullName>Limburg</fullName>
+                <default>false</default>
+                <label>Limburg</label>
+            </value>
+            <value>
+                <fullName>Lux</fullName>
+                <default>false</default>
+                <label>Lux</label>
+            </value>
+            <value>
+                <fullName>France</fullName>
+                <default>false</default>
+                <label>France</label>
+            </value>
+            <value>
+                <fullName>Hungary</fullName>
+                <default>false</default>
+                <label>Hungary</label>
+            </value>
+            <value>
+                <fullName>Zeeland</fullName>
+                <default>false</default>
+                <label>Zeeland</label>
+            </value>
+            <value>
+                <fullName>Aargau</fullName>
+                <default>false</default>
+                <label>Aargau</label>
+            </value>
+            <value>
+                <fullName>Appenzell Innerrhoden</fullName>
+                <default>false</default>
+                <label>Appenzell Innerrhoden</label>
+            </value>
+            <value>
+                <fullName>Appenzell Ausserrhoden</fullName>
+                <default>false</default>
+                <label>Appenzell Ausserrhoden</label>
+            </value>
+            <value>
+                <fullName>Bern</fullName>
+                <default>false</default>
+                <label>Bern</label>
+            </value>
+            <value>
+                <fullName>Basel-Landschaft</fullName>
+                <default>false</default>
+                <label>Basel-Landschaft</label>
+            </value>
+            <value>
+                <fullName>Basel-Stadt</fullName>
+                <default>false</default>
+                <label>Basel-Stadt</label>
+            </value>
+            <value>
+                <fullName>Freiburg</fullName>
+                <default>false</default>
+                <label>Freiburg</label>
+            </value>
+            <value>
+                <fullName>Genf</fullName>
+                <default>false</default>
+                <label>Genf</label>
+            </value>
+            <value>
+                <fullName>Glarus</fullName>
+                <default>false</default>
+                <label>Glarus</label>
+            </value>
+            <value>
+                <fullName>Graubünden</fullName>
+                <default>false</default>
+                <label>Graubünden</label>
+            </value>
+            <value>
+                <fullName>Jura</fullName>
+                <default>false</default>
+                <label>Jura</label>
+            </value>
+            <value>
+                <fullName>Luzern</fullName>
+                <default>false</default>
+                <label>Luzern</label>
+            </value>
+            <value>
+                <fullName>Neuenburg</fullName>
+                <default>false</default>
+                <label>Neuenburg</label>
+            </value>
+            <value>
+                <fullName>Nidwalden</fullName>
+                <default>false</default>
+                <label>Nidwalden</label>
+            </value>
+            <value>
+                <fullName>Obwalden</fullName>
+                <default>false</default>
+                <label>Obwalden</label>
+            </value>
+            <value>
+                <fullName>Sankt Gallen</fullName>
+                <default>false</default>
+                <label>Sankt Gallen</label>
+            </value>
+            <value>
+                <fullName>Schaffhausen</fullName>
+                <default>false</default>
+                <label>Schaffhausen</label>
+            </value>
+            <value>
+                <fullName>Solothurn</fullName>
+                <default>false</default>
+                <label>Solothurn</label>
+            </value>
+            <value>
+                <fullName>Schwyz</fullName>
+                <default>false</default>
+                <label>Schwyz</label>
+            </value>
+            <value>
+                <fullName>Thurgau</fullName>
+                <default>false</default>
+                <label>Thurgau</label>
+            </value>
+            <value>
+                <fullName>Tessin</fullName>
+                <default>false</default>
+                <label>Tessin</label>
+            </value>
+            <value>
+                <fullName>Uri</fullName>
+                <default>false</default>
+                <label>Uri</label>
+            </value>
+            <value>
+                <fullName>Waadt</fullName>
+                <default>false</default>
+                <label>Waadt</label>
+            </value>
+            <value>
+                <fullName>Wallis</fullName>
+                <default>false</default>
+                <label>Wallis</label>
+            </value>
+            <value>
+                <fullName>Zug</fullName>
+                <default>false</default>
+                <label>Zug</label>
+            </value>
+            <value>
+                <fullName>Zürich</fullName>
+                <default>false</default>
+                <label>Zürich</label>
+            </value>
+            <value>
+                <fullName>Liechtenstein</fullName>
+                <default>false</default>
+                <label>Liechtenstein</label>
+            </value>
+            <value>
+                <fullName>Jihočeský kraj</fullName>
+                <default>false</default>
+                <label>Jihočeský kraj</label>
+            </value>
+            <value>
+                <fullName>Jihomoravský kraj</fullName>
+                <default>false</default>
+                <label>Jihomoravský kraj</label>
+            </value>
+            <value>
+                <fullName>Karlovarský kraj</fullName>
+                <default>false</default>
+                <label>Karlovarský kraj</label>
+            </value>
+            <value>
+                <fullName>Královéhradecký kraj</fullName>
+                <default>false</default>
+                <label>Královéhradecký kraj</label>
+            </value>
+            <value>
+                <fullName>Liberecký kraj</fullName>
+                <default>false</default>
+                <label>Liberecký kraj</label>
+            </value>
+            <value>
+                <fullName>Moravskoslezský kraj</fullName>
+                <default>false</default>
+                <label>Moravskoslezský kraj</label>
+            </value>
+            <value>
+                <fullName>Olomoucký kraj</fullName>
+                <default>false</default>
+                <label>Olomoucký kraj</label>
+            </value>
+            <value>
+                <fullName>Pardubický kraj</fullName>
+                <default>false</default>
+                <label>Pardubický kraj</label>
+            </value>
+            <value>
+                <fullName>Plzeňský kraj</fullName>
+                <default>false</default>
+                <label>Plzeňský kraj</label>
+            </value>
+            <value>
+                <fullName>Praha, hlavní město</fullName>
+                <default>false</default>
+                <label>Praha, hlavní město</label>
+            </value>
+            <value>
+                <fullName>Středočeský kraj</fullName>
+                <default>false</default>
+                <label>Středočeský kraj</label>
+            </value>
+            <value>
+                <fullName>Ústecký kraj</fullName>
+                <default>false</default>
+                <label>Ústecký kraj</label>
+            </value>
+            <value>
+                <fullName>Vysočina</fullName>
+                <default>false</default>
+                <label>Vysočina</label>
+            </value>
+            <value>
+                <fullName>Zlínský kraj</fullName>
+                <default>false</default>
+                <label>Zlínský kraj</label>
+            </value>
+            <value>
+                <fullName>Utrechtzeeland</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Utrechtzeeland</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>Antwerp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>Walloon Brabant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>Hainaut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>Liège</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>Luxembourg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>Namur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>East Flanders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>Flemish Brabant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>West Flanders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Limburg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Luxembourg</controllingFieldValue>
+            <valueName>Lux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Drenthe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Flevoland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Friesland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Gelderland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Groningen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Noord-Brabant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Noord-Holland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Overijssel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Utrecht</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Zuid-Holland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Zeeland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hungary</controllingFieldValue>
+            <valueName>Hungary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Aargau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Appenzell Innerrhoden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Appenzell Ausserrhoden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Bern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Basel-Landschaft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Basel-Stadt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Freiburg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Genf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Glarus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Graubünden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Jura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Luzern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Neuenburg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Nidwalden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Obwalden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Sankt Gallen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Schaffhausen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Solothurn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Schwyz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Thurgau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Tessin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Uri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Waadt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Wallis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Zug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Zürich</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Liechtenstein</controllingFieldValue>
+            <valueName>Liechtenstein</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Jihočeský kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Jihomoravský kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Karlovarský kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Královéhradecký kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Liberecký kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Moravskoslezský kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Olomoucký kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Pardubický kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Plzeňský kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Praha, hlavní město</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Středočeský kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Ústecký kraj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Vysočina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Czech Republic</controllingFieldValue>
+            <valueName>Zlínský kraj</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

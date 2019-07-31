@@ -1,0 +1,13 @@
+.THIS .leftPaddingClass {
+    padding-left: 2rem;
+}
+ 
+.THIS .pillSize{
+ width:100%;
+}
+
+.THIS .newContactStyle{
+    border-style: none;
+    text-align: left;
+    width : 100%;
+}

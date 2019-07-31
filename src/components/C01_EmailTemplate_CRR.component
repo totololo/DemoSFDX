@@ -1,0 +1,76 @@
+<!--------------------------------------------------------------------------------------------------------------------------
+Author: Fadi Tannoury
+Company: Ei-Technologies Lebanon
+Description: VisualForce component qui liste les questions et les reponses dans un email.
+History
+2018-06-05  Fadi Tannoury	  Creation
+--------------------------------------------------------------------------------------------------------------------------->
+
+<apex:component controller="C01_EmailTemplate_CRR_Controller" access="global" >
+    
+    <apex:attribute name="CRR" assignTo="{!CompteRenduRempli}" type="Compte_rendu_rempli__c" description="Compte Rendu rempli"/>
+    
+    <div style="height: 90px; padding: 20px ; border: 1px solid #4472c4; margin: 10px; overflow: auto;" >
+        <apex:image url="{!HeaderUrl}" height="50px" />
+    </div>
+    
+    <div style="border: 1px solid #4472c4; margin: 10px; padding: 10px; overflow: auto;" >
+        
+        <apex:outputText rendered="{!CRR.Statut__c == $Label.VAVAP_statutTermine}" >
+            
+            <p><apex:outputText value="{!$Label.ET_Bonjour}" /></p>
+            <p>
+                <apex:outputText value="{!$Label.ET_Merci}" />
+                <br/>
+                <apex:outputText rendered="{!!CRR.Interrompu__c}" value="{!$Label.ET_Termine}" />
+                <apex:outputText rendered="{!CRR.Interrompu__c}" value="{!$Label.ET_EnAttente}" />
+                <br/>
+                <apex:outputText value="{!$Label.ET_QuestionComplementaire}" />
+            </p>
+            <p>
+                <apex:outputText value="{!$Label.ET_Cordialement}" />
+                <br/>
+                <apex:outputText value="{!$User.FirstName + ' ' + $User.LastName}" />
+            </p>
+            
+            <br/>
+            
+            <apex:outputText rendered="{! and(CRR !='', CRR !=null)}" >
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border: 1px solid #e0e3e5;" >
+                    <thead>
+                        <th style="background: #f2f3f3; color: #000; font-size: .9em; font-weight: bold; border-bottom: 1px solid #ededed; padding: 5px 2px 4px 5px; color: #000; border-right: 1px solid #ededed;" >
+                            <apex:outputText value="Question"/>
+                        </th>
+                        <th style="background: #f2f3f3; color: #000; font-size: .9em; font-weight: bold; border-bottom: 1px solid #ededed; padding: 5px 2px 4px 5px; color: #000;">
+                            <apex:outputText value="Réponse"/>
+                        </th>
+                    </thead>
+                    <apex:repeat value="{!listReponses}" var="reponse" >
+                        <tr>
+                            <td style="vertical-align: middle; padding: 4px 2px 4px 5px; border-bottom: 1px solid #ededed; color: #000; border-right: 1px solid #ededed;" >
+                                <apex:outputText value="{!reponse.Question__c}"/>
+                            </td> 
+                            <td style="vertical-align: middle; padding: 4px 2px 4px 5px; border-bottom: 1px solid #ededed; color: #000;" >
+                                <apex:outputText value="{!reponse.Reponse__c}"/>
+                            </td> 
+                        </tr>
+                 
+                    </apex:repeat>
+                    
+                </table>
+                <br/>
+                <apex:outputText style="font-weight:bold;" value="Commentaires divers Relais : "/><apex:outputText label="Commentaires divers Relais" value="{!CRR.Commentaires_divers_Relais__c}"/>
+                <br/>
+                <br/>
+                <apex:outputText style="font-weight:bold;" value="Commentaires divers Pickup : "/><apex:outputText label="Commentaires divers Pickup" value="{!CRR.Commentaires_divers_Pickup__c}"/>
+            </apex:outputText>
+            
+     
+        </apex:outputText>
+    </div>
+    
+    <div class="blue-border footer" style="border: 1px solid #4472c4; margin: 10px; padding: 40px 20px 20px 0px; overflow: auto;" >
+        <apex:image url="{!FooterUrl}" height="30px" style="float: right;" />      
+    </div>
+    
+</apex:component>

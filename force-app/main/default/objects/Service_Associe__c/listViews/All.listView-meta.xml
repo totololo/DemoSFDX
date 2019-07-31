@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Service__c</columns>
+    <columns>Compte__c</columns>
+    <columns>Reference_Pudo__c</columns>
+    <columns>Macroprofil__c</columns>
+    <columns>Pudo_Forme__c</columns>
+    <columns>Active__c</columns>
+    <columns>Modifiable__c</columns>
+    <columns>Motif_d_activation_d_sactivation__c</columns>
+    <columns>Date_de_fin_du_statut__c</columns>
+    <columns>Etat_du_statut__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tous les services associés</label>
+    <language>fr</language>
+</ListView>

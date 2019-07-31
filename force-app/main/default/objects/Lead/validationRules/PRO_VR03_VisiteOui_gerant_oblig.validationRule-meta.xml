@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR03_VisiteOui_gerant_oblig</fullName>
+    <active>true</active>
+    <description>Si &quot;Commerce visité&quot; égal à oui, alors &quot;Gérant vu&quot; obligatoire.</description>
+    <errorConditionFormula>AND
+(NOT( $User.BypassValidationRule__c ),
+IsConverted = false ,
+ISPICKVAL(  Status  , &quot;Oui&quot;),
+
+ISPICKVAL(  Gerant_vu__c  ,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Gerant_vu__c</errorDisplayField>
+    <errorMessage>Si Commerce visité égal Oui, veuillez remplir le champ
+&quot;Gérant vu&quot;.</errorMessage>
+</ValidationRule>

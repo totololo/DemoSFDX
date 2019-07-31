@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR13_DateFormPrevue_NonModif</fullName>
+    <active>true</active>
+    <description>Lors de la saisie de la « date de formation réelle », la « date de formation prévue » n’est plus modifiable.</description>
+    <errorConditionFormula>AND (
+AND(
+!$User.BypassValidationRule__c,
+NOT(ISBLANK( Date_de_la_formation_reelle__c )),
+ISCHANGED( Date_de_formation_prevue__c )
+),
+OR ( 
+Contains( $Label.RT_NonSuiviCo_Compte , RecordTypeId ), 
+Contains(  $Label.RT_SuiviCo_Compte , RecordTypeId ),
+Contains(   $Label.RT_PickupContact_Compte , RecordTypeId )))</errorConditionFormula>
+    <errorDisplayField>Date_de_formation_prevue__c</errorDisplayField>
+    <errorMessage>Lorsque la date de formation réelle est renseignée, la saisie ou la modification de la date de formation prévue n&#39;est plus requise.</errorMessage>
+</ValidationRule>

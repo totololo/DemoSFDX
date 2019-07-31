@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Page_P_riode</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Pour indiquer les périodes reroutage et de backup.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Attention__c</fullName>
+        <defaultValue>&quot;Avant de créer une période veuillez vérifier qu&apos;il n&apos;existe pas déjà une période de même type sur les dates que vous souhaitez indiquer. Deux périodes de même type ne peuvent pas se chevaucher.&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Attention</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commentaires__c</fullName>
+        <externalId>false</externalId>
+        <label>Commentaires</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Date_de_debut__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de début</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_de_fin__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de fin</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Nom_du_compte__c</fullName>
+        <externalId>false</externalId>
+        <label>Nom du compte</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Surcharge / Backup</relationshipLabel>
+        <relationshipName>Reroutages</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Ordre_d_affichage__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Statut__c =&quot;En cours&quot;,&quot;3&quot;, 
+IF( Statut__c =&quot;A venir&quot;,&quot;2&quot;, 
+IF (Statut__c=&quot;Passé&quot;,&quot;1&quot;,&quot;null&quot;))) 
+&amp; TEXT(YEAR( Date_de_debut__c )) &amp; 
+
+IF (LEN(TEXT(MONTH(Date_de_debut__c)))=1,&quot;0&quot; &amp; TEXT(MONTH(Date_de_debut__c)) ,TEXT(MONTH(Date_de_debut__c))) 
+&amp; 
+
+IF (LEN(TEXT(DAY(Date_de_debut__c)))=1,&quot;0&quot; &amp; TEXT(DAY(Date_de_debut__c)) ,TEXT(DAY(Date_de_debut__c)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ordre d&apos;affichage</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Periode_de_backup__c</fullName>
+        <externalId>false</externalId>
+        <label>Période de backup</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Seuil_backup2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Nom_du_compte__r.Seuil_Backup__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Seuil backup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seuil_calcule__c</fullName>
+        <externalId>false</externalId>
+        <formula>Nom_du_compte__r.Seuil_calcule__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Seuil calculé</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seuil_contractuel__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Nom_du_compte__r.Seuil_contractuel__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Seuil contractuel</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seuil_temporaire__c</fullName>
+        <externalId>false</externalId>
+        <label>Seuil temporaire</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statut__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Date_de_debut__c &gt;  TODAY() ,$Label.Periode_A_Venir,
+IF ( Date_de_fin__c  &lt;   TODAY() ,$Label.Periode_Passe,$Label.Periode_En_Cours))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Statut</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_de_periode__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Avant de créer une période veuillez vérifier qu&apos;il n&apos;existe pas déjà une période de même type sur les dates que vous souhaitez indiquer. Deux périodes de même type ne peuvent pas se chevaucher.</inlineHelpText>
+        <label>Type de période</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>48</fullName>
+                    <default>false</default>
+                    <label>48</label>
+                </value>
+                <value>
+                    <fullName>41</fullName>
+                    <default>false</default>
+                    <label>41</label>
+                </value>
+                <value>
+                    <fullName>50</fullName>
+                    <default>false</default>
+                    <label>50</label>
+                </value>
+                <value>
+                    <fullName>43</fullName>
+                    <default>false</default>
+                    <label>43</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Période</label>
+    <nameField>
+        <displayFormat>PER-{0000}</displayFormat>
+        <label>Numéro de Période</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Périodes</pluralLabel>
+    <recordTypes>
+        <fullName>FR_Pudo_Backup</fullName>
+        <active>true</active>
+        <label>FR_Pudo_Backup</label>
+        <picklistValues>
+            <picklist>Periode_de_backup__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>50</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FR_Pudo_active_reroutage</fullName>
+        <active>true</active>
+        <label>FR_Pudo_active_reroutage</label>
+        <picklistValues>
+            <picklist>Periode_de_backup__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>41</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FR_Pudo_exclus</fullName>
+        <active>true</active>
+        <label>FR_Pudo_exclus</label>
+        <picklistValues>
+            <picklist>Periode_de_backup__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>43</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FR_Seuil_temporaire</fullName>
+        <active>true</active>
+        <label>FR_Seuil_temporaire</label>
+        <picklistValues>
+            <picklist>Periode_de_backup__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>48</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>PERI_VR08_DateFinSuperieure</fullName>
+        <active>true</active>
+        <description>La date de fin doit être supérieure ou égale à la date de début.</description>
+        <errorConditionFormula>and( not 
+ ($User.BypassValidationRule__c ),
+Date_de_fin__c &lt; Date_de_debut__c )</errorConditionFormula>
+        <errorDisplayField>Date_de_fin__c</errorDisplayField>
+        <errorMessage>La date de fin doit être supérieure ou égale à la date de début.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RERO_VR01_DateDebutToday</fullName>
+        <active>true</active>
+        <description>date de début doit etre non modifiable si le statut de la période est : en cours ou passé</description>
+        <errorConditionFormula>AND(
+	!$User.BypassValidationRule__c, 
+	NOT ISNEW(),
+	PRIORVALUE(Date_de_debut__c)  &lt;  TODAY(),
+	ISCHANGED(Date_de_debut__c) 
+)</errorConditionFormula>
+        <errorDisplayField>Date_de_debut__c</errorDisplayField>
+        <errorMessage>Vous pouvez pas modifier la date de début d&apos;une période avec statut : en cours ou passé</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RERO_VR02_SeuilTempInfSC</fullName>
+        <active>true</active>
+        <description>Seuil temporaire doit être supérieur au Seuil contractuel.</description>
+        <errorConditionFormula>AND (
+!$User.BypassValidationRule__c, 
+RecordType.Name = &quot;FR_Seuil_temporaire&quot;,
+Nom_du_compte__r.Seuil_contractuel__c  &gt;=  Seuil_temporaire__c)</errorConditionFormula>
+        <errorDisplayField>Seuil_temporaire__c</errorDisplayField>
+        <errorMessage>Vous devez renseigner un Seuil temporaire supérieur au Seuil contractuel .</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RERO_VR04_SeuilTempSupSC</fullName>
+        <active>true</active>
+        <description>Seuil temporaire doit être inférieur ou égal au Seuil calculé.</description>
+        <errorConditionFormula>AND ( 
+!$User.BypassValidationRule__c, 
+RecordType.Name = &quot;FR_Seuil_temporaire&quot;, 
+Seuil_temporaire__c  &gt;  ROUND(Nom_du_compte__r.Seuil_calcule__c,0))</errorConditionFormula>
+        <errorDisplayField>Seuil_temporaire__c</errorDisplayField>
+        <errorMessage>Vous devez renseigner un Seuil temporaire inférieur ou égal au Seuil calculé.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RERO_VR05_DateDebutToday</fullName>
+        <active>true</active>
+        <description>Date de début doit être supérieure ou égale à aujourd&apos;hui.</description>
+        <errorConditionFormula>AND ( 
+   !$User.BypassValidationRule__c, 
+   Date_de_debut__c  &lt;  TODAY(),
+   OR(ISNEW() , PRIORVALUE(Date_de_debut__c  ) &gt;= TODAY())
+   
+)</errorConditionFormula>
+        <errorDisplayField>Date_de_debut__c</errorDisplayField>
+        <errorMessage>Veuillez saisir la date de début valide :  elle doit être supérieure ou égale à aujourd&apos;hui.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RERO_VR06_DatesObligatoiresBackup</fullName>
+        <active>true</active>
+        <description>Date de début et date de fin sont obligatoires.</description>
+        <errorConditionFormula>and(  and(
+           ISPICKVAL( Type_de_periode__c , &quot;50&quot;) ,
+           ISBLANK(TEXT( Periode_de_backup__c))
+            ),
+
+or(
+    ISBLANK(Date_de_debut__c) ,
+    ISBLANK( Date_de_fin__c )
+))</errorConditionFormula>
+        <errorDisplayField>Date_de_debut__c</errorDisplayField>
+        <errorMessage>Veuillez saisir la date de début et la date de fin.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RERO_VR07_SeuiTemp31JMaxi</fullName>
+        <active>true</active>
+        <description>La période de seuil temporaire ne doit pas excéder  31 jours.</description>
+        <errorConditionFormula>AND ( 
+      and(Not($User.BypassValidationRule__c), 
+           RecordTypeId =&quot;01258000000gnfF&quot;),
+    (Date_de_fin__c - Date_de_debut__c )&gt;31)</errorConditionFormula>
+        <errorDisplayField>Date_de_fin__c</errorDisplayField>
+        <errorMessage>La période de seuil temporaire ne doit pas excéder  31 jours.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RERO_VR10_DatesObligatoiresFIN</fullName>
+        <active>false</active>
+        <description>La date de fin est obligatoire.</description>
+        <errorConditionFormula>and( not( $User.BypassValidationRule__c ),
+     isblank( Date_de_fin__c ),
+      or(
+        ISPICKVAL( Type_de_periode__c , &quot;41&quot;),
+        ISPICKVAL( Type_de_periode__c , &quot;43&quot;),
+       ISPICKVAL( Type_de_periode__c , &quot;48&quot;)
+))</errorConditionFormula>
+        <errorDisplayField>Date_de_debut__c</errorDisplayField>
+        <errorMessage>Veuillez saisir la date de début et la date de fin.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RERO_VR11_CreationBackupPasPossible</fullName>
+        <active>true</active>
+        <description>Le Pudo n&apos;est pas BackUp, il n&apos;est pas possible d&apos;ajouter une période BackUp.</description>
+        <errorConditionFormula>AND( NOT ($User.BypassValidationRule__c), 
+      RecordType.DeveloperName =&quot;FR_Pudo_Backup&quot;,
+      ISPICKVAL( Nom_du_compte__r.Pudo_backup__c ,&quot;Non&quot;)
+      
+)</errorConditionFormula>
+        <errorDisplayField>Periode_de_backup__c</errorDisplayField>
+        <errorMessage>Le Pudo n&apos;est pas BackUp, il n&apos;est pas possible d&apos;ajouter une période BackUp.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Nouvelle_periode_de_backup</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle période de backup</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP20_TransitionNouvellePeriodeBackup?id={!Account.Id}&amp;name={!Account.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_periode_de_reroutage</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle période de reroutage</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP19_TransitionNouvellePeriodeRerout?id={!Account.Id}&amp;name={!Account.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_periode_de_seuil_temporaire</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle période de seuil temporaire</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/VFP18_TransitionNouvellePeriodeSeuilTemp?id={!Account.Id}&amp;name={!Account.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_periode_exclus_de_la_suggestion_reroutage</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle période exclus de la suggestion reroutage</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP17_TransitionNouvellePeriodeSugges?id={!Account.Id}&amp;name={!Account.Name}</url>
+    </webLinks>
+</CustomObject>

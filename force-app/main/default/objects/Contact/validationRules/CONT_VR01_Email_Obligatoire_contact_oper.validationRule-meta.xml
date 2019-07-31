@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONT_VR01_Email_Obligatoire_contact_oper</fullName>
+    <active>true</active>
+    <description>Lorsqu&#39;un contact est ajouté en tant que contact opérationnel, son email est obligatoire.</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, Contact_operationnel__c  = true,ISBLANK(Email))</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>Vous devez impérativement indiquer une adresse mail s&#39;il s&#39;agit d&#39;un contact opérationnel.</errorMessage>
+</ValidationRule>

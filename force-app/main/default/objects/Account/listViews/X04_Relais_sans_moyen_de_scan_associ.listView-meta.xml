@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X04_Relais_sans_moyen_de_scan_associ</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Reference_internationale__c</columns>
+    <columns>DisponibiliteFormule__c</columns>
+    <columns>Date_de_la_formation_reelle__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>Date_Modification_ActifSansScan__c</columns>
+    <columns>Utilisateur_dernier_ActifSansScan__c</columns>
+    <columns>Commentaires_Actif_sans_Scan__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>4,5</value>
+    </filters>
+    <filters>
+        <field>Relais_sans_moyen_de_scan_asssocie__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Conges_en_cours__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.PUS_FR_PUDO_Suivi_CO</value>
+    </filters>
+    <label>04_Relais actif sans moyen de scan</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>PUS_FR_Gestion_Materiel</group>
+        <group>PUS_FR_Manager</group>
+    </sharedTo>
+</ListView>

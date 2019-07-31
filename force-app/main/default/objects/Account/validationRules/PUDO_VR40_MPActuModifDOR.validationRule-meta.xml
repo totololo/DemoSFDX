@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR40_MPActuModifDOR</fullName>
+    <active>true</active>
+    <description>A partir de l&#39;état 4, uniquement utilisateur DOR peut modifier le Macroprofil actuel.</description>
+    <errorConditionFormula>and(
+        not( $User.BypassValidationRule__c ),
+        ischanged( Macroprofil_actuel__c ),
+        not($Permission.PUS_FR_Macroprofil_Actuel ),
+        or(
+             ispickval( Etat__c ,&quot;4&quot;),
+             ispickval( Etat__c ,&quot;5&quot;),
+             ispickval( Etat__c ,&quot;6&quot;),
+             ispickval( Etat__c ,&quot;7&quot;))
+          )</errorConditionFormula>
+    <errorDisplayField>Macroprofil_actuel__c</errorDisplayField>
+    <errorMessage>A partir de l&#39;état 4, uniquement utilisateur DOR peut modifier le Macroprofil actuel.</errorMessage>
+</ValidationRule>

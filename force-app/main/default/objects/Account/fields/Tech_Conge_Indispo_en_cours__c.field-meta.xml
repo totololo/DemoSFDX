@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Conge_Indispo_en_cours__c</fullName>
+    <description>Ce champ technique permet de savoir s&#39;il y a un congé ou une indispo en cours. Il est utilisé dans les filtres des campagnes ponctuelles.</description>
+    <externalId>false</externalId>
+    <formula>IF(OR(NOT(ISBLANK(Tech_date_debut_indisp_en_cours__c)),	NOT(ISBLANK(Tech_date_debut_conge_en_cours__c))),true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech_Conge_Indispo_en_cours</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

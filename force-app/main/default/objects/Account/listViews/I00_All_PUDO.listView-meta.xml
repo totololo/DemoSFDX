@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I00_All_PUDO</fullName>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS2_COUNTRY_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <label>I00 - All PUDO</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>TECH_VL_I00_All_PUDO</group>
+    </sharedTo>
+</ListView>

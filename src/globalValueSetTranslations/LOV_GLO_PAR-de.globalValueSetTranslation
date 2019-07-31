@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>-1</masterLabel>
+        <translation><!-- -1 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>-2</masterLabel>
+        <translation>Agence CHR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1</masterLabel>
+        <translation>Cartridge World</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>119</masterLabel>
+        <translation>Hans Lemmens Golf</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>120</masterLabel>
+        <translation>Babykid</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>124</masterLabel>
+        <translation>Game Mania</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>125</masterLabel>
+        <translation>Unibail Rodamco</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>126</masterLabel>
+        <translation>Franprix</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>134</masterLabel>
+        <translation>PSM avec REM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>135</masterLabel>
+        <translation>PSM sans REM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>140</masterLabel>
+        <translation>Agence postale</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>146</masterLabel>
+        <translation>Spartoo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>177</masterLabel>
+        <translation>Accor</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>178</masterLabel>
+        <translation>De Neuville</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>179</masterLabel>
+        <translation>Migros</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>180</masterLabel>
+        <translation>Weldom</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>181</masterLabel>
+        <translation>Gamm Vert</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>182</masterLabel>
+        <translation>Toy&apos;s&apos;rus</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>183</masterLabel>
+        <translation>Monoprix</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>184</masterLabel>
+        <translation>Carrefour Hyper Intégré</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>185</masterLabel>
+        <translation>Carrefour Proxi Franchisé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>188</masterLabel>
+        <translation>Carrefour Hyper Franchisé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>189</masterLabel>
+        <translation>Carrefour Market Franchisé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>19</masterLabel>
+        <translation>AVIA THEVENIN DUCROT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>190</masterLabel>
+        <translation>Carrefour Proxi Intégré</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>194</masterLabel>
+        <translation>Euronics</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>195</masterLabel>
+        <translation>Fiets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>20</masterLabel>
+        <translation>Système U</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>21</masterLabel>
+        <translation>Casino Super Intégré</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>210</masterLabel>
+        <translation>Franprix Intégré</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>211</masterLabel>
+        <translation>Mr Bricolage Intégré</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>212</masterLabel>
+        <translation>Casino Proxi Franchisé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>213</masterLabel>
+        <translation>Casino Super Franchisé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>217</masterLabel>
+        <translation>Accor Nespresso</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>221</masterLabel>
+        <translation>Leclerc</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>222</masterLabel>
+        <translation>France Loisirs</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>223</masterLabel>
+        <translation>Bartolák és Társai Kft</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>224</masterLabel>
+        <translation>Landa Kft</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>225</masterLabel>
+        <translation>Szmodics és Társa Bt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>226</masterLabel>
+        <translation>Top Service Hungária Kft</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>227</masterLabel>
+        <translation>Bel&amp;Bo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>235</masterLabel>
+        <translation>Office World</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>236</masterLabel>
+        <translation>13* Pam Valais</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>239</masterLabel>
+        <translation>Spar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>240</masterLabel>
+        <translation>Benu</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>241</masterLabel>
+        <translation>Interdiscount</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>39</masterLabel>
+        <translation>Bel&amp;Bo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4</masterLabel>
+        <translation>Orange</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5</masterLabel>
+        <translation>AVIA PICOTY</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>57</masterLabel>
+        <translation>River Woods</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>68</masterLabel>
+        <translation>Les Briconautes</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>69</masterLabel>
+        <translation>Easy Cash</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>70</masterLabel>
+        <translation>Optical discount</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>72</masterLabel>
+        <translation>Emmaus Défi</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>73</masterLabel>
+        <translation>Vivre Mobile</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>74</masterLabel>
+        <translation>Baléo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>76</masterLabel>
+        <translation>Carrefour Market Intégré</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>78</masterLabel>
+        <translation>Linex</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>80</masterLabel>
+        <translation>Truffaut</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>84</masterLabel>
+        <translation>Casino Proxi Intégré</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>85</masterLabel>
+        <translation>Mr Bricolage Franchisé</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>86</masterLabel>
+        <translation>Pulsat</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

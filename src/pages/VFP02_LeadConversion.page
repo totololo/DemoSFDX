@@ -1,0 +1,13 @@
+<apex:page standardController="Lead" extensions="VFC02_LeadConversionController" action="{!convertLeadAndRedirectToAccount}" >
+    <apex:form >
+        <apex:outputText value="{!errorMessage}"> </apex:outputText><br/><br />
+        <apex:commandLink rendered="{!showLink}" value="{!$Label.LeadConversionErrorHyperlink}" action="{!redirectToLead}"/>
+        <apex:inputHidden value="{!lead.Reseau_Concurrent__c}"/>
+        <apex:inputHidden value="{!lead.Activite_commerciale_principale__c}"/>
+        <apex:inputHidden value="{!lead.Partenaire__c}"/>
+        <apex:inputHidden value="{!lead.Type_de_point__c}"/>
+        <apex:inputHidden value="{!lead.Industry}"/>
+        <apex:inputHidden value="{!lead.Langue_Principale_de_l_adresse__c}"/>
+        <apex:inputHidden value="{!lead.Tech_Operateur__c}"/>
+    </apex:form>
+</apex:page>

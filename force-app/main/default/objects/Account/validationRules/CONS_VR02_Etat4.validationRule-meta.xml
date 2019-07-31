@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONS_VR02_Etat4</fullName>
+    <active>true</active>
+    <description>Pour passer à l&#39;état 4, renseigner : information agences, horaires, adresse, longitude latitude, date d&#39;installation, délai d&#39;instance, calendrier d&#39;instance, macroprofil actuel, section mise en service, référence inter. et fr.</description>
+    <errorConditionFormula>AND(
+
+!$User.BypassValidationRule__c, 
+ISPICKVAL(Type, &quot;20&quot;),
+
+
+OR (
+
+ISPICKVAL( Etat__c, &quot;4&quot;),
+ISPICKVAL( Etat__c, &quot;5&quot;),
+ISPICKVAL( Etat__c, &quot;6&quot;)
+),
+
+ 
+
+OR (    ISBLANK(Name), 
+        ISBLANK ( Reference__c ),
+        ISBLANK (  Reference_internationale__c ),
+        ISBLANK ( ShippingCountry ), 
+        ISBLANK ( ShippingStreet), 
+        ISBLANK ( ShippingCity ), 
+        ISBLANK ( ShippingPostalCode ),
+        ISBLANK (  Codification_chez_gestionnaire_de_parc__c  ),  
+        ISBLANK ( Date_d_installation__c ),
+        
+
+        Information_agences__c = false,
+        ISBLANK(TEXT(Gestionnaire_du_parc__c)), 
+        ISBLANK(TEXT(Horaire_Ouverture_Reference__c)), 
+        ISBLANK(TEXT(Horaire_Fermeture_Reference__c)),
+        ISBLANK(TEXT(Debut_pause_dejeuner__c)),
+        ISBLANK(TEXT(Fin_pause_dejeuner__c)),
+        ISBLANK(  Long_Lat_adresse_de_livraison__Longitude__s  ), 
+        ISBLANK(  Long_Lat_adresse_de_livraison__Latitude__s  ),
+        ISBLANK(TEXT(Calendrier_d_instance__c)),
+        ISBLANK( Macroprofil_actuel__c),
+        Test_d_installation__c = false,  
+        SI_Gestionnaire_Parc__c = false,  
+        Association_Reseau__c = false,  
+        Stickage__c = false,  
+        ConfigurationConsigne__c = false,  
+        Login_user_machine__c = false,
+        ISBLANK (Delai_d_instance__c) 
+
+)
+)</errorConditionFormula>
+    <errorMessage>Dans l&#39;état actuel de la consigne, vous devez saisir les champs : info agences, horaires et pauses déj de réf, adresse, long/lat, délai et calendrier d&#39;instance, macroprofil actuel, section mise en service, gestionnaire du parc, codification gestion. parc</errorMessage>
+</ValidationRule>

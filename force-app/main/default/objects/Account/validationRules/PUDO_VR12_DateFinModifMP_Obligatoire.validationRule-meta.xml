@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR12_DateFinModifMP_Obligatoire</fullName>
+    <active>true</active>
+    <description>Si la modification de Macroprofil est temporaire alors la date de fin est obligatoire.</description>
+    <errorConditionFormula>AND 
+(NOT( $User.BypassValidationRule__c ),
+ ISPICKVAL(Statut_de_modification__c, &quot;Temporaire&quot;),
+ISBLANK( Date_de_fin_de_modification__c )
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_fin_de_modification__c</errorDisplayField>
+    <errorMessage>Si la modification du Macroprofil est temporaire alors la Date de fin de modification est obligatoire.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR72_horaires_ref_obligatoires</fullName>
+    <active>true</active>
+    <description>Si une des cases Lundi/mardi/mercredi/jeudi/vendredi/samedi/dimanche est cochée, alors les champs horaires de référence sont obligatoires.</description>
+    <errorConditionFormula>AND(
+(RecordType.Name=&quot;PUS_FR_Consigne&quot;||
+RecordType.Name=&quot;PUS_FR_PUDO_Suivi_CO&quot;||
+RecordType.Name=&quot;PUS_FR_Pickup_Contact&quot;||
+RecordType.Name=&quot;PUS_FR_Prospect_Converti&quot;||
+RecordType.Name=&quot;PUS_FR_Prospect_Converti_Pickup_Contact&quot;||
+RecordType.Name=&quot;PUS_FR_Prospect_A_Valider&quot;||
+RecordType.Name=&quot;PUS_FR_Prospect_A_Valider_Pickup_contact&quot;
+),
+
+OR(
+ISPICKVAL(Debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Horaire_Ouverture_Reference__c,&quot;&quot;),
+ISPICKVAL(Horaire_Fermeture_Reference__c,&quot;&quot;)
+),
+
+OR(
+Lundi__c = true,
+Mardi__c = true,
+Mercredi__c = true,
+Jeudi__c = true,
+Vendredi__c = true,
+Samedi__c = true,
+Dimanche__c = true
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Horaire_Ouverture_Reference__c</errorDisplayField>
+    <errorMessage>Si une des cases Lundi/mardi/mercredi/jeudi/vendredi/samedi/dimanche est cochée, alors les champs horaires de référence sont obligatoires.</errorMessage>
+</ValidationRule>

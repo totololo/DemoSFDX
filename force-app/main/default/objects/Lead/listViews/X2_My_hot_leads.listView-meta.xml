@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2_My_hot_leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Statut__c</columns>
+    <columns>N_de_la_rue__c</columns>
+    <columns>LEAD.STREET</columns>
+    <columns>LEAD.ZIP</columns>
+    <columns>LEAD.CITY</columns>
+    <columns>LEAD.COUNTRY_CODE</columns>
+    <columns>ID_mission__c</columns>
+    <columns>Date_de_visite__c</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Prospect Chaud</value>
+    </filters>
+    <label>2 - My hot leads</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>SUPPORT_DOSI</group>
+        <roleAndSubordinates>DPD_BNL</roleAndSubordinates>
+        <roleAndSubordinates>DPD_CHE</roleAndSubordinates>
+        <roleAndSubordinates>DPD_CZE</roleAndSubordinates>
+        <roleAndSubordinates>DPD_HUN</roleAndSubordinates>
+    </sharedTo>
+</ListView>

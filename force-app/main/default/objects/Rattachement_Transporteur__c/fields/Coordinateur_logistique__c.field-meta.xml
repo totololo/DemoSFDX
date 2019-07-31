@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coordinateur_logistique__c</fullName>
+    <externalId>false</externalId>
+    <formula>Depot__r.Coordinateur_logistique__r.FirstName &amp; &quot; &quot; &amp; Depot__r.Coordinateur_logistique__r.LastName</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Coordinateur logistique</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

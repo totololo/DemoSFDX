@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DelegateGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groups>DPD_CHE_Field_Animator</groups>
+    <groups>DPD_CHE_Manager</groups>
+    <groups>DPD_CHE_Operation_Center</groups>
+    <groups>DPD_CZE_Manager</groups>
+    <groups>TECH_VL_I01 - All Requests In Progress</groups>
+    <groups>TECH_VL_I02 - My Requests In Progress</groups>
+    <groups>TECH_VL_I03 - My request to be followed</groups>
+    <groups>TECH_VL_I04 - Request of my Team</groups>
+    <groups>TECH_VL_I05 - Synchronization anomaly</groups>
+    <groups>TECH_VL_I06 - PDA/Synchro Problem</groups>
+    <groups>TECH_VL_I07 - Operational Problem</groups>
+    <groups>TECH_VL_I08 - Unreachable</groups>
+    <groups>TECH_VL_I09 - PUDO with several devices</groups>
+    <groups>TECH_VL_I10 - Inactive PUDO with device</groups>
+    <groups>TECH_VL_I11 - PUDO without registered Ho</groups>
+    <groups>TECH_VL_I12 - PUDO without associated de</groups>
+    <groups>TECH_VL_I13 - Active PUDO without traini</groups>
+    <groups>TECH_VL_I14 - Starting Activity</groups>
+    <groups>TECH_VL_I15 - PUDO with not resp. contr.</groups>
+    <groups>DPD_CZE_Credit_Controlling_Team</groups>
+    <groups>DPD_CZE_Device_Team</groups>
+    <groups>DPD_CZE_Field_Animator</groups>
+    <groups>DPD_CZE_Operation_Center</groups>
+    <groups>TECH_VL_I00 - All PUDO</groups>
+    <groups>TECH_VL_I01 - PUDO with status 1</groups>
+    <groups>TECH_VL_I02 - PUDO with status 2</groups>
+    <groups>TECH_VL_I03 - PUDO validated w/ status 4</groups>
+    <groups>TECH_VL_I04 - PUDO validated w/ status 5</groups>
+    <groups>TECH_VL_I05 - PUDO validated in eol cycl</groups>
+    <groups>TECH_VL_I06 - PUDO validated w/ status 9</groups>
+    <groups>TECH_VL_II07 - Leads Waiting Manager&apos;s a</groups>
+    <groups>DPD_HUN_External_Team</groups>
+    <groups>DPD_HUN_Finance_Team</groups>
+    <groups>DPD_HUN_Manager</groups>
+    <groups>PUS_FR_Animateur_réseau</groups>
+    <groups>PUS_FR_Service_Client</groups>
+    <groups>PUS_FR_Animateur_réseau_siège</groups>
+    <groups>PUS_FR_Gestion_Contractuelle</groups>
+    <groups>PUS_FR_Planificateur</groups>
+    <groups>PUS_FR_Manager</groups>
+    <groups>PUS_FR_Gestion_Matériel</groups>
+    <groups>PUS_FR_DOR</groups>
+    <groups>PUS_FR_Lecture_Seule</groups>
+    <groups>DPD_BNL_Animateur réseau siège</groups>
+    <groups>DPD_BNL_Animateurs</groups>
+    <groups>DPD_BNL_Device Team</groups>
+    <groups>DPD_BNL_Manager</groups>
+    <groups>DPD_BNL_Service_Line</groups>
+    <groups>SUPPORT DOSI</groups>
+    <label>DOSI</label>
+    <loginAccess>true</loginAccess>
+    <permissionSets>Visualisation des Devices</permissionSets>
+    <permissionSets>Droit de création des contacts</permissionSets>
+    <permissionSets>Création rapports</permissionSets>
+    <permissionSets>PUS_FR_Droit d&apos;exportation pour les rapports</permissionSets>
+    <permissionSets>CRM User</permissionSets>
+    <permissionSets>Change Dashboard Colors</permissionSets>
+    <permissionSets>Niveau1AR</permissionSets>
+    <permissionSets>Standard Einstein Activity Capture</permissionSets>
+    <permissionSets>System Administror Classic Mode</permissionSets>
+    <permissionSets>Autorisation Lightning Animateurs VA VAP</permissionSets>
+    <permissionSets>Droit de création des Services et Réseaux</permissionSets>
+    <permissionSets>Droit sur Services et Réseaux, Macroprofils et Transporteurs</permissionSets>
+    <permissionSets>PUS_FR_Lecture_Ecriture_Fin_Activite</permissionSets>
+    <permissionSets>PUS_FR_Modification_Macroprofil actuel</permissionSets>
+    <permissionSets>Salesforce Console User</permissionSets>
+    <profiles>DPD_CHE_Niveau_1</profiles>
+    <profiles>DPD_CHE_Niveau_2</profiles>
+    <profiles>DPD_CZE_Niveau_1</profiles>
+    <profiles>DPD_CZE_Niveau_2</profiles>
+    <profiles>DPD_HUN_Niveau_1</profiles>
+    <profiles>DPD_HUN_Niveau_2</profiles>
+    <profiles>PUS_FR_Niveau_2_Mobilite</profiles>
+    <profiles>DPD_BNL_Consigne</profiles>
+    <profiles>DPD_BNL_Lecture_seule</profiles>
+    <profiles>DPD_BNL_Niveau_1</profiles>
+    <profiles>DPD_BNL_Niveau_2</profiles>
+    <profiles>PUS_FR_Niveau_2</profiles>
+    <profiles>PUS_FR_Niveau_3</profiles>
+    <profiles>PUS_FR_Consigne</profiles>
+    <profiles>PUS_FR_Lecture_seule</profiles>
+    <roles>DPD_CHE</roles>
+    <roles>Suisse</roles>
+    <roles>DPD_CZE</roles>
+    <roles>République Tchèque</roles>
+    <roles>DPD_HUN</roles>
+    <roles>Hungary</roles>
+    <roles>PUS_France</roles>
+    <roles>France</roles>
+    <roles>DPD_BNL</roles>
+    <roles>Belgique</roles>
+    <roles>Luxembourg</roles>
+    <roles>Pays-Bas</roles>
+</DelegateGroup>

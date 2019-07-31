@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Demarrage d&#39;activité</masterLabel>
+        <translation>Demarrage d&#39;activité</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Enquête de satisfaction</masterLabel>
+        <translation>Enquête de satisfaction</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Resilisation</masterLabel>
+        <translation>Resiliation</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

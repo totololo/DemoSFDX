@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR69_vendredi_horaires_manquants</fullName>
+    <active>true</active>
+    <description>Veuillez remplir toutes les cases horaires du vendredi.</description>
+    <errorConditionFormula>AND(
+NOT( $User.BypassValidationRule__c ), 
+Vendredi__c=false,OR(
+AND(  
+ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;),
+NOT(ISPICKVAL(Vendredi_Fermeture__c,&quot;&quot;)),
+NOT(ISPICKVAL(vendredi_debut_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(vendredi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Vendredi_Fermeture__c,&quot;&quot;),
+NOT(ISPICKVAL(vendredi_debut_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(vendredi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Vendredi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(vendredi_debut_pause_dejeuner__c, &quot;&quot;),
+NOT(ISPICKVAL(vendredi_fin_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;)),
+ISPICKVAL(Vendredi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(vendredi_debut_pause_dejeuner__c, &quot;&quot;),
+ISPICKVAL(vendredi_fin_pause_dejeuner__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(vendredi_fin_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;)),
+NOT(ISPICKVAL(Vendredi_Fermeture__c, &quot;&quot;)),
+NOT(ISPICKVAL(vendredi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(vendredi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;),
+NOT(ISPICKVAL(Vendredi_Fermeture__c, &quot;&quot;)),
+NOT(ISPICKVAL(vendredi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+ISPICKVAL(vendredi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Vendredi_Fermeture__c, &quot;&quot;),
+NOT(ISPICKVAL(vendredi_debut_pause_dejeuner__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(vendredi_fin_pause_dejeuner__c,&quot;&quot;)),
+ISPICKVAL(Vendredi_Ouverture__c,&quot;&quot;),
+ISPICKVAL(Vendredi_Fermeture__c, &quot;&quot;),
+ISPICKVAL(vendredi_debut_pause_dejeuner__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(vendredi_debut_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(vendredi_fin_pause_dejeuner__c,&quot;&quot;)),
+NOT(ISPICKVAL(Vendredi_Ouverture__c, &quot;&quot;)),
+NOT(ISPICKVAL(Vendredi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(vendredi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(vendredi_fin_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(Vendredi_Ouverture__c, &quot;&quot;)),
+NOT(ISPICKVAL(Vendredi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(vendredi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(vendredi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Vendredi_Ouverture__c, &quot;&quot;),
+NOT(ISPICKVAL(Vendredi_Fermeture__c, &quot;&quot;))
+)
+||
+AND(  
+NOT(ISPICKVAL(vendredi_debut_pause_dejeuner__c,&quot;&quot;)),
+ISPICKVAL(vendredi_fin_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(Vendredi_Ouverture__c, &quot;&quot;),
+ISPICKVAL(Vendredi_Fermeture__c, &quot;&quot;)
+)||
+AND(  
+ISPICKVAL(Vendredi_Fermeture__c,&quot;&quot;),
+NOT(ISPICKVAL(vendredi_debut_pause_dejeuner__c,&quot;&quot;)),
+NOT(ISPICKVAL(vendredi_fin_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(Vendredi_Ouverture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(Vendredi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(vendredi_debut_pause_dejeuner__c,&quot;&quot;),
+NOT(ISPICKVAL(vendredi_fin_pause_dejeuner__c, &quot;&quot;)),
+NOT(ISPICKVAL(Vendredi_Ouverture__c, &quot;&quot;))
+)
+||
+AND(  
+ISPICKVAL(Vendredi_Fermeture__c,&quot;&quot;),
+ISPICKVAL(vendredi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(vendredi_fin_pause_dejeuner__c, &quot;&quot;),
+NOT(ISPICKVAL(Vendredi_Ouverture__c, &quot;&quot;))
+)||
+AND(  
+NOT(ISPICKVAL(Vendredi_Fermeture__c,&quot;&quot;)),
+ISPICKVAL(vendredi_debut_pause_dejeuner__c,&quot;&quot;),
+ISPICKVAL(vendredi_fin_pause_dejeuner__c, &quot;&quot;),
+ISPICKVAL(Vendredi_Ouverture__c, &quot;&quot;)
+)))</errorConditionFormula>
+    <errorDisplayField>Vendredi_Ouverture__c</errorDisplayField>
+    <errorMessage>Veuillez remplir toutes les cases horaires du vendredi.</errorMessage>
+</ValidationRule>

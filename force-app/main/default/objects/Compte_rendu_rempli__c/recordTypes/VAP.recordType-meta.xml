@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VAP</fullName>
+    <active>true</active>
+    <label>VAP</label>
+    <picklistValues>
+        <picklist>Motif_d_interruption__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le relais est fermé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le relais ne souhaite pas poursuivre faute de temps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le responsable magasin ou le contact opérationnel est absent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>En attente de traitement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente de visite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours de préparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_compte_rendu__c</picklist>
+        <values>
+            <fullName>VAP DA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP Enquête de bienvenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP Enquête de satisfaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP FC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP FDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP MEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP PDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP QS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP Seuil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAP VO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_visite__c</picklist>
+        <values>
+            <fullName>VAP</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEPOTS_DPD_CHE</fullName>
+    <columns>NAME</columns>
+    <columns>Transporteur__c</columns>
+    <columns>ReferenceExterne__c</columns>
+    <columns>Coordinateur_logistique__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Transporteur__c</field>
+        <operation>equals</operation>
+        <value>DPD_CHE</value>
+    </filters>
+    <label>DPD_CHE</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

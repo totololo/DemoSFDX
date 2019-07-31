@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Heure_fermeture_minimale_respectee__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+AND( 
+OR( 
+VALUE(LEFT( TEXT( Lundi_Fermeture__c ) , 2)) &gt;=  VALUE(TEXT( Heure_de_fermeture_minimale_en_h__c) ), 
+VALUE(LEFT( TEXT( Lundi_Fermeture__c ) , 2)) = 00), 
+
+OR( 
+VALUE(LEFT( TEXT( Mardi_Fermeture__c ) , 2)) &gt;= VALUE(TEXT( Heure_de_fermeture_minimale_en_h__c)), 
+VALUE(LEFT( TEXT( Mardi_Fermeture__c ) , 2)) = 00), 
+
+OR( 
+VALUE(LEFT( TEXT(Mercredi_Fermeture__c ) , 2)) &gt;= VALUE(TEXT( Heure_de_fermeture_minimale_en_h__c)), 
+VALUE(LEFT(TEXT(Mercredi_Fermeture__c ), 2))=00), 
+
+
+OR( 
+VALUE(LEFT( TEXT(Jeudi_Fermeture__c) , 2)) &gt;= VALUE(TEXT( Heure_de_fermeture_minimale_en_h__c)), 
+VALUE(LEFT(TEXT(Jeudi_Fermeture__c), 2))=00), 
+
+OR( 
+VALUE(LEFT( TEXT(Vendredi_Fermeture__c) , 2)) &gt;= VALUE(TEXT( Heure_de_fermeture_minimale_en_h__c)), 
+VALUE(LEFT(TEXT(Vendredi_Fermeture__c), 2))=00), 
+
+OR( 
+VALUE(LEFT( TEXT(Samedi_Fermeture__c) , 2)) &gt;= VALUE(TEXT( Heure_de_fermeture_minimale_en_h__c)), 
+VALUE(LEFT(TEXT(Samedi_Fermeture__c), 2))=00)), 
+
+
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;Green&quot;), 
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Red&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Heure fermeture minimale respectée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

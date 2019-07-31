@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR33_Capital_obligatoire</fullName>
+    <active>true</active>
+    <description>Le champ capital devient obligatoire pour certaines formes juridiques</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, ISBLANK(Capital_EUR__c),NOT ISBLANK(TEXT(  Ownership )),
+
+ OR( ISPICKVAL(Ownership , &quot;COFAV/COOPERATIVE&quot; ),
+ISPICKVAL(Ownership , &quot;155&quot; ),
+ISPICKVAL(Ownership , &quot;157&quot; ), 
+ISPICKVAL(Ownership , &quot;163&quot; ), 
+ISPICKVAL(Ownership , &quot;164&quot; ),
+ISPICKVAL(Ownership , &quot;-2&quot; ),
+ISPICKVAL(Ownership , &quot;-3&quot; ),
+ISPICKVAL(Ownership , &quot;-4&quot; ))
+
+
+
+
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Capital_EUR__c</errorDisplayField>
+    <errorMessage>Le champ capital devient obligatoire pour la forme juridique que vous avez choisit.</errorMessage>
+</ValidationRule>

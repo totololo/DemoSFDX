@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NETWORK_PUS_FR</fullName>
+    <columns>NAME</columns>
+    <columns>Pays__c</columns>
+    <columns>Propriete_du_reseau__c</columns>
+    <columns>Type_de_reseau__c</columns>
+    <columns>Operateur__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Operateur__c</field>
+        <operation>equals</operation>
+        <value>PUS_FR</value>
+    </filters>
+    <label>PUS_FR</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

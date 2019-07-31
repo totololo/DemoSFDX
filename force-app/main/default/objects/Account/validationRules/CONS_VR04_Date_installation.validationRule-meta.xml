@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONS_VR04_Date_installation</fullName>
+    <active>true</active>
+    <description>Pas de modification possible du champ à partir de l&#39;état 4</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, ISCHANGED( Date_d_installation__c ), ISPICKVAL(Type, &quot;20&quot;), 
+
+ OR(ISPICKVAL(Etat__c,&quot;4&quot;) ,ISPICKVAL(Etat__c,&quot;5&quot;),ISPICKVAL(Etat__c,&quot;6&quot;),ISPICKVAL(Etat__c,&quot;7&quot;),ISPICKVAL(Etat__c,&quot;8&quot;)))</errorConditionFormula>
+    <errorDisplayField>Date_d_installation__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas modifier ce champ depuis le passage à l&#39;état 4.</errorMessage>
+</ValidationRule>

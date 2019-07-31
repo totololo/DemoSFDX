@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR15_Commerce_parking_Obligatoire</fullName>
+    <active>true</active>
+    <description>Le champ « Distance commerce - parking» devient obligatoire si le champ «Type de parking» est différent de « Pas de parking ».</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c,
+
+    ISBLANK(  Distance_commerce_parking__c ),
+    OR( ISPICKVAL(  Type_de_parking__c ,&quot;2&quot; ) ,
+ISPICKVAL(  Type_de_parking__c ,&quot;1&quot; ) 
+)
+)</errorConditionFormula>
+    <errorDisplayField>Distance_commerce_parking__c</errorDisplayField>
+    <errorMessage>Merci de renseigner la distance Commerce-parking</errorMessage>
+</ValidationRule>

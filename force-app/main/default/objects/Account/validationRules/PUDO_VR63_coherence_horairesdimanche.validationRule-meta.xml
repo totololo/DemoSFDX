@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR63_coherence_horairesdimanche</fullName>
+    <active>true</active>
+    <description>Vérifier la cohérence des horaires du dimanche (ouverture, fermeture, début et fin de pause déjeuner).</description>
+    <errorConditionFormula>(Value(Left(Text(dimanche_debut_pause_dejeuner__c),2))*60)+ Value(Right(Text(dimanche_debut_pause_dejeuner__c ),2)) &gt;  (Value(Left(Text(dimanche_fin_pause_dejeuner__c),2))*60)+ Value(Right(Text( dimanche_fin_pause_dejeuner__c ),2))
+
+||
+
+((Value(Left(Text(  Dimanche_Ouverture__c   ),2))*60)+ Value(Right(Text( Dimanche_Ouverture__c ),2)) &gt;= (Value(Left(Text(   Dimanche_Fermeture__c  ),2))*60)+ Value(Right(Text( Dimanche_Fermeture__c  ),2)))
+
+||
+
+
+((Value(Left(Text(  dimanche_debut_pause_dejeuner__c   ),2))*60)+ Value(Right(Text( dimanche_debut_pause_dejeuner__c ),2)) &lt; (Value(Left(Text(   Dimanche_Ouverture__c  ),2))*60)+ Value(Right(Text( Dimanche_Ouverture__c  ),2)))
+
+
+||
+
+((Value(Left(Text(Dimanche_Ouverture__c),2))*60)+ Value(Right(Text(Dimanche_Ouverture__c),2)) &gt; (Value(Left(Text(dimanche_fin_pause_dejeuner__c),2))*60)+ Value(Right(Text(dimanche_fin_pause_dejeuner__c),2)))
+
+||
+
+((Value(Left(Text(dimanche_debut_pause_dejeuner__c),2))*60)+ Value(Right(Text(dimanche_debut_pause_dejeuner__c),2)) &gt; (Value(Left(Text(Dimanche_Fermeture__c),2))*60)+ Value(Right(Text(Dimanche_Fermeture__c),2)))
+
+||
+
+((Value(Left(Text(dimanche_fin_pause_dejeuner__c),2))*60)+ Value(Right(Text(dimanche_fin_pause_dejeuner__c),2)) &gt; (Value(Left(Text(Dimanche_Fermeture__c),2))*60)+ Value(Right(Text(Dimanche_Fermeture__c),2)))</errorConditionFormula>
+    <errorDisplayField>Dimanche_Ouverture__c</errorDisplayField>
+    <errorMessage>Vérifier la cohérence des horaires du dimanche (ouverture, fermeture, début et fin de pause déjeuner).</errorMessage>
+</ValidationRule>

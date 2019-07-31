@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>PUS_FR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Les utilisateurs PUS_France et subordonnés accèdent en lecture/écriture aux questionaires où l’opérateur est égal à PUS_FR</description>
+        <label>PUS_FR</label>
+        <sharedTo>
+            <roleAndSubordinates>PUS_France</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>Operateur__c</field>
+            <operation>equals</operation>
+            <value>PUS_FR</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

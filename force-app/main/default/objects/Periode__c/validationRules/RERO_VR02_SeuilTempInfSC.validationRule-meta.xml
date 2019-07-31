@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RERO_VR02_SeuilTempInfSC</fullName>
+    <active>true</active>
+    <description>Seuil temporaire doit être supérieur au Seuil contractuel.</description>
+    <errorConditionFormula>AND (
+!$User.BypassValidationRule__c, 
+RecordType.Name = &quot;FR_Seuil_temporaire&quot;,
+Nom_du_compte__r.Seuil_contractuel__c  &gt;=  Seuil_temporaire__c)</errorConditionFormula>
+    <errorDisplayField>Seuil_temporaire__c</errorDisplayField>
+    <errorMessage>Vous devez renseigner un Seuil temporaire supérieur au Seuil contractuel .</errorMessage>
+</ValidationRule>

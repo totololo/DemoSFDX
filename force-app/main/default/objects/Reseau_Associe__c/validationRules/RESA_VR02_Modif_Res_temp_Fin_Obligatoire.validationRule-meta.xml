@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RESA_VR02_Modif_Res_temp_Fin_Obligatoire</fullName>
+    <active>true</active>
+    <description>Si &quot;Etat de statut&quot; est temporaire alors vous devez obligatoirement renseigner la date de fin. La date de fin ne doit pas être dans le passé.</description>
+    <errorConditionFormula>AND(
+Not($User.BypassValidationRule__c),
+ISPICKVAL (Etat_du_statut__c,&quot;temporaire&quot; ),
+OR(
+ISBLANK( Date_de_fin_du_statut__c ),
+Date_de_fin_du_statut__c &lt; TODAY()
+)
+)</errorConditionFormula>
+    <errorDisplayField>Date_de_fin_du_statut__c</errorDisplayField>
+    <errorMessage>Si &quot;Etat de statut&quot; est temporaire alors vous devez obligatoirement renseigner la date de fin. La date de fin ne doit pas être dans le passé.</errorMessage>
+</ValidationRule>

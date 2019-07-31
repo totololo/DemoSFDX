@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secteur_HUN</fullName>
+    <active>true</active>
+    <label>Secteur_HUN</label>
+    <picklistValues>
+        <picklist>Operateur__c</picklist>
+        <values>
+            <fullName>DPD_HUN</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pays__c</picklist>
+        <values>
+            <fullName>HU</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_secteur__c</picklist>
+        <values>
+            <fullName>Cluster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plaque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Region</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secteur AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone AR suppléant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone de conso</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

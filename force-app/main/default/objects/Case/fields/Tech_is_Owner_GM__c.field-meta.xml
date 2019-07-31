@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_is_Owner_GM__c</fullName>
+    <description>Détermine si le propriétaire de la requête est la file d&#39;attente de la Gestion Matériel ou s&#39;il s&#39;agit d&#39;un des utilisateurs de la Gestion Matériel.(Champ utilisé dans la vue de liste 003-Toutes les requêtes GM). Attention, la configuration de la file d&#39;attente ne contient pas toujours des personnes de la Gestion Matérielle.</description>
+    <externalId>false</externalId>
+    <formula>OR(OwnerId = LEFT( $CustomMetadata.Association_Record_Type_et_pays__mdt.FR.ID_GestMatQueue__c ,15),CONTAINS(Owner:User.Title, &#39;GESTIONNAIRE MATERIEL&#39;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech_is_Owner_GM</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

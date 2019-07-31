@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR84_FDA_Contexte_Motif</fullName>
+    <active>true</active>
+    <description>Les champs &quot;Contexte&quot; et &quot;Motif de fin d&#39;activité&quot; ne peuvent être renseignés que si la &quot;Date de fin d&#39;activité&quot; est saisie.</description>
+    <errorConditionFormula>AND(
+    Not($User.BypassValidationRule__c),
+ISBLANK( Date_de_fin_d_activite__c ),
+
+OR(
+NOT ISBLANK(TEXT( Motif__c )),
+NOT ISBLANK(TEXT( Contexte__c ))
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Contexte__c</errorDisplayField>
+    <errorMessage>Les champs &quot;Contexte&quot; et &quot;Motif de fin d&#39;activité&quot; ne peuvent être renseignés que si la &quot;Date de fin d&#39;activité&quot; est saisie.</errorMessage>
+</ValidationRule>

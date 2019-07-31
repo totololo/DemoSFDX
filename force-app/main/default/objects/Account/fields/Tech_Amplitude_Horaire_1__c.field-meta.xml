@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Amplitude_Horaire_1__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( 
+Lundi_ferme__c,0, 
+(NOW()+((Value(Left(Text(Lundi_Fermeture__c),2))*60)+Value(right(Text(Lundi_Fermeture__c),2))))-(NOW()+((Value(Left(Text(Lundi_Ouverture__c),2))*60)+Value(right(Text(Lundi_Ouverture__c),2)))) 
+-IF(ISPICKVAL(lundi_debut_pause_dejeuner__c,&quot;&quot;),0, 
+((NOW()+((Value(Left(Text(lundi_fin_pause_dejeuner__c),2))*60)+Value(right(Text(lundi_fin_pause_dejeuner__c),2))))-(NOW()+((Value(Left(Text(lundi_debut_pause_dejeuner__c),2))*60)+Value(right(Text(lundi_debut_pause_dejeuner__c),2))))))) 
+
++IF( 
+Mardi_ferme__c,0, 
+(NOW()+((Value(Left(Text(Mardi_Fermeture__c),2))*60)+Value(right(Text(Mardi_Fermeture__c),2))))-(NOW()+((Value(Left(Text(Mardi_Ouverture__c),2))*60)+Value(right(Text(Mardi_Ouverture__c),2)))) 
+-IF(ISPICKVAL(mardi_debut_pause_dejeuner__c,&quot;&quot;),0, 
+((NOW()+((Value(Left(Text(mardi_fin_pause_dejeuner__c),2))*60)+Value(right(Text(mardi_fin_pause_dejeuner__c),2))))-(NOW()+((Value(Left(Text(mardi_debut_pause_dejeuner__c),2))*60)+Value(right(Text(mardi_debut_pause_dejeuner__c),2))))))))/60</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech_Amplitude_Horaire_1</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

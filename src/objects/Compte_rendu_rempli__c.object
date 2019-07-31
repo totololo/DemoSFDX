@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>VFP14_DemarrageCompteRenduRempli</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>LC04_DemarrageCompteRenduRempli</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>VFP14_DemarrageCompteRenduRempli</content>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>LC04_DemarrageCompteRenduRempli</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Compte rendu VA/VAP rempli suite à la visite d&apos;un animateur chez un PUDO.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Autre__c</fullName>
+        <description>Champ utilisé lorsque la réponse est &quot;Oui&quot; à la  question &quot;Problème avec le transporteur&quot; et lorsque la réponse est &quot;Autre&quot; à la question &quot;Si OUi, merci de préciser&quot;.</description>
+        <externalId>false</externalId>
+        <label>Autre</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commentaires_divers_Pickup__c</fullName>
+        <externalId>false</externalId>
+        <label>Commentaires divers Pickup</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Commentaires_divers_Relais__c</fullName>
+        <externalId>false</externalId>
+        <label>Commentaires divers Relais</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Compte__c</fullName>
+        <externalId>false</externalId>
+        <label>Compte</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Comptes_rendus_remplis</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Compte_rendu__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Compte rendu</label>
+        <referenceTo>Compte_rendu__c</referenceTo>
+        <relationshipName>Comptes_rendus_remplis</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Compte__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Comptes rendus remplis (Contact)</relationshipLabel>
+        <relationshipName>Comptes_rendus_remplis3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_operationnel__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact opérationnel</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Compte__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Comptes rendus remplis</relationshipLabel>
+        <relationshipName>Comptes_rendus_remplis</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_operationnel_rencontre__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Contact opérationnel rencontré</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cr_ateur_compte_rendu__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Id =  $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Créateur compte rendu</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_de_la_visite__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Date de la visite</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Email_CR__c</fullName>
+        <description>Email de la personne non présente lors de l&apos;entretien mais intéressée par le compte rendu.</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_du_contact_operationnel__c</fullName>
+        <externalId>false</externalId>
+        <label>Email du contact opérationnel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_du_responsable_facturation__c</fullName>
+        <externalId>false</externalId>
+        <label>Email du responsable facturation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_du_responsable_magasin__c</fullName>
+        <externalId>false</externalId>
+        <label>Email du responsable magasin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Envoi_email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Envoi email</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hauteur__c</fullName>
+        <externalId>false</externalId>
+        <label>Hauteur</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hauteur_initiale1__c</fullName>
+        <externalId>false</externalId>
+        <label>Hauteur initiale</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interrompu__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interrompu</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Largeur__c</fullName>
+        <externalId>false</externalId>
+        <label>Largeur</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Largeur_initiale1__c</fullName>
+        <externalId>false</externalId>
+        <label>Largeur initiale</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Macroprofil__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Macroprofil</label>
+        <referenceTo>Macroprofil__c</referenceTo>
+        <relationshipLabel>Comptes rendus remplis</relationshipLabel>
+        <relationshipName>Comptes_rendus_remplis</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Motif__c</fullName>
+        <description>Si le choix &quot;Autre&quot; est sélectionné dans le champ &quot;Motif d&apos;interruption&quot;, l&apos;utilisateur doit expliquer la raison dans ce champ.</description>
+        <externalId>false</externalId>
+        <label>Motif</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Motif_d_interruption__c</fullName>
+        <externalId>false</externalId>
+        <label>Motif d&apos;interruption</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Interrompu__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Le relais est fermé</fullName>
+                    <default>false</default>
+                    <label>Le relais est fermé</label>
+                </value>
+                <value>
+                    <fullName>Le relais ne souhaite pas poursuivre faute de temps</fullName>
+                    <default>false</default>
+                    <label>Le relais ne souhaite pas poursuivre faute de temps</label>
+                </value>
+                <value>
+                    <fullName>Le responsable magasin ou le contact opérationnel est absent</fullName>
+                    <default>false</default>
+                    <label>Le responsable magasin ou le contact opérationnel est absent</label>
+                </value>
+                <value>
+                    <fullName>Autre</fullName>
+                    <default>false</default>
+                    <label>Autre</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Le relais est fermé</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Le relais ne souhaite pas poursuivre faute de temps</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Le responsable magasin ou le contact opérationnel est absent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Autre</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Nom_CR__c</fullName>
+        <description>Nom de la personne non présente lors de l&apos;entretien mais intéressée par le compte rendu.</description>
+        <externalId>false</externalId>
+        <label>Nom</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nombre_d_etageres__c</fullName>
+        <externalId>false</externalId>
+        <label>Nombre d&apos;étagères</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nombre_d_etageres_initial1__c</fullName>
+        <externalId>false</externalId>
+        <label>Nombre d&apos;étagères initial</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_de_preparation__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes de préparation</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notes_internes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes internes</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Numero_de_point_relais__c</fullName>
+        <externalId>false</externalId>
+        <label>Numéro de point relais</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prenom_CR__c</fullName>
+        <description>Prénom de la personne non présente lors de l&apos;entretien mais intéressée par le compte rendu.</description>
+        <externalId>false</externalId>
+        <label>Prénom</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profondeur__c</fullName>
+        <externalId>false</externalId>
+        <label>Profondeur</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profondeur_initiale1__c</fullName>
+        <externalId>false</externalId>
+        <label>Profondeur initiale</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Responsable_facturation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Responsable facturation</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Compte__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Comptes rendus remplis (Responsable facturation)</relationshipLabel>
+        <relationshipName>Comptes_rendus_remplis2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Responsable_facturation_rencontre__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Responsable facturation rencontré</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Responsable_magasin__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Responsable magasin</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Compte__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Comptes rendus remplis (Responsable magasin)</relationshipLabel>
+        <relationshipName>Comptes_rendus_remplis1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Responsable_magasin_rencontre__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Responsable magasin rencontré</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Secteurs__c</fullName>
+        <externalId>false</externalId>
+        <label>Secteurs</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seuil_calcul_initial1__c</fullName>
+        <externalId>false</externalId>
+        <label>Seuil calculé initial</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seuil_calcule__c</fullName>
+        <externalId>false</externalId>
+        <label>Seuil calculé</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seuil_contractuel__c</fullName>
+        <externalId>false</externalId>
+        <label>Seuil contractuel</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seuil_contractuel_initial1__c</fullName>
+        <externalId>false</externalId>
+        <label>Seuil contractuel initial</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statut__c</fullName>
+        <externalId>false</externalId>
+        <label>Statut</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>En attente de traitement</fullName>
+                    <default>false</default>
+                    <label>En attente de traitement</label>
+                </value>
+                <value>
+                    <fullName>En cours de préparation</fullName>
+                    <default>true</default>
+                    <label>En cours de préparation</label>
+                </value>
+                <value>
+                    <fullName>En attente de visite</fullName>
+                    <default>false</default>
+                    <label>En visite</label>
+                </value>
+                <value>
+                    <fullName>Terminé</fullName>
+                    <default>false</default>
+                    <label>Terminé</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tel_fixe_du_contact_operationnel__c</fullName>
+        <externalId>false</externalId>
+        <label>Tel. fixe du contact opérationnel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Tel_fixe_du_responsable_facturation__c</fullName>
+        <externalId>false</externalId>
+        <label>Tel. fixe du responsable facturation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Tel_fixe_du_responsable_magasin__c</fullName>
+        <externalId>false</externalId>
+        <label>Tel. fixe du responsable magasin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Tel_portable_du_contact_operationnel__c</fullName>
+        <externalId>false</externalId>
+        <label>Tel. portable du contact opérationnel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Tel_portable_du_responsable_facturation__c</fullName>
+        <externalId>false</externalId>
+        <label>Tel. portable du responsable facturation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Tel_portable_du_responsable_magasin__c</fullName>
+        <externalId>false</externalId>
+        <label>Tel. portable du responsable magasin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Telephone_fixe_CR__c</fullName>
+        <description>Téléphone fixe de la personne non présente lors de l&apos;entretien mais intéressée par le compte rendu.</description>
+        <externalId>false</externalId>
+        <label>Téléphone fixe</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Telephone_portable_CR__c</fullName>
+        <description>Téléphone portable de la personne non présente lors de l&apos;entretien mais intéressée par le compte rendu.</description>
+        <externalId>false</externalId>
+        <label>Téléphone portable</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Termine__c</fullName>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL( Statut__c, &quot;Terminé&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Terminé</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type_de_compte_rendu__c</fullName>
+        <externalId>false</externalId>
+        <label>Type de compte rendu</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VA Standard</fullName>
+                    <default>false</default>
+                    <label>VA Standard</label>
+                </value>
+                <value>
+                    <fullName>VALP</fullName>
+                    <default>false</default>
+                    <label>VALP</label>
+                </value>
+                <value>
+                    <fullName>VA Quali</fullName>
+                    <default>false</default>
+                    <label>VA Quali</label>
+                </value>
+                <value>
+                    <fullName>VA Orga</fullName>
+                    <default>false</default>
+                    <label>VA Orga</label>
+                </value>
+                <value>
+                    <fullName>VAP PDA</fullName>
+                    <default>false</default>
+                    <label>VAP PDA</label>
+                </value>
+                <value>
+                    <fullName>VAP Seuil</fullName>
+                    <default>false</default>
+                    <label>VAP Seuil</label>
+                </value>
+                <value>
+                    <fullName>VAP FDA</fullName>
+                    <default>false</default>
+                    <label>VAP FDA</label>
+                </value>
+                <value>
+                    <fullName>VAP Injoignable</fullName>
+                    <default>false</default>
+                    <label>VAP Injoignable</label>
+                </value>
+                <value>
+                    <fullName>VAP DA</fullName>
+                    <default>false</default>
+                    <label>VAP DA</label>
+                </value>
+                <value>
+                    <fullName>VAP MEN</fullName>
+                    <default>false</default>
+                    <label>VAP MEN</label>
+                </value>
+                <value>
+                    <fullName>VAP VO</fullName>
+                    <default>false</default>
+                    <label>VAP VO</label>
+                </value>
+                <value>
+                    <fullName>VAP QS</fullName>
+                    <default>false</default>
+                    <label>VAP QS</label>
+                </value>
+                <value>
+                    <fullName>VAP Enquête de satisfaction</fullName>
+                    <default>false</default>
+                    <label>VAP Enquête de satisfaction</label>
+                </value>
+                <value>
+                    <fullName>VAP Enquête de bienvenue</fullName>
+                    <default>false</default>
+                    <label>VAP Enquête de bienvenue</label>
+                </value>
+                <value>
+                    <fullName>VAP FC</fullName>
+                    <default>false</default>
+                    <label>VAP FC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_de_visite__c</fullName>
+        <externalId>false</externalId>
+        <label>Type de visite</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VA</fullName>
+                    <default>false</default>
+                    <label>VA</label>
+                </value>
+                <value>
+                    <fullName>VAP</fullName>
+                    <default>false</default>
+                    <label>VAP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Compte rendu de visite</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Statut__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Tout</label>
+    </listViews>
+    <listViews>
+        <fullName>Mes_comptes_rendus_de_visite_interrompus</fullName>
+        <columns>NAME</columns>
+        <columns>Numero_de_point_relais__c</columns>
+        <columns>Type_de_visite__c</columns>
+        <columns>Type_de_compte_rendu__c</columns>
+        <columns>Date_de_la_visite__c</columns>
+        <columns>Interrompu__c</columns>
+        <columns>Motif_d_interruption__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Statut__c</field>
+            <operation>equals</operation>
+            <value>Terminé</value>
+        </filters>
+        <filters>
+            <field>Interrompu__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Cr_ateur_compte_rendu__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Mes comptes rendus de visite interrompus</label>
+        <language>fr</language>
+    </listViews>
+    <listViews>
+        <fullName>Mes_comptes_rendus_de_visite_termines</fullName>
+        <columns>NAME</columns>
+        <columns>Numero_de_point_relais__c</columns>
+        <columns>Type_de_visite__c</columns>
+        <columns>Type_de_compte_rendu__c</columns>
+        <columns>Date_de_la_visite__c</columns>
+        <columns>Interrompu__c</columns>
+        <columns>Motif_d_interruption__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Statut__c</field>
+            <operation>equals</operation>
+            <value>Terminé</value>
+        </filters>
+        <filters>
+            <field>Cr_ateur_compte_rendu__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Mes comptes rendus de visite terminés</label>
+        <language>fr</language>
+    </listViews>
+    <nameField>
+        <displayFormat>CR-{00000}</displayFormat>
+        <label>Nom de compte rendu</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Comptes rendus de visite</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>VA</fullName>
+        <active>true</active>
+        <label>VA</label>
+        <picklistValues>
+            <picklist>Motif_d_interruption__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Le relais est fermé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Le relais ne souhaite pas poursuivre faute de temps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Le responsable magasin ou le contact opérationnel est absent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut__c</picklist>
+            <values>
+                <fullName>En attente de traitement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En attente de visite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En cours de préparation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_compte_rendu__c</picklist>
+            <values>
+                <fullName>VA Orga</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA Quali</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA Standard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VALP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_visite__c</picklist>
+            <values>
+                <fullName>VA</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>VAP</fullName>
+        <active>true</active>
+        <label>VAP</label>
+        <picklistValues>
+            <picklist>Motif_d_interruption__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Le relais est fermé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Le relais ne souhaite pas poursuivre faute de temps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Le responsable magasin ou le contact opérationnel est absent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut__c</picklist>
+            <values>
+                <fullName>En attente de traitement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En attente de visite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En cours de préparation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_compte_rendu__c</picklist>
+            <values>
+                <fullName>VAP DA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP Enquête de bienvenue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP Enquête de satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP FC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP FDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP MEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP QS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP Seuil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAP VO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_visite__c</picklist>
+            <values>
+                <fullName>VAP</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Type_de_compte_rendu__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Statut__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Interrompu__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

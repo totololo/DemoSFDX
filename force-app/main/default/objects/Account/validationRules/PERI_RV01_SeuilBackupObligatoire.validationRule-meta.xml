@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PERI_RV01_SeuilBackupObligatoire</fullName>
+    <active>true</active>
+    <description>Si le champ &quot;Pudo backup&quot; est égal à Oui, alors il faut obligatoirement renseigner &quot;Seuil backup&quot;. Sinon il n&#39;est pas possible de renseigner le Seuil backup.</description>
+    <errorConditionFormula>OR(
+AND(NOT ($User.BypassValidationRule__c), 
+ISPICKVAL( Pudo_backup__c ,&quot;Oui&quot;),
+ISBLANK( Seuil_Backup__c )),
+AND(NOT ($User.BypassValidationRule__c), 
+ISPICKVAL( Pudo_backup__c ,&quot;Non&quot;),
+NOT(ISBLANK( Seuil_Backup__c ))))</errorConditionFormula>
+    <errorDisplayField>Seuil_Backup__c</errorDisplayField>
+    <errorMessage>Si le champ &quot;Pudo backup&quot; est égal à Oui, veuillez renseigner &quot;Seuil backup&quot;. 
+Sinon il n&#39;est pas possible de renseigner le Seuil backup.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONS_VR14_Etat2</fullName>
+    <active>true</active>
+    <description>Pour enregistrer en état 2, merci de renseigner les champs suivants : Nom commercial, pays / rue / ville / code postal de l&#39;adresse de livraison, Date d&#39;installation et sélectionner la valeur « état 2 » dans le champ dédié.</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, 
+ISPICKVAL( Type, &quot;20&quot;),  ISPICKVAL( Etat__c , &quot;2&quot;) , 
+
+OR (  
+   ISBLANK(Name), 
+   ISBLANK ( ShippingCountry ), 
+   ISBLANK ( ShippingStreet), 
+   ISBLANK ( ShippingCity ), 
+   ISBLANK ( ShippingPostalCode ), 
+   ISBLANK ( Date_d_installation__c ),
+   ISBLANK(TEXT( Etat__c ))
+
+))</errorConditionFormula>
+    <errorMessage>Les champs suivants sont obligatoires pour passer à l&#39;état 2 : Nom commercial, adresse de livraison (complète), date d&#39;installation et sélectionner la valeur « état 2 » dans le champ dédié.</errorMessage>
+</ValidationRule>

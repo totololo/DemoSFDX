@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DMax_Respectee__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND(not isblank (Zone_dimplantation__c),DISTANCE( Long_Lat_adresse_de_livraison__c ,  Zone_dimplantation__r.Centroide__c , &#39;km&#39;)&lt; Zone_dimplantation__r.Dmax__c), IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;Green&quot;),
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Red&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DMax Respectée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

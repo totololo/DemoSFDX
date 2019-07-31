@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_motif_1__c</fullName>
+    <externalId>false</externalId>
+    <label>Sous-motif 1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Actions à réaliser</fullName>
+                <default>false</default>
+                <label>Actions à réaliser</label>
+            </value>
+            <value>
+                <fullName>Anomalie colis</fullName>
+                <default>false</default>
+                <label>Anomalie colis</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+            <value>
+                <fullName>Changement de coordonnees</fullName>
+                <default>false</default>
+                <label>Changement de coordonnées</label>
+            </value>
+            <value>
+                <fullName>Colis volumineux</fullName>
+                <default>false</default>
+                <label>Colis volumineux</label>
+            </value>
+            <value>
+                <fullName>Collecte</fullName>
+                <default>false</default>
+                <label>Collecte</label>
+            </value>
+            <value>
+                <fullName>Collecte Transporteur</fullName>
+                <default>false</default>
+                <label>Collecte Transporteur</label>
+            </value>
+            <value>
+                <fullName>Commandes</fullName>
+                <default>false</default>
+                <label>Commandes</label>
+            </value>
+            <value>
+                <fullName>Comportement du point relais</fullName>
+                <default>false</default>
+                <label>Comportement du point relais</label>
+            </value>
+            <value>
+                <fullName>Congé et disponibilité du point relais</fullName>
+                <default>false</default>
+                <label>Congé et disponibilité du point relais</label>
+            </value>
+            <value>
+                <fullName>Contre-remboursement (COD)</fullName>
+                <default>false</default>
+                <label>Contre-remboursement (COD)</label>
+            </value>
+            <value>
+                <fullName>Demande d&#39;enlèvement colis</fullName>
+                <default>false</default>
+                <label>Demande d&#39;enlèvement colis</label>
+            </value>
+            <value>
+                <fullName>Demande de retour colis</fullName>
+                <default>false</default>
+                <label>Demande de retour colis</label>
+            </value>
+            <value>
+                <fullName>Dépôt</fullName>
+                <default>false</default>
+                <label>Dépôt</label>
+            </value>
+            <value>
+                <fullName>Dévoyés</fullName>
+                <default>false</default>
+                <label>Dévoyés</label>
+            </value>
+            <value>
+                <fullName>Dévoyés 100% cause relais</fullName>
+                <default>false</default>
+                <label>Dévoyés 100% cause relais</label>
+            </value>
+            <value>
+                <fullName>Dévoyés partiels cause relais</fullName>
+                <default>false</default>
+                <label>Dévoyés partiels cause relais</label>
+            </value>
+            <value>
+                <fullName>Echange</fullName>
+                <default>false</default>
+                <label>Echange</label>
+            </value>
+            <value>
+                <fullName>État du colis</fullName>
+                <default>false</default>
+                <label>État du colis</label>
+            </value>
+            <value>
+                <fullName>Événement grave</fullName>
+                <default>false</default>
+                <label>Événement grave</label>
+            </value>
+            <value>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+                <label>Exclusion</label>
+            </value>
+            <value>
+                <fullName>Facturation</fullName>
+                <default>false</default>
+                <label>Facturation</label>
+            </value>
+            <value>
+                <fullName>Horaires</fullName>
+                <default>false</default>
+                <label>Horaires</label>
+            </value>
+            <value>
+                <fullName>Indemnisation colis</fullName>
+                <default>false</default>
+                <label>Indemnisation colis</label>
+            </value>
+            <value>
+                <fullName>Indisponibilité</fullName>
+                <default>false</default>
+                <label>Indisponibilité</label>
+            </value>
+            <value>
+                <fullName>Informations colis</fullName>
+                <default>false</default>
+                <label>Informations colis</label>
+            </value>
+            <value>
+                <fullName>Inventaire colis</fullName>
+                <default>false</default>
+                <label>Inventaire colis</label>
+            </value>
+            <value>
+                <fullName>Inventaire colis non réalisé</fullName>
+                <default>false</default>
+                <label>Inventaire colis non réalisé</label>
+            </value>
+            <value>
+                <fullName>Livraison</fullName>
+                <default>false</default>
+                <label>Livraison</label>
+            </value>
+            <value>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+                <label>Menace de résiliation</label>
+            </value>
+            <value>
+                <fullName>Message PDA</fullName>
+                <default>false</default>
+                <label>Message PDA</label>
+            </value>
+            <value>
+                <fullName>Modification seuil</fullName>
+                <default>false</default>
+                <label>Modification seuil</label>
+            </value>
+            <value>
+                <fullName>Notification destinataire</fullName>
+                <default>false</default>
+                <label>Notification destinataire</label>
+            </value>
+            <value>
+                <fullName>Préparation</fullName>
+                <default>false</default>
+                <label>Préparation</label>
+            </value>
+            <value>
+                <fullName>Problème d&#39;avisage</fullName>
+                <default>false</default>
+                <label>Problème d&#39;avisage</label>
+            </value>
+            <value>
+                <fullName>Problème de suggestion</fullName>
+                <default>false</default>
+                <label>Problème de suggestion</label>
+            </value>
+            <value>
+                <fullName>Problème relationnel</fullName>
+                <default>false</default>
+                <label>Problème relationnel</label>
+            </value>
+            <value>
+                <fullName>Réception</fullName>
+                <default>false</default>
+                <label>Réception</label>
+            </value>
+            <value>
+                <fullName>Recherche colis</fullName>
+                <default>false</default>
+                <label>Recherche colis</label>
+            </value>
+            <value>
+                <fullName>Refus d&#39;activité</fullName>
+                <default>false</default>
+                <label>Refus d&#39;activité</label>
+            </value>
+            <value>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+                <label>Résiliation</label>
+            </value>
+            <value>
+                <fullName>Retrait</fullName>
+                <default>false</default>
+                <label>Retrait</label>
+            </value>
+            <value>
+                <fullName>ROD</fullName>
+                <default>false</default>
+                <label>ROD</label>
+            </value>
+            <value>
+                <fullName>Service après-vente</fullName>
+                <default>false</default>
+                <label>Service après-vente</label>
+            </value>
+            <value>
+                <fullName>Seuil</fullName>
+                <default>false</default>
+                <label>Seuil</label>
+            </value>
+            <value>
+                <fullName>Shop Ident</fullName>
+                <default>false</default>
+                <label>Shop Ident</label>
+            </value>
+            <value>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+                <label>Surcharge</label>
+            </value>
+            <value>
+                <fullName>Transfert de responsabilité</fullName>
+                <default>false</default>
+                <label>Transfert de responsabilité</label>
+            </value>
+            <value>
+                <fullName>Transporteur/Service/Réseau</fullName>
+                <default>false</default>
+                <label>Transporteur/Service/Réseau</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Demande d&#39;enlèvement colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Dévoyés 100% cause relais</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Dévoyés partiels cause relais</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Inventaire colis non réalisé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Dévoyés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <controllingFieldValue>Transporteur</controllingFieldValue>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Autres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Surcharge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Colis volumineux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>État du colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Informations colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Indemnisation colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Demande de retour colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colis</controllingFieldValue>
+            <valueName>Recherche colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel et réseau</controllingFieldValue>
+            <valueName>Service après-vente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel et réseau</controllingFieldValue>
+            <valueName>Commandes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Contre-remboursement (COD)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Collecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Notification destinataire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Réception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Dépôt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Anomalie colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Inventaire colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Message PDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Retrait</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Préparation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>ROD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Shop Ident</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Echange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Actions à réaliser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procédure et prestations</controllingFieldValue>
+            <valueName>Transfert de responsabilité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporteur</controllingFieldValue>
+            <valueName>Problème relationnel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporteur</controllingFieldValue>
+            <valueName>Collecte Transporteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporteur</controllingFieldValue>
+            <valueName>Livraison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transporteur</controllingFieldValue>
+            <valueName>Problème d&#39;avisage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Refus d&#39;activité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Transporteur/Service/Réseau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Événement grave</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Exclusion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Congé et disponibilité du point relais</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Facturation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Horaires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Comportement du point relais</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Changement de coordonnees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Problème de suggestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Résiliation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Menace de résiliation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Modification seuil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vie du relais</controllingFieldValue>
+            <valueName>Indisponibilité</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

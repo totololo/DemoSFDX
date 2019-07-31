@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I01_PUDO_with_status_1</fullName>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Shipping_Zip_Postal_Code__c</columns>
+    <columns>Shipping_Country__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Etat__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>I01 - PUDO with status 1</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>TECH_VL_I01_PUDO_with_status_1</group>
+    </sharedTo>
+</ListView>

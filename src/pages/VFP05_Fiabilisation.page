@@ -1,0 +1,116 @@
+<apex:page standardController="Account" showQuickActionVfHeader="false" showHeader="false" sidebar="false" LightningStyleSheets="true" extensions="VFC05_Fiabilisation"> 
+    
+    <style>
+        .bPageBlock .pbBody{border-top: 1px solid #f3f3ec !important; } 
+        .pgBlockTableHeader{text-align:center;}
+    </style>
+    <script> 
+     // send message to lightning component
+    function closeLN() {
+        parent.parent.postMessage('closePopup', '*');
+    }
+    var passageFiabilisation = null;
+    function keepOriginAddress() {
+        if(passageFiabilisation == 'false') {
+            alert('{!$Label.FIAB_ConserverAlert}');
+        }
+        closeLN();
+        return passageFiabilisation == 'false' ? false : true;
+    }
+    
+    function onCheckBoxChanged(id) { 
+        // user can choose only 1 address at a time
+        var $prefix = id.substring(0,id.indexOf('_'));  
+        $('*[id^="' + $prefix + '"]').each(function(idx,el) {
+            if(this.id != id) { 
+                $('div#'+this.id+' input[type=checkbox]').each(function() {
+                    if ($(this).is(":checked")) {
+                        $(this).attr('checked',false);
+                    }
+                });
+            }  
+        });
+        return true;
+    }
+    
+    function submitAddresses(addressId) {
+        var bRet = true;
+        if(! document.getElementById('{!$Component.myForm.myPbBlock.myPBSection.cbx_applyDelivery}').checked && 
+           ! document.getElementById('{!$Component.myForm.myPbBlock.myPBSection.cbx_applyBilling}').checked) {
+            bRet = false;
+            alert('{!$Label.FIAB_OneCheckbox}');
+        } 
+        closeLN();
+        return bRet;
+    }
+    
+    </script> 
+    <apex:includeScript value="{!$Resource.jQuery }"/>
+    
+    <!-- panel to Display errors in case of any -->
+    <apex:outputPanel id="messageBlock">
+        <apex:pagemessages />
+    </apex:outputPanel>
+    
+    <!-- account's BILLING address fields sent to the web service.
+Can be modified by the user -->
+    <apex:form id="myForm"> 
+        <apex:pageBlock id="myPbBlock" title="{!$Label.FIAB_title}">   
+            <apex:pageBlockSection id="myPBSection" columns="2" >   
+                <apex:inputCheckbox value="{!applyForDelivery}" label="{!$Label.FIAB_Livraison}" id="cbx_applyDelivery" ><apex:actionSupport event="onchange" reRender="myPbBlock"/></apex:inputCheckbox>
+                <apex:inputHidden />
+                <apex:inputCheckbox value="{!applyForBilling}" label="{!$Label.FIAB_Facturation}" id="cbx_applyBilling" ><apex:actionSupport event="onchange" reRender="myPbBlock"/></apex:inputCheckbox>
+                <apex:inputHidden />
+                <apex:inputField value="{!account.N_de_rue_livraison__c}"    style="width:180px;" label="{!$Label.FIAB_StreetNumber}"/>
+                <apex:inputField value="{!account.ShippingPostalCode}"       style="width:180px;" label="{!$Label.FIAB_PostalCode}"/> 
+                <apex:inputText value="{!shippingStreet1}"                   style="width:180px;" label="{!$Label.FIAB_Street1}"    /> 
+                <apex:inputField value="{!account.ShippingCity}"             style="width:180px;" label="{!$Label.FIAB_City}"/> 
+                <apex:inputText value="{!shippingStreet2}"                   style="width:180px;" label="{!$Label.FIAB_Street2}"   />
+                <apex:inputField value="{!account.ShippingCountryCode}"      style="width:180px;" label="{!$Label.FIAB_Country}"  /> 
+                <apex:inputText value="{!shippingStreet3}"                   style="width:180px;" label="{!$Label.FIAB_Street3}"/>
+            </apex:pageBlockSection> 
+            <div align="center" draggable="false" style="margin-top:20px;" >
+                <apex:commandButton value="{!$Label.FIAB_ShowSuggestions}" action="{!suggestAddresses}"  reRender="devicesBlock,frm_invalidAdress,messageBlock" /> 
+                <apex:commandButton value="{!$Label.FIAB_Conserver}"     action="{!keepOriginalAddress}"  onclick="return keepOriginAddress('{!passageFiabilisation}')"   style="margin-left:20px;"    /> 
+                <apex:commandButton value="{!$Label.FIAB_CloseWindow}" style="margin-left:20px;" onclick="closeLN()"  action="{!closeScreen}" /> 
+            </div> 
+        </apex:pageBlock>
+    </apex:form>
+    
+    <!-- list of suggested addresses by AMABIAS block -->   
+    <apex:form id="devicesBlock" >  
+        <apex:outPutPanel layout="block">
+            <script>
+            passageFiabilisation = "{!passageFiabilisation}"; 
+            </script> 
+        </apex:outPutPanel>
+        <apex:pageBlock rendered="{!IF (listAddresses.size == 0 , false , true)}" id="PgBlck"> 
+            <apex:pageBlockSection title="{!$Label.FIAB_ResearchStatus} : {!status}" columns="1">
+                <apex:pageBlockTable style="text-align:center;" value="{!listAddresses}" var="address" id="pgBlckTable"  >
+                    <apex:column headerClass="pgBlockTableHeader"  width="60" >  
+                        <apex:commandLink action="{!submitAddresses}" onclick="return submitAddresses()" style="text-decoration:none;color:blue;"  >
+                            <apex:param name="addressId" value="{!address.id}"/>  
+                            {!$Label.FIAB_Select}
+                        </apex:commandLink> 
+                    </apex:column> 
+                    <apex:column value="{!address.streetNumber} {!address.street}"  headerClass="pgBlockTableHeader"   headerValue="{!$Label.FIAB_Street}" /> 
+                    <apex:column value="{!address.postalCode}"     headerClass="pgBlockTableHeader"  headerValue="{!$Label.FIAB_PostalCode}" />
+                    <apex:column value="{!address.city}"    headerClass="pgBlockTableHeader"        headerValue="{!$Label.FIAB_City}" />  
+                </apex:pageBlockTable> 
+            </apex:pageBlockSection>
+        </apex:pageBlock> 
+    </apex:form>
+    
+    <!-- display the status message In case of 0 suggestion  -->
+    <apex:form id="frm_invalidAdress" >
+        <apex:outPutPanel layout="block">
+            <script>
+            passageFiabilisation = "{!passageFiabilisation}"; 
+            </script>
+        </apex:outPutPanel>
+        <apex:pageBlock rendered="{!IF(AND(listAddresses.size ==0,len(status)>0) , true , false)}"  >
+            <apex:pageBlockSection title="{!$Label.FIAB_ResearchStatus} : {!status}"  />
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

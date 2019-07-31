@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>En_tete_Comptes_BNL</fullName>
+    <fields>Name</fields>
+    <fields>Etat__c</fields>
+    <fields>Reference__c</fields>
+    <fields>Phone</fields>
+    <fields>DisponibiliteFormule__c</fields>
+    <fields>Derniere_synchronisation_statut__c</fields>
+    <label>En tête Comptes BNL</label>
+</CompactLayout>

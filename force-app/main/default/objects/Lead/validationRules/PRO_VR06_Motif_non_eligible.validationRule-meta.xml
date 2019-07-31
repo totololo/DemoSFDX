@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRO_VR06_Motif_non_eligible</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(NOT( $User.BypassValidationRule__c ),
+ISPICKVAL(Commerce_eligible__c ,&quot;Non&quot;),
+ISPICKVAL( Motif_d_ineligibilite__c ,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Motif_d_ineligibilite__c</errorDisplayField>
+    <errorMessage>Veuillez indiquer le &quot;Motif d&#39;inéligibilité&quot;.</errorMessage>
+</ValidationRule>

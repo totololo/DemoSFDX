@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prospect</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prospects</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Nom commercial</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>company_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Commentaire</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>description_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Domaine d&apos;activité</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>industry_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Nom du gérant</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>last_name_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Accès à la prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_access</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Niveau d&apos;accès à la prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_access_level</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alerte de prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_alert</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Règle d&apos;attribution des prospects</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Règles d&apos;attribution des prospects</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_assignment_rule</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Saisie de prospects</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_capture</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Interface de saisie de prospects</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_capture_interface</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Page de saisie de prospects</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_capture_page</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Créateur de prospects</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_creator</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Devise du prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_currency</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Champ personnalisé de prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Champs personnalisés de prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_custom_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Données du prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_data</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Service du prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_division</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Modification du prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_edit</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Champ de prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Champs de prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Généralités sur la prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_general</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Historique des prospects</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_history</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Rapport sur l&apos;historique des prospects</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_history_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID de prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>ID de prospects</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Importation de prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_import</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Assistant Importation de prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_import_wizard</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Informations sur la prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Durée de vie des prospects</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_lifetime</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Rapport de liste de prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_list_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Gestion des prospects</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_management</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Nom du prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Noms du prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Propriétaire du prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Propriétaires du prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_owner</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alias du propriétaire du prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_owner_alias</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Rapport du propriétaire de la prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_owner_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Liste de sélection des prospects</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Listes de sélection des prospects</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_picklist</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>File d&apos;attente de prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Files d&apos;attente de prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_queue</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Cote du prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_rating</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enregistrement de prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enregistrements de prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_record</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Type d&apos;enregistrement de prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Types d&apos;enregistrement de prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_record_type</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Rapport sur les prospects</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Rapports sur les prospects</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Score du prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Scores des prospects</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_score</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Paramètre de prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Paramètres de prospect</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_setting</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Configuration du prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_setup</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Source</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Origines des prospects</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_source</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID d&apos;étape de prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_stage_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Commerce visité</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Commerces visités</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_status</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Rapport sur le statut des prospects</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>lead_status_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Vues de prospect</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Vues de prospect</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>lead_views</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <gender>Masculine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

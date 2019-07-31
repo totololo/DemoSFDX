@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Français</fullName>
+        <default>false</default>
+        <label>Français</label>
+    </customValue>
+    <customValue>
+        <fullName>Anglais</fullName>
+        <default>false</default>
+        <label>Anglais</label>
+    </customValue>
+    <customValue>
+        <fullName>Espagnol</fullName>
+        <default>false</default>
+        <label>Espagnol</label>
+    </customValue>
+    <customValue>
+        <fullName>Hollandais</fullName>
+        <default>false</default>
+        <label>Hollandais</label>
+    </customValue>
+    <customValue>
+        <fullName>Allemand</fullName>
+        <default>false</default>
+        <label>Allemand</label>
+    </customValue>
+    <customValue>
+        <fullName>Hongrois</fullName>
+        <default>false</default>
+        <label>Hongrois</label>
+    </customValue>
+    <customValue>
+        <fullName>Italien</fullName>
+        <default>false</default>
+        <label>Italien</label>
+    </customValue>
+    <customValue>
+        <fullName>Tchèque</fullName>
+        <default>false</default>
+        <label>Tchèque</label>
+    </customValue>
+    <description>Liste des langues</description>
+    <masterLabel>LOV_GLO_LAN</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ouvert_avant_10h30_entre_mardi_et_samedi__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+
+AND(
+
+VALUE(LEFT( TEXT( Mardi_Ouverture__c ) , 2)) &lt; 11,
+VALUE(RIGHT( TEXT( Mardi_Ouverture__c ) , 2)) &lt;= 45,
+
+
+VALUE(LEFT( TEXT( Mercredi_Ouverture__c ) , 2)) &lt; 11,
+VALUE(RIGHT( TEXT( Mercredi_Ouverture__c ) , 2)) &lt;= 45,
+ 
+VALUE(LEFT( TEXT( Jeudi_Ouverture__c ) , 2)) &lt; 11,
+VALUE(RIGHT( TEXT( Jeudi_Ouverture__c ) , 2)) &lt;= 45,
+
+VALUE(LEFT( TEXT( Vendredi_Ouverture__c ) , 2)) &lt; 11,
+VALUE(RIGHT( TEXT( Vendredi_Ouverture__c ) , 2)) &lt;= 45,
+
+VALUE(LEFT( TEXT( Samedi_Ouverture__c ) , 2)) &lt; 11,
+VALUE(RIGHT( TEXT( Samedi_Ouverture__c ) , 2)) &lt;= 45),
+
+
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;Green&quot;), 
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Red&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ouvert avant 10h30 entre mardi et samedi</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

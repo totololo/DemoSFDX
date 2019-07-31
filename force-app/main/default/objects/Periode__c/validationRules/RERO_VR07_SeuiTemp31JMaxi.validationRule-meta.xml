@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RERO_VR07_SeuiTemp31JMaxi</fullName>
+    <active>true</active>
+    <description>La période de seuil temporaire ne doit pas excéder  31 jours.</description>
+    <errorConditionFormula>AND ( 
+      and(Not($User.BypassValidationRule__c), 
+           RecordTypeId =&quot;01258000000gnfF&quot;),
+    (Date_de_fin__c - Date_de_debut__c )&gt;31)</errorConditionFormula>
+    <errorDisplayField>Date_de_fin__c</errorDisplayField>
+    <errorMessage>La période de seuil temporaire ne doit pas excéder  31 jours.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Version_du_stickage__c</fullName>
+    <externalId>false</externalId>
+    <label>Version du stickage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pickup 2014</fullName>
+                <default>false</default>
+                <label>Pickup 2014</label>
+            </value>
+            <value>
+                <fullName>La Poste 2015</fullName>
+                <default>false</default>
+                <label>La Poste 2015</label>
+            </value>
+            <value>
+                <fullName>SNCF 2015</fullName>
+                <default>false</default>
+                <label>SNCF 2015</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

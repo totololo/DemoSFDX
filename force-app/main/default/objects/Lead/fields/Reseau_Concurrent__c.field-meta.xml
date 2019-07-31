@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reseau_Concurrent__c</fullName>
+    <externalId>false</externalId>
+    <label>Réseau concurrent</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Kiala</fullName>
+                <default>false</default>
+                <label>Kiala</label>
+            </value>
+            <value>
+                <fullName>Mondial Relay</fullName>
+                <default>false</default>
+                <label>Mondial Relay</label>
+            </value>
+            <value>
+                <fullName>Relais Colis</fullName>
+                <default>false</default>
+                <label>Relais Colis</label>
+            </value>
+            <value>
+                <fullName>Relais Poste</fullName>
+                <default>false</default>
+                <label>Relais Poste</label>
+            </value>
+            <value>
+                <fullName>UPS Acces Point</fullName>
+                <default>false</default>
+                <label>UPS Acces Point</label>
+            </value>
+            <value>
+                <fullName>Kariboo</fullName>
+                <default>false</default>
+                <label>Kariboo</label>
+            </value>
+            <value>
+                <fullName>Bpost</fullName>
+                <default>false</default>
+                <label>Bpost</label>
+            </value>
+            <value>
+                <fullName>DHL</fullName>
+                <default>false</default>
+                <label>DHL</label>
+            </value>
+            <value>
+                <fullName>GLS</fullName>
+                <default>false</default>
+                <label>GLS</label>
+            </value>
+            <value>
+                <fullName>MPL</fullName>
+                <default>false</default>
+                <label>MPL</label>
+            </value>
+            <value>
+                <fullName>Expressone</fullName>
+                <default>false</default>
+                <label>Expressone</label>
+            </value>
+            <value>
+                <fullName>PickPost (La Poste)</fullName>
+                <default>false</default>
+                <label>PickPost (La Poste)</label>
+            </value>
+            <value>
+                <fullName>Geis</fullName>
+                <default>false</default>
+                <label>Geis</label>
+            </value>
+            <value>
+                <fullName>Intime</fullName>
+                <default>false</default>
+                <label>Intime</label>
+            </value>
+            <value>
+                <fullName>Czech Post</fullName>
+                <default>false</default>
+                <label>Czech Post</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Kiala</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Mondial Relay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Relais Colis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Relais Poste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>UPS Acces Point</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Kariboo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Bpost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>DHL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>GLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>MPL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Expressone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>PickPost (La Poste)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Geis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Intime</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oui</controllingFieldValue>
+            <valueName>Czech Post</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

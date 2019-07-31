@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nb_de_requete_indispo_pb_synchro_en_cour__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Le nombre de requete indisponibles/Probleme de synchro avec un statut active (autre que terminé)</description>
+    <externalId>false</externalId>
+    <label>Nb de requete indispo pb synchro en cour</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

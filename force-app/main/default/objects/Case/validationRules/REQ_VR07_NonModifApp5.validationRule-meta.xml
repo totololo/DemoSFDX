@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR07_NonModifApp5</fullName>
+    <active>true</active>
+    <description>Empêche la modification du Statut vers &quot;En attente appel 5&quot; sauf si la valeur précédente est &quot;En attente visite animateur&quot;.</description>
+    <errorConditionFormula>and(
+     not ($User.BypassValidationRule__c ),
+    or($Profile.Id = &quot;00e5800000159HE&quot;,
+    $Profile.Id = &quot;00e580000015AQ1&quot;),
+    RecordType.DeveloperName =&quot;PUS_FR_Demarrage_d_activite&quot;,
+    ischanged(Status),
+    not(ispickval( PRIORVALUE(Status) ,&quot;9&quot;)),
+    ispickval( Status ,&quot;5&quot;))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas modifier le statut vers &quot;En attente appel 5&quot; sauf si Statut actuel est &quot;En attente visite animateur réseau&quot;.</errorMessage>
+</ValidationRule>

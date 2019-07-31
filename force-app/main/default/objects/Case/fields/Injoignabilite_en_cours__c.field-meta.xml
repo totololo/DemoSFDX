@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Injoignabilite_en_cours__c</fullName>
+    <description>Champ technique - pour les filtres dans les vues de listes.</description>
+    <externalId>false</externalId>
+    <formula>IF(     AND
+                 (Indisponibilite__r.Injoignable__c=TRUE,
+                 CONTAINS(Subject,&quot;Indisponibilité&quot;)),
+         TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Injoignabilité en cours</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

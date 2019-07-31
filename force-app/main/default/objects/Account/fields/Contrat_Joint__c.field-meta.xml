@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contrat_Joint__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Champ technique alimenté par un trigger. Il permet de savoir s&#39;il y a un fichier joint au format &quot;ID PUDO&quot; + &quot;_&quot; + une chaîne de caractères.</description>
+    <externalId>false</externalId>
+    <label>Contrat Joint</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

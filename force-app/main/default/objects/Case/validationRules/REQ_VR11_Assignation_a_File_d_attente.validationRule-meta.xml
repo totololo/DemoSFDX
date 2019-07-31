@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR11_Assignation_a_File_d_attente</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( 
+($User.BypassValidationRule__c = false),
+ (Not( ISBLANK(Owner:Queue.QueueName ))), 
+ (Not(BEGINS(Owner:Queue.QueueName, 
+ (text(Account.Operateur_Global__c )) )  
+)))</errorConditionFormula>
+    <errorMessage>Vous n&#39;êtes pas autorisé à assigner cette requête à une file d&#39;attente différente du l&#39;opérateur!</errorMessage>
+</ValidationRule>

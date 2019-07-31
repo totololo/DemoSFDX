@@ -1,0 +1,48 @@
+<apex:page standardController="Account">
+     <apex:pageMessages />
+    <script>
+    <apex:includeScript value="/support/console/43.0/integration.js"/>;
+
+    var accountName = getUrlParameter('name');
+    var ID = getUrlParameter('id');
+    var redirectUrl = '/a03/e?CF00N5800000CCTm4='+encodeURI('{!JSENCODE(Account.Name)}')+
+        '&CF00N5800000CCTm4_lkid='+ID+'&retURL=%2F'+ID+'&RecordType=01258000000gnfZ&ent=01I58000001I7vF';
+    var defaultValues = {'Nom_du_compte__c' : getUrlParameter('id')}
+     
+     if (sforce.console.isInConsole()) {
+         //redirectUrl += '&isdtp=vw';
+         //srcSelf(redirectUrl);
+         window.onload = function() {
+             sforce.one.navigateToURL('/'+ getUrlParameter('id') , true);                         
+             sforce.one.createRecord('Periode__c', '01258000000gnfZ', defaultValues);    
+         };
+    }
+    else {
+        //window.open(redirectUrl);
+        window.location.href = redirectUrl;
+        //window.location.reload(true);
+    }
+    
+     function getUrlParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&')
+        for (var i = 0; i < sURLVariables.length; i++) 
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) 
+            {
+                while(sParameterName[1].includes('+') /*|| sParameterName[1].includes('%28') || sParameterName[1].includes('%29')*/)
+                {
+                    sParameterName[1] = sParameterName[1].replace("+", " "); 
+                    //sParameterName[1] = sParameterName[1].replace("%28", "(");
+                    //sParameterName[1] = sParameterName[1].replace("%29", ")");
+                    //sParameterName[1] = sParameterName[1].replace("%C3%A8", "è");
+                } 
+                
+                return sParameterName[1];
+            }
+        }
+    }
+    </script>
+</apex:page>

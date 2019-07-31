@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Activation d&#39;une nouvelle consigne</masterLabel>
+        <translation><!-- Activation d&apos;une nouvelle consigne --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Activation reroutage</masterLabel>
+        <translation><!-- Activation reroutage --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Anomalie de synchronisation - non résolu</masterLabel>
+        <translation><!-- Anomalie de synchronisation - non résolu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Anomalie de synchronisation - résolu</masterLabel>
+        <translation><!-- Anomalie de synchronisation - résolu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Appel ARS – Formation Pickup contact </masterLabel>
+        <translation><!-- Appel ARS – Formation Pickup contact  --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Appel ARS – Suivi Pickup Contact</masterLabel>
+        <translation><!-- Appel ARS – Suivi Pickup Contact --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cause relais confirmée</masterLabel>
+        <translation><!-- Cause relais confirmée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Congé - Ne répond pas</masterLabel>
+        <translation><!-- Congé - Ne répond pas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Congé - Période renseignée</masterLabel>
+        <translation><!-- Congé - Période renseignée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Congé - Relais déclare rester ouvert</masterLabel>
+        <translation><!-- Congé - Relais déclare rester ouvert --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Congé - Relais ne connait pas sa période</masterLabel>
+        <translation><!-- Congé - Relais ne connait pas sa période --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Congé - Traitement interrompu</masterLabel>
+        <translation><!-- Congé - Traitement interrompu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Demande de dissociation</masterLabel>
+        <translation><!-- Demande de dissociation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Demande de passage animateur</masterLabel>
+        <translation><!-- Demande de passage animateur --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dissociation effectuée</masterLabel>
+        <translation><!-- Dissociation effectuée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Appel 1</masterLabel>
+        <translation>Aufnahme der Tätigkeit - Anruf 1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Appel 2</masterLabel>
+        <translation>Aufnahme der Tätigkeit - Anruf 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Appel 3</masterLabel>
+        <translation>Aufnahme der Tätigkeit - Anruf 3</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Appel 5</masterLabel>
+        <translation>Aufnahme der Tätigkeit - Anruf 5</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Appel Bilan 1 validé</masterLabel>
+        <translation><!-- Démarrage d&apos;activité - Appel Bilan 1 validé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Appel Bilan 2 validé</masterLabel>
+        <translation><!-- Démarrage d&apos;activité - Appel Bilan 2 validé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Demande d&#39;exclusion en cours</masterLabel>
+        <translation><!-- Démarrage d&apos;activité - Demande d&apos;exclusion en cours --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Demande d&#39;exclusion refusé</masterLabel>
+        <translation><!-- Démarrage d&apos;activité - Demande d&apos;exclusion refusé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Demande d&#39;exclusion validé</masterLabel>
+        <translation><!-- Démarrage d&apos;activité - Demande d&apos;exclusion validé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Demande de sortie en cours</masterLabel>
+        <translation>Aufnahme der Tätigkeit - Antrag auf Entlassung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Demande de sortie refusée</masterLabel>
+        <translation><!-- Démarrage d&apos;activité - Demande de sortie refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Demande de sortie validée</masterLabel>
+        <translation><!-- Démarrage d&apos;activité - Demande de sortie validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Ne répond pas</masterLabel>
+        <translation><!-- Démarrage d&apos;activité - Ne répond pas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Démarrage d&#39;activité - Traitement interrompu</masterLabel>
+        <translation>Aufnahme der Tätigkeit - Bearbeitung unterbrochen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dévoyés cause relais – cause DDR</masterLabel>
+        <translation><!-- Dévoyés cause relais – cause DDR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Formation agence transporteur</masterLabel>
+        <translation><!-- Formation agence transporteur --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Horaire - Amplitude horaire modifiée</masterLabel>
+        <translation><!-- Horaire - Amplitude horaire modifiée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Horaire - Ne répond pas</masterLabel>
+        <translation><!-- Horaire - Ne répond pas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Horaire - Relais ne souhaite pas modifier ses horaires</masterLabel>
+        <translation><!-- Horaire - Relais ne souhaite pas modifier ses horaires --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Horaire - Traitement interrompu</masterLabel>
+        <translation><!-- Horaire - Traitement interrompu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité Problème PDA/Panne PDA - Demande d&#39;exclusion refusée</masterLabel>
+        <translation><!-- Indisponibilité Problème PDA/Panne PDA - Demande d&apos;exclusion refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité Problème PDA/Panne PDA - Demande d&#39;exclusion validée</masterLabel>
+        <translation><!-- Indisponibilité Problème PDA/Panne PDA - Demande d&apos;exclusion validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité Problème PDA/Problème de synchronisation - Demande d&#39;exclusion refusée</masterLabel>
+        <translation><!-- Indisponibilité Problème PDA/Problème de synchronisation - Demande d&apos;exclusion refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité Problème PDA/Problème de synchronisation - Demande d&#39;exclusion validée</masterLabel>
+        <translation><!-- Indisponibilité Problème PDA/Problème de synchronisation - Demande d&apos;exclusion validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA/ panne PDA - Demande d&#39;exclusion en cours</masterLabel>
+        <translation><!-- Indisponibilité problème PDA/ panne PDA - Demande d&apos;exclusion en cours --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA/ panne PDA - Résolu</masterLabel>
+        <translation><!-- Indisponibilité problème PDA/ panne PDA - Résolu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA/ problème synchronisation - Demande d&#39;exclusion en cours</masterLabel>
+        <translation><!-- Indisponibilité problème PDA/ problème synchronisation - Demande d&apos;exclusion en cours --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA/ problème synchronisation - Résolu</masterLabel>
+        <translation><!-- Indisponibilité problème PDA/ problème synchronisation - Résolu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel Sinistre/Travaux/Santé avec date de fin  - Demande d&#39;exclusion refusée</masterLabel>
+        <translation><!-- Indisponibilité problème opérationnel Sinistre/Travaux/Santé avec date de fin  - Demande d&apos;exclusion refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel Sinistre/Travaux/Santé avec date de fin - Demande d&#39;exclusion validée</masterLabel>
+        <translation><!-- Indisponibilité problème opérationnel Sinistre/Travaux/Santé avec date de fin - Demande d&apos;exclusion validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel Sinistre/Travaux/Santé sans date de fin  - Demande d&#39;exclusion refusée</masterLabel>
+        <translation><!-- Indisponibilité problème opérationnel Sinistre/Travaux/Santé sans date de fin  - Demande d&apos;exclusion refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel Sinistre/Travaux/Santé sans date de fin - Demande d&#39;exclusion validée</masterLabel>
+        <translation><!-- Indisponibilité problème opérationnel Sinistre/Travaux/Santé sans date de fin - Demande d&apos;exclusion validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Information agence installation nouvelle consigne</masterLabel>
+        <translation><!-- Information agence installation nouvelle consigne --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème PDA / panne PDA - Relais joignable</masterLabel>
+        <translation><!-- Injoignabilité problème PDA / panne PDA - Relais joignable --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème PDA / problème synchronisation - Relais joignable</masterLabel>
+        <translation><!-- Injoignabilité problème PDA / problème synchronisation - Relais joignable --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème PDA/ panne PDA - Demande d&#39;exclusion refusée</masterLabel>
+        <translation><!-- Injoignabilité problème PDA/ panne PDA - Demande d&apos;exclusion refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème PDA/ panne PDA - Demande d&#39;exclusion validée</masterLabel>
+        <translation><!-- Injoignabilité problème PDA/ panne PDA - Demande d&apos;exclusion validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème PDA/ problème synchronisation- Demande d&#39;exclusion en cours</masterLabel>
+        <translation><!-- Injoignabilité problème PDA/ problème synchronisation- Demande d&apos;exclusion en cours --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème PDA/ problème synchronisation- Demande d&#39;exclusion refusée</masterLabel>
+        <translation><!-- Injoignabilité problème PDA/ problème synchronisation- Demande d&apos;exclusion refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème PDA/ problème synchronisation- Demande d&#39;exclusion validée</masterLabel>
+        <translation><!-- Injoignabilité problème PDA/ problème synchronisation- Demande d&apos;exclusion validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème opérationnel Sinistre/Travaux/Santé - Demande d&#39;exclusion en cours</masterLabel>
+        <translation><!-- Injoignabilité problème opérationnel Sinistre/Travaux/Santé - Demande d&apos;exclusion en cours --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème opérationnel Sinistre/Travaux/Santé - Demande d&#39;exclusion refusée</masterLabel>
+        <translation><!-- Injoignabilité problème opérationnel Sinistre/Travaux/Santé - Demande d&apos;exclusion refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème opérationnel Sinistre/Travaux/Santé - Demande d&#39;exclusion validée</masterLabel>
+        <translation><!-- Injoignabilité problème opérationnel Sinistre/Travaux/Santé - Demande d&apos;exclusion validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème opérationnel Sinistre/Travaux/Santé - Relais joignable</masterLabel>
+        <translation><!-- Injoignabilité problème opérationnel Sinistre/Travaux/Santé - Relais joignable --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème opérationnel anomalie colis  - Demande d&#39;exclusion refusée</masterLabel>
+        <translation><!-- Injoignabilité problème opérationnel anomalie colis  - Demande d&apos;exclusion refusée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème opérationnel anomalie colis  - Demande d&#39;exclusion validée</masterLabel>
+        <translation><!-- Injoignabilité problème opérationnel anomalie colis  - Demande d&apos;exclusion validée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème opérationnel anomalie colis - Demande d&#39;exclusion en cours</masterLabel>
+        <translation><!-- Injoignabilité problème opérationnel anomalie colis - Demande d&apos;exclusion en cours --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilité problème opérationnel anomalie colis - Relais joignable</masterLabel>
+        <translation><!-- Injoignabilité problème opérationnel anomalie colis - Relais joignable --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignabilitéproblème PDA/ panne PDA - Demande d&#39;exclusion en cours</masterLabel>
+        <translation><!-- Injoignabilitéproblème PDA/ panne PDA - Demande d&apos;exclusion en cours --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mise en place d’un seuil temporaire</masterLabel>
+        <translation><!-- Mise en place d’un seuil temporaire --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Modification seuil contractuel – Baisse</masterLabel>
+        <translation><!-- Modification seuil contractuel – Baisse --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Modification seuil contractuel – Hausse</masterLabel>
+        <translation><!-- Modification seuil contractuel – Hausse --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pas de dissociation effectuée</masterLabel>
+        <translation><!-- Pas de dissociation effectuée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rappel</masterLabel>
+        <translation><!-- Rappel --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Recrutement en cours sur la zone</masterLabel>
+        <translation><!-- Recrutement en cours sur la zone --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais actif avec plusieurs moyens de scan associés - Non résolu</masterLabel>
+        <translation><!-- Relais actif avec plusieurs moyens de scan associés - Non résolu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais actif avec plusieurs moyens de scan associés - Résolu</masterLabel>
+        <translation><!-- Relais actif avec plusieurs moyens de scan associés - Résolu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais inactif avec  moyen de scan - Attente intervention Animateur réseau / Ne répond pas</masterLabel>
+        <translation><!-- Relais inactif avec  moyen de scan - Attente intervention Animateur réseau / Ne répond pas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais inactif avec  moyen de scan - En attente de dissociation</masterLabel>
+        <translation><!-- Relais inactif avec  moyen de scan - En attente de dissociation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais inactif avec  moyen de scan - En cours d’acheminement</masterLabel>
+        <translation><!-- Relais inactif avec  moyen de scan - En cours d’acheminement --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais inactif avec  moyen de scan - Enlèvement sur demande non réalisé</masterLabel>
+        <translation><!-- Relais inactif avec  moyen de scan - Enlèvement sur demande non réalisé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais inactif avec  moyen de scan - Indisponible</masterLabel>
+        <translation><!-- Relais inactif avec  moyen de scan - Indisponible --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais inactif avec  moyen de scan - Liquidateur /matériel à disposition</masterLabel>
+        <translation><!-- Relais inactif avec  moyen de scan - Liquidateur /matériel à disposition --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais inactif avec moyen de scan - Attente intervention Animateur réseau / refus de rendre le matériel</masterLabel>
+        <translation><!-- Relais inactif avec moyen de scan - Attente intervention Animateur réseau / refus de rendre le matériel --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais inactif avec moyen de scan - Liquidateur / Délai de réclamation matériel dépassé</masterLabel>
+        <translation><!-- Relais inactif avec moyen de scan - Liquidateur / Délai de réclamation matériel dépassé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais sans moyen de scan - Association effectuée</masterLabel>
+        <translation><!-- Relais sans moyen de scan - Association effectuée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais sans moyen de scan - En cours d&#39;acheminement</masterLabel>
+        <translation><!-- Relais sans moyen de scan - En cours d&apos;acheminement --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais sans moyen de scan - Matériel à envoyer</masterLabel>
+        <translation><!-- Relais sans moyen de scan - Matériel à envoyer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais sans moyen de scan - Ne répond pas</masterLabel>
+        <translation><!-- Relais sans moyen de scan - Ne répond pas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relais sans moyen de scan - Traitement interrompu</masterLabel>
+        <translation><!-- Relais sans moyen de scan - Traitement interrompu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Requalification dévoyés cause relais – cause chargeur</masterLabel>
+        <translation><!-- Requalification dévoyés cause relais – cause chargeur --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Requalification dévoyés cause relais – cause mixte</masterLabel>
+        <translation><!-- Requalification dévoyés cause relais – cause mixte --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Requalification dévoyés cause relais – cause transporteur</masterLabel>
+        <translation><!-- Requalification dévoyés cause relais – cause transporteur --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Zone noire</masterLabel>
+        <translation><!-- Zone noire --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

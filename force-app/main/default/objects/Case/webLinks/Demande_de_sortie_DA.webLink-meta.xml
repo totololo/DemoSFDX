@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demande_de_sortie_DA</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Demande de sortie du Démarrage d&#39;activité</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/VFP15_TransitionLancerAppelFR?id={!Case.Id}&amp;status={!Case.Status}&amp;isSortie=true</url>
+</WebLink>

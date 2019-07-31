@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RERO_VR11_CreationBackupPasPossible</fullName>
+    <active>true</active>
+    <description>Le Pudo n&#39;est pas BackUp, il n&#39;est pas possible d&#39;ajouter une période BackUp.</description>
+    <errorConditionFormula>AND( NOT ($User.BypassValidationRule__c), 
+      RecordType.DeveloperName =&quot;FR_Pudo_Backup&quot;,
+      ISPICKVAL( Nom_du_compte__r.Pudo_backup__c ,&quot;Non&quot;)
+      
+)</errorConditionFormula>
+    <errorDisplayField>Periode_de_backup__c</errorDisplayField>
+    <errorMessage>Le Pudo n&#39;est pas BackUp, il n&#39;est pas possible d&#39;ajouter une période BackUp.</errorMessage>
+</ValidationRule>

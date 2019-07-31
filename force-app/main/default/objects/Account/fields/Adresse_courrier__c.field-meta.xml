@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adresse_courrier__c</fullName>
+    <externalId>false</externalId>
+    <label>Adresse courrier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SHIPPING</fullName>
+                <default>false</default>
+                <label>SHIPPING</label>
+            </value>
+            <value>
+                <fullName>BILLING</fullName>
+                <default>true</default>
+                <label>BILLING</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

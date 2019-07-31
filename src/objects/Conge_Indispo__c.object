@@ -1,0 +1,3013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Page_Page_Cong_Indispo</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Permet de gérer les périodes de congés, de disponibilités et des indisponibilités des PUDO.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Anomalie__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Champ technique servant à référencer une anomalie</description>
+        <externalId>false</externalId>
+        <label>Anomalie</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Anomalie__c.PUDO__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Nom_du_compte__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Anomalie__c</referenceTo>
+        <relationshipLabel>Congés/disponibilités/indisponibilités</relationshipLabel>
+        <relationshipName>Cong_s_disponibilit_s_indisponibilit_s</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Autres_motif__c</fullName>
+        <externalId>false</externalId>
+        <label>Autres (motif)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cause_d_indisponibilite__c</fullName>
+        <externalId>false</externalId>
+        <label>Cause d&apos;indisponibilité</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_d_indisponibilite__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Panne matérielle</fullName>
+                    <default>false</default>
+                    <label>Panne matérielle</label>
+                </value>
+                <value>
+                    <fullName>Panne électrique</fullName>
+                    <default>false</default>
+                    <label>Panne électrique</label>
+                </value>
+                <value>
+                    <fullName>Panne écran</fullName>
+                    <default>false</default>
+                    <label>Panne écran</label>
+                </value>
+                <value>
+                    <fullName>Panne réseau</fullName>
+                    <default>false</default>
+                    <label>Panne réseau</label>
+                </value>
+                <value>
+                    <fullName>Vandalisme</fullName>
+                    <default>false</default>
+                    <label>Vandalisme</label>
+                </value>
+                <value>
+                    <fullName>Travaux non prévus/communiqués</fullName>
+                    <default>false</default>
+                    <label>Travaux non prévus/communiqués</label>
+                </value>
+                <value>
+                    <fullName>Autre</fullName>
+                    <default>false</default>
+                    <label>Autre</label>
+                </value>
+                <value>
+                    <fullName>Travaux</fullName>
+                    <default>false</default>
+                    <label>Travaux</label>
+                </value>
+                <value>
+                    <fullName>Désinstallation temporaire</fullName>
+                    <default>false</default>
+                    <label>Désinstallation temporaire</label>
+                </value>
+                <value>
+                    <fullName>Autre(s)</fullName>
+                    <default>false</default>
+                    <label>Autre(s)</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Planifiée</controllingFieldValue>
+                <valueName>Travaux</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Planifiée</controllingFieldValue>
+                <valueName>Désinstallation temporaire</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Planifiée</controllingFieldValue>
+                <valueName>Autre(s)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Imprévue</controllingFieldValue>
+                <valueName>Panne matérielle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Imprévue</controllingFieldValue>
+                <valueName>Panne électrique</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Imprévue</controllingFieldValue>
+                <valueName>Panne écran</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Imprévue</controllingFieldValue>
+                <valueName>Panne réseau</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Imprévue</controllingFieldValue>
+                <valueName>Vandalisme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Imprévue</controllingFieldValue>
+                <valueName>Travaux non prévus/communiqués</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Imprévue</controllingFieldValue>
+                <valueName>Autre</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Champ_technique__c</fullName>
+        <description>Pour le tri dans la liste associée.</description>
+        <externalId>false</externalId>
+        <formula>IF ( Statut__c =&quot;En cours&quot;,&quot;3&quot;,
+IF( Statut__c =&quot;A venir&quot;,&quot;2&quot;,
+IF (Statut__c=&quot;Passé&quot;,&quot;1&quot;,&quot;null&quot;)))
+&amp;  TEXT(YEAR( Date_de_debut__c ))  &amp;  
+
+IF (LEN(TEXT(MONTH(Date_de_debut__c)))=1,&quot;0&quot; &amp; TEXT(MONTH(Date_de_debut__c)) ,TEXT(MONTH(Date_de_debut__c)))
+ &amp; 
+
+IF (LEN(TEXT(DAY(Date_de_debut__c)))=1,&quot;0&quot; &amp; TEXT(DAY(Date_de_debut__c)) ,TEXT(DAY(Date_de_debut__c)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Champ technique</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commentaires__c</fullName>
+        <externalId>false</externalId>
+        <label>Commentaires</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Compte_RecordType__c</fullName>
+        <externalId>false</externalId>
+        <formula>Nom_du_compte__r.RecordTypeId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Compte RecordType</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_de_debut__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de début</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_de_fin__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de fin</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Duree_totale_injoignabilite__c</fullName>
+        <externalId>false</externalId>
+        <label>Durée totale injoignabilité (en jours)</label>
+        <summarizedField>Historique_Injoignabilites__c.Duree__c</summarizedField>
+        <summaryForeignKey>Historique_Injoignabilites__c.Indisponibilite__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Indispo_AnomalieC_cree__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Champ technique pour éviter la création de plusieurs requête dans la cas de modification d&apos;une Indisponibilité</description>
+        <externalId>false</externalId>
+        <label>Indispo_AnomalieC_crée</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Indispo_Panne_PDA_cree__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Champ technique pour indiquer qu&apos;une indisponibilité Panne PDA a été créée.</description>
+        <externalId>false</externalId>
+        <label>Indispo Panne PDA créée</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Indispo_Synchro_PDA_cree__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Champ technique pour indiquer qu&apos;une indisponibilité Problème Sychro a été créée.</description>
+        <externalId>false</externalId>
+        <label>Indispo Synchro PDA créée</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Indispo_avec_DdF_cree__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Champ technique pour indiquer qu&apos;une indisponibilité STS avec date de fin a été créée.</description>
+        <externalId>false</externalId>
+        <label>Indispo avec DdF crée</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Indispo_sans_DdF_cree__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Champ technique pour indiquer qu&apos;une indisponibilité STS sans date de fin a été créée.</description>
+        <externalId>false</externalId>
+        <label>Indispo sans DdF crée</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Injoignable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Injoignable</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Injoignable_cree__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Injoignable_crée</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Injoignable_depuis_le__c</fullName>
+        <externalId>false</externalId>
+        <label>Injoignable depuis le</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Inventaire__c</fullName>
+        <externalId>false</externalId>
+        <label>Inventaire</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Nom_du_compte__c</fullName>
+        <externalId>false</externalId>
+        <label>Nom du compte</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Conges</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>PDA_Period_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>PDA Period Id</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Raison_d_appel__c</fullName>
+        <externalId>false</externalId>
+        <label>Raison d&apos;appel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Sous_type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Anomalie Colis</fullName>
+                    <default>false</default>
+                    <label>Anomalie Colis</label>
+                </value>
+                <value>
+                    <fullName>Anomalie de synchronisation</fullName>
+                    <default>false</default>
+                    <label>Anomalie de synchronisation</label>
+                </value>
+                <value>
+                    <fullName>Autres</fullName>
+                    <default>false</default>
+                    <label>Autres</label>
+                </value>
+                <value>
+                    <fullName>Démarrage d&apos;activité</fullName>
+                    <default>false</default>
+                    <label>Démarrage d&apos;activité</label>
+                </value>
+                <value>
+                    <fullName>Dévoyé</fullName>
+                    <default>false</default>
+                    <label>Dévoyé</label>
+                </value>
+                <value>
+                    <fullName>Dévoyés</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Dévoyés</label>
+                </value>
+                <value>
+                    <fullName>Enquête de bienvenue</fullName>
+                    <default>false</default>
+                    <label>Enquête de bienvenue</label>
+                </value>
+                <value>
+                    <fullName>Enquête de satisfaction</fullName>
+                    <default>false</default>
+                    <label>Enquête de satisfaction</label>
+                </value>
+                <value>
+                    <fullName>Exclusion</fullName>
+                    <default>false</default>
+                    <label>Exclusion</label>
+                </value>
+                <value>
+                    <fullName>Indisponibilité problème PDA</fullName>
+                    <default>false</default>
+                    <label>Indisponibilité problème PDA</label>
+                </value>
+                <value>
+                    <fullName>Indisponibilité qualité de service</fullName>
+                    <default>false</default>
+                    <label>Indisponibilité qualité de service</label>
+                </value>
+                <value>
+                    <fullName>Indisponibilité S/T/S</fullName>
+                    <default>false</default>
+                    <label>Indisponibilité S/T/S</label>
+                </value>
+                <value>
+                    <fullName>Injoignable</fullName>
+                    <default>false</default>
+                    <label>Injoignable</label>
+                </value>
+                <value>
+                    <fullName>Menace de résiliation</fullName>
+                    <default>false</default>
+                    <label>Menaces de résiliation</label>
+                </value>
+                <value>
+                    <fullName>Panne PDA</fullName>
+                    <default>false</default>
+                    <label>Panne PDA</label>
+                </value>
+                <value>
+                    <fullName>Pas de PDA associé</fullName>
+                    <default>false</default>
+                    <label>Pas de PDA associé</label>
+                </value>
+                <value>
+                    <fullName>Problème synchronisation</fullName>
+                    <default>false</default>
+                    <label>Problème synchronisation</label>
+                </value>
+                <value>
+                    <fullName>Résiliation</fullName>
+                    <default>false</default>
+                    <label>Résiliation</label>
+                </value>
+                <value>
+                    <fullName>Sinistre/Travaux/Santé</fullName>
+                    <default>false</default>
+                    <label>Sinistre/Travaux/Santé</label>
+                </value>
+                <value>
+                    <fullName>Surchage</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Surchage</label>
+                </value>
+                <value>
+                    <fullName>Surcharge</fullName>
+                    <default>false</default>
+                    <label>Surcharge</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Autres</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Enquête de bienvenue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Enquête de satisfaction</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Exclusion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Indisponibilité problème PDA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Indisponibilité qualité de service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Indisponibilité S/T/S</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Dévoyé</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Résiliation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Démarrage d&apos;activité</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Surcharge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualité de service</controllingFieldValue>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Menace de résiliation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Injoignabilité</controllingFieldValue>
+                <valueName>Anomalie de synchronisation</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ReferenceExterne__c</fullName>
+        <externalId>false</externalId>
+        <label>Réference Externe</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Sous_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Sous type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_d_indisponibilite__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sinistre / Travaux / Santé</fullName>
+                    <default>false</default>
+                    <label>Sinistre / Travaux / Santé</label>
+                </value>
+                <value>
+                    <fullName>Qualité de service</fullName>
+                    <default>false</default>
+                    <label>Qualité de service</label>
+                </value>
+                <value>
+                    <fullName>Problème de synchronisation</fullName>
+                    <default>false</default>
+                    <label>Problème de synchronisation</label>
+                </value>
+                <value>
+                    <fullName>Panne PDA</fullName>
+                    <default>false</default>
+                    <label>Panne PDA</label>
+                </value>
+                <value>
+                    <fullName>Injoignabilité</fullName>
+                    <default>false</default>
+                    <label>Injoignabilité</label>
+                </value>
+                <value>
+                    <fullName>Pas de PDA associé</fullName>
+                    <default>false</default>
+                    <label>Pas de PDA associé</label>
+                </value>
+                <value>
+                    <fullName>Anomalie colis</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Anomalie colis</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>1</controllingFieldValue>
+                <valueName>Sinistre / Travaux / Santé</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1</controllingFieldValue>
+                <valueName>Qualité de service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1</controllingFieldValue>
+                <valueName>Injoignabilité</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>Problème de synchronisation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>Panne PDA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4</controllingFieldValue>
+                <valueName>Pas de PDA associé</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Statut__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Date_de_debut__c &gt;  TODAY() ,$Label.CongeIndispo_A_Venir_2,
+IF ( Date_de_fin__c  &lt;   TODAY() ,$Label.Conge_Indispo_Passe_2,$Label.CongeIndispo_En_Cours_2))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Statut</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECH_Conges_Dispo_Juillet_Aout__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+	AND(Date_de_debut__c &gt;= DATE( YEAR( TODAY()),07, 01 ), 
+		Date_de_debut__c &lt;= DATE( YEAR( TODAY()),08, 31 ), 
+		Date_de_fin__c &gt;= DATE( YEAR( TODAY()),07, 01 ), 
+		Date_de_fin__c &lt;= DATE( YEAR( TODAY()),08, 31), 
+		OR(RecordType.Id == $Label.RT_Conge_Indispo_Conge ,RecordType.Id == $Label.RT_Conge_Indispo_Disponibilite ) 
+), true, false)</formula>
+        <label>TECH Conges Dispo Juillet Aout</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tech_Compte_ShippingCountry__c</fullName>
+        <externalId>false</externalId>
+        <formula>Nom_du_compte__r.ShippingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tech_Compte_ShippingCountry</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Treated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tech_Treated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type_d_indisponibilite__c</fullName>
+        <description>Ne pas activer l&apos;option &quot;Restreindre la liste sélectionnée aux valeurs définies dans l’ensemble de valeurs.	&quot; pour ne pas bloquer le PB qui crée automatiquement les indispos suite à des créations d&apos;anomalies.</description>
+        <externalId>false</externalId>
+        <label>Type d&apos;indisponibilité</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>Planifiée</fullName>
+                    <default>false</default>
+                    <label>Planifiée</label>
+                </value>
+                <value>
+                    <fullName>Imprévue</fullName>
+                    <default>false</default>
+                    <label>Imprévue</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_de_periode__c</fullName>
+        <externalId>false</externalId>
+        <label>Type de période</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Congés</fullName>
+                    <default>false</default>
+                    <label>Congés</label>
+                </value>
+                <value>
+                    <fullName>Disponibilité</fullName>
+                    <default>false</default>
+                    <label>Disponibilité</label>
+                </value>
+                <value>
+                    <fullName>Indisponibilité</fullName>
+                    <default>false</default>
+                    <label>Indisponibilité</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Congés/disponibilité/indisponibilité</label>
+    <nameField>
+        <displayFormat>CDI-{0000}</displayFormat>
+        <label>Numéro du Congé, Dispo ou Indispo</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Congés/disponibilités/indisponibilités</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Conge</fullName>
+        <active>true</active>
+        <description>Permet de créer une période de congés.</description>
+        <label>Congé</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Imprévue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planifiée</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Congés</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Disponibilite</fullName>
+        <active>true</active>
+        <description>Permet de créer une période de disponibilité.</description>
+        <label>Disponibilité</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Imprévue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planifiée</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Disponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_consigne</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;une Consigne.</description>
+        <label>Indisponibilité_consigne</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne matérielle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Imprévue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planifiée</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_partenaire_BNL</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un Partenaire situé en BENELUX</description>
+        <label>Indisponibilité_partenaire_BNL</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Imprévue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planifiée</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_partenaire_CHE</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un Partenaire situé en Suisse</description>
+        <label>Indisponibilité_partenaire_CHE</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne matérielle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Anomalie de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autres</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de bienvenue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité S%2FT%2FS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité problème PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Congés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disponibilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_partenaire_CZE</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un Partenaire situé en République Tchèque</description>
+        <label>Indisponibilité_partenaire_CZE</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne matérielle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Anomalie de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autres</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de bienvenue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité S%2FT%2FS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité problème PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Imprévue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planifiée</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Congés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disponibilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_partenaire_HUN</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un Partenaire situé en Hongrie</description>
+        <label>Indisponibilité_partenaire_HUN</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne matérielle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Imprévue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planifiée</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_standard</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un Pudo standard</description>
+        <label>Indisponibilité_standard</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Anomalie de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autres</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de bienvenue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité S%2FT%2FS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité problème PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_standard_BNL</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un Pudo standard située en BENELUX</description>
+        <label>Indisponibilite_standard_BNL</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_standard_CHE</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un standard situé en Suisse</description>
+        <label>Indisponibilite_standard_CHE</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne matérielle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Anomalie de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autres</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de bienvenue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité S%2FT%2FS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité problème PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Congés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disponibilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_standard_CZE</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un standard situé en République Tchèque</description>
+        <label>Indisponibilite_standard_CZE</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne matérielle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Anomalie de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autres</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de bienvenue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enquête de satisfaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité S%2FT%2FS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité problème PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Congés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disponibilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Indisponibilite_standard_HUN</fullName>
+        <active>true</active>
+        <description>Permet de créer une période d&apos;indisponibilité d&apos;un standard situé en Hongrie</description>
+        <label>Indisponibilite_standard_HUN</label>
+        <picklistValues>
+            <picklist>Cause_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre%28s%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Désinstallation temporaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne matérielle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne réseau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne écran</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne électrique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travaux non prévus%2Fcommuniqués</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Raison_d_appel__c</picklist>
+            <values>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Démarrage d%27activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre%2FTravaux%2FSanté</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sous_type__c</picklist>
+            <values>
+                <fullName>Injoignabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problème de synchronisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualité de service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinistre %2F Travaux %2F Santé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_d_indisponibilite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_de_periode__c</picklist>
+            <values>
+                <fullName>Indisponibilité</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>CONG_VR_01_Debut_Nouveau_Conge_Dispo</fullName>
+        <active>false</active>
+        <description>Un nouveau congé ou une nouvelle disponibilité doit débuter à Jour ou dans le futur.</description>
+        <errorConditionFormula>AND( 
+   NOT ISCHANGED(Tech_Treated__c), 
+   Not($User.BypassValidationRule__c), 
+   OR (RecordType.DeveloperName =&quot;Conge&quot;, 
+       RecordType.DeveloperName =&quot;Disponibilite&quot;), 
+   ISNEW(), 
+    Date_de_debut__c &lt; today() 
+   )</errorConditionFormula>
+        <errorDisplayField>Date_de_debut__c</errorDisplayField>
+        <errorMessage>Un nouveau congé ou une nouvelle disponibilité doivent débuter à Jour ou dans le futur.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_02_Fin_Nouveau_Conge_Dispo</fullName>
+        <active>true</active>
+        <description>La date de fin d’un congé/dispo/indispo doit être supérieure ou égale à la date de début.</description>
+        <errorConditionFormula>AND( Not($User.BypassValidationRule__c), 
+     ISNEW(), 
+     OR(RecordType.DeveloperName = &quot;Conge&quot;, 
+        RecordType.DeveloperName = &quot;Disponibilite&quot; ), 
+      Date_de_fin__c &lt; Date_de_debut__c 
+      )</errorConditionFormula>
+        <errorDisplayField>Date_de_fin__c</errorDisplayField>
+        <errorMessage>La date de fin d’un congé ou d&apos;une disponibilité doit être supérieure ou égale à la date de début.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_03_Modifier_Debut_Dispo_Indispo</fullName>
+        <active>true</active>
+        <description>Avant le début du congé, d&apos;une disponibilité ou une indisponibilité il est possible de modifier la date de début et cette dernière doit rester supérieure ou égale à la date du jour.</description>
+        <errorConditionFormula>AND( 
+     NOT ISCHANGED(Tech_Treated__c), 
+     NOT($User.BypassValidationRule__c), 
+     NOT(ISPICKVAL( Type_d_indisponibilite__c ,&quot;4&quot;)), 
+     ISCHANGED(Date_de_debut__c), 
+     (PRIORVALUE(Date_de_debut__c) &gt; TODAY()), 
+     Date_de_debut__c &lt; TODAY() 
+     )</errorConditionFormula>
+        <errorDisplayField>Date_de_debut__c</errorDisplayField>
+        <errorMessage>La date de début doit rester supérieure ou égale à la date du jour.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_04_Modifier_Date_Fin_Conge_Dispo</fullName>
+        <active>true</active>
+        <description>Il est possible de modifier la date de fin uniquement pour une date supérieure ou égale à la date du jour. 
+Il est possible de modifier la date de fin uniquement pour une date supérieure ou égale à la date du début de la disponibilité</description>
+        <errorConditionFormula>AND( 
+NOT ISCHANGED(Tech_Treated__c), 
+Not($User.BypassValidationRule__c), 
+OR(
+RecordType.DeveloperName =&quot;Conge&quot;,
+RecordType.DeveloperName =&quot;Disponibilite&quot;
+),
+OR(
+ISCHANGED(Date_de_fin__c),
+ISCHANGED(Date_de_debut__c)
+), 
+OR
+   (Date_de_fin__c &lt; Date_de_debut__c, 
+    Date_de_fin__c &lt; Today ()) 
+)</errorConditionFormula>
+        <errorDisplayField>Date_de_fin__c</errorDisplayField>
+        <errorMessage>La date de fin doit rester supérieure ou égale à la date du jour et supérieure à la date de début.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_05_Modifier_Dispo_ApresDebut</fullName>
+        <active>true</active>
+        <description>Après le début de la disponibilité il n’est plus possible de modifier la date de début.</description>
+        <errorConditionFormula>AND( 
+     Not($User.BypassValidationRule__c), 
+     NOT ISCHANGED(Tech_Treated__c), 
+     NOT(ISPICKVAL( Type_d_indisponibilite__c ,&quot;4&quot;)), 
+     ISCHANGED(Date_de_debut__c) , 
+     IF( Today () &gt;= PRIORVALUE(Date_de_debut__c), 
+          True, False) 
+    )</errorConditionFormula>
+        <errorDisplayField>Date_de_debut__c</errorDisplayField>
+        <errorMessage>Vous n&apos;avez plus le droit de modifier la date de début.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_06_Modifier_Date_Fin_Indispo</fullName>
+        <active>false</active>
+        <description>Il est possible de modifier la date de fin uniquement pour une date supérieure ou égale à la date du jour.
+Il est possible de modifier la date de fin uniquement pour une date supérieure ou égale à la date du début de l&apos;indisponibilité</description>
+        <errorConditionFormula>AND(
+   NOT ISCHANGED(Tech_Treated__c),
+   Not($User.BypassValidationRule__c),
+     OR (
+             CONTAINS($Label.CongInd_RT_IndispoConsigne, RecordTypeId),
+             CONTAINS($Label.CongInd_RT_IndispoStandard_ALL,RecordTypeId)
+            ) ,
+     NOT(ISPICKVAL( Type_d_indisponibilite__c ,&quot;4&quot;)),
+     OR(Date_de_fin__c &lt; Date_de_debut__c,
+        Date_de_fin__c &lt; Today ()
+       ) 
+     )</errorConditionFormula>
+        <errorDisplayField>Date_de_fin__c</errorDisplayField>
+        <errorMessage>La date de fin doit rester supérieure ou égale à la date du jour et supérieure à la date de début de l&apos;indisponibilité.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_07_Type_NonModifiable_Apresdebut</fullName>
+        <active>true</active>
+        <description>Pour tous les types de point sauf les consignes, il est impossible de modifier le type d’une indisponibilité (problème opérationnel, problème PDA) après son début.</description>
+        <errorConditionFormula>AND( 
+NOT($User.BypassValidationRule__c) , 
+NOT ISCHANGED(Tech_Treated__c), 
+CONTAINS($Label.CongInd_RT_IndispoStandard_ALL,RecordTypeId),
+NOT(ISPICKVAL( Type_d_indisponibilite__c ,&quot;4&quot;)), 
+
+Date_de_debut__c &lt;= TODAY() , 
+ISCHANGED( Type_d_indisponibilite__c ) 
+)</errorConditionFormula>
+        <errorDisplayField>Type_d_indisponibilite__c</errorDisplayField>
+        <errorMessage>Vous ne pouvez pas modifier ce type d&apos;indisponibilité après son début.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_08_ST_NonModifiable_ApresDebut</fullName>
+        <active>true</active>
+        <description>Il n’est pas possible de modifier le sous type d’une indisponibilité &quot;problème opérationnel&quot; une fois l&apos;indisponibilité commencée.</description>
+        <errorConditionFormula>AND ( ! $User.BypassValidationRule__c , 
+NOT ISCHANGED(Tech_Treated__c), 
+ISPICKVAL( Type_d_indisponibilite__c , &quot;1&quot;), 
+Date_de_debut__c &lt;= TODAY() , 
+ISCHANGED( Sous_type__c ) 
+)</errorConditionFormula>
+        <errorDisplayField>Sous_type__c</errorDisplayField>
+        <errorMessage>Vous ne pouvez plus modifier ce sous-type d&apos;indisponibilité après son début.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_11_PasPDANonModifiable</fullName>
+        <active>true</active>
+        <description>Indisponibilité Pas de PDA associé n&apos;est pas modifiable manuellement (sauf par Administrateur).</description>
+        <errorConditionFormula>and (
+     not( $User.BypassValidationRule__c ),
+     $UserRole.DeveloperName  &lt;&gt; &quot;Administrateur&quot;,
+      not( RecordType.DeveloperName 
+                 =&quot;Indisponibilite_consigne&quot;),
+     ispickval(Type_d_indisponibilite__c,&quot;4&quot;), 
+or   (ischanged( Type_d_indisponibilite__c ), 
+      ischanged( Sous_type__c ), 
+      ischanged(Date_de_debut__c), 
+      ischanged( Date_de_fin__c ), 
+      ischanged( Commentaires__c ), 
+      ischanged( Injoignable__c )))</errorConditionFormula>
+        <errorMessage>Vous ne pouvez pas modifier cette indisponibilité manuellement.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_12_Debut_Nouvelle_Indispo</fullName>
+        <active>false</active>
+        <description>Une Indisponibilité doit débuter à Jour ou dans le futur.</description>
+        <errorConditionFormula>AND(    
+        NOT ISCHANGED(Tech_Treated__c), 
+        Not($User.BypassValidationRule__c),
+        ISNEW(),
+        OR(
+        CONTAINS($Label.CongInd_RT_IndispoStandard_ALL,RecordTypeId),
+        CONTAINS($Label.CongInd_RT_IndispoConsigne,RecordTypeId)),
+        Date_de_debut__c    &lt;   today())</errorConditionFormula>
+        <errorDisplayField>Date_de_debut__c</errorDisplayField>
+        <errorMessage>Une Indisponibilité doit débuter à Jour ou dans le futur.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_13_Injoignabilite_jour_J</fullName>
+        <active>false</active>
+        <description>Si une injoignabilité est créée alors la date de début doit être supérieure ou égale à la date J.</description>
+        <errorConditionFormula>Injoignable__c  = True  &amp;&amp;  Date_de_debut__c  &gt;  TODAY()</errorConditionFormula>
+        <errorDisplayField>Injoignable__c</errorDisplayField>
+        <errorMessage>Veuillez renseigner la date d&apos;aujourd&apos;hui si vous souhaitez créer une injoignabilité.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_14_Injoignabilite_Raison_Appel</fullName>
+        <active>true</active>
+        <description>Si la valeur &quot;Injoignabilité&quot; est sélectionnée, il faut renseigner le champ &quot;Raison d&apos;appel&quot;.</description>
+        <errorConditionFormula>AND(
+NOT($User.BypassValidationRule__c),
+RecordType.DeveloperName = &apos;Indisponibilite_standard&apos;,
+OR( ISPICKVAL( Sous_type__c , &apos;Injoignabilité&apos;),
+ISPICKVAL( Sous_type__c , &apos;Qualité de service&apos;)),
+ISBLANK( TEXT(Raison_d_appel__c ))
+)</errorConditionFormula>
+        <errorDisplayField>Raison_d_appel__c</errorDisplayField>
+        <errorMessage>Veuillez renseigner une raison d&apos;appel pour une indisponibilité de type &quot;Injoignable&quot; ou &quot;Qualité de service&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CONG_VR_15_Injoignabilite_Autres</fullName>
+        <active>true</active>
+        <description>Si la raison d&apos;appel est &quot;Autres&quot; alors il faut remplir le champ &quot;Autres (motif)</description>
+        <errorConditionFormula>OR(
+AND (
+ISPICKVAL(Raison_d_appel__c, &apos;Autres&apos; ),
+ISBLANK( Autres_motif__c )),
+AND(
+NOT(ISPICKVAL(Raison_d_appel__c, &apos;Autres&apos; )),
+NOT(ISBLANK( Autres_motif__c )))
+)</errorConditionFormula>
+        <errorDisplayField>Autres_motif__c</errorDisplayField>
+        <errorMessage>Veuillez remplir le champ Autres (motif) si et seulement si la raison d&apos;appel est &quot;Autres&quot;.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Nouveau_Conge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouveau congé</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.RT_Conge_Indispo_Conge}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouveau_Conge_Lightning1</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouveau congé</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.RT_Conge_Indispo_Conge}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_Indisponibilite_CHE</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle Indisponibilité</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.RT_CHE_Indisponibilite_standard}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_Indisponibilite_CZE</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle Indisponibilité</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.RT_CZE_Indisponibilite_standard}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_Indisponibilite_Consigne</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle indisponibilité Consigne</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.IndispoConsigneRT_15}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_Indisponibilite_Consigne_Lightning1</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle Indisponibilite Consigne</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.IndispoConsigneRT_15}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_Indisponibilite_HU</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle Indisponibilité</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.RT_HUN_Indisponibilite_standard}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_disponibilite</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle disponibilité</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.DispoRT_15}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_disponibilite_Lightning1</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle disponibilité</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.DispoRT_15}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_indisponibilite</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle indisponibilité</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.CongInd_RT_IndispoFR}&amp;RecordType1={!$Label.CongInd_RT_IndispoPartenaire_BNL}&amp;Type={!Account.Type}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Nouvelle_indisponibilite_Lightning1</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Nouvelle indisponibilité</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/VFP11_TransitonAccountCongesDispo?accountId={!Account.Id}&amp;accountName={!Account.Name}&amp;RecordType={!$Label.CongInd_RT_IndispoStandard_BNL}</url>
+    </webLinks>
+</CustomObject>

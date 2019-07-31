@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inventaire__c</fullName>
+    <description>Permet à l’équipe exploitation d’indiquer si l’inventaire nécessaire à la désinstallation d’une consigne a bien été réalisé.</description>
+    <externalId>false</externalId>
+    <label>Inventaire</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

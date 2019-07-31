@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Conges_Dispo_Juillet_Aout__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+	AND(Date_de_debut__c &gt;= DATE( YEAR( TODAY()),07, 01 ), 
+		Date_de_debut__c &lt;= DATE( YEAR( TODAY()),08, 31 ), 
+		Date_de_fin__c &gt;= DATE( YEAR( TODAY()),07, 01 ), 
+		Date_de_fin__c &lt;= DATE( YEAR( TODAY()),08, 31), 
+		OR(RecordType.Id == $Label.RT_Conge_Indispo_Conge ,RecordType.Id == $Label.RT_Conge_Indispo_Disponibilite ) 
+), true, false)</formula>
+    <label>TECH Conges Dispo Juillet Aout</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

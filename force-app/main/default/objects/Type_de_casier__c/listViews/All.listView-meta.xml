@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Modele__c</columns>
+    <columns>Maximum__c</columns>
+    <columns>Minimum__c</columns>
+    <columns>Moyenne__c</columns>
+    <columns>Coef_ajustement__c</columns>
+    <columns>Poids_max__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tout</label>
+    <language>fr</language>
+</ListView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR83_RefusEmail_EmailMagasin</fullName>
+    <active>true</active>
+    <description>Le champ &quot;Email du magasin&quot; ou &quot;Refus Email&quot; à partir de l&#39;état 1 est obligatoire pour les Points supervisés et les pickup contact.</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c,
+
+OR
+(
+AND(
+ISBLANK(Email_du_magasin__c), 
+Refus_Email__c = false)),
+
+OR
+(
+AND(
+NOT ISBLANK(Email_du_magasin__c), 
+Refus_Email__c = true)),
+
+ 
+OR(
+AND(
+ISPICKVAL(Etat__c,&quot;1&quot;), 
+ISPICKVAL(Etat__c,&quot;4&quot;), 
+ISPICKVAL(Etat__c,&quot;5&quot;), 
+ISPICKVAL(Etat__c,&quot;6&quot;), 
+ISPICKVAL(Etat__c,&quot;7&quot;), 
+ISPICKVAL(Etat__c,&quot;9&quot;), 
+
+AND( 
+ISPICKVAL(Etat__c,&quot;2&quot;), 
+NOT ISBLANK(TEXT(Type)) 
+), 
+
+
+OR(
+RecordType.Name= &quot;PUS_FR_Prospect_Converti&quot;,
+RecordType.Name= &quot;PUS_FR_Prospect_Converti_Pickup_Contact&quot;,  
+RecordType.Name= &quot;PUS_FR_PUDO_Suivi_CO&quot;, 
+RecordType.Name= &quot;PUS_FR_Pickup_Contact&quot;, 
+RecordType.Name= &quot;PUS_FR_Prospect_A_Valider&quot;, 
+RecordType.Name= &quot;PUS_FR_Prospect_A_Valider_Pickup_contact&quot;)
+)))</errorConditionFormula>
+    <errorDisplayField>Email_du_magasin__c</errorDisplayField>
+    <errorMessage>Vous devez seulement renseigner l&#39;un des deux champs suivants : &quot;Email du magasin&quot; ou &quot;refus Email&quot;.</errorMessage>
+</ValidationRule>

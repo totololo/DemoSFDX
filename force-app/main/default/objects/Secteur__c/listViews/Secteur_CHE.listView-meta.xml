@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secteur_CHE</fullName>
+    <columns>NAME</columns>
+    <columns>Pays__c</columns>
+    <columns>ReferenceExterne__c</columns>
+    <columns>Responsable__c</columns>
+    <columns>Responsable_N_2__c</columns>
+    <columns>Secteur_parent__c</columns>
+    <columns>Selectionnable__c</columns>
+    <columns>Type_de_secteur__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Operateur__c</field>
+        <operation>equals</operation>
+        <value>DPD_CHE</value>
+    </filters>
+    <label>CHE</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>SUPPORT_DOSI</group>
+    </sharedTo>
+</ListView>

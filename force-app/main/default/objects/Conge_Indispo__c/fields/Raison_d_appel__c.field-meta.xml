@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Raison_d_appel__c</fullName>
+    <externalId>false</externalId>
+    <label>Raison d&#39;appel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sous_type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Anomalie Colis</fullName>
+                <default>false</default>
+                <label>Anomalie Colis</label>
+            </value>
+            <value>
+                <fullName>Anomalie de synchronisation</fullName>
+                <default>false</default>
+                <label>Anomalie de synchronisation</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+            <value>
+                <fullName>Démarrage d&#39;activité</fullName>
+                <default>false</default>
+                <label>Démarrage d&#39;activité</label>
+            </value>
+            <value>
+                <fullName>Dévoyé</fullName>
+                <default>false</default>
+                <label>Dévoyé</label>
+            </value>
+            <value>
+                <fullName>Dévoyés</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dévoyés</label>
+            </value>
+            <value>
+                <fullName>Enquête de bienvenue</fullName>
+                <default>false</default>
+                <label>Enquête de bienvenue</label>
+            </value>
+            <value>
+                <fullName>Enquête de satisfaction</fullName>
+                <default>false</default>
+                <label>Enquête de satisfaction</label>
+            </value>
+            <value>
+                <fullName>Exclusion</fullName>
+                <default>false</default>
+                <label>Exclusion</label>
+            </value>
+            <value>
+                <fullName>Indisponibilité problème PDA</fullName>
+                <default>false</default>
+                <label>Indisponibilité problème PDA</label>
+            </value>
+            <value>
+                <fullName>Indisponibilité qualité de service</fullName>
+                <default>false</default>
+                <label>Indisponibilité qualité de service</label>
+            </value>
+            <value>
+                <fullName>Indisponibilité S/T/S</fullName>
+                <default>false</default>
+                <label>Indisponibilité S/T/S</label>
+            </value>
+            <value>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+                <label>Injoignable</label>
+            </value>
+            <value>
+                <fullName>Menace de résiliation</fullName>
+                <default>false</default>
+                <label>Menaces de résiliation</label>
+            </value>
+            <value>
+                <fullName>Panne PDA</fullName>
+                <default>false</default>
+                <label>Panne PDA</label>
+            </value>
+            <value>
+                <fullName>Pas de PDA associé</fullName>
+                <default>false</default>
+                <label>Pas de PDA associé</label>
+            </value>
+            <value>
+                <fullName>Problème synchronisation</fullName>
+                <default>false</default>
+                <label>Problème synchronisation</label>
+            </value>
+            <value>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+                <label>Résiliation</label>
+            </value>
+            <value>
+                <fullName>Sinistre/Travaux/Santé</fullName>
+                <default>false</default>
+                <label>Sinistre/Travaux/Santé</label>
+            </value>
+            <value>
+                <fullName>Surchage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Surchage</label>
+            </value>
+            <value>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+                <label>Surcharge</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Autres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Enquête de bienvenue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Enquête de satisfaction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Exclusion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Indisponibilité problème PDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Indisponibilité qualité de service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Indisponibilité S/T/S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Dévoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Résiliation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Démarrage d&#39;activité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Surcharge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualité de service</controllingFieldValue>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Menace de résiliation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Injoignabilité</controllingFieldValue>
+            <valueName>Anomalie de synchronisation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

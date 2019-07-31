@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR86_Commentaires_N1</fullName>
+    <active>true</active>
+    <description>Vous avez un profil de niveau 1, vous ne pouvez pas modifier le champ &quot;Commentaires&quot;</description>
+    <errorConditionFormula>AND(
+    Not($User.BypassValidationRule__c),
+ 
+AND(
+$Profile.Name == &quot;PUS_FR_Niveau_1&quot;,
+ISCHANGED( Description)) 
+
+)</errorConditionFormula>
+    <errorDisplayField>Description</errorDisplayField>
+    <errorMessage>Vous avez un profil de niveau 1, vous ne pouvez pas modifier le champ &quot;Commentaires&quot;.</errorMessage>
+</ValidationRule>

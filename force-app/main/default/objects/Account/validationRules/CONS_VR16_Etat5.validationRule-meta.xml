@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONS_VR16_Etat5</fullName>
+    <active>true</active>
+    <description>Pour passer à l&#39;état 5, cocher les cases &quot;contrôle suggestions&quot;, &quot;contrôle dévoyés&quot; et &quot;contrôle collecte&quot;. (reprendre également les critères de passage à l&#39;état 4, horaires, adresse, etc.)</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, ISPICKVAL( Etat__c, &quot;5&quot;) , 
+
+OR ( 
+RecordType.DeveloperName = &quot;PUS_FR_Consigne&quot;),
+OR ( 
+Controle_suggestions__c = false, 
+Controle_devoyes__c = false, 
+Controle_collecte__c = false, 
+ISBLANK(Name), 
+ISBLANK ( Reference__c ), 
+ISBLANK ( Reference_internationale__c ), 
+ISBLANK ( ShippingCountry ), 
+ISBLANK ( ShippingStreet), 
+ISBLANK ( ShippingCity ), 
+ISBLANK ( ShippingPostalCode ), 
+ISBLANK ( Date_d_installation__c ), 
+Information_agences__c = false, 
+ISPICKVAL( Horaire_Ouverture_Reference__c , &quot;&quot;), 
+ISPICKVAL( Horaire_Fermeture_Reference__c , &quot;&quot;), 
+ISBLANK( Long_Lat_adresse_de_livraison__Longitude__s ), 
+ISBLANK( Long_Lat_adresse_de_livraison__Latitude__s ), 
+ISPICKVAL( Calendrier_d_instance__c , &quot;&quot;), 
+ISBLANK( Macroprofil_actuel__c ), 
+Test_d_installation__c = false, 
+SI_Gestionnaire_Parc__c = false, 
+Association_Reseau__c = false, 
+Stickage__c = false, 
+ConfigurationConsigne__c = false, 
+Login_user_machine__c = false 
+
+) 
+)</errorConditionFormula>
+    <errorMessage>Pour passer à l&#39;état 5, cocher les cases &quot;contrôle suggestions&quot;, &quot;contrôle dévoyés&quot; et &quot;contrôle collecte&quot;. (reprendre également les critères de passage à l&#39;état 4, horaires, adresse, etc.)</errorMessage>
+</ValidationRule>

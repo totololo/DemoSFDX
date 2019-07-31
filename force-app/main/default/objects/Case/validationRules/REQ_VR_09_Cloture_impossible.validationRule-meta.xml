@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR_09_Cloture_impossible</fullName>
+    <active>true</active>
+    <description>Empêcher la clôture de la requête Indisponibilité, si la date de fin n&#39;est pas renseignée. Valable pour les Requêtes Indispo Inter et Indispo STS France.</description>
+    <errorConditionFormula>AND ( NOT($User.BypassValidationRule__c),
+     NOT (ISBLANK(Indisponibilite__c)),
+     CONTAINS($Label.CongInd_RT_IndispoStandard_ALL,        Indisponibilite__r.RecordType.Id ),
+ISBLANK(Indispo_Date_Fin__c),
+ISCHANGED(Status),
+ISPICKVAL(Status,&quot;Terminée&quot;)
+)</errorConditionFormula>
+    <errorMessage>Merci de saisir une date de fin sur l’indisponibilité en cours pour procéder à la clôture de la requête associée.</errorMessage>
+</ValidationRule>

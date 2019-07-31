@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>18</masterLabel>
+        <translation>Cordonnerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1861</masterLabel>
+        <translation>Petrol station</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1862</masterLabel>
+        <translation>Stationery shop</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1863</masterLabel>
+        <translation>Shoemaker store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1864</masterLabel>
+        <translation>Travel agency</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1865</masterLabel>
+        <translation>PC accessories store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1866</masterLabel>
+        <translation>Other retail store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1867</masterLabel>
+        <translation>Wine shop</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1868</masterLabel>
+        <translation>Deco store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1869</masterLabel>
+        <translation>Optic store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1870</masterLabel>
+        <translation>Laundry services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1871</masterLabel>
+        <translation>Copy store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1872</masterLabel>
+        <translation>Coffee shop</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1873</masterLabel>
+        <translation>Paint store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1874</masterLabel>
+        <translation>Agricultural retailer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1875</masterLabel>
+        <translation>Classified advertiser</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1876</masterLabel>
+        <translation>Playstation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1877</masterLabel>
+        <translation>Grocery store</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1878</masterLabel>
+        <translation>Other</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>20</masterLabel>
+        <translation>Confection sur mesures, Tailleur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>21</masterLabel>
+        <translation>Artisan (Plombier, Menuisier, Serrurier)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2167</masterLabel>
+        <translation>Cordonnerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2168</masterLabel>
+        <translation>Retoucherie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2169</masterLabel>
+        <translation>Coiffeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2170</masterLabel>
+        <translation>Salon De Beaute</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2171</masterLabel>
+        <translation>Confection Sur Mesures,Tailleur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2172</masterLabel>
+        <translation>Artisan (Plombier, Menuisier, Serrurier)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2173</masterLabel>
+        <translation>Artisanat D&#39;Art (Encadreur, Ébéniste)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2174</masterLabel>
+        <translation>Autres Artisanat &amp; Services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2175</masterLabel>
+        <translation>Station Avec Gérant Indépendant</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2176</masterLabel>
+        <translation>Garage Réparation Auto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2177</masterLabel>
+        <translation>Location Véhicule</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2178</masterLabel>
+        <translation>Concessionnaire Auto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2179</masterLabel>
+        <translation>Auto/Moto/Bateau École</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2180</masterLabel>
+        <translation>Station D&#39;Une Société Pétrolière</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2181</masterLabel>
+        <translation>Autres Station-Service, Garage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2182</masterLabel>
+        <translation>Autres Cadeaux, Gadgets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2183</masterLabel>
+        <translation>Gadgets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2184</masterLabel>
+        <translation>Cadeaux + Liste Mariages</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2185</masterLabel>
+        <translation>Souvenirs</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2186</masterLabel>
+        <translation>Autres Commerces Alimentaires</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2187</masterLabel>
+        <translation>Épicerie/Primeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2188</masterLabel>
+        <translation>Super/Hypermarché</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2189</masterLabel>
+        <translation>Épicerie Fine(Vins, Café, Chocolat)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2190</masterLabel>
+        <translation>Diététique, Bio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2191</masterLabel>
+        <translation>Jouets, Maquettes, Farces Et Attrapes</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2192</masterLabel>
+        <translation>Autres Commerces De Loisirs</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2193</masterLabel>
+        <translation>2 Roues, Vélos, Motos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2194</masterLabel>
+        <translation>Sports</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2195</masterLabel>
+        <translation>Location:Vente De Vidéos / Jeux Vidéos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2196</masterLabel>
+        <translation>Chasse, Pêche, Armurerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2197</masterLabel>
+        <translation>Art (Musique, Dessin)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2198</masterLabel>
+        <translation>Bateau, Accastillage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2199</masterLabel>
+        <translation>Autres Équipement Maison</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>22</masterLabel>
+        <translation>Artisanat d&#39;art (Encadreur, Ebéniste)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2200</masterLabel>
+        <translation>Ordinateur, Bureautique</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2201</masterLabel>
+        <translation>Électro-Ménager, Hifi</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2202</masterLabel>
+        <translation>Bricolage, Outillage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2203</masterLabel>
+        <translation>Droguerie, Papier Peints, Décoration</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2204</masterLabel>
+        <translation>Quincaillerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2205</masterLabel>
+        <translation>Solderie, Achat / Vente Occasion</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2206</masterLabel>
+        <translation>Ameublement, Luminaire</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2207</masterLabel>
+        <translation>Modiste, Chapellerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2208</masterLabel>
+        <translation>Opticien</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2209</masterLabel>
+        <translation>Vêtements En Prêt À Porter</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2210</masterLabel>
+        <translation>Parfumerie, Cosmétique</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2211</masterLabel>
+        <translation>Chaussures</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2212</masterLabel>
+        <translation>Bijouterie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2213</masterLabel>
+        <translation>Maroquinerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2214</masterLabel>
+        <translation>Lingerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2215</masterLabel>
+        <translation>Puériculture</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2216</masterLabel>
+        <translation>Autres Équipement Personne</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2217</masterLabel>
+        <translation>Autres Fleuriste, Jardinerie, Animalerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2218</masterLabel>
+        <translation>Graineterie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2219</masterLabel>
+        <translation>Fleuriste, Jardinerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2220</masterLabel>
+        <translation>Animalerie, Toilettage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2221</masterLabel>
+        <translation>Horticulture, Jardinerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2222</masterLabel>
+        <translation>Vente / Location Matériel Médical</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2223</masterLabel>
+        <translation>Pharmacie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2224</masterLabel>
+        <translation>Autres Médical, Paramédical</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2225</masterLabel>
+        <translation>Mercerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2226</masterLabel>
+        <translation>Ventes De Laines Et Fil À Tricoter</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2227</masterLabel>
+        <translation>Autres Mercerie, Confection, Laine</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2228</masterLabel>
+        <translation>Imprimerie, Reprographie(Faire-Parts)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2229</masterLabel>
+        <translation>Clef-Minute</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2230</masterLabel>
+        <translation>Multi-Services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2231</masterLabel>
+        <translation>Photographes Et Ventes Matériel Photo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2232</masterLabel>
+        <translation>Cigarettes Electroniques</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2233</masterLabel>
+        <translation>Autres Presse,Tabac,Librairie,Papeterie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2234</masterLabel>
+        <translation>Presse &amp; Tabac</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2235</masterLabel>
+        <translation>Tabac/Presse/Bar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2236</masterLabel>
+        <translation>Presse (Non Tabac)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2237</masterLabel>
+        <translation>Tabac (Non Presse)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2238</masterLabel>
+        <translation>Librairie, Papeterie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2239</masterLabel>
+        <translation>Autres Pressing, Laverie, Repassage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2240</masterLabel>
+        <translation>Laverie Automatique</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2241</masterLabel>
+        <translation>Pressing, Blanchisserie, Teinturerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2242</masterLabel>
+        <translation>Repassage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2243</masterLabel>
+        <translation>Telephone Portable / Internet</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2244</masterLabel>
+        <translation>Accessoires</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2245</masterLabel>
+        <translation>Internet Café</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2246</masterLabel>
+        <translation>Depot Transporteur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2247</masterLabel>
+        <translation>Autres</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2248</masterLabel>
+        <translation><!-- 2248 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2249</masterLabel>
+        <translation><!-- 2249 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2250</masterLabel>
+        <translation><!-- 2250 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2251</masterLabel>
+        <translation><!-- 2251 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2252</masterLabel>
+        <translation><!-- 2252 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2253</masterLabel>
+        <translation><!-- 2253 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2254</masterLabel>
+        <translation><!-- 2254 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2255</masterLabel>
+        <translation><!-- 2255 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2256</masterLabel>
+        <translation><!-- 2256 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2257</masterLabel>
+        <translation><!-- 2257 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2258</masterLabel>
+        <translation><!-- 2258 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2259</masterLabel>
+        <translation><!-- 2259 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2260</masterLabel>
+        <translation><!-- 2260 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2261</masterLabel>
+        <translation><!-- 2261 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2262</masterLabel>
+        <translation><!-- 2262 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2263</masterLabel>
+        <translation><!-- 2263 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2264</masterLabel>
+        <translation><!-- 2264 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2265</masterLabel>
+        <translation><!-- 2265 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2266</masterLabel>
+        <translation><!-- 2266 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2267</masterLabel>
+        <translation><!-- 2267 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2268</masterLabel>
+        <translation><!-- 2268 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2269</masterLabel>
+        <translation><!-- 2269 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2270</masterLabel>
+        <translation><!-- 2270 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2271</masterLabel>
+        <translation><!-- 2271 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2272</masterLabel>
+        <translation><!-- 2272 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2273</masterLabel>
+        <translation><!-- 2273 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2274</masterLabel>
+        <translation><!-- 2274 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2275</masterLabel>
+        <translation><!-- 2275 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2276</masterLabel>
+        <translation><!-- 2276 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2277</masterLabel>
+        <translation><!-- 2277 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2278</masterLabel>
+        <translation><!-- 2278 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2279</masterLabel>
+        <translation><!-- 2279 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2280</masterLabel>
+        <translation><!-- 2280 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2281</masterLabel>
+        <translation><!-- 2281 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2282</masterLabel>
+        <translation><!-- 2282 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2283</masterLabel>
+        <translation><!-- 2283 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2284</masterLabel>
+        <translation><!-- 2284 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2285</masterLabel>
+        <translation><!-- 2285 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2286</masterLabel>
+        <translation><!-- 2286 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2287</masterLabel>
+        <translation><!-- 2287 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2288</masterLabel>
+        <translation><!-- 2288 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2289</masterLabel>
+        <translation><!-- 2289 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2290</masterLabel>
+        <translation><!-- 2290 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2291</masterLabel>
+        <translation><!-- 2291 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2292</masterLabel>
+        <translation><!-- 2292 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2293</masterLabel>
+        <translation><!-- 2293 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2294</masterLabel>
+        <translation><!-- 2294 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2295</masterLabel>
+        <translation><!-- 2295 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2296</masterLabel>
+        <translation><!-- 2296 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2297</masterLabel>
+        <translation><!-- 2297 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2298</masterLabel>
+        <translation><!-- 2298 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2299</masterLabel>
+        <translation><!-- 2299 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>23</masterLabel>
+        <translation>Autres Artisanat &amp; services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2300</masterLabel>
+        <translation><!-- 2300 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2301</masterLabel>
+        <translation><!-- 2301 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2302</masterLabel>
+        <translation><!-- 2302 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2303</masterLabel>
+        <translation><!-- 2303 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2304</masterLabel>
+        <translation><!-- 2304 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2305</masterLabel>
+        <translation><!-- 2305 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2306</masterLabel>
+        <translation><!-- 2306 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2307</masterLabel>
+        <translation><!-- 2307 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2308</masterLabel>
+        <translation><!-- 2308 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2309</masterLabel>
+        <translation><!-- 2309 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2310</masterLabel>
+        <translation><!-- 2310 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2311</masterLabel>
+        <translation><!-- 2311 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2312</masterLabel>
+        <translation><!-- 2312 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2313</masterLabel>
+        <translation><!-- 2313 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2314</masterLabel>
+        <translation><!-- 2314 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2315</masterLabel>
+        <translation><!-- 2315 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2316</masterLabel>
+        <translation><!-- 2316 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2317</masterLabel>
+        <translation><!-- 2317 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2318</masterLabel>
+        <translation><!-- 2318 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2319</masterLabel>
+        <translation><!-- 2319 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2320</masterLabel>
+        <translation><!-- 2320 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2321</masterLabel>
+        <translation><!-- 2321 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2322</masterLabel>
+        <translation><!-- 2322 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2323</masterLabel>
+        <translation><!-- 2323 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2324</masterLabel>
+        <translation><!-- 2324 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2325</masterLabel>
+        <translation><!-- 2325 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2326</masterLabel>
+        <translation><!-- 2326 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2327</masterLabel>
+        <translation><!-- 2327 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2328</masterLabel>
+        <translation><!-- 2328 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2329</masterLabel>
+        <translation><!-- 2329 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2330</masterLabel>
+        <translation><!-- 2330 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2331</masterLabel>
+        <translation><!-- 2331 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2332</masterLabel>
+        <translation><!-- 2332 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2333</masterLabel>
+        <translation><!-- 2333 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2334</masterLabel>
+        <translation><!-- 2334 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2335</masterLabel>
+        <translation><!-- 2335 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2336</masterLabel>
+        <translation><!-- 2336 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2337</masterLabel>
+        <translation><!-- 2337 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2338</masterLabel>
+        <translation><!-- 2338 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2339</masterLabel>
+        <translation><!-- 2339 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2340</masterLabel>
+        <translation><!-- 2340 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2341</masterLabel>
+        <translation><!-- 2341 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2342</masterLabel>
+        <translation><!-- 2342 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2343</masterLabel>
+        <translation><!-- 2343 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2344</masterLabel>
+        <translation><!-- 2344 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2345</masterLabel>
+        <translation><!-- 2345 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2346</masterLabel>
+        <translation><!-- 2346 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2347</masterLabel>
+        <translation><!-- 2347 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2348</masterLabel>
+        <translation><!-- 2348 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2349</masterLabel>
+        <translation><!-- 2349 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2350</masterLabel>
+        <translation><!-- 2350 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2351</masterLabel>
+        <translation><!-- 2351 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2352</masterLabel>
+        <translation><!-- 2352 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2353</masterLabel>
+        <translation><!-- 2353 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2354</masterLabel>
+        <translation><!-- 2354 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2355</masterLabel>
+        <translation><!-- 2355 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2356</masterLabel>
+        <translation><!-- 2356 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2357</masterLabel>
+        <translation><!-- 2357 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2358</masterLabel>
+        <translation><!-- 2358 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2359</masterLabel>
+        <translation><!-- 2359 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2360</masterLabel>
+        <translation><!-- 2360 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2361</masterLabel>
+        <translation><!-- 2361 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2362</masterLabel>
+        <translation><!-- 2362 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2363</masterLabel>
+        <translation><!-- 2363 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2364</masterLabel>
+        <translation><!-- 2364 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2365</masterLabel>
+        <translation><!-- 2365 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2366</masterLabel>
+        <translation><!-- 2366 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2367</masterLabel>
+        <translation><!-- 2367 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2368</masterLabel>
+        <translation><!-- 2368 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2369</masterLabel>
+        <translation><!-- 2369 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2370</masterLabel>
+        <translation><!-- 2370 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2371</masterLabel>
+        <translation><!-- 2371 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2372</masterLabel>
+        <translation><!-- 2372 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2373</masterLabel>
+        <translation><!-- 2373 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2374</masterLabel>
+        <translation><!-- 2374 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2375</masterLabel>
+        <translation><!-- 2375 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2376</masterLabel>
+        <translation><!-- 2376 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2377</masterLabel>
+        <translation><!-- 2377 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2378</masterLabel>
+        <translation><!-- 2378 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2379</masterLabel>
+        <translation><!-- 2379 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2380</masterLabel>
+        <translation><!-- 2380 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2381</masterLabel>
+        <translation><!-- 2381 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2382</masterLabel>
+        <translation><!-- 2382 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2383</masterLabel>
+        <translation><!-- 2383 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2384</masterLabel>
+        <translation><!-- 2384 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2385</masterLabel>
+        <translation><!-- 2385 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2386</masterLabel>
+        <translation><!-- 2386 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2387</masterLabel>
+        <translation><!-- 2387 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2388</masterLabel>
+        <translation><!-- 2388 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2389</masterLabel>
+        <translation><!-- 2389 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2390</masterLabel>
+        <translation><!-- 2390 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2391</masterLabel>
+        <translation><!-- 2391 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2392</masterLabel>
+        <translation><!-- 2392 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2393</masterLabel>
+        <translation><!-- 2393 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2394</masterLabel>
+        <translation><!-- 2394 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2395</masterLabel>
+        <translation><!-- 2395 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2396</masterLabel>
+        <translation><!-- 2396 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2397</masterLabel>
+        <translation><!-- 2397 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2398</masterLabel>
+        <translation><!-- 2398 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2399</masterLabel>
+        <translation><!-- 2399 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>24</masterLabel>
+        <translation>Station avec gérant indépendant</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2400</masterLabel>
+        <translation><!-- 2400 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2401</masterLabel>
+        <translation><!-- 2401 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2402</masterLabel>
+        <translation><!-- 2402 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2403</masterLabel>
+        <translation><!-- 2403 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2404</masterLabel>
+        <translation><!-- 2404 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2405</masterLabel>
+        <translation><!-- 2405 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2406</masterLabel>
+        <translation><!-- 2406 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2407</masterLabel>
+        <translation><!-- 2407 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2408</masterLabel>
+        <translation><!-- 2408 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2409</masterLabel>
+        <translation><!-- 2409 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>25</masterLabel>
+        <translation>Garage réparation auto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>26</masterLabel>
+        <translation>Location véhicule</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>27</masterLabel>
+        <translation>Concessionnaire auto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>28</masterLabel>
+        <translation>Auto/moto/bateau Ecole</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>29</masterLabel>
+        <translation>Station d&#39;une société pétrolière</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>30</masterLabel>
+        <translation>Autres Station service, Garage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>31</masterLabel>
+        <translation>Autres Cadeaux, Gadgets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>32</masterLabel>
+        <translation>Gadgets</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>33</masterLabel>
+        <translation>Solderie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>33011</masterLabel>
+        <translation>Transport</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>33101</masterLabel>
+        <translation>Retoucherie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3311</masterLabel>
+        <translation>Hôtel</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>33111</masterLabel>
+        <translation>Vente cartouches d&#39;encre</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>33112</masterLabel>
+        <translation>Conciergerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>33151</masterLabel>
+        <translation>Accessoires téléphone</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3341</masterLabel>
+        <translation>Boulangerie, Pâtisserie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3342</masterLabel>
+        <translation>Alimentation générale</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3351</masterLabel>
+        <translation>Agence de voyage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>34</masterLabel>
+        <translation>Cadeaux + Liste mariages</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>347</masterLabel>
+        <translation>Pièces détachées Auto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>35</masterLabel>
+        <translation>Souvenirs</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>36</masterLabel>
+        <translation>Autres Commerces alimentaires</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>37</masterLabel>
+        <translation>Epicerie / primeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>38</masterLabel>
+        <translation>Super/Hypermarché / Petite surface</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>39</masterLabel>
+        <translation>Epicerie fine (Vin, Café, Chocolat etc.)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>40</masterLabel>
+        <translation>Diététique, Bio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>41</masterLabel>
+        <translation>Jouets, Maquettes, Farces et attrapes</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>42</masterLabel>
+        <translation>Autres Commerces de loisirs</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>43</masterLabel>
+        <translation>2 Roues, Vélos, Motos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>44</masterLabel>
+        <translation>Sports</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>45</masterLabel>
+        <translation>Location / vente de vidéos / Jeux vidéos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>46</masterLabel>
+        <translation>Chasse, Pêche, Armurerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>47</masterLabel>
+        <translation>Art (Musique, Dessin)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>48</masterLabel>
+        <translation>Bateau, Accastillage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>49</masterLabel>
+        <translation>Autres Equipement maison</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>50</masterLabel>
+        <translation>Ordinateur, Bureautique</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>51</masterLabel>
+        <translation>Electro-ménager, Hifi</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>52</masterLabel>
+        <translation>Bricolage, Outillage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>53</masterLabel>
+        <translation>Droguerie, Papier peints, Décoration</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>54</masterLabel>
+        <translation>Quincaillerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>55</masterLabel>
+        <translation>Solderie, achat / vente occasion</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>56</masterLabel>
+        <translation>Ameublement, Luminaire</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>57</masterLabel>
+        <translation>Modiste, Chapellerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>58</masterLabel>
+        <translation>Opticien</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>59</masterLabel>
+        <translation>Vêtements en prêt-à-porter</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>60</masterLabel>
+        <translation>Parfumerie, cosmétique</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>61</masterLabel>
+        <translation>Chaussures</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>62</masterLabel>
+        <translation>Bijouterie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>63</masterLabel>
+        <translation>Maroquinerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>64</masterLabel>
+        <translation>Lingerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>65</masterLabel>
+        <translation>Puériculture</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>66</masterLabel>
+        <translation>Autres Equipement personne</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>67</masterLabel>
+        <translation>Autres Fleuriste, Jardinerie, animalerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>68</masterLabel>
+        <translation>Graineterie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>69</masterLabel>
+        <translation>Fleuriste, Jardinerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>70</masterLabel>
+        <translation>Animalerie, toilettage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>71</masterLabel>
+        <translation>Horticulture, Jardinerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>72</masterLabel>
+        <translation>Vente / location matériel médical</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>73</masterLabel>
+        <translation>Autres Médical, Paramédical</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>74</masterLabel>
+        <translation>Mercerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>75</masterLabel>
+        <translation>Ventes de laines et fil a tricoter</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>76</masterLabel>
+        <translation>Autres Mercerie, Confection, Retoucherie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>77</masterLabel>
+        <translation>Imprimerie, Reprographie (Faire-part)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>78</masterLabel>
+        <translation>Clef-minute</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>79</masterLabel>
+        <translation>Multi-services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>80</masterLabel>
+        <translation>Photographes et ventes matériel photo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>81</masterLabel>
+        <translation>Autres Presse,Tabac,Librairie,Papeterie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>82</masterLabel>
+        <translation>Presse &amp; Tabac</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>83</masterLabel>
+        <translation>Tabac / Presse / Bar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>84</masterLabel>
+        <translation>Presse (non tabac)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>85</masterLabel>
+        <translation>Tabac (non presse)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>86</masterLabel>
+        <translation>Librairie, Papeterie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>87</masterLabel>
+        <translation>Autres Pressing, Laverie, Repassage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>88</masterLabel>
+        <translation>Laverie automatique</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>89</masterLabel>
+        <translation>Pressing, Blanchisserie, Teinturerie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>90</masterLabel>
+        <translation>Repassage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>91</masterLabel>
+        <translation>Autres Téléphonie</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

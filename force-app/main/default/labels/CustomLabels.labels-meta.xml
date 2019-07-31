@@ -1,0 +1,4438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AP_ActiviteCommercialeEligible</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_ ActivitéCommercialeéligible</shortDescription>
+        <value>; ActivitéCommercialeÉligible :</value>
+    </labels>
+    <labels>
+        <fullName>AP_AmplitudeHoraire</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_AmplitudeHoraire</shortDescription>
+        <value>Amplitude horaire</value>
+    </labels>
+    <labels>
+        <fullName>AP_DmaxRespectee</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_DmaxRespectée</shortDescription>
+        <value>; Dmax respectée :</value>
+    </labels>
+    <labels>
+        <fullName>AP_DureePauseDejeunerRespectee</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_DuréePauseDéjeunerRespectée</shortDescription>
+        <value>; Durée pause déjeuner respectée :</value>
+    </labels>
+    <labels>
+        <fullName>AP_HeureOuvertureMinimaleRespect_e</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_HeureOuvertureMinimaleRespectée</shortDescription>
+        <value>; Heure ouverture minimale respectée :</value>
+    </labels>
+    <labels>
+        <fullName>AP_Heure_fermetureMinimaleRespect_e</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_Heure fermetureMinimaleRespectée</shortDescription>
+        <value>; Heure fermeture minimale respectée  :</value>
+    </labels>
+    <labels>
+        <fullName>AP_OuvertJusqua18h</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_OuvertJusquà18h</shortDescription>
+        <value>; Ouvert jusqu&#39;à 18h :</value>
+    </labels>
+    <labels>
+        <fullName>AP_OuvertLesMatins</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_OuvertLesMatins</shortDescription>
+        <value>; Ouvert les matins :</value>
+    </labels>
+    <labels>
+        <fullName>AP_SeuilRespecte</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AP_SeuilRespecté</shortDescription>
+        <value>; Seuil respecté :</value>
+    </labels>
+    <labels>
+        <fullName>AccountConsigneRT_15</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AccountConsigneRT_15</shortDescription>
+        <value>012580000005YcI</value>
+    </labels>
+    <labels>
+        <fullName>AccountNonSuiviCoRT</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AccountNonSuiviCoRT</shortDescription>
+        <value>012580000005YcN</value>
+    </labels>
+    <labels>
+        <fullName>AccountPickupContactRT</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AccountPickupContactRT</shortDescription>
+        <value>01258000000gnt2</value>
+    </labels>
+    <labels>
+        <fullName>AccountPudoSuiviCoRT</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AccountPudoSuiviCoRT</shortDescription>
+        <value>012580000005YcD</value>
+    </labels>
+    <labels>
+        <fullName>Account_Contexte_Exclusion</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account_Contexte_Exclusion</shortDescription>
+        <value>Exclusion</value>
+    </labels>
+    <labels>
+        <fullName>Account_Contexte_Resiliation</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account_Contexte_Resiliation</shortDescription>
+        <value>Résiliation</value>
+    </labels>
+    <labels>
+        <fullName>Account_Etat_6</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account Etat 6</shortDescription>
+        <value>6</value>
+    </labels>
+    <labels>
+        <fullName>Account_Etat_7</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account Etat 7</shortDescription>
+        <value>7</value>
+    </labels>
+    <labels>
+        <fullName>Account_Mode_ExclusionNonSuggere</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account_Mode_ExclusionNonSuggere</shortDescription>
+        <value>735</value>
+    </labels>
+    <labels>
+        <fullName>Account_Mode_ExclusionSuggere</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account_Mode_ExclusionSuggere</shortDescription>
+        <value>730</value>
+    </labels>
+    <labels>
+        <fullName>Account_Mode_Inactif</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account_Mode_Inactif</shortDescription>
+        <value>900</value>
+    </labels>
+    <labels>
+        <fullName>Account_Mode_ResiliationNonSuggere</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account_Mode_ResiliationNonSuggere</shortDescription>
+        <value>745</value>
+    </labels>
+    <labels>
+        <fullName>Account_Mode_ResiliationSuggere</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Account_Mode_ResiliationSuggere</shortDescription>
+        <value>740</value>
+    </labels>
+    <labels>
+        <fullName>AdresseCourier</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AdresseCourier</shortDescription>
+        <value>Adresse courrier ;</value>
+    </labels>
+    <labels>
+        <fullName>AdresseFiabiliser</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AdresseFiabiliser</shortDescription>
+        <value>Fiabilisation de l&#39;adresse;</value>
+    </labels>
+    <labels>
+        <fullName>Alerte_date_fin_indispo_pour_cloturer_requete</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Alerte date de fin indispo pour clôturer requête</shortDescription>
+        <value>Attention ! Vous avez renseigné une date de fin d&#39;indisponibilité dans le futur et vous vous apprêtez à clôturer la requête.</value>
+    </labels>
+    <labels>
+        <fullName>Amabis_Authentication_Key</fullName>
+        <categories>Key Pass</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Amabis Authentication Key</shortDescription>
+        <value>29f4bcd30f7a4fbfb570530fa5157d8a26f53940</value>
+    </labels>
+    <labels>
+        <fullName>AnnulerLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AnnulerLbl</shortDescription>
+        <value>Annuler</value>
+    </labels>
+    <labels>
+        <fullName>Anomalie_KO</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Anomalie KO</shortDescription>
+        <value>KO</value>
+    </labels>
+    <labels>
+        <fullName>Anomalie_PasDeConnection</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Anomalie_PasDeConnection</shortDescription>
+        <value>Problème de connexion ! Contactez votre administrateur</value>
+    </labels>
+    <labels>
+        <fullName>Anomalie_TypeSyncPudo</fullName>
+        <categories>Technical Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Anomalie_TypeSyncPudo</shortDescription>
+        <value>SyncPudo</value>
+    </labels>
+    <labels>
+        <fullName>Anomalies</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Anomalies</shortDescription>
+        <value>PU360°</value>
+    </labels>
+    <labels>
+        <fullName>AssocierUnPDA</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AssocierUnPDA</shortDescription>
+        <value>Associer un PDA</value>
+    </labels>
+    <labels>
+        <fullName>AssujettiTVA</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>AssujettiTVA</shortDescription>
+        <value>Assujetti à la TVA ?;</value>
+    </labels>
+    <labels>
+        <fullName>BatchBypass</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>BatchBypass</shortDescription>
+        <value>AP05_Account;AP01_Account</value>
+    </labels>
+    <labels>
+        <fullName>BillingAddress</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>BillingAddress</shortDescription>
+        <value>Adresse de facturation (complète) ;</value>
+    </labels>
+    <labels>
+        <fullName>CARREFOUR_FRANCHISE</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CARREFOUR_FRANCHISE</shortDescription>
+        <value>CARREFOURFRANCHISE-V1117</value>
+    </labels>
+    <labels>
+        <fullName>CA_ConsignerUnAppel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CA_ConsignerUnAppel</shortDescription>
+        <value>Consigner un appel</value>
+    </labels>
+    <labels>
+        <fullName>CA_NRPLb</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CA_NRPLb</shortDescription>
+        <value>Ne répond pas</value>
+    </labels>
+    <labels>
+        <fullName>CA_contactEffLb</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CA_contactEffLb</shortDescription>
+        <value>Contact effectué</value>
+    </labels>
+    <labels>
+        <fullName>Capital_EUR</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Capital_EUR</shortDescription>
+        <value>Capital (EUR);</value>
+    </labels>
+    <labels>
+        <fullName>CaseComment_Blockage</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CaseComment_Bloquage</shortDescription>
+        <value>Vous ne pouvez pas supprimer ou modifier un commentaire associé à une requête</value>
+    </labels>
+    <labels>
+        <fullName>Case_AnomalieSynchro</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Case_AnomalieSynchro</shortDescription>
+        <value>01258000000gmez</value>
+    </labels>
+    <labels>
+        <fullName>Case_ListView_Accepter</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Case_ListView_Accepter</shortDescription>
+        <value>X03_Ano_synch_En_att_attribution_STA;X04_Ano_synch_En_att_attribution_PAR;X10_IndispoProbPDA_En_att_attribution_STA;X11_IndispoProbPDA_En_att_attribution_STA;X15_IndispoProbOp_En_att_attribution_STA;X16_IndispoProbOp_En_att_attribution_PAR;X21_Injoignable_En_att_attribution_sta;X22_Injoignable_En_att_attribution_PAR;X003_DA_En_attente_d_attri_BNL</value>
+    </labels>
+    <labels>
+        <fullName>Case_Status_AttenteDeTraitement</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Case_Status_AttenteDeTraitement</shortDescription>
+        <value>En attente de traitement</value>
+    </labels>
+    <labels>
+        <fullName>Case_Subject_AnomalieDeSynchro</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Case_Subject_AnomalieDeSynchro</shortDescription>
+        <value>Anomalie de synchronisation d&#39;un relais</value>
+    </labels>
+    <labels>
+        <fullName>ChangerPropro_taireLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ChangerProproétaireLbl</shortDescription>
+        <value>Changer propriétaire de la requête</value>
+    </labels>
+    <labels>
+        <fullName>Click_Here</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Click Here</shortDescription>
+        <value>Cliquez ici</value>
+    </labels>
+    <labels>
+        <fullName>ClosedCongeIndispo</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ClosedCongeIndispo</shortDescription>
+        <value>Passé</value>
+    </labels>
+    <labels>
+        <fullName>CodeBIC</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CodeBIC</shortDescription>
+        <value>Code BIC ;</value>
+    </labels>
+    <labels>
+        <fullName>Colis_Not_Found</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Colis Not Found</shortDescription>
+        <value>Référence internationale Inexistante</value>
+    </labels>
+    <labels>
+        <fullName>Colis_Org</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Colis_Org</shortDescription>
+        <value>https://anomalymanagement.pickup.fr</value>
+    </labels>
+    <labels>
+        <fullName>CongInd_RT_IndispoConsigne</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CongInd_RT_IndispoConsigne</shortDescription>
+        <value>01258000000gieE</value>
+    </labels>
+    <labels>
+        <fullName>CongInd_RT_IndispoFR</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongInd_RT_IndispoFR</shortDescription>
+        <value>01258000000gie9AAA</value>
+    </labels>
+    <labels>
+        <fullName>CongInd_RT_IndispoPartenaire_ALL</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongInd_RT_IndispoPartenaire_ALL</shortDescription>
+        <value>01258000000QhrTAAS;0121w0000008YuEAAU;0121i000000kDR2AAM;0121i000000H9g6AAC;0121i000000H9iWAAS</value>
+    </labels>
+    <labels>
+        <fullName>CongInd_RT_IndispoPartenaire_BNL</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongInd_RT_IndispoPartenaire_BNL</shortDescription>
+        <value>01258000000QhrTAAS</value>
+    </labels>
+    <labels>
+        <fullName>CongInd_RT_IndispoStandard</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongInd_RT_IndispoStandard</shortDescription>
+        <value>01258000000gie9</value>
+    </labels>
+    <labels>
+        <fullName>CongInd_RT_IndispoStandard_ALL</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CongInd_RT_IndispoStandard_ALL</shortDescription>
+        <value>01258000000gie9;01258000000QhrUAAS;0121w0000008YuFAAU;0121i000000kDR3AAM;0121i000000H9g7AAC;0121i000000H9iXAAS</value>
+    </labels>
+    <labels>
+        <fullName>CongInd_RT_IndispoStandard_BNL</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongInd_RT_IndispoStandard_BNL</shortDescription>
+        <value>01258000000QhrUAAS</value>
+    </labels>
+    <labels>
+        <fullName>CongInd_TypeIndispo_PasDePDAassocie</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongInd_TypeIndispo_PasDePDAassocie</shortDescription>
+        <value>Pas de PDA associé</value>
+    </labels>
+    <labels>
+        <fullName>CongeIndispo_A_Venir</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongeIndispo A Venir</shortDescription>
+        <value>A venir</value>
+    </labels>
+    <labels>
+        <fullName>CongeIndispo_A_Venir_2</fullName>
+        <categories>Translations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CongeIndispo A Venir 2</shortDescription>
+        <value>A venir</value>
+    </labels>
+    <labels>
+        <fullName>CongeIndispo_En_Cours</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongeIndispo En Cours</shortDescription>
+        <value>En cours</value>
+    </labels>
+    <labels>
+        <fullName>CongeIndispo_En_Cours_2</fullName>
+        <categories>Translations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CongeIndispo En Cours	2</shortDescription>
+        <value>En cours</value>
+    </labels>
+    <labels>
+        <fullName>CongeRT</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>CongeRT</shortDescription>
+        <value>Congé ou disponibilité</value>
+    </labels>
+    <labels>
+        <fullName>CongeRT_15</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CongeRT_15</shortDescription>
+        <value>01258000000cXnc</value>
+    </labels>
+    <labels>
+        <fullName>Conge_Indispo_Passe</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Conge Indispo Passe</shortDescription>
+        <value>Passé</value>
+    </labels>
+    <labels>
+        <fullName>Conge_Indispo_Passe_2</fullName>
+        <categories>Translations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Conge Indispo Passe 2</shortDescription>
+        <value>Passé</value>
+    </labels>
+    <labels>
+        <fullName>Consigne_Date</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Consigne Date</shortDescription>
+        <value>(Date de début/Date de fin)</value>
+    </labels>
+    <labels>
+        <fullName>Consulter_Ticket</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Consulter_Ticket</shortDescription>
+        <value>http://web.pickup-services.com/TicketManager/results.aspx?bkeys=PudoId=</value>
+    </labels>
+    <labels>
+        <fullName>Consulter_Ticket_INTER</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Consulter_Ticket_INTER</shortDescription>
+        <value>http://ticketmanager.pickup.fr/results.aspx?bkeys=PudoId=</value>
+    </labels>
+    <labels>
+        <fullName>Consulter_la_liste_des_colis</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Consulter la liste des colis</shortDescription>
+        <value>visucolis.pickup.fr</value>
+    </labels>
+    <labels>
+        <fullName>ContactOperationnel</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ContactOperationnel</shortDescription>
+        <value>Contact opérationnel ;</value>
+    </labels>
+    <labels>
+        <fullName>Contrat_Joint</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Contrat Joint</shortDescription>
+        <value>Contrat joint;</value>
+    </labels>
+    <labels>
+        <fullName>Creer_un_ticket</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Créer un ticket</shortDescription>
+        <value>http://web.pickup-services.com//TicketManager/CreateTicket.aspx?bkeys=PudoId=</value>
+    </labels>
+    <labels>
+        <fullName>Creer_un_ticket_INTER</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Creer_un_ticket_INTER</shortDescription>
+        <value>http://ticketmanager.pickup.fr/createticket.aspx?bkeys=PudoId=</value>
+    </labels>
+    <labels>
+        <fullName>DA_APPEL</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_APPEL</shortDescription>
+        <value>APPEL</value>
+    </labels>
+    <labels>
+        <fullName>DA_AccountSuiviParCORecordTypeId</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AccountSuiviParCORecordTypeId</shortDescription>
+        <value>012580000005YcDAAU</value>
+    </labels>
+    <labels>
+        <fullName>DA_AttenteAppel1</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AttenteAppel1</shortDescription>
+        <value>Démarrage d&#39;activité - Appel 1</value>
+    </labels>
+    <labels>
+        <fullName>DA_AttenteAppel2</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AttenteAppel2</shortDescription>
+        <value>Démarrage d&#39;activité - Appel 2</value>
+    </labels>
+    <labels>
+        <fullName>DA_AttenteAppel3</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AttenteAppel3</shortDescription>
+        <value>Démarrage d&#39;activité - Appel 3</value>
+    </labels>
+    <labels>
+        <fullName>DA_AttenteAppel4</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AttenteAppel4</shortDescription>
+        <value>En attente appel 4</value>
+    </labels>
+    <labels>
+        <fullName>DA_AttenteAppel4D</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AttenteAppel4D</shortDescription>
+        <value>Démarrage d&#39;activité - Appel 4</value>
+    </labels>
+    <labels>
+        <fullName>DA_AttenteAppel5</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AttenteAppel5</shortDescription>
+        <value>Démarrage d&#39;activité - Appel 5</value>
+    </labels>
+    <labels>
+        <fullName>DA_AttenteAppel6</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AttenteAppel6</shortDescription>
+        <value>En attente appel 6</value>
+    </labels>
+    <labels>
+        <fullName>DA_AucunResultat</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_AucunResultat</shortDescription>
+        <value>Aucun résultat trouvé...</value>
+    </labels>
+    <labels>
+        <fullName>DA_Bilan1Valide</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_Bilan1Valide</shortDescription>
+        <value>Démarrage d&#39;activité - Bilan 1 validé</value>
+    </labels>
+    <labels>
+        <fullName>DA_Bilan2Valide</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_Bilan2Valide</shortDescription>
+        <value>Démarrage d&#39;activité - Bilan 2 validé</value>
+    </labels>
+    <labels>
+        <fullName>DA_BilanExclus</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_BilanExclus</shortDescription>
+        <value>Démarrage d&#39;activité - Demande d&#39;exclusion en cours</value>
+    </labels>
+    <labels>
+        <fullName>DA_BilanValide</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_BilanValide</shortDescription>
+        <value>Démarrage d&#39;activité - Bilan validé</value>
+    </labels>
+    <labels>
+        <fullName>DA_ChoisirOption</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ChoisirOption</shortDescription>
+        <value>Veuillez choisire une des options</value>
+    </labels>
+    <labels>
+        <fullName>DA_CommentaireLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_CommentaireLbl</shortDescription>
+        <value>Commentaire</value>
+    </labels>
+    <labels>
+        <fullName>DA_CompleterQuestionnaire</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_CompleterQuestionnaire</shortDescription>
+        <value>Veuillez compléter le questionnaire.</value>
+    </labels>
+    <labels>
+        <fullName>DA_CompteRendu</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_CompteRendu</shortDescription>
+        <value>Compte Rendu</value>
+    </labels>
+    <labels>
+        <fullName>DA_DatePlannifier</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA Date Plannifier</shortDescription>
+        <value>Veuillez choisir une date de rappel dans le futur</value>
+    </labels>
+    <labels>
+        <fullName>DA_DemandeExclusionPUDO</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_DemandeExclusionPUDO</shortDescription>
+        <value>Demande d&#39;exclusion PUDO</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteAppel1Statut1</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteAppel1Statut1</shortDescription>
+        <value>En attente appel 1</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteAppel2Statut2</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteAppel2Statut2</shortDescription>
+        <value>En attente appel 2</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteAppel3Statut3</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteAppel3Statut3</shortDescription>
+        <value>En attente appel 3</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteAppel5Statut5</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteAppel5Statut5</shortDescription>
+        <value>En attente appel 5 - Prolongation</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteAppel5Statut5S</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteAppel5Statut5S</shortDescription>
+        <value>En attente appel 5</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteAppelBILAN1</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteAppelBILAN1_S4</shortDescription>
+        <value>En attente appel - Bilan 1</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteAppelBILAN2_S6</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteAppelBILAN2_S6</shortDescription>
+        <value>En attente appel - Bilan 2</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteAttribution</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteAttribution</shortDescription>
+        <value>En attente d&#39;attribution</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteExclusion</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteExclusion</shortDescription>
+        <value>En attente exclusion</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttentePlanification</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttentePlanification</shortDescription>
+        <value>En attente planification</value>
+    </labels>
+    <labels>
+        <fullName>DA_EnAttenteVisiteAnimateur</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_EnAttenteVisiteAnimateur</shortDescription>
+        <value>En attente visite animateur réseau</value>
+    </labels>
+    <labels>
+        <fullName>DA_En_AttenteDemandeSortie</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_En AttenteDemandeSortie</shortDescription>
+        <value>En attente demande de sortie</value>
+    </labels>
+    <labels>
+        <fullName>DA_ErreurChoixStatut</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ErreurChoixStatut</shortDescription>
+        <value>La valeur de statut ne vous permet pas de lancer un appel.</value>
+    </labels>
+    <labels>
+        <fullName>DA_ErreurSortieStatut</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ErreurSortieStatut</shortDescription>
+        <value>La valeur de statut ne vous permet pas de lancer une demande de sortie.</value>
+    </labels>
+    <labels>
+        <fullName>DA_Exception</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_Exception</shortDescription>
+        <value>Une erreur s&#39;est produite lors de l&#39;enregistrement.Veuillez Vérifier les données</value>
+    </labels>
+    <labels>
+        <fullName>DA_ExclusionRefusee</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ExclusionRefusee</shortDescription>
+        <value>Démarrage d&#39;activité - Demande d&#39;exclusion refusée</value>
+    </labels>
+    <labels>
+        <fullName>DA_ExclusionValide</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ExclusionValide</shortDescription>
+        <value>Démarrage d&#39;activité - Demande d&#39;exclusion validée</value>
+    </labels>
+    <labels>
+        <fullName>DA_FinSuiviDemmActivite</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_FinSuiviDemmActivite</shortDescription>
+        <value>Appel effectué - Fin de suivi du démarrage d&#39;activité</value>
+    </labels>
+    <labels>
+        <fullName>DA_INT_Duree_Entre_Appel</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_INT_Duree_Entre_Appel</shortDescription>
+        <value>7</value>
+    </labels>
+    <labels>
+        <fullName>DA_InterrompuLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_InterrompuLbl</shortDescription>
+        <value>Traitement interrompu</value>
+    </labels>
+    <labels>
+        <fullName>DA_NonRelaisRepond</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_NonRelaisRepond</shortDescription>
+        <value>Non, le relais ne répond pas</value>
+    </labels>
+    <labels>
+        <fullName>DA_NumeroQuestionLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_NumeroQuestionLbl</shortDescription>
+        <value>Numéro de question</value>
+    </labels>
+    <labels>
+        <fullName>DA_ObjetDA</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ObjetDA</shortDescription>
+        <value>Démarrage d&#39;activité</value>
+    </labels>
+    <labels>
+        <fullName>DA_OptionNonValide</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_OptionNonValide</shortDescription>
+        <value>Vous avez choisi une option non valide.</value>
+    </labels>
+    <labels>
+        <fullName>DA_OptionNonValide2</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_OptionNonValide2</shortDescription>
+        <value>Veuillez sélectionner un contact valide.</value>
+    </labels>
+    <labels>
+        <fullName>DA_OuiRelaisRepond</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_OuiRelaisRepond</shortDescription>
+        <value>Oui, le relais répond</value>
+    </labels>
+    <labels>
+        <fullName>DA_PUS_FR_Duree_Entre_Appel</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_PUS_FR_Duree_Entre_Appel</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>DA_PassageAppSuivant</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_PassageAppSuivant</shortDescription>
+        <value>Appel fait, passage à l&#39;appel suivant</value>
+    </labels>
+    <labels>
+        <fullName>DA_PlannifierRappeLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_PlannifierRappeLbl</shortDescription>
+        <value>Plannifier Rappel</value>
+    </labels>
+    <labels>
+        <fullName>DA_PlannifierRappelLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_PlannifierRappelLbl</shortDescription>
+        <value>Planifier un rappel</value>
+    </labels>
+    <labels>
+        <fullName>DA_Primordiale</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_Primordiale</shortDescription>
+        <value>Primordiale</value>
+    </labels>
+    <labels>
+        <fullName>DA_QuestionLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_QuestionLbl</shortDescription>
+        <value>Question</value>
+    </labels>
+    <labels>
+        <fullName>DA_QuestionnaireNonValide</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_QuestionnaireNonValide</shortDescription>
+        <value>Questionnaire non valide.</value>
+    </labels>
+    <labels>
+        <fullName>DA_QueueARSId</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_QueueARSId</shortDescription>
+        <value>00G58000001ubpa</value>
+    </labels>
+    <labels>
+        <fullName>DA_QueueARSId_BNL</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_QueueARSId_BNL</shortDescription>
+        <value>00G58000004ZBw2EAG</value>
+    </labels>
+    <labels>
+        <fullName>DA_RT_DemandeDeSortie_Questionnaire</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_RT_DemandeDeSortie_Questionnaire</shortDescription>
+        <value>01258000000gnoHAAQ</value>
+    </labels>
+    <labels>
+        <fullName>DA_RT_DemandeDeSortie_QuestionnaireRempli</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_RT_DemandeDeSortie_QuestionnaireRempli</shortDescription>
+        <value>01258000000goIcAAI</value>
+    </labels>
+    <labels>
+        <fullName>DA_RelaisJoinableLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_RelaisJoinableLbl</shortDescription>
+        <value>Le relais est-il joignable?</value>
+    </labels>
+    <labels>
+        <fullName>DA_ReponseKo</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ReponseKo</shortDescription>
+        <value>KO</value>
+    </labels>
+    <labels>
+        <fullName>DA_ReponseLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ReponseLbl</shortDescription>
+        <value>Réponse</value>
+    </labels>
+    <labels>
+        <fullName>DA_ReponseOk</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ReponseOk</shortDescription>
+        <value>OK</value>
+    </labels>
+    <labels>
+        <fullName>DA_ReponseRevu</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ReponseRevu</shortDescription>
+        <value>Revu</value>
+    </labels>
+    <labels>
+        <fullName>DA_ReponseSuggereesLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_ReponseSuggereesLbl</shortDescription>
+        <value>Réponses suggerées</value>
+    </labels>
+    <labels>
+        <fullName>DA_RequeteNonValide</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_RequeteNonValide</shortDescription>
+        <value>Veuillez choisir une requete valide</value>
+    </labels>
+    <labels>
+        <fullName>DA_RequeteRecrodTypeDAId</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_RequeteRecrodTypeDAId</shortDescription>
+        <value>012580000005bnM</value>
+    </labels>
+    <labels>
+        <fullName>DA_RequeteRecrodTypeDAId_BNL</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_RequeteRecrodTypeDAId_BNL</shortDescription>
+        <value>01258000000QhrLAAS</value>
+    </labels>
+    <labels>
+        <fullName>DA_SortieEnCours</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_SortieEnCours</shortDescription>
+        <value>Démarrage d&#39;activité - Demande de sortie en cours</value>
+    </labels>
+    <labels>
+        <fullName>DA_SortieRefuse</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_SortieRefuse</shortDescription>
+        <value>Démarrage d&#39;activité - Demande de sortie refusée</value>
+    </labels>
+    <labels>
+        <fullName>DA_SortieVAlide</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_SortieVAlide</shortDescription>
+        <value>Démarrage d&#39;activité - Demande de sortie validée</value>
+    </labels>
+    <labels>
+        <fullName>DA_StatutEnAttenteDemandeSortie</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_StatutEnAttenteDemandeSortie</shortDescription>
+        <value>En attente demande de sortie</value>
+    </labels>
+    <labels>
+        <fullName>DA_TacheStatutOuvert</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_TacheStatutOuvert</shortDescription>
+        <value>Ouvert</value>
+    </labels>
+    <labels>
+        <fullName>DA_TacheTraitementInterrompu</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_TacheTraitementInterrompu</shortDescription>
+        <value>Démarrage d&#39;activité - Traitement interrompu</value>
+    </labels>
+    <labels>
+        <fullName>DA_Tache_DemandeSortieEnCours</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_Tache_DemandeSortieEnCours</shortDescription>
+        <value>Démarrage d&#39;activité - demande de sortie en cours</value>
+    </labels>
+    <labels>
+        <fullName>DA_Tache_NeRepondPas</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_Tache_NeRepondPas</shortDescription>
+        <value>Démarrage d’activité - Ne répond pas</value>
+    </labels>
+    <labels>
+        <fullName>DA_Tache_StatutTraite</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_Tache_StatutTraite</shortDescription>
+        <value>Traité</value>
+    </labels>
+    <labels>
+        <fullName>DA_Termin_e_Traduite</fullName>
+        <categories>Translations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DA_Terminée_Traduite</shortDescription>
+        <value>Ended</value>
+    </labels>
+    <labels>
+        <fullName>DA_Termine</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_Terminée</shortDescription>
+        <value>Terminée</value>
+    </labels>
+    <labels>
+        <fullName>DA_TypeQuestionLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DA_TypeQuestionLbl</shortDescription>
+        <value>Type de question</value>
+    </labels>
+    <labels>
+        <fullName>DPD_BNL_Animateur_r_seau_si_ge</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DPD_BNL_Animateur réseau siège</shortDescription>
+        <value>00G58000004ZBw8EAG</value>
+    </labels>
+    <labels>
+        <fullName>DPD_BNL_Niveau_1</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DPD_BNL_Niveau_1</shortDescription>
+        <value>00e58000000d6DxAAI</value>
+    </labels>
+    <labels>
+        <fullName>DateDeVisite</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DateDeVisite</shortDescription>
+        <value>Date de visite;</value>
+    </labels>
+    <labels>
+        <fullName>DebutPauseDejeuner</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DebutPauseDejeuner</shortDescription>
+        <value>Début pause déjeuner de référence;</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Tache_Erreur</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Delete Tache Erreur</shortDescription>
+        <value>Privilège insuffisant pour supprimer cette tache</value>
+    </labels>
+    <labels>
+        <fullName>DeviceNum_Link</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DeviceNum_Link</shortDescription>
+        <value>MultiDeviceTypes/GetDeviceFromIdentifier?deviceIdentifier=</value>
+    </labels>
+    <labels>
+        <fullName>Dimanche</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Dimanche</shortDescription>
+        <value>Dimanche</value>
+    </labels>
+    <labels>
+        <fullName>DispoRT_15</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DispoRT_15</shortDescription>
+        <value>01258000000cXnh</value>
+    </labels>
+    <labels>
+        <fullName>DisponibiliteRT</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>DisponibiliteRT</shortDescription>
+        <value>Congé habituel ou disponibilité habituelle</value>
+    </labels>
+    <labels>
+        <fullName>Disponibilite_En_Cours</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Disponibilite En Cours</shortDescription>
+        <value>Creation du conge impossible . Une disponibilité en cours existe déjà sure cette periode.</value>
+    </labels>
+    <labels>
+        <fullName>Dissocier</fullName>
+        <categories>Translations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dissocier</shortDescription>
+        <value>Dissocier</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Reference</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Reference</shortDescription>
+        <value>Référence Internationale dupliquée. Veuillez contacter votre administrateur</value>
+    </labels>
+    <labels>
+        <fullName>ESD</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ESD</shortDescription>
+        <value>esdmanager</value>
+    </labels>
+    <labels>
+        <fullName>ET_Bonjour</fullName>
+        <categories>Email Template</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ET_Bonjour</shortDescription>
+        <value>Bonjour,</value>
+    </labels>
+    <labels>
+        <fullName>ET_Cordialement</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ET_Cordialement</shortDescription>
+        <value>Cordialement,</value>
+    </labels>
+    <labels>
+        <fullName>ET_EnAttente</fullName>
+        <categories>Email Template</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ET_EnAttente</shortDescription>
+        <value>Nous n’avons pas pu aborder l’ensemble des sujets mais vous trouverez ci-dessous un compte-rendu des points que nous avons traités ensemble.</value>
+    </labels>
+    <labels>
+        <fullName>ET_Merci</fullName>
+        <categories>Email Template</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ET_Merci</shortDescription>
+        <value>Merci pour votre disponibilité lors de notre rencontre de ce jour.</value>
+    </labels>
+    <labels>
+        <fullName>ET_QuestionComplementaire</fullName>
+        <categories>Email Template</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ET_QuestionComplementaire</shortDescription>
+        <value>Je reste à votre disposition pour toute question complémentaire.</value>
+    </labels>
+    <labels>
+        <fullName>ET_Termine</fullName>
+        <categories>Email Template</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ET_Termine</shortDescription>
+        <value>Vous trouverez ci-dessous un compte-rendu des différents sujets que nous avons traités ensemble.</value>
+    </labels>
+    <labels>
+        <fullName>EmailDuMagasin</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>EmailDuMagasin</shortDescription>
+        <value>Cocher la case Refus Email ou renseigner le champ Email du magasin ;</value>
+    </labels>
+    <labels>
+        <fullName>Employes</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Employes</shortDescription>
+        <value>Employés ;</value>
+    </labels>
+    <labels>
+        <fullName>Empty_Reference_Number</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Empty Reference Number</shortDescription>
+        <value>Vous avez saisi un numéro de référence internationale vide</value>
+    </labels>
+    <labels>
+        <fullName>EnregistrerLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>EnregistrerLbl</shortDescription>
+        <value>Enregistrer</value>
+    </labels>
+    <labels>
+        <fullName>Envoyer_un_message_PDA</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Envoyer un message PDA</shortDescription>
+        <value>messagepda</value>
+    </labels>
+    <labels>
+        <fullName>Etape_de_traitement</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Etape de traitement</shortDescription>
+        <value>Avant de procéder à d’éventuelles actions, vérifier que le relais réceptionne correctement ses colis depuis Visucolis. Ci-dessous les étapes de traitement possibles :</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_AddressCorrection</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_AddressCorrection</shortDescription>
+        <value>Correction d&#39;adresse</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_AddressIncrorrect</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_AddressIncrorrect</shortDescription>
+        <value>Adresse incorrecte.</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Billing</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Billing</shortDescription>
+        <value>Facturation</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_City</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_City</shortDescription>
+        <value>Ville</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_CityNode</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_CityNode</shortDescription>
+        <value>LOCLIBDEST2</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_CloseWindow</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_CloseWindow</shortDescription>
+        <value>Fermer</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Conserver</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Conserver</shortDescription>
+        <value>Conserver adresse d&#39;origine</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_ConserverAlert</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_ConserverAlert</shortDescription>
+        <value>Vous devez fiabiliser votre adresse avant</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Country</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Country</shortDescription>
+        <value>Pays</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_CountryNode</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_CountryNode</shortDescription>
+        <value>LIBPAYS</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Delivery</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Delivery</shortDescription>
+        <value>Livraison</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Facturation</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Facturation</shortDescription>
+        <value>Adresse de Facturation</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_LadrNode</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_LadrNode</shortDescription>
+        <value>LADR</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Livraison</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Livraison</shortDescription>
+        <value>Adresse de Livraison</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Num1</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Num1</shortDescription>
+        <value>NUM1</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_OneCheckbox</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_OneCheckbox</shortDescription>
+        <value>Vous devez sélectionner au moins une des deux adresses</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_PostalCode</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_PostalCode</shortDescription>
+        <value>Code Postal</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_PostalCodeNode</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_PostalCodeNode</shortDescription>
+        <value>LOCCP</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Required</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Required</shortDescription>
+        <value>Veuillez saisir plus d&#39;informations.</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_ResearchStatus</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_ResearchStatus</shortDescription>
+        <value>Statut de la recherche</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Select</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Select</shortDescription>
+        <value>Sélectionnez</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_ShowSuggestions</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_ShowSuggestions</shortDescription>
+        <value>Afficher les suggestions</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_StatusNode</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_StatusNode</shortDescription>
+        <value>STATUT</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Street</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Street</shortDescription>
+        <value>Rue</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Street1</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Street1</shortDescription>
+        <value>Rue 1</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Street2</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Street2</shortDescription>
+        <value>Rue 2</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_Street3</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_Street3</shortDescription>
+        <value>Rue 3</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_StreetNode</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_StreetNode</shortDescription>
+        <value>VOIE</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_StreetNumber</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_StreetNumber</shortDescription>
+        <value>Numéro de rue</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_StreetOnlyNode</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_StreetOnlyNode</shortDescription>
+        <value>LIBVOIE</value>
+    </labels>
+    <labels>
+        <fullName>FIAB_title</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FIAB_title</shortDescription>
+        <value>Fiabilisation d&#39;adresse</value>
+    </labels>
+    <labels>
+        <fullName>FILEGESTMAT_ID_FR</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FileGestMat_ID_FR</shortDescription>
+        <value>00G580000016rF2</value>
+    </labels>
+    <labels>
+        <fullName>FileGestionContractuelle</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FileGestionContract_ID</shortDescription>
+        <value>00G580000010rqvEAA</value>
+    </labels>
+    <labels>
+        <fullName>FileWebHelp_ID_FR</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FileWebHelp_ID_FR</shortDescription>
+        <value>00G58000001HADy</value>
+    </labels>
+    <labels>
+        <fullName>File_BNLGestMat</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_BNLGestMat</shortDescription>
+        <value>00G58000004ZBw4EAG</value>
+    </labels>
+    <labels>
+        <fullName>File_BNLManager</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_BNLManager</shortDescription>
+        <value>00G58000004ZBw5EAG</value>
+    </labels>
+    <labels>
+        <fullName>File_BNL_animateur</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_BNL_animateur</shortDescription>
+        <value>00G6E000002IlFn</value>
+    </labels>
+    <labels>
+        <fullName>File_BNL_service_line</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_BNL_service_line</shortDescription>
+        <value>00G58000004ZBw6EAG</value>
+    </labels>
+    <labels>
+        <fullName>File_CHE_Manager</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_CHE_Manager</shortDescription>
+        <value>00G1i000000lb2sEAA</value>
+    </labels>
+    <labels>
+        <fullName>File_CHE_Service_Line</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_CHE_Service_Line</shortDescription>
+        <value>00G1i000000lb2tEAA</value>
+    </labels>
+    <labels>
+        <fullName>File_CZE_Manager</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_CZE_Manager</shortDescription>
+        <value>00G1i000000lb5zEAA</value>
+    </labels>
+    <labels>
+        <fullName>File_CZE_Service_Line</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_CZE_Service_Line</shortDescription>
+        <value>00G1i000000lb60EAA</value>
+    </labels>
+    <labels>
+        <fullName>File_HUN_Manager</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_HUN_Manager</shortDescription>
+        <value>00G1i000000xjS2EAI</value>
+    </labels>
+    <labels>
+        <fullName>File_HUN_Service_Line</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>File_HUN_Service_Line</shortDescription>
+        <value>00G1i000000xjS3EAI</value>
+    </labels>
+    <labels>
+        <fullName>FinPauseDejeuner</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FinPauseDejeuner</shortDescription>
+        <value>Fin pause déjeuner de référence;</value>
+    </labels>
+    <labels>
+        <fullName>Fleet_Manager</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Fleet Manager</shortDescription>
+        <value>https://pickup.revers.io/#/app/stock?externalref2=</value>
+    </labels>
+    <labels>
+        <fullName>FormeJuridique</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>FormeJuridique</shortDescription>
+        <value>Forme juridique;</value>
+    </labels>
+    <labels>
+        <fullName>GMO_FilterURL</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>GMO_FilterURL</shortDescription>
+        <value>/one/one.app?source=alohaHeader#/sObject/Case/list?filterName=</value>
+    </labels>
+    <labels>
+        <fullName>GrilleTarifaire</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>GrilleTarifaire</shortDescription>
+        <value>Grille tarifaire ;</value>
+    </labels>
+    <labels>
+        <fullName>Hauteur</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Hauteur</shortDescription>
+        <value>Hauteur;</value>
+    </labels>
+    <labels>
+        <fullName>HoraireReferenceFermeture</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>HoraireReferenceFermeture</shortDescription>
+        <value>Horaire de fermeture de référence;</value>
+    </labels>
+    <labels>
+        <fullName>HoraireReferenceOuverture</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>HoraireReferenceOuverture</shortDescription>
+        <value>Horaire d’ouverture de référence;</value>
+    </labels>
+    <labels>
+        <fullName>HorairesManquantes</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>HorairesManquantes</shortDescription>
+        <value>Remplir tous les champs horaires;</value>
+    </labels>
+    <labels>
+        <fullName>IBAN</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IBAN</shortDescription>
+        <value>IBAN;</value>
+    </labels>
+    <labels>
+        <fullName>ID_DSI</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_DSI</shortDescription>
+        <value>00D6E000000D5Ui</value>
+    </labels>
+    <labels>
+        <fullName>ID_DSI_NEW</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_DSI_NEW</shortDescription>
+        <value>00D3E000000CtK1</value>
+    </labels>
+    <labels>
+        <fullName>ID_DevFix</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_DevFix</shortDescription>
+        <value>00D6E0000000cLK</value>
+    </labels>
+    <labels>
+        <fullName>ID_ORG</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_ORG</shortDescription>
+        <value>00D58000000cs5o</value>
+    </labels>
+    <labels>
+        <fullName>ID_PREPROD</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_PREPROD</shortDescription>
+        <value>00D0E0000008juN</value>
+    </labels>
+    <labels>
+        <fullName>ID_PROD</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_PROD</shortDescription>
+        <value>00D0E00000021JQ</value>
+    </labels>
+    <labels>
+        <fullName>ID_QUA</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_QUA</shortDescription>
+        <value>00D0E0000008juN</value>
+    </labels>
+    <labels>
+        <fullName>ID_RT_Point_non_supervi</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID RT PointNonSupervise</shortDescription>
+        <value>012580000005YcN</value>
+    </labels>
+    <labels>
+        <fullName>ID_TEST</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_TEST</shortDescription>
+        <value>00D25000000E3Pc</value>
+    </labels>
+    <labels>
+        <fullName>ID_Test_FIX</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_Test_FIX</shortDescription>
+        <value>00D6E0000000c4B</value>
+    </labels>
+    <labels>
+        <fullName>ID_UAT</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_UAT</shortDescription>
+        <value>00D25000000E1cg</value>
+    </labels>
+    <labels>
+        <fullName>ID_VNEXT</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID_VNEXT</shortDescription>
+        <value>00D4E0000000p6H</value>
+    </labels>
+    <labels>
+        <fullName>IDmission</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IDmission</shortDescription>
+        <value>ID mission;</value>
+    </labels>
+    <labels>
+        <fullName>IND_AnoColis</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IND_AnoColis</shortDescription>
+        <value>Indisponibilité Problème opérationnel Qualité de service</value>
+    </labels>
+    <labels>
+        <fullName>IND_PannePDA</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IND_PannePDA</shortDescription>
+        <value>Indisponibilité - Problème PDA / Panne PDA</value>
+    </labels>
+    <labels>
+        <fullName>IND_STS</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IND_STS</shortDescription>
+        <value>Indisponibilité - Problème opérationnel Sinistre / Travaux / Santé</value>
+    </labels>
+    <labels>
+        <fullName>IND_STS_SansFin</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IND_STS_SansFin</shortDescription>
+        <value>Indisponibilité - Problème opérationnel Sinistre / Travaux / Santé sans date de fin</value>
+    </labels>
+    <labels>
+        <fullName>IND_Synch</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IND_Synch</shortDescription>
+        <value>Indisponibilité - Problème PDA / Problème de synchronisation</value>
+    </labels>
+    <labels>
+        <fullName>INJ_AnoColis</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>INJ_AnoColis</shortDescription>
+        <value>Injoignabilité - Problème opérationnel Anomalie colis</value>
+    </labels>
+    <labels>
+        <fullName>INJ_PannePDA</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>INJ_PannePDA</shortDescription>
+        <value>Injoignabilité - Problème PDA / Panne PDA</value>
+    </labels>
+    <labels>
+        <fullName>INJ_Probl_me_Sinistre</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>INJ_Problème_Sinistre</shortDescription>
+        <value>Problème opérationnel - Sinistre / Travaux / Santé</value>
+    </labels>
+    <labels>
+        <fullName>INJ_STS</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>INJ_STS</shortDescription>
+        <value>Injoignabilité - Problème opérationnel Sinistre / Travaux / Santé</value>
+    </labels>
+    <labels>
+        <fullName>INJ_Synch</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>INJ_Synch</shortDescription>
+        <value>Injoignabilité - Problème PDA / Problème de synchronisation</value>
+    </labels>
+    <labels>
+        <fullName>INJ_general</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>INJ_general</shortDescription>
+        <value>Injoignable</value>
+    </labels>
+    <labels>
+        <fullName>INS_STS_AvecFin</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>INS_STS_AvecFin</shortDescription>
+        <value>Indisponibilité - Problème opérationnel Sinistre / Travaux / Santé avec date de fin</value>
+    </labels>
+    <labels>
+        <fullName>IndiceDeLocalisation</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IndiceDeLocalisation</shortDescription>
+        <value>Indice de localisation;</value>
+    </labels>
+    <labels>
+        <fullName>IndispoConsigneRT_15</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IndispoConsigneRT_15</shortDescription>
+        <value>01258000000gieE</value>
+    </labels>
+    <labels>
+        <fullName>IndispoStandardRT_15</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IndispoStandardRT_15</shortDescription>
+        <value>01258000000gie9</value>
+    </labels>
+    <labels>
+        <fullName>Indisponibilite</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Indisponibilite</shortDescription>
+        <value>Indisponibilité</value>
+    </labels>
+    <labels>
+        <fullName>IndisponibiliteConsigneRT</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IndisponibiliteConsigneRT</shortDescription>
+        <value>Indisponibilité_consigne</value>
+    </labels>
+    <labels>
+        <fullName>IndisponibiliteStandardRT</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>IndisponibiliteStandardRT</shortDescription>
+        <value>Indisponibilité_standard</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_International_Reference</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Invalid International Reference</shortDescription>
+        <value>Vous avez saisi un numéro de référence internationale non valide</value>
+    </labels>
+    <labels>
+        <fullName>Jeudi</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Jeudi</shortDescription>
+        <value>Jeudi</value>
+    </labels>
+    <labels>
+        <fullName>Langue_parlee_sur_relais_Allemand</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Langue parlée sur relais Allemand</shortDescription>
+        <value>Allemand</value>
+    </labels>
+    <labels>
+        <fullName>Langue_parlee_sur_relais_Anglais</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Langue parlée sur relais Anglais</shortDescription>
+        <value>Anglais</value>
+    </labels>
+    <labels>
+        <fullName>Langue_parlee_sur_relais_Espagnol</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Langue parlée sur relais Espagnol</shortDescription>
+        <value>Espagnol</value>
+    </labels>
+    <labels>
+        <fullName>Langue_parlee_sur_relais_Francais</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Langue parlée sur relais Français</shortDescription>
+        <value>Français</value>
+    </labels>
+    <labels>
+        <fullName>Langue_parlee_sur_relais_Hollandais</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Langue parlée sur relais Hollandais</shortDescription>
+        <value>Hollandais</value>
+    </labels>
+    <labels>
+        <fullName>Langue_parlee_sur_relais_Hongrois</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Langue parlée sur relais Hongrois</shortDescription>
+        <value>Hongrois</value>
+    </labels>
+    <labels>
+        <fullName>Langue_parlee_sur_relais_Italien</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Langue parlée sur relais Italien</shortDescription>
+        <value>Italien</value>
+    </labels>
+    <labels>
+        <fullName>Langue_parlee_sur_relais_Tcheque</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Langue parlée sur relais Tcheque</shortDescription>
+        <value>Tchèque</value>
+    </labels>
+    <labels>
+        <fullName>LanguesParleesSurleRelais</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>LanguesParleesSurleRelais</shortDescription>
+        <value>Langues parlées sur le relais;</value>
+    </labels>
+    <labels>
+        <fullName>Largeur</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Largeur</shortDescription>
+        <value>Largeur;</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversionErrorHyperlink</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversionErrorHyperlink</shortDescription>
+        <value>Retourner à la piste</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversionErrorMessage</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversionErrorMessage</shortDescription>
+        <value>Vous ne pouvez pas convertir votre prospect car certaines informations obligatoires sont manquantes</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Already_Converted</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>LeadAlreadyConverted</shortDescription>
+        <value>Piste déjà convertie</value>
+    </labels>
+    <labels>
+        <fullName>Lead_FillField</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lead_FillField</shortDescription>
+        <value>Veuillez remplir le champ</value>
+    </labels>
+    <labels>
+        <fullName>Lead_FirstName</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lead FirstName</shortDescription>
+        <value>Prénom</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_Authentication_Key</fullName>
+        <categories>Key Pass</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android Authentication Key</shortDescription>
+        <value>QXAxbTNzZ1BENCNQckBkMTcwOA==</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_Click_Here</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android Click Here</shortDescription>
+        <value>cliquez ici</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_Email_Sent</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android Email Sent</shortDescription>
+        <value>Email envoyé avec succès</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_Endpoint</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android Endpoint</shortDescription>
+        <value>https://apis.pickup-services.com/user/UserIntegrationService.svc/UserManagementService</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_Fill_Identifiant_android_du_Pudo</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android Fill Identifiant android du Pudo</shortDescription>
+        <value>Veuillez remplir la valeur de votre utilisateurs (Identifiant android du Pudo)</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_Fill_Reference_Internationale</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android Fill Reference Internationale</shortDescription>
+        <value>Veuillez remplir la valeur de votre utilisateurs (Référence Internationale)</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_No_Email</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android No Email</shortDescription>
+        <value>Veuillez remplir l&#39;email de destination (Responsable Magasin)</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_OK</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android OK</shortDescription>
+        <value>Ok</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_Send_Email_To_Responsable_Magasin</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android Send Email To Responsable Magasin</shortDescription>
+        <value>Envoyer email au responsable magasin</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_Send_Me_Email</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android Send Me Email</shortDescription>
+        <value>M&#39;envoyer un email</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_User_Not_Found</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android User Not Found</shortDescription>
+        <value>UserNotFound</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Android_User_Not_Found_Response</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Android User Not Found Response</shortDescription>
+        <value>L&#39;utilisateur que vous utilisez est incorrect. Veuillez contacter votre administrateur</value>
+    </labels>
+    <labels>
+        <fullName>Lien_Non_Dispo</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lien Non Dispo</shortDescription>
+        <value>Lien Non dispo</value>
+    </labels>
+    <labels>
+        <fullName>Loading_Devices</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Loading Devices</shortDescription>
+        <value>Dispositifs en cours</value>
+    </labels>
+    <labels>
+        <fullName>LogLat</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>LogLat</shortDescription>
+        <value>Longitude / Latitude ;</value>
+    </labels>
+    <labels>
+        <fullName>Lot_Batch06_AccountCongeIndispo</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lot_Batch06_AccountCongeIndispo</shortDescription>
+        <value>25</value>
+    </labels>
+    <labels>
+        <fullName>Lundi</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Lundi</shortDescription>
+        <value>Lundi</value>
+    </labels>
+    <labels>
+        <fullName>MO_CasesNotSelected</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>MO_CasesNotSelected</shortDescription>
+        <value>Veuillez sélectionner au moins une ligne</value>
+    </labels>
+    <labels>
+        <fullName>MO_ErrorMessage</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>MO_ErrorMessage</shortDescription>
+        <value>Vous ne pouvez pas accepter les requêtes de cette vue de liste</value>
+    </labels>
+    <labels>
+        <fullName>MacroprofilReference</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>MacroprofilReference</shortDescription>
+        <value>Macroprofil de référence ;</value>
+    </labels>
+    <labels>
+        <fullName>Macroprofil_MP2</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Macroprofil_MP2</shortDescription>
+        <value>a095800000FSF6A</value>
+    </labels>
+    <labels>
+        <fullName>Macroprofil_MPORA</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Macroprofil MPORA</shortDescription>
+        <value>MPORA</value>
+    </labels>
+    <labels>
+        <fullName>Macroprofil_actuel</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Macroprofil actuel</shortDescription>
+        <value>Macroprofil actuel;</value>
+    </labels>
+    <labels>
+        <fullName>Mardi</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Mardi</shortDescription>
+        <value>Mardi</value>
+    </labels>
+    <labels>
+        <fullName>Mercredi</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Mercredi</shortDescription>
+        <value>Mercredi</value>
+    </labels>
+    <labels>
+        <fullName>Message_No_Shipping_Country</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Message No Shipping Country</shortDescription>
+        <value>Le compte n&#39;a pas un Pays d&#39;expédition</value>
+    </labels>
+    <labels>
+        <fullName>NbDeSiren</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>NbDeSiren</shortDescription>
+        <value>N° de SIREN;</value>
+    </labels>
+    <labels>
+        <fullName>NbEmployes</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>NbEmployes</shortDescription>
+        <value>Employés;</value>
+    </labels>
+    <labels>
+        <fullName>NbEtageres</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>NbEtageres</shortDescription>
+        <value>Nombre d&#39;étagères ;</value>
+    </labels>
+    <labels>
+        <fullName>No_Devices</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>No Devices</shortDescription>
+        <value>Aucun Dispositif</value>
+    </labels>
+    <labels>
+        <fullName>NomDuContact</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>NomDuContact</shortDescription>
+        <value>Nom du Contact:</value>
+    </labels>
+    <labels>
+        <fullName>NumeroTVA</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>NumeroTVA</shortDescription>
+        <value>N° de TVA;</value>
+    </labels>
+    <labels>
+        <fullName>Numero_non_renseigne</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Numéro non renseigné</shortDescription>
+        <value>Numéro non renseigné</value>
+    </labels>
+    <labels>
+        <fullName>ObjetCampAnomalieSynch</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ObjetCampAnomalieSynch</shortDescription>
+        <value>Anomalie de synchronisation d&#39;un relais</value>
+    </labels>
+    <labels>
+        <fullName>Old_Status</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Old Status</shortDescription>
+        <value>Avec un statut dépassé</value>
+    </labels>
+    <labels>
+        <fullName>Open_International_Reference</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Open International Reference</shortDescription>
+        <value>Ouvrir la référence</value>
+    </labels>
+    <labels>
+        <fullName>Orange</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ID Macrprofil Orange</shortDescription>
+        <value>a095800000FSF6G</value>
+    </labels>
+    <labels>
+        <fullName>Org_ext</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Org ext</shortDescription>
+        <value>.uat</value>
+    </labels>
+    <labels>
+        <fullName>PDA_Associer</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PDA_Associer</shortDescription>
+        <value>http://pickup.revers.io/#/app/stock/transfert?dest=</value>
+    </labels>
+    <labels>
+        <fullName>PDA_Dissocier</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PDA_Dissocier</shortDescription>
+        <value>http://pickup.revers.io/#/app/stock/transfert?orig=</value>
+    </labels>
+    <labels>
+        <fullName>PDA_Link</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PDA_Link</shortDescription>
+        <value>http://cyclope-france.pickup.fr/</value>
+    </labels>
+    <labels>
+        <fullName>PICKACTION</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PICKACTION</shortDescription>
+        <value>https://pickaction-inventory.pickup.fr/Inventory/</value>
+    </labels>
+    <labels>
+        <fullName>PU360</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PU360</shortDescription>
+        <value>anomalymanagement.pickup.fr</value>
+    </labels>
+    <labels>
+        <fullName>PUDO_RT_Consigne</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUDO RT Consigne</shortDescription>
+        <value>Consigne</value>
+    </labels>
+    <labels>
+        <fullName>PUDO_RT_Non_Suivi_Par_le_CO</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUDO RT Non Suivi Par le CO</shortDescription>
+        <value>Point non suivi par le CO</value>
+    </labels>
+    <labels>
+        <fullName>PUDO_RT_Prospect_Converti</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUDO RT Prospect Converti</shortDescription>
+        <value>Prospect Converti</value>
+    </labels>
+    <labels>
+        <fullName>PUDO_RT_Prospect_Converti_Pickup_Contact_18</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUDO RT Prospect Converti Pickup Contact 18</shortDescription>
+        <value>01258000000gnrzAAA</value>
+    </labels>
+    <labels>
+        <fullName>PUDO_domaineActivite</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUDO_domaineActivite</shortDescription>
+        <value>;226;243;260;230;247;264;6;232;249;266;240;257;274;241;258;275;239;256;273;238;255;272;237;12;271;254;236;253;270;235;269;252;234;251;268;233;249;267;</value>
+    </labels>
+    <labels>
+        <fullName>PUS_RT_Consigne</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUS_RT_Consigne</shortDescription>
+        <value>012580000005YcIAAU</value>
+    </labels>
+    <labels>
+        <fullName>PUS_RT_NonSuiviParCO</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUS_RT_NonSuiviParCO</shortDescription>
+        <value>012580000005YcNAAU</value>
+    </labels>
+    <labels>
+        <fullName>PUS_RT_ProspectConverti</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUS_RT_ProspectConverti</shortDescription>
+        <value>01258000000cXnmAAE</value>
+    </labels>
+    <labels>
+        <fullName>PUS_RT_ProspectConvertiBNL</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PUS_RT_ProspectConvertiBNL</shortDescription>
+        <value>0125E0000009PNNQA2</value>
+    </labels>
+    <labels>
+        <fullName>Pays_Sequence</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Pays Sequence</shortDescription>
+        <value>La séquence de pays de facturation n&#39;est pas réglée, veuillez contacter votre administrateur</value>
+    </labels>
+    <labels>
+        <fullName>Pays_TypeEnregistrment</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Pays_TypeEnregistrment</shortDescription>
+        <value>Veuillez choisir un pays correspondant au type d&#39;enregistrement</value>
+    </labels>
+    <labels>
+        <fullName>Periode_A_Venir</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Periode A Venir</shortDescription>
+        <value>A venir</value>
+    </labels>
+    <labels>
+        <fullName>Periode_En_Cours</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Periode En Cours</shortDescription>
+        <value>En cours</value>
+    </labels>
+    <labels>
+        <fullName>Periode_Passe</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Periode Passé</shortDescription>
+        <value>Passé</value>
+    </labels>
+    <labels>
+        <fullName>PoidsMaximal</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PoidsMaximal</shortDescription>
+        <value>Poids maximal accepté par colis;</value>
+    </labels>
+    <labels>
+        <fullName>Portail_Pick_It_sacoches</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Portail Pick It</shortDescription>
+        <value>pickit.pickup.fr</value>
+    </labels>
+    <labels>
+        <fullName>Portail_facturation</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Portail facturation</shortDescription>
+        <value>invoicingadmin.pickup.fr</value>
+    </labels>
+    <labels>
+        <fullName>Portail_numerisation</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Portail numérisation</shortDescription>
+        <value>scancontrat</value>
+    </labels>
+    <labels>
+        <fullName>Profile_Niveau1_ID</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Profile_Niveau1_ID</shortDescription>
+        <value>00e580000015APr</value>
+    </labels>
+    <labels>
+        <fullName>Profile_Non_Delete_Access</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Profile Non Delete Accès</shortDescription>
+        <value>PUS_FR_Niveau_1,PUS_FR_Niveau_2</value>
+    </labels>
+    <labels>
+        <fullName>Profile_SystemAdmin</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Profile_SystemAdmin</shortDescription>
+        <value>00e580000012ZsGAAU</value>
+    </labels>
+    <labels>
+        <fullName>Profondeur</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Profondeur</shortDescription>
+        <value>Profondeur;</value>
+    </labels>
+    <labels>
+        <fullName>Propri_taireLbl</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>PropriétaireLbl</shortDescription>
+        <value>Propriétaire</value>
+    </labels>
+    <labels>
+        <fullName>Publipostage</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Publipostage</shortDescription>
+        <value>publipostage.pickup-services.com</value>
+    </labels>
+    <labels>
+        <fullName>Pudo_ActiviteCommerciale</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Pudo_ActiviteCommerciale</shortDescription>
+        <value>;2236;2343;2348;2354;2361;2378;2379;2217;2305;2308;2311;
+2174;2186;2192;2199;2216;2224;2227;2230;2233;2239;2255;
+2263;2267;2297;2298;2314;2320;2336;2344;2386;2389;2392;
+2395;2401;66;49;42;36;23;2308;2273;2290;2262;2181;2182;
+2231;2246;2312;2327;2393;2408;91;</value>
+    </labels>
+    <labels>
+        <fullName>REQ_Statut_Termine</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>REQ_Statut_Termine</shortDescription>
+        <value>Terminée</value>
+    </labels>
+    <labels>
+        <fullName>RESA_ErrorNonModifiable</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RESA_ErrorNonModifiable</shortDescription>
+        <value>Si la case modifiable n&#39;est pas cochée, il est impossible d&#39;activer ou de désactiver le réseau.</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_Indisponibilit_partenaire</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_Indisponibilité_partenaire</shortDescription>
+        <value>01258000000QhrTAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_Indisponibilite_standard</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_Indisponibilité_standard</shortDescription>
+        <value>01258000000QhrUAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_MoyenScan_Actif_Plusieurs</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_MoyenScan_Actif_Plusieurs</shortDescription>
+        <value>01258000000QhrPAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_MoyenScan_Actif_Sans</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_MoyenScan_Actif_Sans</shortDescription>
+        <value>01258000000QhrRAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_MoyenScan_Actif_Sans_Formation_Scan</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_MoyenScan_Actif_Sans_Formation_Scan</shortDescription>
+        <value>01258000000QhrQAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_MoyenScan_Inactif_Avec</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_MoyenScan_Inactif_Avec</shortDescription>
+        <value>01258000000QhrIAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_Requ_te_Indisponibilit</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_Requête_Indisponibilité</shortDescription>
+        <value>01258000000QhrNAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_Requ_te_Indisponibilit_PDA</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_Requête_Indisponibilité_PDA</shortDescription>
+        <value>01258000000QhrMAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_Requ_tes_IND_INJ_Ano</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_Requêtes_IND_INJ_Ano</shortDescription>
+        <value>01258000000QhrJAAS; 01258000000QhrMAAS; 01258000000QhrNAAS; 01258000000QhrOAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_BNL_Requete_Injoignabilite</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_BNL_Requête_Injoignabilité</shortDescription>
+        <value>01258000000QhrOAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_Indisponibilit_partenaire</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_Indisponibilité_partenaire</shortDescription>
+        <value>0121i000000H9g6AAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_Indisponibilite_standard</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_Indisponibilité_standard</shortDescription>
+        <value>0121i000000H9g7AAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_MoyenScan_Actif_Plusieurs</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_MoyenScan_Actif_Plusieurs</shortDescription>
+        <value>0121i000000H9g0AAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_MoyenScan_Actif_Sans</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_MoyenScan_Actif_Sans</shortDescription>
+        <value>0121i000000H9g2AAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_MoyenScan_Actif_Sans_Formation_Scan</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_MoyenScan_Actif_Sans_Formation_Scan</shortDescription>
+        <value>0121i000000H9g1AAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_MoyenScan_Inactif_Avec</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_MoyenScan_Inactif_Avec</shortDescription>
+        <value>0121i000000H9g3AAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_Requ_te_Indisponibilit</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_Requête_Indisponibilité</shortDescription>
+        <value>0121i000000H9fxAAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_Requ_te_Indisponibilit_PDA</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_Requête_Indisponibilité_PDA</shortDescription>
+        <value>0121i000000H9fyAAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_Requ_tes_IND_INJ_Ano</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_Requêtes_IND_INJ_Ano</shortDescription>
+        <value>0121q0000008dEIAAY;0121q0000008dEcAAI;0121q0000008dEhAAI;0121q0000008dEmAAI;0121i000000H9fuAAC;0121i000000H9fxAAC;0121i000000H9fyAAC;0121i000000H9fzAAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_Requete_ContratNonRespecte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_Requete_ContratNonRespecte</shortDescription>
+        <value>0121i000000H9g4AAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CHE_Requete_Injoignabilite</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CHE_Requete_Injoignabilite</shortDescription>
+        <value>0121i000000H9fzAAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_Indisponibilit_partenaire</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_Indisponibilité_partenaire</shortDescription>
+        <value>0121i000000H9iWAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_Indisponibilite_standard</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_Indisponibilite_standard</shortDescription>
+        <value>0121i000000H9iXAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_MoyenScan_Actif_Plusieurs</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_MoyenScan_Actif_Plusieurs</shortDescription>
+        <value>0121i000000H9iQAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_MoyenScan_Actif_Sans</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_MoyenScan_Actif_Sans</shortDescription>
+        <value>0121i000000H9iSAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_MoyenScan_Actif_Sans_Formation_Scan</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_MoyenScan_Actif_Sans_Formation_Scan</shortDescription>
+        <value>0121i000000H9iRAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_MoyenScan_Inactif_Avec</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_MoyenScan_Inactif_Avec</shortDescription>
+        <value>0121i000000H9iTAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_Requete_ContratNonRespecte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_Requete_ContratNonRespecte</shortDescription>
+        <value>0121i000000H9iUAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_Requete_Indisponibilit_PDA</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_Requete_Indisponibilité_PDA</shortDescription>
+        <value>0121i000000H9iOAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_Requete_Indisponibilite</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_Requete_Indisponibilité</shortDescription>
+        <value>0121i000000H9iNAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_Requete_Injoignabilite</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_Requete_Injoignabilite</shortDescription>
+        <value>0121i000000H9iPAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_CZE_Requetes_IND_INJ_Ano</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_CZE_Requêtes_IND_INJ_Ano</shortDescription>
+        <value>0121q0000008hq6AAA;0121q0000008hqQAAQ;0121q0000008hqLAAQ;0121q0000008hqVAAQ;0121q0000000F5WAAU;0121q0000000F5ZAAU;0121q0000000F5aAAE;0121q0000000F5bAAE;0121i000000H9iKAAS;0121i000000H9iNAAS;0121i000000H9iOAAS;0121i000000H9iPAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_Compte_FR_Consigne</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Compte_FR_Consigne</shortDescription>
+        <value>012580000005YcIAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_Compte_Pickup_Contact</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Compte_Pickup_Contact</shortDescription>
+        <value>01258000000gnt2</value>
+    </labels>
+    <labels>
+        <fullName>RT_Conge_Indispo_Conge</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Conge_Indispo_Conge</shortDescription>
+        <value>01258000000cXnc</value>
+    </labels>
+    <labels>
+        <fullName>RT_Conge_Indispo_Disponibilite</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Conge_Indispo_Disponibilite</shortDescription>
+        <value>01258000000cXnh</value>
+    </labels>
+    <labels>
+        <fullName>RT_Consigne_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Consigne_Compte</shortDescription>
+        <value>012580000005YcIAAU;01258000000Qi6kAAC;01258000000Qi6lAAC;01258000000Qi6jAAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_DA_Requete</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_DA_Requete</shortDescription>
+        <value>01258000000QhrLAAS;012580000005bnMAAQ;0121i000000kDQtAAM;0121i000000H9fwAAC;0121i000000H9iMAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_DPD_BNL_Conges_Requette</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_DPD_BNL_Congés_Requette</shortDescription>
+        <value>01258000000QhrKAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_DPD_CHE_Conges_Requette</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_DPD_CHE_Conges_Requette</shortDescription>
+        <value>0121i000000H9fvAAC</value>
+    </labels>
+    <labels>
+        <fullName>RT_DPD_CZE_Conges_Requette</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_DPD_CZE_Conges_Requette</shortDescription>
+        <value>0121i000000H9iLAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_DPD_HUN_Conges_Requette</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_DPD_HUN_Conges_Requette</shortDescription>
+        <value>0121i000000kDQsAAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_Email_Obligatoire</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Email_Obligatoire</shortDescription>
+        <value>0121q0000000E9pAAE;0121q0000000F5jAAE;0121i000000H9iYAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_Indisponibilite_PB_Op_Qualite</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT FR_Indisponibilité PB Op Qualité</shortDescription>
+        <value>0121i000000kDrXAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_Indisponibilite_PB_Op_STS</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_Indisponibilité PB Op STS</shortDescription>
+        <value>0121i000000kDrWAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_Indisponibilite_PB_PDA_Panne</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_Indisponibilité PB PDA Panne</shortDescription>
+        <value>01258000000gmAuAAI</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_Indisponibilite_PB_PDA_Synchro</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_Indisponibilité PB PDA Synchro</shortDescription>
+        <value>01258000000gmJXAAY</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_Indisponibilite_standard</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_Indisponibilite_standard</shortDescription>
+        <value>01258000000gie9AAA</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_Injoignabilite_Indisponibilite</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_Injoignabilité_Indisponibilité</shortDescription>
+        <value>01258000000glfSAAQ</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_MoyenScan_Actif_Plusieurs</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_MoyenScan_Actif_Plusieurs</shortDescription>
+        <value>0121i000000kDrPAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_MoyenScan_Actif_Sans_Formation_Scan</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_MoyenScan_Actif_Sans_Formation_Scan</shortDescription>
+        <value>0121i000000kDrQAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_MoyenScan_Actif_Sans_Moyen_Scan</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_MoyenScan_Actif_Sans_Moyen_Scan</shortDescription>
+        <value>0121i000000kDrRAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_MoyenScan_Inactif_Avec</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_MoyenScan_Inactif_Avec</shortDescription>
+        <value>0121i000000kDrUAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_Point_non_Suivi_par_le_CO</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_Point_non_Suivi_par_le_CO</shortDescription>
+        <value>012580000005YcNAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_Prospect_Converti</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_Prospect_Converti</shortDescription>
+        <value>01258000000cXnmAAE</value>
+    </labels>
+    <labels>
+        <fullName>RT_FR_cong_s_du_relais</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_FR_congés_du_relais</shortDescription>
+        <value>0121i000000kDrSAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_France_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_France_Compte</shortDescription>
+        <value>012580000005YcIAAU;01258000000gnt2AAA;012580000005YcNAAU;01258000000gkSWAAY;01258000000gnsxAAA;01258000000cXnmAAE;01258000000gnrzAAA;012580000005YcDAAU</value>
+    </labels>
+    <labels>
+        <fullName>RT_France_Requete</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_France_Requete</shortDescription>
+        <value>01258000000gmezAAA;012580000005bnMAAQ;01258000000gnS6AAI;01258000000gmAuAAI;01258000000gmJXAAY;01258000000glfSAAQ;01258000000gjkdAAA;0121i000000kDrPAAU;0121i000000kDrQAAU;0121i000000kDrRAAU;0121i000000kDrSAAU;0121i000000kDrTAAU;0121i000000kDrUAAU;0121i000000kDrWAAU;0121i000000HHPi</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_Indisponibilit_partenaire</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_Indisponibilité_partenaire</shortDescription>
+        <value>0121i000000kDR2AAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_Indisponibilite_standard</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_Indisponibilité_standard</shortDescription>
+        <value>0121i000000kDR3AAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_MoyenScan_Actif_Plusieurs</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_MoyenScan_Actif_Plusieurs</shortDescription>
+        <value>0121i000000kDQxAAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_MoyenScan_Actif_Sans</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_MoyenScan_Actif_Sans</shortDescription>
+        <value>0121i000000kDQzAAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_MoyenScan_Actif_Sans_Formation_Scan</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_MoyenScan_Actif_Sans_Formation_Scan</shortDescription>
+        <value>0121i000000kDQyAAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_MoyenScan_Inactif_Avec</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_MoyenScan_Inactif_Avec</shortDescription>
+        <value>0121i000000kDR0AAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_Requ_te_Indisponibilit</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_Requête_Indisponibilité</shortDescription>
+        <value>0121i000000kDQuAAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_Requ_te_Indisponibilit_PDA</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_Requête_Indisponibilité_PDA</shortDescription>
+        <value>0121i000000kDQvAAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_Requ_tes_IND_INJ_Ano</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_Requêtes_IND_INJ_Ano</shortDescription>
+        <value>0121i000000kDQrAAM;0121i000000kDQuAAM;0121i000000kDQvAAM;0121i000000kDQwAAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_Requete_ContratNonRespecte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_Requete_ContratNonRespecte</shortDescription>
+        <value>0121i000000kDR1AAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_HUN_Requete_Injoignabilite</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_HUN_Requete_Injoignabilite</shortDescription>
+        <value>0121i000000kDQwAAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_INT_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_INT_Compte</shortDescription>
+        <value>01258000000Qhr5AAC;01258000000Qhr7AAC;01258000000Qhr8AAC;01258000000Qhr9AAC;01258000000QhrAAAS;01258000000QhrBAAS;01258000000QhrCAAS;01258000000QhrDAAS;01258000000QhrEAAS;01258000000QhrFAAS;01258000000QhrGAAS;01258000000QhrHAAS;01258000000Qi6kAAC;01258000000Qi6lAAC;01258000000Qi6jAAC;0121i000000kDQoAAM;0121i000000kDQpAAM;0121i000000kDQnAAM;0121i000000kDQqAAM;0121i000000H9frAAC;0121i000000H9fsAAC;0121i000000H9fqAAC;0121i000000H9ftAAC;0121i000000H9iGAAS;0121i000000H9iIAAS;0121i000000H9iHAAS;0121i000000H9iJAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_INT_Compte2</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_INT_Compte2</shortDescription>
+        <value>N/A</value>
+    </labels>
+    <labels>
+        <fullName>RT_INT_Requete</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_INT_Requete</shortDescription>
+        <value>01258000000QhrSAAS;01258000000QhrPAAS;01258000000QhrRAAS;01258000000QhrQAAS;01258000000QhrIAAS;01258000000QhrOAAS;01258000000QhrNAAS;01258000000QhrMAAS;01258000000QhrKAAS;01258000000QhrJAAS;01258000000QhrLAAS;0121q0000008XZEAA2;0121q0000008XZKAA2;0121q0000008XZLAA2;0121q0000008XZMAA2;0121q0000008XZFAA2;0121q0000008XZGAA2;0121q0000008XZNAA2;0121q0000008XZHAA2;0121q0000008XZIAA2;0121q0000008XZJAA2;0121q0000008XZOAA2;0121i000000kDRHAA2;0121i000000kDRIAA2;0121q0000000E9kAAE;0121q0000000E9jAAE;0121q0000000E9iAAE;0121q0000000E9lAAE;0121q0000000E9cAAE;0121q0000000E9dAAE;0121q0000000E9mAAE;0121q0000000E9oAAE;0121q0000000E9nAAE;0121i000000H9g2AAC;0121i000000H9g1AAC;0121i000000H9g0AAC;0121i000000H9g3AAC;0121i000000H9fuAAC;0121i000000H9fvAAC;0121i000000H9g4AAC;0121i000000H9g7AAC;0121i000000H9g6AAC;0121i000000H9iSAAS;0121i000000H9iRAAS;0121i000000H9iQAAS;0121i000000H9iTAAS;0121i000000H9iKAAS;0121i000000H9iLAAS;0121i000000H9iUAAS;0121i000000H9iXAAS;0121i000000H9iWAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_MoyenScan_Actif_Plusieurs</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_MoyenScan_Actif_Plusieurs</shortDescription>
+        <value>01258000000QhrPAAS;0121w0000008Yu9AAE;0121i000000kDQxAAM;0121i000000kDrPAAU;0121i000000H9g0AAC;0121i000000H9iQAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_MoyenScan_Actif_Sans</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_MoyenScan_Actif_Sans</shortDescription>
+        <value>01258000000QhrRAAS;0121w0000008YuBAAU;0121i000000kDQzAAM;0121i000000kDrRAAU;0121i000000H9g2AAC;0121i000000H9iSAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_MoyenScan_Actif_Sans_Formation_Scan</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_MoyenScan_Actif_Sans_Formation_Scan</shortDescription>
+        <value>01258000000QhrQAAS;0121w0000008YuAAAU;0121i000000kDQyAAM;0121i000000kDrQAAU;0121i000000H9g1AAC;0121i000000H9iRAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_MoyenScan_Inactif_Avec</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_MoyenScan_Inactif_Avec</shortDescription>
+        <value>01258000000QhrIAAS;0121w0000008YuCAAU;0121i000000kDR0AAM;0121i000000kDrUAAU;0121i000000H9g3AAC;0121i000000H9iTAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_NonSuiviCo_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_NonSuiviCo_Compte</shortDescription>
+        <value>012580000005YcNAAU;01258000000Qhr5AAC;01258000000QhrGAAS;01258000000QhrHAAS;0121i000000kDQqAAM;0121i000000H9ftAAC;0121i000000H9iJAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_PickupContact_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_PickupContact_Compte</shortDescription>
+        <value>01258000000gnt2AAA</value>
+    </labels>
+    <labels>
+        <fullName>RT_ProspectAValiderPickupContact_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_ProspectAValiderPickupContact_Compte</shortDescription>
+        <value>01258000000gnsxAAA</value>
+    </labels>
+    <labels>
+        <fullName>RT_ProspectAValider_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_ProspectAValider_Compte</shortDescription>
+        <value>01258000000Qhr8AAC;01258000000QhrBAAS;01258000000QhrEAAS;01258000000gkSWAAY;0121i000000kDQoAAM;0121i000000H9frAAC;0121i000000H9iGAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_ProspectConvertiPickupContact_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_ProspectConvertiPickupContact_Compte</shortDescription>
+        <value>01258000000gnrzAAA</value>
+    </labels>
+    <labels>
+        <fullName>RT_ProspectConverti_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_ProspectConverti_Compte</shortDescription>
+        <value>01258000000Qhr9AAC;01258000000QhrCAAS;01258000000QhrFAAS;01258000000cXnmAAE;0121i000000kDQpAAM;0121i000000H9fsAAC;0121i000000H9iIAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_Prospect_Belgique</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Prospect_Belgique</shortDescription>
+        <value>0125E0000009PxkQAE</value>
+    </labels>
+    <labels>
+        <fullName>RT_Prospect_France</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_Prospect_France</shortDescription>
+        <value>01258000000glTkAAI</value>
+    </labels>
+    <labels>
+        <fullName>RT_Prospect_Hongrie</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_Prospect_Hongrie</shortDescription>
+        <value>0121i000000kDR4AAM</value>
+    </labels>
+    <labels>
+        <fullName>RT_Prospect_INTER</fullName>
+        <categories>Technical ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_Prospect_INTER</shortDescription>
+        <value>01258000000QhrVAAS;01258000000QhrWAAS;01258000000QhrXAAS;0121i000000kDR4AAM;0121i000000H9g8AAC;0121i000000H9iYAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_Requete_ContratNonRespecte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Requete_ContratNonRespecte</shortDescription>
+        <value>01258000000QhrSAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_SuiviCo_Compte</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_SuiviCo_Compte</shortDescription>
+        <value>012580000005YcDAAU;01258000000Qhr7AAC;01258000000QhrAAAS;01258000000QhrDAAS;0121i000000kDQnAAM;0121i000000H9fqAAC;0121i000000H9iHAAS</value>
+    </labels>
+    <labels>
+        <fullName>RT_Ticket_Manager</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RT_Ticket_Manager</shortDescription>
+        <value>0121i000000kDRHAA2;0121i000000kDRIAA2;0121i000000H9g5AAC;0121i000000HHPi</value>
+    </labels>
+    <labels>
+        <fullName>RaisonSociale</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RaisonSociale</shortDescription>
+        <value>Raison sociale ;</value>
+    </labels>
+    <labels>
+        <fullName>ReQuette_En_attente_de_traitement</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ReQuette En attente de traitement</shortDescription>
+        <value>En attente de traitement</value>
+    </labels>
+    <labels>
+        <fullName>Reference_International_Message</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Reference International Message</shortDescription>
+        <value>Veuillez saisir un numéro de référence internationale</value>
+    </labels>
+    <labels>
+        <fullName>Requete_HoraireInsuffisantsDuRelais</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requete_HoraireInsuffisantsDuRelais</shortDescription>
+        <value>Les horaires insuffisants du relais</value>
+    </labels>
+    <labels>
+        <fullName>Requete_ObjetContratNonRespecte</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requete_ObjetContratNonRespecte</shortDescription>
+        <value>Relais actif avec terme contrat non respecté (lecture seule)</value>
+    </labels>
+    <labels>
+        <fullName>Requete_Terminee</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requete Terminee</shortDescription>
+        <value>Terminée</value>
+    </labels>
+    <labels>
+        <fullName>ReseauConcurrent</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ReseauConcurrent</shortDescription>
+        <value>Réseau Concurrent;</value>
+    </labels>
+    <labels>
+        <fullName>RespFacturation</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>RespFacturation</shortDescription>
+        <value>Responsable facturation</value>
+    </labels>
+    <labels>
+        <fullName>ResponsableMagasin</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ResponsableMagasin</shortDescription>
+        <value>Responsable Magasin</value>
+    </labels>
+    <labels>
+        <fullName>SERA_ErrorNonModifiable</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>SERA_ErrorNonModifiable</shortDescription>
+        <value>Si la case modifiable n&#39;est pas cochée, il est impossible d&#39;activer ou de désactiver le service.</value>
+    </labels>
+    <labels>
+        <fullName>Samedi</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Samedi</shortDescription>
+        <value>Samedi</value>
+    </labels>
+    <labels>
+        <fullName>SeuilCalcule</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>SeuilCalcule</shortDescription>
+        <value>Seuil calculé ;</value>
+    </labels>
+    <labels>
+        <fullName>SeuilContractuel</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>SeuilContractuel</shortDescription>
+        <value>Seuil contractuel ;</value>
+    </labels>
+    <labels>
+        <fullName>ShippingAddress</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ShippingAddress</shortDescription>
+        <value>Adresse de livraison (complète) ;</value>
+    </labels>
+    <labels>
+        <fullName>Shipping_Country</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Shipping Country</shortDescription>
+        <value>Pays d&#39;expédition</value>
+    </labels>
+    <labels>
+        <fullName>Source</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Source</shortDescription>
+        <value>CRM</value>
+    </labels>
+    <labels>
+        <fullName>Statut</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Statut</shortDescription>
+        <value>Statut:</value>
+    </labels>
+    <labels>
+        <fullName>Subject_Case_Indispo_Injoignabilit</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Subject_Case_Indispo_Injoignabilité</shortDescription>
+        <value>Indisponibilité problème opérationnel - Injoignabilité</value>
+    </labels>
+    <labels>
+        <fullName>Subject_Case_Panne_PDA</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Subject_Case_Panne_PDA</shortDescription>
+        <value>Indisponibilité - Problème PDA / Panne PDA</value>
+    </labels>
+    <labels>
+        <fullName>Subject_Case_Prob_Synchro</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Subject_Case_Prob_Synchro</shortDescription>
+        <value>Indisponibilité - Problème PDA / Problème de synchronisation</value>
+    </labels>
+    <labels>
+        <fullName>Subject_Case_Qualite_Service</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Subject_Case_Qualite_Service</shortDescription>
+        <value>Indisponibilité - Problème opérationnel Qualité de Service</value>
+    </labels>
+    <labels>
+        <fullName>Subject_Case_STS</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Subject_Case_STS</shortDescription>
+        <value>Indisponibilité - Problème opérationnel Sinistre / Travaux / Santé</value>
+    </labels>
+    <labels>
+        <fullName>Suppression_date_en_cours</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Suppression date en cours</shortDescription>
+        <value>Suppression impossible : le congé, la disponibilité ou l&#39;indisponibilité sélectionné(e) est en cours.</value>
+    </labels>
+    <labels>
+        <fullName>SyncPudo</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>SyncPudo</shortDescription>
+        <value>Synchronisation d&#39;un relais</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DA_DemandeExclusionPUDO</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DA_DemandeExclusionPUDO</shortDescription>
+        <value>4</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DA_FinSuiviDemmActivite</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DA_FinSuiviDemmActivite</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DA_PassageAppSuivant</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DA_PassageAppSuivant</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>TECH_ENV_NOT_AVAILABLE</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>TECH_ENV_NOT_AVAILABLE</shortDescription>
+        <value>http://info.pickup.fr/urlsbx.html</value>
+    </labels>
+    <labels>
+        <fullName>TECH_URL_CYCLOPE</fullName>
+        <categories>Technical URL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_URL_CYCLOPE</shortDescription>
+        <value>http://cyclope-france.pickup.fr/</value>
+    </labels>
+    <labels>
+        <fullName>TECH_URL_CYCLOPE_PDA</fullName>
+        <categories>Technical URL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_URL_CYCLOPE_PDA</shortDescription>
+        <value>PDA/PDAInfo?pdaId=</value>
+    </labels>
+    <labels>
+        <fullName>TOO_MANY_DEVICE</fullName>
+        <categories>Translations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TOO_MANY_DEVICE</shortDescription>
+        <value>Too Many Devices</value>
+    </labels>
+    <labels>
+        <fullName>TRAA_ErrorNonModifiable</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>TRAA_ErrorNonModifiable</shortDescription>
+        <value>Si la case modifiable n&#39;est pas cochée, il est impossible d&#39;activer ou de désactiver le transporteur.</value>
+    </labels>
+    <labels>
+        <fullName>Telecollecte</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Telecollecte</shortDescription>
+        <value>cyclope-france</value>
+    </labels>
+    <labels>
+        <fullName>Telephone</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Telephone</shortDescription>
+        <value>Téléphone;</value>
+    </labels>
+    <labels>
+        <fullName>TitulaireDuCompte</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>TitulaireDuCompte</shortDescription>
+        <value>Titulaire du compte;</value>
+    </labels>
+    <labels>
+        <fullName>TypeAccesInternet</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>TypeAccesInternet</shortDescription>
+        <value>Type d’accès d’internet;</value>
+    </labels>
+    <labels>
+        <fullName>TypeDeDevice</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Type de device</shortDescription>
+        <value>Type de device;</value>
+    </labels>
+    <labels>
+        <fullName>TypeDeParking</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>TypeDeParking</shortDescription>
+        <value>Type de parking;</value>
+    </labels>
+    <labels>
+        <fullName>Type_de_device_Error</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Type de device Error</shortDescription>
+        <value>Choisissez une ou deux options</value>
+    </labels>
+    <labels>
+        <fullName>Unreachable_WS</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Unreachable WS</shortDescription>
+        <value>Un erreur s&#39;est produite dans le service des dispositifs. Veuillez contacter votre administrateur.</value>
+    </labels>
+    <labels>
+        <fullName>Update_Right</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Update Right</shortDescription>
+        <value>Vous n&#39;avez pas le droit de modifier</value>
+    </labels>
+    <labels>
+        <fullName>User_Role_PUS_FR</fullName>
+        <categories>Technical ID</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>User_Role_PUS_FR</shortDescription>
+        <value>00E58000000c5amEAA</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_Aucun</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_Aucun</shortDescription>
+        <value>--Aucun--</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_Autre</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_Autre</shortDescription>
+        <value>Autre</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_EnAttenteDeVisite</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_EnAttenteDeVisite</shortDescription>
+        <value>En attente de visite</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_ErrorContact</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_ErrorContact</shortDescription>
+        <value>Veuillez choisir un contact valide.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_ErrorFollowUp</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_ErrorFollowUp</shortDescription>
+        <value>Attention, certaines questions sont restées sans réponse, merci de les compléter</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_ErrorInterrompu</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_ErrorInterrompu</shortDescription>
+        <value>Veuillez renseigner un motif d&#39;interruption.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_ErrorMacroProfil</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_ErrorMacroProfil</shortDescription>
+        <value>Attention, le relais a déjà ce macro profil.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_ErrorTerminer</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_ErrorTerminer</shortDescription>
+        <value>S&#39;il vous plaît remplir toutes les réponses</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_ErrorType</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_ErrorType</shortDescription>
+        <value>choisissez un type d&#39;enregistrement et un type de compte rendu.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_HauteurInitial</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_HauteurInitial</shortDescription>
+        <value>Hauteur initiale</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_MPActuel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_MPActuel</shortDescription>
+        <value>Macroprofil Actuel :</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_Non</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_Non</shortDescription>
+        <value>Non</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_NotesInternes</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_NotesInternes</shortDescription>
+        <value>Notes internes suite à l’entretien</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_OtherContact</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_OtherContact</shortDescription>
+        <value>Contact</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_Oui</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_Oui</shortDescription>
+        <value>Oui</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_TypeEnregistrementLabel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_TypeEnregistrementLabel</shortDescription>
+        <value>Type de visite</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_TypeReponseTitre</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_TypeReponseTitre</shortDescription>
+        <value>Titre</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_VALP</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_VALP</shortDescription>
+        <value>VALP</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_VALPcommentairesTitle</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_VALPcommentairesTitle</shortDescription>
+        <value>5. Commentaires / Points à approfondir lors de la prochaine visite</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_ZoneDeStock</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_ZoneDeStock</shortDescription>
+        <value>Zone de stock</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_atleastOneContact</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_atleastOneContact</shortDescription>
+        <value>Choisir au moins un contact</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_aucunStatut</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_aucunStatut</shortDescription>
+        <value>Veuillez choisir un statut valide.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_choix</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_choix</shortDescription>
+        <value>Choix</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_commentairesTitle</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_commentairesTitle</shortDescription>
+        <value>7. Commentaires / Points à approfondir lors de la prochaine visite</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_compteRenduLabel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_compteRenduLabel</shortDescription>
+        <value>Compte_rendu__c</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_compteRenduRempliLabel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_compteRenduRempliLabel</shortDescription>
+        <value>Compte_rendu_rempli__c</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_contactIntial</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_contactIntial</shortDescription>
+        <value>Seuil contractuel initial</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_dateErreur</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_dateErreur</shortDescription>
+        <value>Veuillez renseigner une date de visite.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_diversPickupLabel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_diversPickupLabel</shortDescription>
+        <value>Commentaires divers Pickup</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_diversRelaisLabel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_diversRelaisLabel</shortDescription>
+        <value>Commentaires divers Relais</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_enAttente</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_enAttente</shortDescription>
+        <value>En attente de visite</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_enCoursDePrep</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_enCoursDePrep</shortDescription>
+        <value>En cours de préparation</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_errorMotif</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_errorMotif</shortDescription>
+        <value>Merci de préciser le motif</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_etagInitial</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_etagInitial</shortDescription>
+        <value>Nombre d&#39;étagères initial</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_infoGeneral</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_infoGeneral</shortDescription>
+        <value>1. Informations générales</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_largeurInitial</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_largeurInitial</shortDescription>
+        <value>Largeur initiale</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_multichoix</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_multichoix﻿</shortDescription>
+        <value>Multi-choix</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_noteDePrep</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_noteDePrep</shortDescription>
+        <value>Notes de préparation</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_numeroPoint</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_numeroPoint</shortDescription>
+        <value>N° de point relais</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_objectifVisite</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_objectifVisite</shortDescription>
+        <value>Objectif de la visite :</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_otherContactPhrase</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_otherContactPhrase</shortDescription>
+        <value>Personne non présente lors de l’entretien mais intéressée par le compte-rendu</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_profInitial</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_profInitial</shortDescription>
+        <value>Profondeur (cm) initiale</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_questionNumero</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_questionNumero</shortDescription>
+        <value>. Questions Numéro :</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_questionObligatoire</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_questionObligatoire</shortDescription>
+        <value>Question obligatoire Numero :</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_recordTypeVA</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_recordTypeVA</shortDescription>
+        <value>01258000000Qi0s</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_seuilCalcInitial</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_seuilCalcInitial</shortDescription>
+        <value>Seuil calculé initial</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_seuilCalcule</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_seuilCalcule</shortDescription>
+        <value>Veuillez saisir un Seuil contractuel inférieur ou égal au Seuil calculé.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_seuilContractuel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_seuilContractuel</shortDescription>
+        <value>la valeur du seuil contractuel ne peu pas être égal à  zero.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_statutDuCR</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_statutDuCR</shortDescription>
+        <value>Statut du compte rendu</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_statutEnAttente</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_statutEnAttente</shortDescription>
+        <value>En attente de traitement</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_statutEnAttenteDeTraitement</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_statutEnAttenteDeTraitement</shortDescription>
+        <value>En attente de traitement</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_statutEnAttenteVisite</fullName>
+        <categories>Email Template</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_statutEnAttenteVisite</shortDescription>
+        <value>En attente de visite</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_statutTermine</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_statutTermine</shortDescription>
+        <value>Terminé</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_vaStandard</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_vaStandard</shortDescription>
+        <value>VA Standard</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_valeurNegatif</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_valeurNegatif</shortDescription>
+        <value>Une hauteur, une profondeur, et une largeur ne peuvent avoir une valeur négative.</value>
+    </labels>
+    <labels>
+        <fullName>VAVAP_vapSeuil</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VAVAP_vapSeuil</shortDescription>
+        <value>VAP Seuil</value>
+    </labels>
+    <labels>
+        <fullName>Vendredi</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Vendredi</shortDescription>
+        <value>Vendredi</value>
+    </labels>
+    <labels>
+        <fullName>VersionContrat</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VersionContrat</shortDescription>
+        <value>Version de contrat ;</value>
+    </labels>
+    <labels>
+        <fullName>VilleRCS</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VilleRCS</shortDescription>
+        <value>Ville RCS;</value>
+    </labels>
+    <labels>
+        <fullName>VolumeMaximal</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>VolumeMaximal</shortDescription>
+        <value>Volume maximal accepté par colis;</value>
+    </labels>
+    <labels>
+        <fullName>ZoneImplantation</fullName>
+        <categories>Champs obligatoires pour soumission</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ZoneImplantation</shortDescription>
+        <value>Zone d&#39;implantation;</value>
+    </labels>
+    <labels>
+        <fullName>conge_dates_existantes</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>conge_dates_existantes</shortDescription>
+        <value>Période incorrecte ! Un congé existe déjà sur cette période, veuillez modifier le congé déjà existant.</value>
+    </labels>
+    <labels>
+        <fullName>contactOperationel</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>contactOperationel</shortDescription>
+        <value>Contact opérationnel</value>
+    </labels>
+    <labels>
+        <fullName>cyclope_Link</fullName>
+        <categories>Technical URL</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>cyclope_Link</shortDescription>
+        <value>https://cyclopelocal/WhiteListAssociations?pudoId=</value>
+    </labels>
+    <labels>
+        <fullName>dispo_dates_existantes</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>dispo_dates_existantes</shortDescription>
+        <value>Période incorrecte !  Un congé ou une disponibilité existe déjà sur cette période, veuillez modifier le congé ou la disponibilité déjà existant.</value>
+    </labels>
+    <labels>
+        <fullName>heures</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>heures</shortDescription>
+        <value>heure(s)</value>
+    </labels>
+    <labels>
+        <fullName>indispo_dates_existantes</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>indispo_dates_existantes</shortDescription>
+        <value>Période incorrecte ! Une indisponibilité existe déjà sur cette période, veuillez modifier l’indisponibilité déjà existante.</value>
+    </labels>
+    <labels>
+        <fullName>indispo_sans_dateDeFin</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>indispo_sans_dateDeFin</shortDescription>
+        <value>Une indisponibilité existe déjà à une date postérieure. Veuillez indiquer une date de fin.</value>
+    </labels>
+    <labels>
+        <fullName>indispo_update_dateEnCours</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>indispo_update_dateEnCours</shortDescription>
+        <value>Modification impossible : l&#39;indisponibilité sélectionnée est en cours depuis le</value>
+    </labels>
+    <labels>
+        <fullName>is_Batch_Logs_Active</fullName>
+        <categories>Technical Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>is_Batch_Logs_Active</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>pas_de_PDA_assos</fullName>
+        <categories>Technical Labels</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>pas_de_PDA_assos</shortDescription>
+        <value>4</value>
+    </labels>
+    <labels>
+        <fullName>responsableFacturation</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>responsableFacturation</shortDescription>
+        <value>Responsable facturation</value>
+    </labels>
+    <labels>
+        <fullName>supp_cong_dateEnCours</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>supp_cong_dateEnCours</shortDescription>
+        <value>Suppression impossible : le congé, la disponibilité ou l&#39;indisponibilité sélectionné(e) est en cours depuis le</value>
+    </labels>
+    <labels>
+        <fullName>supp_cong_date_passe</fullName>
+        <categories>Translations</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>supp_cong_date_passe</shortDescription>
+        <value>Suppression impossible, date de début déjà passée</value>
+    </labels>
+</CustomLabels>

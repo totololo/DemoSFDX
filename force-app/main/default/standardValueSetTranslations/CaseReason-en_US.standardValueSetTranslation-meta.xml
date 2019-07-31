@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Animation relais</masterLabel>
+        <translation>Shop animation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Colis</masterLabel>
+        <translation>Parcel</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA - Panne PDA</masterLabel>
+        <translation>Unavailability problem PDA - PDA breakdown</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème PDA - Problème de synchronisation</masterLabel>
+        <translation>Unavailability problem PDA - synchronisation problem</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel - Sinistre/ Travaux/Santé avec date de fin</masterLabel>
+        <translation>Operational unavailability incident/road works/ health with end date</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilité problème opérationnel - Sinistre/Travaux/Santé sans date de fin</masterLabel>
+        <translation>Operational unavailability incident/road works/ health without end date</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème PDA / panne PDA</masterLabel>
+        <translation>Unreachable - unavailability problem PDA/PDA breakdown</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème PDA / problème synchronisation</masterLabel>
+        <translation>Unreachable - unavailability PDA/synchronisation problem</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable - Indisponibilité problème opérationnel Sinistre/travaux/Santé</masterLabel>
+        <translation>Unreachable - operational unavailability incident/road works/ health</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Injoignable- Indisponibilité problème opérationnel anomalie colis</masterLabel>
+        <translation>Unreachable- unavailability operational problem service quality</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Matériel et réseau</masterLabel>
+        <translation>Device and network</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Procédure et prestations</masterLabel>
+        <translation>Procedures and services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transporteur</masterLabel>
+        <translation>Carrier</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vie du relais</masterLabel>
+        <translation>Shop life cycle</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

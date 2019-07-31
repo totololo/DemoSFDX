@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etat_Type_TECH__c</fullName>
+    <description>Champ technique utilisé dans les vues de listes des requêtes.</description>
+    <externalId>false</externalId>
+    <formula>AND( 
+        OR(
+              text (Account.Type)=&quot;2&quot;,
+               text (Account.Type)=&quot;21&quot;,
+               text (Account.Type)=&quot;-3&quot;,
+                text (Account.Type)=&quot;3&quot;
+                                       ),
+              
+          
+          
+               
+         OR(
+              text (Account.Etat__c)=&quot;2&quot;,
+              text(Account.Etat__c)=&quot;4&quot;,
+              text(Account.Etat__c)=&quot;5&quot;,
+               text(Account.Etat__c)=&quot;6&quot;
+                                                   )
+               
+               )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Etat_Type_TECH</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

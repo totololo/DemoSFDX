@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signe_avec_moins_de_35h__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Champ utilisé pour les capagnes ponctuelles &quot;les horaires insuffisant des relais&quot;
+Cette case pourra être cochée par l’agent. Dès lors que cette case est cochée, cela permet de définir qu’une dérogation sur le relais a été acceptée.</description>
+    <externalId>false</externalId>
+    <label>Dérogation moins de 35h</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

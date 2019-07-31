@@ -1,0 +1,5 @@
+<messaging:emailTemplate subject="Compte Rendu Pickup" recipientType="Contact" relatedToType="Compte_rendu_rempli__c">
+<messaging:htmlEmailBody >
+<c:C01_EmailTemplate_CRR CRR="{!relatedTo}" />
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

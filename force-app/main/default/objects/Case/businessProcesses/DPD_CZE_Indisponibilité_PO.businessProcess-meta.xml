@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DPD_CZE_Indisponibilité_PO</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>0</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>En attente de traitement</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>En attente de validation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>En cours de traitement</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Terminée</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

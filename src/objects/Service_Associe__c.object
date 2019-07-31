@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Ensemble de services proposés par le Pudo selon le macro-profil affecté. Des services seront pilotables par l’action d’activation ou de désactivation.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Activé</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Commentaires__c</fullName>
+        <externalId>false</externalId>
+        <label>Commentaires</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Compte__c</fullName>
+        <externalId>false</externalId>
+        <label>Compte</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Services associés</relationshipLabel>
+        <relationshipName>Services_associes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Date_de_fin_du_statut__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de fin du statut</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_de_modification__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <externalId>false</externalId>
+        <label>Date de modification</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Etat_du_statut__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Si la modification est temporaire veuillez renseigner la date de fin d&apos;application.</inlineHelpText>
+        <label>Etat du statut</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Temporaire</fullName>
+                    <default>false</default>
+                    <label>Temporaire</label>
+                </value>
+                <value>
+                    <fullName>Définitif</fullName>
+                    <default>false</default>
+                    <label>Définitif</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Exclu__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Exclu</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interdit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interdit</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Macroprofil__c</fullName>
+        <externalId>false</externalId>
+        <formula>Compte__r.Macroprofil_actuel__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Macroprofil</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Modifiable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Modifiable</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Motif_d_activation_d_sactivation__c</fullName>
+        <externalId>false</externalId>
+        <label>Motif d&apos;activation/désactivation</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Création d’un relais</fullName>
+                    <default>false</default>
+                    <label>Création d’un relais</label>
+                </value>
+                <value>
+                    <fullName>Relais en surcharge</fullName>
+                    <default>false</default>
+                    <label>Relais en surcharge</label>
+                </value>
+                <value>
+                    <fullName>Régulation</fullName>
+                    <default>false</default>
+                    <label>Régulation</label>
+                </value>
+                <value>
+                    <fullName>Autres / Voir commentaire</fullName>
+                    <default>false</default>
+                    <label>Autres / Voir commentaire</label>
+                </value>
+                <value>
+                    <fullName>Concurrence chargeur</fullName>
+                    <default>false</default>
+                    <label>Concurrence chargeur</label>
+                </value>
+                <value>
+                    <fullName>Omission</fullName>
+                    <default>false</default>
+                    <label>Omission</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Nom_du_service_traduit__c</fullName>
+        <externalId>false</externalId>
+        <label>Nom du service</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LOV_GLO_SER</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pudo_Forme__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Pour préciser si le Pudo a été formé pour fournir ce service.</description>
+        <externalId>false</externalId>
+        <label>Pudo Formé</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ReferenceExterne__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>Réference Externe</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Reference_Pudo__c</fullName>
+        <externalId>false</externalId>
+        <formula>Compte__r.Reference__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Référence Pudo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service</label>
+        <referenceTo>Service__c</referenceTo>
+        <relationshipLabel>Points relais pouvant activer le service</relationshipLabel>
+        <relationshipName>Services_associes</relationshipName>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Tech_Desactive__c</fullName>
+        <externalId>false</externalId>
+        <formula>Not( Active__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Désactivé</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tech_bypassNonModifiableCheck__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>tech_bypassNonModifiableCheck</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Service associé</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Service__c</columns>
+        <columns>Compte__c</columns>
+        <columns>Reference_Pudo__c</columns>
+        <columns>Macroprofil__c</columns>
+        <columns>Pudo_Forme__c</columns>
+        <columns>Active__c</columns>
+        <columns>Modifiable__c</columns>
+        <columns>Motif_d_activation_d_sactivation__c</columns>
+        <columns>Date_de_fin_du_statut__c</columns>
+        <columns>Etat_du_statut__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Tous les services associés</label>
+        <language>fr</language>
+    </listViews>
+    <listViews>
+        <fullName>PUDO_MP4_avec_NAVETTE</fullName>
+        <columns>NAME</columns>
+        <columns>Reference_Pudo__c</columns>
+        <columns>Compte__c</columns>
+        <columns>Macroprofil__c</columns>
+        <columns>Service__c</columns>
+        <columns>Active__c</columns>
+        <columns>Modifiable__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Macroprofil__c</field>
+            <operation>equals</operation>
+            <value>MP4</value>
+        </filters>
+        <filters>
+            <field>Service__c</field>
+            <operation>contains</operation>
+            <value>NAVETTE</value>
+        </filters>
+        <label>PUDO MP4 avec NAVETTE</label>
+        <language>fr</language>
+    </listViews>
+    <nameField>
+        <displayFormat>SA-{0000}</displayFormat>
+        <label>Numéro du Service associé</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Services associés</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Service__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Compte__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Reference_Pudo__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Active__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Modifiable__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Motif_d_activation_d_sactivation__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Etat_du_statut__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_de_fin_du_statut__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>SERA_VR02_Modif_Ser_temp_Fin_Obligatoire</fullName>
+        <active>true</active>
+        <description>Si &quot;Etat de statut&quot; est temporaire alors vous devez obligatoirement renseigner la date de fin. La date de fin ne doit pas être dans le passé.</description>
+        <errorConditionFormula>AND(
+Not($User.BypassValidationRule__c),
+ISPICKVAL (Etat_du_statut__c,&quot;temporaire&quot; ),
+OR(
+   ISBLANK( Date_de_fin_du_statut__c ), 
+   Date_de_fin_du_statut__c &lt; TODAY() 
+)
+)</errorConditionFormula>
+        <errorDisplayField>Date_de_fin_du_statut__c</errorDisplayField>
+        <errorMessage>Si &quot;Etat de statut&quot; est temporaire alors vous devez obligatoirement renseigner la date de fin. La date de fin ne doit pas être dans le passé.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SERA_VR03_DateFinStatut_SupDateModif</fullName>
+        <active>true</active>
+        <description>La date de fin du statut ne peut pas être antérieur à la date de modification</description>
+        <errorConditionFormula>AND(!$User.BypassValidationRule__c, 
+ISPICKVAL (Etat_du_statut__c,&quot;temporaire&quot;),
+Date_de_fin_du_statut__c &lt;  Date_de_modification__c 
+ )</errorConditionFormula>
+        <errorDisplayField>Date_de_fin_du_statut__c</errorDisplayField>
+        <errorMessage>La date de fin du statut ne peut pas être antérieur à la date de modification</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ServiceAssocie_VR01_chooseOneValue</fullName>
+        <active>true</active>
+        <errorConditionFormula>If(Active__c = true,1,0)+ 
+If(Exclu__c = true,1,0)+ 
+If(Interdit__c = true, 1,0) 
+&gt; 1</errorConditionFormula>
+        <errorMessage>Veuillez choisir une des cases à cochés suivantes (Activé, Exclu ou Interdit)</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

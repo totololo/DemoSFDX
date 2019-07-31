@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etape_de_traitement__c</fullName>
+    <defaultValue>$Label.Etape_de_traitement</defaultValue>
+    <description>Avant de procéder à d’éventuelles actions, vérifier que le relais réceptionne correctement ses colis depuis Visucolis.
+Ci-dessous les étapes de traitement possibles :</description>
+    <externalId>false</externalId>
+    <label>Etape de traitement</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

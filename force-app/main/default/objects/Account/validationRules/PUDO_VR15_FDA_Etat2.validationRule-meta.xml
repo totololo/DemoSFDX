@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PUDO_VR15_FDA_Etat2</fullName>
+    <active>true</active>
+    <description>En état 2, lorsque je saisi la date de FDA, celle-ci ne peut être indiquer qu&#39;au jour J</description>
+    <errorConditionFormula>AND(!$User.BypassValidationRule__c, 
+ISPICKVAL( Etat__c , &quot;2&quot;), 
+ OR(Date_de_fin_d_activite__c  &gt; TODAY(),Date_de_fin_d_activite__c  &lt; TODAY()))</errorConditionFormula>
+    <errorDisplayField>Date_de_fin_d_activite__c</errorDisplayField>
+    <errorMessage>En état 2, la date de Fin d&#39;activité à indiquer doit être la date du jour.</errorMessage>
+</ValidationRule>

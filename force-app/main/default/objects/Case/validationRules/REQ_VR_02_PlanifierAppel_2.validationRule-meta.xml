@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR_02_PlanifierAppel_2</fullName>
+    <active>true</active>
+    <description>&quot;Planifier un rappel&quot; et &quot;Traitement interrompu&quot;  sont cochées.
+Rentrez une date de rappel</description>
+    <errorConditionFormula>AND ( !$User.BypassValidationRule__c ,
+     not( Subject = $Label.DA_ObjetDA ),
+        Planifier_un_rappel__c = True ,
+        Traitement_interrompu__c = True,
+        ISBLANK(Date_de_rappel_planifiee__c) 
+      )</errorConditionFormula>
+    <errorDisplayField>Date_de_rappel_planifiee__c</errorDisplayField>
+    <errorMessage>&quot;Planifier un rappel&quot; et &quot;Traitement interrompu&quot;  sont cochées.
+Veuillez rentrer une date de rappel</errorMessage>
+</ValidationRule>
